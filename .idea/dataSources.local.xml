@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal">
+    <data-source name="Rails FStation: test" uuid="8a0c40ba-573c-41e7-9a0c-069bdf2f5dea">
+      <database-info product="PostgreSQL" version="9.6.3" jdbc-version="4.2" driver-name="PostgreSQL JDBC Driver" driver-version="42.1.1">
+        <identifier-quote-string>&quot;</identifier-quote-string>
+      </database-info>
+      <case-sensitivity plain-identifiers="lower" quoted-identifiers="exact" />
+      <user-name>postgres</user-name>
+      <introspection-schemas>myapp_test:public</introspection-schemas>
+    </data-source>
+    <data-source name="Rails FStation: production" uuid="8cd1dc71-b7ee-433d-9502-802cfe51e657">
+      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" />
+      <secret-storage>master_key</secret-storage>
+      <first-sync>true</first-sync>
+      <user-name>myapp</user-name>
+    </data-source>
+    <data-source name="Rails FStation: development" uuid="9fa7cd9f-39f2-403e-97a6-740284df0ac2">
+      <database-info product="PostgreSQL" version="9.6.3" jdbc-version="4.2" driver-name="PostgreSQL JDBC Driver" driver-version="42.1.1">
+        <identifier-quote-string>&quot;</identifier-quote-string>
+      </database-info>
+      <case-sensitivity plain-identifiers="lower" quoted-identifiers="exact" />
+      <user-name>postgres</user-name>
+      <introspection-schemas>myapp_development:public</introspection-schemas>
+    </data-source>
+  </component>
+</project>

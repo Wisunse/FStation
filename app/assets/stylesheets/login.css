@@ -1,0 +1,21 @@
+.login-container {
+    width: 300px;
+    top: 150px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    border-radius: 10px;
+    text-align: center;
+    border: 5px solid black;
+    position: absolute;
+    height: 350px;
+    background-color: #6e786f;}
+
+.login-container__icon {
+    width: 128px;
+    height: 128px;
+    float: none;
+    display: block;
+    margin: 0 auto;
+    bottom: 5px; }

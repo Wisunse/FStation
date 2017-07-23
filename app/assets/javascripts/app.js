@@ -43,7 +43,7 @@ angular.module('FireStation', ['ui.router', 'templates'])
                 url: '/login',
                 views: {
                     headerView: {
-                        templateUrl: 'views/protected/menu',
+                        templateUrl: 'menu/_menu.html',
                         controller: 'MenuController'
                     },
                     mainView: {

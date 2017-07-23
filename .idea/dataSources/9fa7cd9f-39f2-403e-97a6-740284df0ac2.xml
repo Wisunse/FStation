@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="Rails FStation: development">
+  <database-model serializer="dbm" rdbms="POSTGRES" format-version="4.3">
+    <root id="1"/>
+    <database id="2" parent="1" name="myapp_development">
+      <ObjectId>16473</ObjectId>
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </database>
+    <database id="3" parent="1" name="postgres">
+      <ObjectId>12443</ObjectId>
+    </database>
+    <database id="4" parent="1" name="example2_development">
+      <ObjectId>16385</ObjectId>
+    </database>
+    <database id="5" parent="1" name="example2_test">
+      <ObjectId>16386</ObjectId>
+    </database>
+    <database id="6" parent="1" name="asd">
+      <ObjectId>16387</ObjectId>
+    </database>
+    <database id="7" parent="1" name="ddd">
+      <ObjectId>16388</ObjectId>
+    </database>
+    <database id="8" parent="1" name="myapp_test">
+      <ObjectId>16474</ObjectId>
+    </database>
+    <schema id="9" parent="2" name="public">
+      <ObjectId>2200</ObjectId>
+      <IntrospectionTimestamp>2017-07-23.21:13:16.586</IntrospectionTimestamp>
+      <IntrospectionStateNumber>625</IntrospectionStateNumber>
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </schema>
+    <schema id="10" parent="2" name="pg_catalog">
+      <ObjectId>11</ObjectId>
+    </schema>
+    <schema id="11" parent="2" name="pg_toast">
+      <ObjectId>99</ObjectId>
+    </schema>
+    <schema id="12" parent="2" name="pg_temp_1">
+      <ObjectId>11848</ObjectId>
+    </schema>
+    <schema id="13" parent="2" name="pg_toast_temp_1">
+      <ObjectId>11849</ObjectId>
+    </schema>
+    <schema id="14" parent="2" name="information_schema">
+      <ObjectId>12155</ObjectId>
+    </schema>
+    <sequence id="15" parent="9" name="firemen_id_seq">
+      <ObjectId>16491</ObjectId>
+      <StateNumber>620</StateNumber>
+      <BelongsToColumn>1</BelongsToColumn>
+    </sequence>
+    <sequence id="16" parent="9" name="logins_id_seq">
+      <ObjectId>16502</ObjectId>
+      <StateNumber>625</StateNumber>
+      <BelongsToColumn>1</BelongsToColumn>
+    </sequence>
+    <table id="17" parent="9" name="ar_internal_metadata">
+      <ObjectId>16483</ObjectId>
+      <StateNumber>618</StateNumber>
+    </table>
+    <table id="18" parent="9" name="firemen">
+      <ObjectId>16493</ObjectId>
+      <StateNumber>620</StateNumber>
+    </table>
+    <table id="19" parent="9" name="logins">
+      <ObjectId>16504</ObjectId>
+      <StateNumber>625</StateNumber>
+    </table>
+    <table id="20" parent="9" name="schema_migrations">
+      <ObjectId>16475</ObjectId>
+      <StateNumber>617</StateNumber>
+    </table>
+    <column id="21" parent="17" name="key">
+      <Position>1</Position>
+      <DataType>varchar|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>618</StateNumber>
+    </column>
+    <column id="22" parent="17" name="value">
+      <Position>2</Position>
+      <DataType>varchar|0</DataType>
+      <StateNumber>618</StateNumber>
+    </column>
+    <column id="23" parent="17" name="created_at">
+      <Position>3</Position>
+      <DataType>timestamp|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>618</StateNumber>
+    </column>
+    <column id="24" parent="17" name="updated_at">
+      <Position>4</Position>
+      <DataType>timestamp|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>618</StateNumber>
+    </column>
+    <index id="25" parent="17" name="ar_internal_metadata_pkey">
+      <ObjectId>16489</ObjectId>
+      <ColNames>key</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="26" parent="17" name="ar_internal_metadata_pkey">
+      <ObjectId>16490</ObjectId>
+      <ColNames>key</ColNames>
+      <UnderlyingIndexName>ar_internal_metadata_pkey</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <column id="27" parent="18" name="id">
+      <Position>1</Position>
+      <DataType>bigint|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>620</StateNumber>
+      <SequenceName>firemen_id_seq</SequenceName>
+      <DefaultExpression>nextval(&apos;firemen_id_seq&apos;::regclass)</DefaultExpression>
+    </column>
+    <column id="28" parent="18" name="name">
+      <Position>2</Position>
+      <DataType>varchar|0</DataType>
+      <StateNumber>620</StateNumber>
+    </column>
+    <column id="29" parent="18" name="surname">
+      <Position>3</Position>
+      <DataType>varchar|0</DataType>
+      <StateNumber>620</StateNumber>
+    </column>
+    <column id="30" parent="18" name="email">
+      <Position>4</Position>
+      <DataType>varchar|0</DataType>
+      <StateNumber>620</StateNumber>
+    </column>
+    <column id="31" parent="18" name="created_at">
+      <Position>5</Position>
+      <DataType>timestamp|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>620</StateNumber>
+    </column>
+    <column id="32" parent="18" name="updated_at">
+      <Position>6</Position>
+      <DataType>timestamp|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>620</StateNumber>
+    </column>
+    <index id="33" parent="18" name="firemen_pkey">
+      <ObjectId>16500</ObjectId>
+      <ColNames>id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="34" parent="18" name="firemen_pkey">
+      <ObjectId>16501</ObjectId>
+      <ColNames>id</ColNames>
+      <UnderlyingIndexName>firemen_pkey</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <column id="35" parent="19" name="id">
+      <Position>1</Position>
+      <DataType>bigint|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>625</StateNumber>
+      <SequenceName>logins_id_seq</SequenceName>
+      <DefaultExpression>nextval(&apos;logins_id_seq&apos;::regclass)</DefaultExpression>
+    </column>
+    <column id="36" parent="19" name="username">
+      <Position>2</Position>
+      <DataType>varchar|0</DataType>
+      <StateNumber>625</StateNumber>
+    </column>
+    <column id="37" parent="19" name="password">
+      <Position>3</Position>
+      <DataType>varchar|0</DataType>
+      <StateNumber>625</StateNumber>
+    </column>
+    <column id="38" parent="19" name="email">
+      <Position>4</Position>
+      <DataType>varchar|0</DataType>
+      <StateNumber>625</StateNumber>
+    </column>
+    <column id="39" parent="19" name="created_at">
+      <Position>5</Position>
+      <DataType>timestamp|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>625</StateNumber>
+    </column>
+    <column id="40" parent="19" name="updated_at">
+      <Position>6</Position>
+      <DataType>timestamp|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>625</StateNumber>
+    </column>
+    <index id="41" parent="19" name="logins_pkey">
+      <ObjectId>16511</ObjectId>
+      <ColNames>id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="42" parent="19" name="logins_pkey">
+      <ObjectId>16512</ObjectId>
+      <ColNames>id</ColNames>
+      <UnderlyingIndexName>logins_pkey</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <column id="43" parent="20" name="version">
+      <Position>1</Position>
+      <DataType>varchar|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>617</StateNumber>
+    </column>
+    <index id="44" parent="20" name="schema_migrations_pkey">
+      <ObjectId>16481</ObjectId>
+      <ColNames>version</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="45" parent="20" name="schema_migrations_pkey">
+      <ObjectId>16482</ObjectId>
+      <ColNames>version</ColNames>
+      <UnderlyingIndexName>schema_migrations_pkey</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+  </database-model>
+</dataSource>
