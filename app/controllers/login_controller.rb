@@ -1,12 +1,14 @@
 class LoginController < ApplicationController
 
-
-
   def index
   end
 
   def login
     render 'layouts/main'
+  end
+
+  def login_try
+
   end
 
   def all

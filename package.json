@@ -1,5 +1,7 @@
 {
   "name": "myapp",
   "private": true,
-  "dependencies": {}
+  "dependencies": {
+    "angular-material": "^1.1.4"
+  }
 }

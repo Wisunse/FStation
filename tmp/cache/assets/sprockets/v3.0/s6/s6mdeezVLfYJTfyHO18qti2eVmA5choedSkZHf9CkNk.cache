@@ -1,0 +1,22 @@
+{:uriI"ƒfile://app/assets/javascripts/menu/_menu.html?type=text/ng-html&id=a97a700e2d16487eb753a5a3c1147260e37c0364c4e755937dd841581fa0fa79:ET:load_pathI"app/assets/javascripts;T:filenameI"+app/assets/javascripts/menu/_menu.html;T:	nameI"menu/_menu;T:logical_pathI"menu/_menu.html;T:content_typeI"text/ng-html;T:sourceI"r<!--<div  layout-fill>-->
+    <md-toolbar>
+        <div class="md-toolbar-tools" ayout="row" layout-sm="column" layout-align="center center" layout-wrap>
+            <h2 md-truncate flex>My App's Title</h2>
+
+        <!--<section layout="row" layout-sm="column" layout-align="center center" layout-wrap>-->
+            <md-button class="md-raised">Button</md-button>
+            <md-button class="md-raised md-primary">Primary</md-button>
+            <md-button ng-disabled="true" class="md-raised md-primary">Disabled</md-button>
+            <md-button class="md-raised md-warn">Warn</md-button>
+            <div class="label">Raised</div>
+            <md-button class="md-icon-button md-primary" aria-label="Settings">
+            <md-icon md-svg-icon="img/icons/menu.svg"></md-icon>
+            </md-button>
+        <!--</section>-->
+        </div>
+    </md-toolbar>
+<!--</div>-->;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"8processors:type=text/ng-html&file_type=text/ng-html;TTI"9file-digest://app/assets/javascripts/menu/_menu.html;TTF:charsetI"
+utf-8;F:digest"%Á”ü?ïoôrC°’íÓØý%<âõ_šÞhV/1üG%Jó:lengthir:dependencies_digest"%ÃE$ØÀ“ã³ŸÎƒÛMQäŸ&3ÛþoZâv¶‘mi/9ª:idI"Ea97a700e2d16487eb753a5a3c1147260e37c0364c4e755937dd841581fa0fa79;F:
+mtimel+|ŸxY

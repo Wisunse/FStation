@@ -1,8 +1,8 @@
 'use strict';
 
-angular.module('FireStation', ['ui.router', 'templates'])
+angular.module('FireStation', ['ui.router', 'templates', 'ngMaterial'])
 
-    .config(['$stateProvider', '$locationProvider', '$urlRouterProvider', '$httpProvider', function($stateProvider, $locationProvider, $urlRouterProvider, $httpProvider) {
+    .config(['$stateProvider', '$locationProvider', '$urlRouterProvider', '$httpProvider', '$mdThemingProvider', function($stateProvider, $locationProvider, $urlRouterProvider, $httpProvider, $mdThemingProvider) {
 
         $httpProvider.interceptors.push(['$injector', '$q', function ($injector, $q) {
             return {
@@ -53,9 +53,13 @@ angular.module('FireStation', ['ui.router', 'templates'])
                 }
             })
     //
-    //         .state('home', {
-    //             url: '/home',
+    //         .state('firemen', {
+    //             url: '/authentication',
     //             views: {
+    //                 headerView: {
+    //                     templateUrl: 'menu/_menu.html',
+    //                     controller: 'MenuController'
+    //                 },
     //                 mainView: {
     //                     templateUrl: 'home/_home.html',
     //                     controller: 'HomeController'
@@ -64,7 +68,19 @@ angular.module('FireStation', ['ui.router', 'templates'])
     //         });
     //
     //     $urlRouterProvider.otherwise('/404');
-    //
+
+
+    $mdThemingProvider.theme('default')
+            .primaryPalette('grey', {
+            'default': '500',
+                'hue-1': '500',
+                'hue-2': '700',
+                'hue-3': 'A200'
+        })
+    .accentPalette('cyan')
+            .warnPalette('red');
+            // .backgroundPalette('grey');
+
     }])
 
     .run(['$rootScope', '$state', '$stateParams', '$http',

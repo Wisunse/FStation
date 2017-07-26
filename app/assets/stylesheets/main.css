@@ -1,0 +1,41 @@
+body {
+    background-color: #EEEEEE;
+}
+
+.login md-card {
+    width: 400px;
+}
+
+.login .logo {
+    font-size: 48px;
+    width: 48px;
+    height: 48px;
+}
+
+.main-view {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: auto; }
+
+@media all and (max-width: 960px) {
+    .main-wrapper {
+        position: absolute;
+        top: 60px;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        overflow: hidden;
+        z-index: 1000; } }
+
+@media all and (min-width: 961px) {
+    .main-wrapper {
+        position: absolute;
+        top: 60px;
+        bottom: 35px;
+        left: 0;
+        right: 0;
+        width: 100%;
+        overflow: hidden;
+        z-index: 1000; } }
