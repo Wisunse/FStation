@@ -1,0 +1,22 @@
+{:uriI"ƒfile://app/assets/javascripts/menu/_menu.html?type=text/ng-html&id=8ef5c8bdaab5f257feac2d95a840b03b7a0b2f595371a46edefaba65142c376c:ET:load_pathI"app/assets/javascripts;T:filenameI"+app/assets/javascripts/menu/_menu.html;T:	nameI"menu/_menu;T:logical_pathI"menu/_menu.html;T:content_typeI"text/ng-html;T:sourceI".<div class="login-header">
+    <div layout="column" layout-fill>
+        <md-toolbar layout="row" layout-align="space-around center">
+            <button md-icon-button (click)="sidenav.toggle()">
+                <md-icon class="md-24" >menu</md-icon>
+            </button>ï¿¼
+            <md-button class="menu" aria-label="show menu"> Strazacy </md-button>
+            <md-button class="menu" aria-label="show menu"> Samochody </md-button>
+            <md-button class="menu" aria-label="show menu"> Wyjazdy </md-button>
+            <md-button class="menu" aria-label="show menu"> Przypomniania </md-button>
+            <md-button class="menu" aria-label="show menu"> Alarmy </md-button>
+            <md-button class="menu" aria-label="show menu"> Ustawienia </md-button>
+        </md-toolbar>
+    </div>
+</div>
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"8processors:type=text/ng-html&file_type=text/ng-html;TTI"9file-digest://app/assets/javascripts/menu/_menu.html;TTF:charsetI"
+utf-8;F:digest"%¶x0_ùfq	^ùdO.ëjM¯¾
+7±5sôAO
+í~:lengthi.:dependencies_digest"%¿uTEˆĞ¸c“ùÎÿ™/{OFfâ¾Î÷âC£kZw:idI"E8ef5c8bdaab5f257feac2d95a840b03b7a0b2f595371a46edefaba65142c376c;F:
+mtimel+ˆÛyY

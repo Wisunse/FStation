@@ -18,7 +18,6 @@
 //= require angular-material
 //= require angular-rails-templates
 //= require angular-ui-router
-
 // add single file
 //= require app.js
 // add directory

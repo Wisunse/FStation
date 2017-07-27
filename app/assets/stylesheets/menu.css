@@ -1,4 +1,8 @@
-navBardemoBasicUsage md-content .ext-content {
-    padding: 50px;
-    margin: 20px;
-    background-color: #FFF2E0; }
+.login-header {
+    height: 60px;
+    display: flex;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    z-index: 2000;
+}

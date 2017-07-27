@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html >
   <head>
-    <title>Myapp</title>
+    <title>FStation</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1, user-scalable=no">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all' %>
@@ -10,8 +12,6 @@
   </head>
 
   <body ng-app="FireStation" ng-controller="MainController" ng-init="init()">
-  <!--<ui-view></ui-view>-->
-  <!--<div>application.html.erb</div>-->
      <%= yield %>
   </body>
 </html>

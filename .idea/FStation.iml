@@ -70,6 +70,8 @@
     <orderEntry type="library" scope="PROVIDED" name="rails-angular-material (v1.0.5, ruby-2.3.4-p301) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rails-assets-angular (v1.6.5, ruby-2.3.4-p301) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rails-assets-angular-aria (v1.6.5, ruby-2.3.4-p301) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="rails-assets-angular-material-icons (v0.7.1, ruby-2.3.4-p301) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="rails-assets-material-icons (v0.1.0, ruby-2.3.4-p301) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rails-dom-testing (v2.0.3, ruby-2.3.4-p301) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rails-html-sanitizer (v1.0.3, ruby-2.3.4-p301) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="railties (v5.1.2, ruby-2.3.4-p301) [gem]" level="application" />

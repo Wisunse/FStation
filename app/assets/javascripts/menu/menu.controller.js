@@ -6,4 +6,6 @@ angular.module('FireStation')
         console.log('MenuController');
         $scope.currentNavItem = 'page1';
         console.log($scope.currentNavItem)
+
+
     }]);

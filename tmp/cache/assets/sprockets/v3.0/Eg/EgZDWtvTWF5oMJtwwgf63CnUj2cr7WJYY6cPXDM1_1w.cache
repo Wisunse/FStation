@@ -1,0 +1,15 @@
+{:uriI"Œfile://app/assets/javascripts/login/_login_header.html?type=text/ng-html&id=3542a485203c42f5c2c9be19666d01af10a8c91d163a4a1bab1b194ba2be1460:ET:load_pathI"app/assets/javascripts;T:filenameI"4app/assets/javascripts/login/_login_header.html;T:	nameI"login/_login_header;T:logical_pathI"login/_login_header.html;T:content_typeI"text/ng-html;T:sourceI"ö<div class="login-header">
+    <div layout="column" layout-fill>
+        <md-toolbar layout="row" layout-align="space-around center">
+            <md-button class="menu" aria-label="show menu"> Login </md-button>
+            <md-button class="menu" aria-label="show menu"> About App </md-button>
+            <md-button class="menu" aria-label="show menu"> Rejestracja </md-button>
+            <md-button class="menu" aria-label="show menu"> Kontakt </md-button>
+        </md-toolbar>
+    </div>
+</div>
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"8processors:type=text/ng-html&file_type=text/ng-html;TTI"Bfile-digest://app/assets/javascripts/login/_login_header.html;TTF:charsetI"
+utf-8;F:digest"%Íø]ñê`=Á|ÏÏ“_ıg”áÇ‡ÇûJ«šzı«:lengthiö:dependencies_digest"%4LFÕÜßAüOIıÍxÈšY.Ú~	²ù\ĞÓÉ—£ˆ:idI"E3542a485203c42f5c2c9be19666d01af10a8c91d163a4a1bab1b194ba2be1460;F:
+mtimel+	·yY

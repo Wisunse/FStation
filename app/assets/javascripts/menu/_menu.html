@@ -1,18 +1,19 @@
-<!--<div  layout-fill>-->
-    <md-toolbar>
-        <div class="md-toolbar-tools" ayout="row" layout-sm="column" layout-align="center center" layout-wrap>
-            <h2 md-truncate flex>My App's Title</h2>
+<div class="login-header">
+    <div layout="column" layout-fill>
+        <md-toolbar layout="row" layout-align="space-around center">
 
-        <!--<section layout="row" layout-sm="column" layout-align="center center" layout-wrap>-->
-            <md-button class="md-raised">Button</md-button>
-            <md-button class="md-raised md-primary">Primary</md-button>
-            <md-button ng-disabled="true" class="md-raised md-primary">Disabled</md-button>
-            <md-button class="md-raised md-warn">Warn</md-button>
-            <div class="label">Raised</div>
-            <md-button class="md-icon-button md-primary" aria-label="Settings">
-            <!--<md-icon md-svg-icon="img/icons/menu.svg"></md-icon>-->
-            </md-button>
-        <!--</section>-->
-        </div>
-    </md-toolbar>
-<!--</div>-->
+            <button md-icon-button (click)="sidenav.toggle()">
+                <md-icon class="md-24" >menu</md-icon>
+            </button>￼
+
+            <md-button class="menu" aria-label="show menu"> Strazacy </md-button>
+            <md-button class="menu" aria-label="show menu"> Samochody </md-button>
+            <md-button class="menu" aria-label="show menu"> Wyjazdy </md-button>
+            <md-button class="menu" aria-label="show menu"> Przypomniania </md-button>
+            <md-button class="menu" aria-label="show menu"> Alarmy </md-button>
+            <md-button class="menu" aria-label="show menu"> Ustawienia </md-button>
+        </md-toolbar>
+    </div>
+</div>
+
+

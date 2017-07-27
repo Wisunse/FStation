@@ -51,7 +51,7 @@ angular.module('FireStation', ['ui.router', 'templates', 'ngMaterial'])
                         controller: 'LoginController'
                     }
                 }
-            })
+            });
     //
     //         .state('firemen', {
     //             url: '/authentication',
@@ -71,15 +71,17 @@ angular.module('FireStation', ['ui.router', 'templates', 'ngMaterial'])
 
 
     $mdThemingProvider.theme('default')
-            .primaryPalette('grey', {
-            'default': '500',
-                'hue-1': '500',
-                'hue-2': '700',
-                'hue-3': 'A200'
+            .primaryPalette('red', {
+            'default': '400',
+                'hue-1': '100',
+                'hue-2': '600',
+                'hue-3': 'A100'
         })
-    .accentPalette('cyan')
-            .warnPalette('red');
-            // .backgroundPalette('grey');
+    .accentPalette('orange', {
+        'default': '200'
+    })
+    .warnPalette('red');
+    // .backgroundPalette('grey');
 
     }])
 
