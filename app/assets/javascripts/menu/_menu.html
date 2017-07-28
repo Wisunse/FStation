@@ -1,21 +1,75 @@
 <div class="login-header" ng-cloak>
     <div layout="column" layout-fill>
 
-        <md-toolbar layout="row" ng-cloak layout-fill>
+            <md-toolbar>
 
-            <md-button md-icon-button hide-gt-sm class="menuBtn" ng-click="login.openLeftMenu()" ng-cloak>
-                <md-icon class="md-24" ng-cloak>menu</md-icon>
-            </md-button>
+                <md-button md-icon-button hide-gt-sm class="menuBtn" ng-click="login.openLeftMenu()" ng-cloak>
+                    <md-icon class="md-24" ng-cloak>menu</md-icon>
+                </md-button>
 
-            <div flex layout="row" layout-align="space-around center">
-                <md-button class="menu" layout-fill hide show-gt-sm aria-label="show menu"> Straƶacy </md-button>
-                <md-button class="menu" layout-fill hide show-gt-sm aria-label="show menu"> Pojazdy </md-button>
-                <md-button class="menu" layout-fill hide show-gt-sm aria-label="show menu"> Wyjazdy </md-button>
-                <md-button class="menu" layout-fill hide show-gt-sm aria-label="show menu"> Przypomnienia </md-button>
-                <md-button class="menu" layout-fill hide show-gt-sm aria-label="show menu"> Alarmy </md-button>
-                <md-button class="menu" layout-fill hide show-gt-sm aria-label="show menu"> Ustawienia </md-button>
-            </div>
+                <md-tabs md-dynamic-height md-center-tabs>
 
-        </md-toolbar>
+                    <md-tab>
+                        <md-tab-label>
+                            <md-icon class="md-24" ng-cloak>portrait</md-icon>
+                            <div>Straƶacy</div>
+                        </md-tab-label>
+                    </md-tab>
+
+                    <md-tab>
+                        <md-tab-label>
+                            <md-icon class="md-24" ng-cloak>time_to_leave</md-icon>
+                            <div>Pojazdy</div>
+                        </md-tab-label>
+                    </md-tab>
+
+                    <md-tab>
+                        <md-tab-label>
+                            <md-icon class="md-24" ng-cloak>time_to_leave</md-icon>
+                            <div>Wyjazdy</div>
+                        </md-tab-label>
+                    </md-tab>
+
+                    <md-tab>
+                        <md-tab-label>
+                            <md-icon class="md-24" ng-cloak>add_alert</md-icon>
+                            <div>Przypomnienia</div>
+                        </md-tab-label>
+                    </md-tab>
+
+                    <md-tab>
+                        <md-tab-label>
+                            <md-icon class="md-24" ng-cloak>error</md-icon>
+                            <div>Alarmy</div>
+                        </md-tab-label>
+                    </md-tab>
+
+                    <md-tab>
+                        <md-tab-label>
+                            <md-icon class="md-24" ng-cloak>settings</md-icon>
+                            <div>Ustawienia</div>
+                        </md-tab-label>
+                    </md-tab>
+
+                </md-tabs>
+
+            </md-toolbar>
+
+    <!--<md-content layout-padding flex>-->
+        <!--<md-toolbar layout="row" ng-cloak layout-fill>-->
+        <!--</md-content>-->
+            <!--<div flex layout="row" layout-align="space-around center">-->
+                <!--<md-button class="menu" layout-fill hide show-gt-sm aria-label="show menu">-->
+                    <!--<md-icon class="md-24" right ng-cloak>portrait</md-icon>-->
+                    <!--Straƶacy-->
+                <!--</md-button>-->
+                    <!--<md-button class="menu" layout-fill hide show-gt-sm aria-label="show menu"> Pojazdy </md-button>-->
+                    <!--<md-button class="menu" layout-fill hide show-gt-sm aria-label="show menu"> Wyjazdy </md-button>-->
+                    <!--<md-button class="menu" layout-fill hide show-gt-sm aria-label="show menu"> Przypomnienia </md-button>-->
+                    <!--<md-button class="menu" layout-fill hide show-gt-sm aria-label="show menu"> Alarmy </md-button>-->
+                    <!--<md-button class="menu" layout-fill hide show-gt-sm aria-label="show menu"> Ustawienia </md-button>-->
+            <!--</div>-->
+        <!--</md-toolbar>-->
+
     </div>
 </div>

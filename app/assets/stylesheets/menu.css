@@ -11,3 +11,13 @@
     top:60px;
     position: fixed;
 }
+
+.md-sidenav-left {
+    position: fixed;
+    top:60px;
+    overflow: hidden;
+}
+
+md-pagination-wrapper, md-tabs-canvas {
+    height: 60px;
+}

@@ -72,7 +72,7 @@ angular.module('FireStation', ['ui.router', 'templates', 'ngMaterial'])
 
     $mdThemingProvider.theme('default')
             .primaryPalette('grey', {
-            'default': '400',
+            'default': '900',
                 'hue-1': '100',
                 'hue-2': '600',
                 'hue-3': 'A100'
