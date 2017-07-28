@@ -1,64 +1,0 @@
-{:uriI"Öfile://app/assets/javascripts/login/_login.html?type=text/ng-html&id=ce83095c28bc07426145fa093ce47d61f8c5b06ddfff67f93120087765ed5217:ET:load_pathI"app/assets/javascripts;T:filenameI"-app/assets/javascripts/login/_login.html;T:	nameI"login/_login;T:logical_pathI"login/_login.html;T:content_typeI"text/ng-html;T:sourceI"ö<div class="login-wrapper">
- <!--1 --><div layout="flex" layout-fill ng-cloak>
-        <section layout="column" flex layout-align="center center" class="login">
-<!--2 -->   <md-card class="md-whiteframe-4dp">
-<!--3 -->      <md-toolbar>
-                    <div layout="column" layout-padding layout-align="center center">
-                        <div>
-                        </div>
-                        <div class="md-headline md-padding">Login</div>
-                    </div>
-                </md-toolbar>
-<!--4 -->       <md-card-content>
-                    <form name="loginForm">
-                        <md-input-container class="md-block">
-                            <label for="email">Email</label>
-                            <input id="email" name="email" ng-model="user.username" required ng-keydown="$event.which === 13 && login()" />
-                        </md-input-container>
-                        <md-input-container class="md-block">
-                            <label for="password">Password</label>
-                            <input id="password" type="password" name="password" ng-model="user.password_digest" required ng-keydown="$event.which === 13 && login()"/>
-                        </md-input-container>
-                        <md-input-container class="md-block">
-                            <div layout="row" layout-align="center center">
-                                {{dd}}
-                                <md-button class="md-raised md-accent" flex="50" ng-click="login()">Login</md-button>
-                            </div>
-                        </md-input-container>
-                    </form>
-                </md-card-content>
-            </md-card>
-        </section>
-    </div>
-</div>
-
-<div ng-include="'login/_about_app.html'"></div>
-<div ng-include="'login/_registration.html'"></div>
-<div ng-include="'login/_contact.html'"></div>
-
-
-<div class="login-wrapper">
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-;T:metadata{	:dependencieso:Set:
-@hash}
-I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"8processors:type=text/ng-html&file_type=text/ng-html;TTI";file-digest://app/assets/javascripts/login/_login.html;TTF:charsetI"
-utf-8;F:digest"%•ª‡ØÈtŒ$ÿø¨Õ™DR>Ûô∞•öœU∫;8:lengthiö:dependencies_digest"%∞§ﬂKÉeêŸñsiZ?∏<ØÎÜ∏4Œ~¨Á_£ñÎ:idI"Ece83095c28bc07426145fa093ce47d61f8c5b06ddfff67f93120087765ed5217;F:
-mtimel+ÑƒyY

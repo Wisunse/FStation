@@ -6,7 +6,6 @@ angular.module('FireStation')
 
         console.log('LoginController');
 
-        $scope.user = {};
         $scope.user = {
             'username': 'matt',
             'password_digest': '1234'
@@ -14,14 +13,9 @@ angular.module('FireStation')
 
         $scope.login = function() {
             console.log('login');
-            // var data = {
-            //   'username': $scope.user.username,
-            //   'password': $scope.user.password
-            // };
-            // console.log(data);
-
             $http.post('/login', $scope.user).then(function successCallback(response) {
                 console.log(response);
             });
         }
+
     }]);

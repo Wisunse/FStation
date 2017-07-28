@@ -71,13 +71,13 @@ angular.module('FireStation', ['ui.router', 'templates', 'ngMaterial'])
 
 
     $mdThemingProvider.theme('default')
-            .primaryPalette('red', {
+            .primaryPalette('grey', {
             'default': '400',
                 'hue-1': '100',
                 'hue-2': '600',
                 'hue-3': 'A100'
         })
-    .accentPalette('orange', {
+    .accentPalette('red', {
         'default': '200'
     })
     .warnPalette('red');

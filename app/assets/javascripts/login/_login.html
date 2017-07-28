@@ -1,15 +1,16 @@
 <div class="login-wrapper">
- <!--1 --><div layout="flex" layout-fill ng-cloak>
+    <div layout="flex" layout-fill ng-cloak>
         <section layout="column" flex layout-align="center center" class="login">
-<!--2 -->   <md-card class="md-whiteframe-4dp">
-<!--3 -->      <md-toolbar>
+          <md-card class="md-whiteframe-4dp">
+             <md-toolbar>
                     <div layout="column" layout-padding layout-align="center center">
                         <div>
+                            ikonka
                         </div>
                         <div class="md-headline md-padding">Login</div>
                     </div>
                 </md-toolbar>
-<!--4 -->       <md-card-content>
+                <md-card-content>
                     <form name="loginForm">
                         <md-input-container class="md-block">
                             <label for="email">Email</label>
@@ -21,7 +22,6 @@
                         </md-input-container>
                         <md-input-container class="md-block">
                             <div layout="row" layout-align="center center">
-                                {{dd}}
                                 <md-button class="md-raised md-accent" flex="50" ng-click="login()">Login</md-button>
                             </div>
                         </md-input-container>
@@ -32,15 +32,11 @@
     </div>
 </div>
 
-<div ng-include="'login/_about_app.html'"></div>
-<div ng-include="'login/_registration.html'"></div>
-<div ng-include="'login/_contact.html'"></div>
-
-
 <div class="login-wrapper">
+    <div ng-include="'login/_about_app.html'"></div>
+    <div ng-include="'login/_registration.html'"></div>
+    <div ng-include="'login/_contact.html'"></div>
 </div>
-
-
 
 
 

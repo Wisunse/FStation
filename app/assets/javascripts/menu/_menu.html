@@ -1,19 +1,21 @@
-<div class="login-header">
+<div class="login-header" ng-cloak>
     <div layout="column" layout-fill>
-        <md-toolbar layout="row" layout-align="space-around center">
 
-            <button md-icon-button (click)="sidenav.toggle()">
-                <md-icon class="md-24" >menu</md-icon>
-            </button>￼
+        <md-toolbar layout="row" ng-cloak layout-fill>
 
-            <md-button class="menu" aria-label="show menu"> Strazacy </md-button>
-            <md-button class="menu" aria-label="show menu"> Samochody </md-button>
-            <md-button class="menu" aria-label="show menu"> Wyjazdy </md-button>
-            <md-button class="menu" aria-label="show menu"> Przypomniania </md-button>
-            <md-button class="menu" aria-label="show menu"> Alarmy </md-button>
-            <md-button class="menu" aria-label="show menu"> Ustawienia </md-button>
+            <md-button md-icon-button hide-gt-sm class="menuBtn" ng-click="login.openLeftMenu()" ng-cloak>
+                <md-icon class="md-24" ng-cloak>menu</md-icon>
+            </md-button>
+
+            <div flex layout="row" layout-align="space-around center">
+                <md-button class="menu" layout-fill hide show-gt-sm aria-label="show menu"> Straƶacy </md-button>
+                <md-button class="menu" layout-fill hide show-gt-sm aria-label="show menu"> Pojazdy </md-button>
+                <md-button class="menu" layout-fill hide show-gt-sm aria-label="show menu"> Wyjazdy </md-button>
+                <md-button class="menu" layout-fill hide show-gt-sm aria-label="show menu"> Przypomnienia </md-button>
+                <md-button class="menu" layout-fill hide show-gt-sm aria-label="show menu"> Alarmy </md-button>
+                <md-button class="menu" layout-fill hide show-gt-sm aria-label="show menu"> Ustawienia </md-button>
+            </div>
+
         </md-toolbar>
     </div>
 </div>
-
-
