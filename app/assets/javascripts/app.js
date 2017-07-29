@@ -51,24 +51,22 @@ angular.module('FireStation', ['ui.router', 'templates', 'ngMaterial'])
                         controller: 'LoginController'
                     }
                 }
+            })
+            .state('firemen', {
+                url: '/authentication',
+                views: {
+                    headerView: {
+                        templateUrl: 'menu/_menu.html',
+                        controller: 'MenuController'
+                    },
+                    mainView: {
+                        templateUrl: 'firemen/_firemen.html',
+                        controller: 'FiremenController'
+                    }
+                }
             });
     //
-    //         .state('firemen', {
-    //             url: '/authentication',
-    //             views: {
-    //                 headerView: {
-    //                     templateUrl: 'menu/_menu.html',
-    //                     controller: 'MenuController'
-    //                 },
-    //                 mainView: {
-    //                     templateUrl: 'home/_home.html',
-    //                     controller: 'HomeController'
-    //                 }
-    //             }
-    //         });
-    //
     //     $urlRouterProvider.otherwise('/404');
-
 
     $mdThemingProvider.theme('default')
             .primaryPalette('grey', {
@@ -76,12 +74,11 @@ angular.module('FireStation', ['ui.router', 'templates', 'ngMaterial'])
                 'hue-1': '100',
                 'hue-2': '600',
                 'hue-3': 'A100'
-        })
-    .accentPalette('red', {
-        'default': '200'
-    })
-    .warnPalette('red');
-    // .backgroundPalette('grey');
+        }) .accentPalette('yellow', {
+            'default': 'A200'
+        }) .warnPalette('red');
+
+        // .backgroundPalette('grey');
 
     }])
 

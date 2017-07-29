@@ -2,12 +2,18 @@
     <div layout="column" layout-fill>
 
             <md-toolbar>
+                <!--<md-button md-icon-button hide-gt-sm class="menuBtn" ng-click="login.openLeftMenu()" ng-cloak>-->
+                    <!--<md-icon class="md-24" ng-cloak>menu</md-icon>-->
+                <!--</md-button>-->
+                <md-tabs md-dynamic-height hide-gt-sm md-no-ink-bar>
+                    <md-tab ng-click="login.openLeftMenu()">
+                        <md-tab-label>
+                            <md-icon class="md-24" ng-cloak>menu</md-icon>
+                        </md-tab-label>
+                    </md-tab>
+                </md-tabs>
 
-                <md-button md-icon-button hide-gt-sm class="menuBtn" ng-click="login.openLeftMenu()" ng-cloak>
-                    <md-icon class="md-24" ng-cloak>menu</md-icon>
-                </md-button>
-
-                <md-tabs md-dynamic-height md-center-tabs>
+                <md-tabs md-dynamic-height md-center-tabs hide show-gt-sm>
 
                     <md-tab>
                         <md-tab-label>

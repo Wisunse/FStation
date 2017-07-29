@@ -1,0 +1,80 @@
+{:uriI"Éfile://app/assets/javascripts/menu/_menu.html?type=text/ng-html&id=fc392956c58d2475ca4ae43ebd1b85a97295d339b9991fc0e4f00d9a5ba0ed38:ET:load_pathI"app/assets/javascripts;T:filenameI"+app/assets/javascripts/menu/_menu.html;T:	nameI"menu/_menu;T:logical_pathI"menu/_menu.html;T:content_typeI"text/ng-html;T:sourceI"Ç<div class="login-header" ng-cloak>
+    <div layout="column" layout-fill>
+
+            <md-toolbar>
+
+                <md-button md-icon-button hide-gt-sm class="menuBtn" ng-click="login.openLeftMenu()" ng-cloak>
+                    <md-icon class="md-24" ng-cloak>menu</md-icon>
+                </md-button>
+
+                <md-tabs md-dynamic-height md-center-tabs>
+
+                    <md-tab>
+                        <md-tab-label>
+                            <md-icon class="md-24" ng-cloak>portrait</md-icon>
+                            <div>Stra∆∂acy</div>
+                        </md-tab-label>
+                    </md-tab>
+
+                    <md-tab>
+                        <md-tab-label>
+                            <md-icon class="md-24" ng-cloak>time_to_leave</md-icon>
+                            <div>Pojazdy</div>
+                        </md-tab-label>
+                    </md-tab>
+
+                    <md-tab>
+                        <md-tab-label>
+                            <md-icon class="md-24" ng-cloak>time_to_leave</md-icon>
+                            <div>Wyjazdy</div>
+                        </md-tab-label>
+                    </md-tab>
+
+                    <md-tab>
+                        <md-tab-label>
+                            <md-icon class="md-24" ng-cloak>add_alert</md-icon>
+                            <div>Przypomnienia</div>
+                        </md-tab-label>
+                    </md-tab>
+
+                    <md-tab>
+                        <md-tab-label>
+                            <md-icon class="md-24" ng-cloak>error</md-icon>
+                            <div>Alarmy</div>
+                        </md-tab-label>
+                    </md-tab>
+
+                    <md-tab>
+                        <md-tab-label>
+                            <md-icon class="md-24" ng-cloak>settings</md-icon>
+                            <div>Ustawienia</div>
+                        </md-tab-label>
+                    </md-tab>
+
+                </md-tabs>
+
+            </md-toolbar>
+
+    <!--<md-content layout-padding flex>-->
+        <!--<md-toolbar layout="row" ng-cloak layout-fill>-->
+        <!--</md-content>-->
+            <!--<div flex layout="row" layout-align="space-around center">-->
+                <!--<md-button class="menu" layout-fill hide show-gt-sm aria-label="show menu">-->
+                    <!--<md-icon class="md-24" right ng-cloak>portrait</md-icon>-->
+                    <!--Stra∆∂acy-->
+                <!--</md-button>-->
+                    <!--<md-button class="menu" layout-fill hide show-gt-sm aria-label="show menu"> Pojazdy </md-button>-->
+                    <!--<md-button class="menu" layout-fill hide show-gt-sm aria-label="show menu"> Wyjazdy </md-button>-->
+                    <!--<md-button class="menu" layout-fill hide show-gt-sm aria-label="show menu"> Przypomnienia </md-button>-->
+                    <!--<md-button class="menu" layout-fill hide show-gt-sm aria-label="show menu"> Alarmy </md-button>-->
+                    <!--<md-button class="menu" layout-fill hide show-gt-sm aria-label="show menu"> Ustawienia </md-button>-->
+            <!--</div>-->
+        <!--</md-toolbar>-->
+
+    </div>
+</div>;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"8processors:type=text/ng-html&file_type=text/ng-html;TTI"9file-digest://app/assets/javascripts/menu/_menu.html;TTF:charsetI"
+utf-8;F:digest"%†‚±V`èÓã@|}Pˆ©®ÉP`|
+—rö£ﬂ∫:lengthiÇ:dependencies_digest"%‰BpyÆƒT©πÒë´,∂»3‰˛«[ëYà«q@û":idI"Efc392956c58d2475ca4ae43ebd1b85a97295d339b9991fc0e4f00d9a5ba0ed38;F:
+mtimel+2{Y

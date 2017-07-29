@@ -1,10 +1,9 @@
 class User < ApplicationRecord
-  has_secure_password
   # attr_accessor :Username, :Password, :Password_digest, :Email
-  validates :username, presence: true
-  validates :password, presence: true
-  validates :password_digest, presence: true
-  validates :email, presence: true
+  # validates :username, presence: true
+  # validates :password, presence: true
+  # validates :password_digest, presence: true
+  # validates :email, presence: true
   # has_one :Username
   # has_one :Password
   # has_one :Password_digest
@@ -16,6 +15,5 @@ class User < ApplicationRecord
   #   return user if user.has_password?(submitted_password)
   # end
 
-
-
+  has_secure_password
 end

@@ -11467,3 +11467,1276 @@ Processing by FiremenController#all as HTML
 Completed 200 OK in 4ms (Views: 1.3ms | ActiveRecord: 0.4ms)
 
 
+Started GET "/login" for 127.0.0.1 at 2017-07-28 12:53:36 +0200
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by LoginController#login as HTML
+  Rendering layouts/main.html.erb within layouts/application
+  Rendered layouts/main.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 7265ms (Views: 7256.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/all_firemen" for 127.0.0.1 at 2017-07-28 12:53:45 +0200
+Processing by FiremenController#all as HTML
+  [1m[36mFiremen Load (0.9ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+  [1m[36mCACHE Firemen Load (0.0ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+Completed 200 OK in 16ms (Views: 1.0ms | ActiveRecord: 3.2ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2017-07-28 12:54:39 +0200
+Processing by LoginController#login as HTML
+  Rendering layouts/main.html.erb within layouts/application
+  Rendered layouts/main.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 470ms (Views: 468.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/all_firemen" for 127.0.0.1 at 2017-07-28 12:54:40 +0200
+Processing by FiremenController#all as HTML
+  [1m[36mFiremen Load (0.3ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+  [1m[36mCACHE Firemen Load (0.0ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+Completed 200 OK in 3ms (Views: 0.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2017-07-28 12:55:07 +0200
+Processing by LoginController#login as HTML
+  Rendering layouts/main.html.erb within layouts/application
+  Rendered layouts/main.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 486ms (Views: 485.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/all_firemen" for 127.0.0.1 at 2017-07-28 12:55:07 +0200
+Processing by FiremenController#all as HTML
+  [1m[36mFiremen Load (0.3ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+  [1m[36mCACHE Firemen Load (0.0ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+Completed 200 OK in 3ms (Views: 0.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2017-07-28 12:55:15 +0200
+Processing by LoginController#login as HTML
+  Rendering layouts/main.html.erb within layouts/application
+  Rendered layouts/main.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 54ms (Views: 53.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/all_firemen" for 127.0.0.1 at 2017-07-28 12:55:16 +0200
+Processing by FiremenController#all as HTML
+  [1m[36mFiremen Load (0.3ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+  [1m[36mCACHE Firemen Load (0.0ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-28 13:04:08 +0200
+Processing by ApplicationController#angular as HTML
+  Rendering layouts/main.html.erb within layouts/application
+  Rendered layouts/main.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 760ms (Views: 758.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/all_firemen" for 127.0.0.1 at 2017-07-28 13:04:10 +0200
+Processing by FiremenController#all as HTML
+  [1m[36mFiremen Load (0.3ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+  [1m[36mCACHE Firemen Load (0.0ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+Completed 200 OK in 3ms (Views: 0.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2017-07-28 13:04:22 +0200
+Processing by LoginController#login as HTML
+  Rendering layouts/main.html.erb within layouts/application
+  Rendered layouts/main.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 495ms (Views: 494.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/all_firemen" for 127.0.0.1 at 2017-07-28 13:04:23 +0200
+Processing by FiremenController#all as HTML
+  [1m[36mFiremen Load (0.6ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+  [1m[36mCACHE Firemen Load (0.0ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+Completed 200 OK in 4ms (Views: 0.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2017-07-28 13:04:36 +0200
+Processing by LoginController#login as HTML
+  Rendering layouts/main.html.erb within layouts/application
+  Rendered layouts/main.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 566ms (Views: 565.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/all_firemen" for 127.0.0.1 at 2017-07-28 13:04:37 +0200
+Processing by FiremenController#all as HTML
+  [1m[36mFiremen Load (0.3ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+  [1m[36mCACHE Firemen Load (0.0ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+Completed 200 OK in 2ms (Views: 0.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2017-07-28 13:05:24 +0200
+Processing by LoginController#login as HTML
+  Rendering layouts/main.html.erb within layouts/application
+  Rendered layouts/main.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 605ms (Views: 603.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/all_firemen" for 127.0.0.1 at 2017-07-28 13:05:26 +0200
+Processing by FiremenController#all as HTML
+  [1m[36mFiremen Load (0.5ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+  [1m[36mCACHE Firemen Load (0.0ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+Completed 200 OK in 4ms (Views: 0.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2017-07-28 13:06:40 +0200
+Processing by LoginController#login as HTML
+  Rendering layouts/main.html.erb within layouts/application
+  Rendered layouts/main.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 540ms (Views: 538.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/all_firemen" for 127.0.0.1 at 2017-07-28 13:06:42 +0200
+Processing by FiremenController#all as HTML
+  [1m[36mFiremen Load (0.3ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+  [1m[36mCACHE Firemen Load (0.0ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+Completed 200 OK in 3ms (Views: 0.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2017-07-28 13:06:45 +0200
+Processing by LoginController#login as HTML
+  Rendering layouts/main.html.erb within layouts/application
+  Rendered layouts/main.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 65ms (Views: 64.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/all_firemen" for 127.0.0.1 at 2017-07-28 13:06:45 +0200
+Processing by FiremenController#all as HTML
+  [1m[36mFiremen Load (0.3ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+  [1m[36mCACHE Firemen Load (0.0ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+Completed 200 OK in 3ms (Views: 0.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2017-07-28 13:06:54 +0200
+Processing by LoginController#login as HTML
+  Rendering layouts/main.html.erb within layouts/application
+  Rendered layouts/main.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 47ms (Views: 46.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/all_firemen" for 127.0.0.1 at 2017-07-28 13:06:54 +0200
+Processing by FiremenController#all as HTML
+  [1m[36mFiremen Load (0.3ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+  [1m[36mCACHE Firemen Load (0.0ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+Completed 200 OK in 3ms (Views: 0.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2017-07-28 13:07:37 +0200
+Processing by LoginController#login as HTML
+  Rendering layouts/main.html.erb within layouts/application
+  Rendered layouts/main.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 65ms (Views: 64.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/all_firemen" for 127.0.0.1 at 2017-07-28 13:07:38 +0200
+Processing by FiremenController#all as HTML
+  [1m[36mFiremen Load (0.3ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+  [1m[36mCACHE Firemen Load (0.0ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+Completed 200 OK in 3ms (Views: 0.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2017-07-28 13:07:45 +0200
+Processing by LoginController#login as HTML
+  Rendering layouts/main.html.erb within layouts/application
+  Rendered layouts/main.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 511ms (Views: 510.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/all_firemen" for 127.0.0.1 at 2017-07-28 13:07:46 +0200
+Processing by FiremenController#all as HTML
+  [1m[36mFiremen Load (0.3ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+  [1m[36mCACHE Firemen Load (0.0ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+Completed 200 OK in 2ms (Views: 0.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2017-07-28 13:07:50 +0200
+Processing by LoginController#login as HTML
+  Rendering layouts/main.html.erb within layouts/application
+  Rendered layouts/main.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 62ms (Views: 61.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/all_firemen" for 127.0.0.1 at 2017-07-28 13:07:51 +0200
+Processing by FiremenController#all as HTML
+  [1m[36mFiremen Load (0.4ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+  [1m[36mCACHE Firemen Load (0.0ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+Completed 200 OK in 3ms (Views: 0.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2017-07-28 13:08:21 +0200
+Processing by LoginController#login as HTML
+  Rendering layouts/main.html.erb within layouts/application
+  Rendered layouts/main.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 51ms (Views: 49.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/all_firemen" for 127.0.0.1 at 2017-07-28 13:08:21 +0200
+Processing by FiremenController#all as HTML
+  [1m[36mFiremen Load (0.3ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+  [1m[36mCACHE Firemen Load (0.0ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+Completed 200 OK in 3ms (Views: 0.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2017-07-28 13:08:28 +0200
+Processing by LoginController#login as HTML
+  Rendering layouts/main.html.erb within layouts/application
+  Rendered layouts/main.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 485ms (Views: 484.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/all_firemen" for 127.0.0.1 at 2017-07-28 13:08:29 +0200
+Processing by FiremenController#all as HTML
+  [1m[36mFiremen Load (0.3ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+  [1m[36mCACHE Firemen Load (0.0ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+Completed 200 OK in 3ms (Views: 0.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2017-07-28 13:08:46 +0200
+Processing by LoginController#login as HTML
+  Rendering layouts/main.html.erb within layouts/application
+  Rendered layouts/main.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 64ms (Views: 63.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/all_firemen" for 127.0.0.1 at 2017-07-28 13:08:47 +0200
+Processing by FiremenController#all as HTML
+  [1m[36mFiremen Load (0.2ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+  [1m[36mCACHE Firemen Load (0.0ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+Completed 200 OK in 3ms (Views: 0.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2017-07-28 13:09:17 +0200
+Processing by LoginController#login as HTML
+  Rendering layouts/main.html.erb within layouts/application
+  Rendered layouts/main.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 417ms (Views: 416.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/all_firemen" for 127.0.0.1 at 2017-07-28 13:09:18 +0200
+Processing by FiremenController#all as HTML
+  [1m[36mFiremen Load (0.3ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+  [1m[36mCACHE Firemen Load (0.0ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2017-07-28 13:16:28 +0200
+Processing by LoginController#login as HTML
+  Rendering layouts/main.html.erb within layouts/application
+  Rendered layouts/main.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 81ms (Views: 80.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/all_firemen" for 127.0.0.1 at 2017-07-28 13:16:29 +0200
+Processing by FiremenController#all as HTML
+  [1m[36mFiremen Load (0.3ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+  [1m[36mCACHE Firemen Load (0.0ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+Completed 200 OK in 3ms (Views: 0.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-28 13:18:33 +0200
+Processing by ApplicationController#angular as HTML
+  Rendering layouts/main.html.erb within layouts/application
+  Rendered layouts/main.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 513ms (Views: 512.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/all_firemen" for 127.0.0.1 at 2017-07-28 13:18:35 +0200
+Processing by FiremenController#all as HTML
+  [1m[36mFiremen Load (0.3ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+  [1m[36mCACHE Firemen Load (0.0ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+Completed 200 OK in 3ms (Views: 0.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2017-07-28 13:18:38 +0200
+Processing by LoginController#login as HTML
+  Rendering layouts/main.html.erb within layouts/application
+  Rendered layouts/main.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 62ms (Views: 61.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/all_firemen" for 127.0.0.1 at 2017-07-28 13:18:38 +0200
+Processing by FiremenController#all as HTML
+  [1m[36mFiremen Load (0.2ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+  [1m[36mCACHE Firemen Load (0.1ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+Completed 200 OK in 2ms (Views: 0.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-28 13:28:13 +0200
+Processing by ApplicationController#angular as HTML
+  Rendering layouts/main.html.erb within layouts/application
+  Rendered layouts/main.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 483ms (Views: 482.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/all_firemen" for 127.0.0.1 at 2017-07-28 13:28:14 +0200
+Processing by FiremenController#all as HTML
+  [1m[36mFiremen Load (0.3ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+  [1m[36mCACHE Firemen Load (0.0ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+Completed 200 OK in 4ms (Views: 0.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2017-07-28 13:28:40 +0200
+Processing by LoginController#login as HTML
+  Rendering layouts/main.html.erb within layouts/application
+  Rendered layouts/main.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 78ms (Views: 77.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/all_firemen" for 127.0.0.1 at 2017-07-28 13:28:40 +0200
+Processing by FiremenController#all as HTML
+  [1m[36mFiremen Load (0.3ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+  [1m[36mCACHE Firemen Load (0.0ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+Completed 200 OK in 2ms (Views: 0.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2017-07-28 13:28:51 +0200
+Processing by LoginController#login as HTML
+  Rendering layouts/main.html.erb within layouts/application
+  Rendered layouts/main.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 61ms (Views: 60.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/all_firemen" for 127.0.0.1 at 2017-07-28 13:28:52 +0200
+Processing by FiremenController#all as HTML
+  [1m[36mFiremen Load (0.3ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+  [1m[36mCACHE Firemen Load (0.0ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+Completed 200 OK in 3ms (Views: 0.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2017-07-28 13:29:37 +0200
+Processing by LoginController#login as HTML
+  Rendering layouts/main.html.erb within layouts/application
+  Rendered layouts/main.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 972ms (Views: 971.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/all_firemen" for 127.0.0.1 at 2017-07-28 13:29:38 +0200
+Processing by FiremenController#all as HTML
+  [1m[36mFiremen Load (0.2ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+  [1m[36mCACHE Firemen Load (0.0ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+Completed 200 OK in 3ms (Views: 0.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2017-07-28 13:29:41 +0200
+Processing by LoginController#login as HTML
+  Rendering layouts/main.html.erb within layouts/application
+  Rendered layouts/main.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 48ms (Views: 47.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/all_firemen" for 127.0.0.1 at 2017-07-28 13:29:41 +0200
+Processing by FiremenController#all as HTML
+  [1m[36mFiremen Load (0.3ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+  [1m[36mCACHE Firemen Load (0.0ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+Completed 200 OK in 3ms (Views: 0.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2017-07-28 13:29:45 +0200
+Processing by LoginController#login as HTML
+  Rendering layouts/main.html.erb within layouts/application
+  Rendered layouts/main.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 48ms (Views: 47.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2017-07-28 13:29:45 +0200
+Processing by LoginController#login as HTML
+  Rendering layouts/main.html.erb within layouts/application
+  Rendered layouts/main.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 48ms (Views: 47.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/all_firemen" for 127.0.0.1 at 2017-07-28 13:29:46 +0200
+Processing by FiremenController#all as HTML
+  [1m[36mFiremen Load (0.3ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+  [1m[36mCACHE Firemen Load (0.0ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+Completed 200 OK in 2ms (Views: 0.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2017-07-28 13:30:04 +0200
+Processing by LoginController#login as HTML
+  Rendering layouts/main.html.erb within layouts/application
+  Rendered layouts/main.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 483ms (Views: 482.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/all_firemen" for 127.0.0.1 at 2017-07-28 13:30:05 +0200
+Processing by FiremenController#all as HTML
+  [1m[36mFiremen Load (0.3ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+  [1m[36mCACHE Firemen Load (0.0ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+Completed 200 OK in 3ms (Views: 0.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2017-07-28 13:30:23 +0200
+Processing by LoginController#login as HTML
+  Rendering layouts/main.html.erb within layouts/application
+  Rendered layouts/main.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 531ms (Views: 530.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2017-07-28 13:30:24 +0200
+Processing by LoginController#login as HTML
+  Rendering layouts/main.html.erb within layouts/application
+  Rendered layouts/main.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 102ms (Views: 100.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/all_firemen" for 127.0.0.1 at 2017-07-28 13:30:24 +0200
+Processing by FiremenController#all as HTML
+  [1m[36mFiremen Load (0.8ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+  [1m[36mCACHE Firemen Load (0.0ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+Completed 200 OK in 5ms (Views: 1.3ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/all_firemen" for 127.0.0.1 at 2017-07-28 13:30:25 +0200
+Processing by FiremenController#all as HTML
+  [1m[36mFiremen Load (0.3ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+  [1m[36mCACHE Firemen Load (0.0ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+Completed 200 OK in 2ms (Views: 0.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2017-07-28 13:30:35 +0200
+Processing by LoginController#login as HTML
+  Rendering layouts/main.html.erb within layouts/application
+  Rendered layouts/main.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 474ms (Views: 472.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/all_firemen" for 127.0.0.1 at 2017-07-28 13:30:36 +0200
+Processing by FiremenController#all as HTML
+  [1m[36mFiremen Load (0.4ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+  [1m[36mCACHE Firemen Load (0.0ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+Completed 200 OK in 3ms (Views: 0.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2017-07-28 13:31:00 +0200
+Processing by LoginController#login as HTML
+  Rendering layouts/main.html.erb within layouts/application
+  Rendered layouts/main.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 485ms (Views: 484.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/all_firemen" for 127.0.0.1 at 2017-07-28 13:31:02 +0200
+Processing by FiremenController#all as HTML
+  [1m[36mFiremen Load (0.4ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+  [1m[36mCACHE Firemen Load (0.0ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+Completed 200 OK in 4ms (Views: 1.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2017-07-28 13:31:14 +0200
+Processing by LoginController#login as HTML
+  Rendering layouts/main.html.erb within layouts/application
+  Rendered layouts/main.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 475ms (Views: 474.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/all_firemen" for 127.0.0.1 at 2017-07-28 13:31:15 +0200
+Processing by FiremenController#all as HTML
+  [1m[36mFiremen Load (0.3ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+  [1m[36mCACHE Firemen Load (0.0ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2017-07-28 13:32:11 +0200
+Processing by LoginController#login as HTML
+  Rendering layouts/main.html.erb within layouts/application
+  Rendered layouts/main.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 530ms (Views: 529.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/all_firemen" for 127.0.0.1 at 2017-07-28 13:32:12 +0200
+Processing by FiremenController#all as HTML
+  [1m[36mFiremen Load (0.3ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+  [1m[36mCACHE Firemen Load (0.0ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2017-07-28 13:32:21 +0200
+Processing by LoginController#login as HTML
+  Rendering layouts/main.html.erb within layouts/application
+  Rendered layouts/main.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 431ms (Views: 430.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/all_firemen" for 127.0.0.1 at 2017-07-28 13:32:23 +0200
+Processing by FiremenController#all as HTML
+  [1m[36mFiremen Load (0.3ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+  [1m[36mCACHE Firemen Load (0.0ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+Completed 200 OK in 3ms (Views: 0.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2017-07-28 13:32:42 +0200
+Processing by LoginController#login as HTML
+  Rendering layouts/main.html.erb within layouts/application
+  Rendered layouts/main.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 420ms (Views: 419.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/all_firemen" for 127.0.0.1 at 2017-07-28 13:32:43 +0200
+Processing by FiremenController#all as HTML
+  [1m[36mFiremen Load (0.2ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+  [1m[36mCACHE Firemen Load (0.0ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+Completed 200 OK in 3ms (Views: 0.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2017-07-28 13:32:55 +0200
+Processing by LoginController#login as HTML
+  Rendering layouts/main.html.erb within layouts/application
+  Rendered layouts/main.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 445ms (Views: 444.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/all_firemen" for 127.0.0.1 at 2017-07-28 13:32:57 +0200
+Processing by FiremenController#all as HTML
+  [1m[36mFiremen Load (0.3ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+  [1m[36mCACHE Firemen Load (0.0ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+Completed 200 OK in 4ms (Views: 0.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2017-07-28 13:33:15 +0200
+Processing by LoginController#login as HTML
+  Rendering layouts/main.html.erb within layouts/application
+  Rendered layouts/main.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 498ms (Views: 497.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/all_firemen" for 127.0.0.1 at 2017-07-28 13:33:16 +0200
+Processing by FiremenController#all as HTML
+  [1m[36mFiremen Load (0.3ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+  [1m[36mCACHE Firemen Load (0.0ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+Completed 200 OK in 3ms (Views: 0.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2017-07-28 13:34:08 +0200
+Processing by LoginController#login as HTML
+  Rendering layouts/main.html.erb within layouts/application
+  Rendered layouts/main.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 539ms (Views: 538.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2017-07-28 13:34:19 +0200
+Processing by LoginController#login as HTML
+  Rendering layouts/main.html.erb within layouts/application
+  Rendered layouts/main.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 74ms (Views: 73.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2017-07-28 13:34:48 +0200
+Processing by LoginController#login as HTML
+  Rendering layouts/main.html.erb within layouts/application
+  Rendered layouts/main.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 51ms (Views: 50.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/all_firemen" for 127.0.0.1 at 2017-07-28 13:34:49 +0200
+Processing by FiremenController#all as HTML
+  [1m[36mFiremen Load (0.3ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+  [1m[36mCACHE Firemen Load (0.0ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+Completed 200 OK in 3ms (Views: 0.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2017-07-28 13:34:52 +0200
+Processing by LoginController#login as HTML
+  Rendering layouts/main.html.erb within layouts/application
+  Rendered layouts/main.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 58ms (Views: 57.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/all_firemen" for 127.0.0.1 at 2017-07-28 13:34:52 +0200
+Processing by FiremenController#all as HTML
+  [1m[36mFiremen Load (0.4ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+  [1m[36mCACHE Firemen Load (0.0ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+Completed 200 OK in 3ms (Views: 0.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2017-07-28 13:37:52 +0200
+Processing by LoginController#login as HTML
+  Rendering layouts/main.html.erb within layouts/application
+  Rendered layouts/main.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 527ms (Views: 526.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/all_firemen" for 127.0.0.1 at 2017-07-28 13:37:53 +0200
+Processing by FiremenController#all as HTML
+  [1m[36mFiremen Load (0.3ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+  [1m[36mCACHE Firemen Load (0.0ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+Completed 200 OK in 3ms (Views: 0.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2017-07-28 13:46:49 +0200
+Processing by LoginController#login as HTML
+  Rendering layouts/main.html.erb within layouts/application
+  Rendered layouts/main.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 532ms (Views: 531.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/all_firemen" for 127.0.0.1 at 2017-07-28 13:46:50 +0200
+Processing by FiremenController#all as HTML
+  [1m[36mFiremen Load (0.4ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+  [1m[36mCACHE Firemen Load (0.0ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+Completed 200 OK in 3ms (Views: 0.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2017-07-28 13:47:03 +0200
+Processing by LoginController#login as HTML
+  Rendering layouts/main.html.erb within layouts/application
+  Rendered layouts/main.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 61ms (Views: 60.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/all_firemen" for 127.0.0.1 at 2017-07-28 13:47:04 +0200
+Processing by FiremenController#all as HTML
+  [1m[36mFiremen Load (0.4ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+  [1m[36mCACHE Firemen Load (0.0ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+Completed 200 OK in 3ms (Views: 0.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2017-07-28 13:47:10 +0200
+Processing by LoginController#login as HTML
+  Rendering layouts/main.html.erb within layouts/application
+  Rendered layouts/main.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 404ms (Views: 403.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/all_firemen" for 127.0.0.1 at 2017-07-28 13:47:10 +0200
+Processing by FiremenController#all as HTML
+  [1m[36mFiremen Load (0.2ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+  [1m[36mCACHE Firemen Load (0.0ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+Completed 200 OK in 2ms (Views: 0.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2017-07-28 13:47:14 +0200
+Processing by LoginController#login as HTML
+  Rendering layouts/main.html.erb within layouts/application
+  Rendered layouts/main.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 69ms (Views: 68.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/all_firemen" for 127.0.0.1 at 2017-07-28 13:47:14 +0200
+Processing by FiremenController#all as HTML
+  [1m[36mFiremen Load (0.3ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+  [1m[36mCACHE Firemen Load (0.0ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+Completed 200 OK in 4ms (Views: 1.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2017-07-28 13:47:24 +0200
+Processing by LoginController#login as HTML
+  Rendering layouts/main.html.erb within layouts/application
+  Rendered layouts/main.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 68ms (Views: 67.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/all_firemen" for 127.0.0.1 at 2017-07-28 13:47:24 +0200
+Processing by FiremenController#all as HTML
+  [1m[36mFiremen Load (0.3ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+  [1m[36mCACHE Firemen Load (0.0ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+Completed 200 OK in 2ms (Views: 0.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2017-07-28 13:47:28 +0200
+Processing by LoginController#login as HTML
+  Rendering layouts/main.html.erb within layouts/application
+  Rendered layouts/main.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 473ms (Views: 471.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/all_firemen" for 127.0.0.1 at 2017-07-28 13:47:28 +0200
+Processing by FiremenController#all as HTML
+  [1m[36mFiremen Load (0.3ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+  [1m[36mCACHE Firemen Load (0.0ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+Completed 200 OK in 3ms (Views: 0.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2017-07-28 13:48:04 +0200
+Processing by LoginController#login as HTML
+  Rendering layouts/main.html.erb within layouts/application
+  Rendered layouts/main.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 453ms (Views: 452.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/all_firemen" for 127.0.0.1 at 2017-07-28 13:48:05 +0200
+Processing by FiremenController#all as HTML
+  [1m[36mFiremen Load (0.3ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+  [1m[36mCACHE Firemen Load (0.0ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+Completed 200 OK in 3ms (Views: 0.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2017-07-28 13:49:21 +0200
+Processing by LoginController#login as HTML
+  Rendering layouts/main.html.erb within layouts/application
+  Rendered layouts/main.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 142ms (Views: 141.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/all_firemen" for 127.0.0.1 at 2017-07-28 13:49:21 +0200
+Processing by FiremenController#all as HTML
+  [1m[36mFiremen Load (0.3ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+  [1m[36mCACHE Firemen Load (0.0ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+Completed 200 OK in 3ms (Views: 0.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2017-07-28 13:50:31 +0200
+Processing by LoginController#login as HTML
+  Rendering layouts/main.html.erb within layouts/application
+  Rendered layouts/main.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 472ms (Views: 471.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/all_firemen" for 127.0.0.1 at 2017-07-28 13:50:32 +0200
+Processing by FiremenController#all as HTML
+  [1m[36mFiremen Load (0.2ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+  [1m[36mCACHE Firemen Load (0.0ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2017-07-28 13:50:53 +0200
+Processing by LoginController#login as HTML
+  Rendering layouts/main.html.erb within layouts/application
+  Rendered layouts/main.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 504ms (Views: 503.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/all_firemen" for 127.0.0.1 at 2017-07-28 13:50:54 +0200
+Processing by FiremenController#all as HTML
+  [1m[36mFiremen Load (0.3ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+  [1m[36mCACHE Firemen Load (0.0ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+Completed 200 OK in 3ms (Views: 0.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-28 13:53:20 +0200
+Processing by ApplicationController#angular as HTML
+  Rendering layouts/main.html.erb within layouts/application
+  Rendered layouts/main.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 490ms (Views: 488.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/all_firemen" for 127.0.0.1 at 2017-07-28 13:53:22 +0200
+Processing by FiremenController#all as HTML
+  [1m[36mFiremen Load (0.3ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+  [1m[36mCACHE Firemen Load (0.0ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+Completed 200 OK in 3ms (Views: 0.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2017-07-28 13:53:32 +0200
+Processing by LoginController#login as HTML
+  Rendering layouts/main.html.erb within layouts/application
+  Rendered layouts/main.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 112ms (Views: 110.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/all_firemen" for 127.0.0.1 at 2017-07-28 13:53:33 +0200
+Processing by FiremenController#all as HTML
+  [1m[36mFiremen Load (0.2ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+  [1m[36mCACHE Firemen Load (0.0ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2017-07-28 13:56:22 +0200
+Processing by LoginController#login as HTML
+  Rendering layouts/main.html.erb within layouts/application
+  Rendered layouts/main.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 595ms (Views: 594.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/all_firemen" for 127.0.0.1 at 2017-07-28 13:56:24 +0200
+Processing by FiremenController#all as HTML
+  [1m[36mFiremen Load (0.3ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+  [1m[36mCACHE Firemen Load (0.0ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+Completed 200 OK in 3ms (Views: 0.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2017-07-28 14:14:53 +0200
+Processing by LoginController#login as HTML
+  Rendering layouts/main.html.erb within layouts/application
+  Rendered layouts/main.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 505ms (Views: 500.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/all_firemen" for 127.0.0.1 at 2017-07-28 14:14:54 +0200
+Processing by FiremenController#all as HTML
+  [1m[36mFiremen Load (1.5ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+  [1m[36mCACHE Firemen Load (0.0ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+Completed 200 OK in 11ms (Views: 0.5ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2017-07-28 14:15:30 +0200
+Processing by LoginController#login as HTML
+  Rendering layouts/main.html.erb within layouts/application
+  Rendered layouts/main.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 68ms (Views: 66.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/all_firemen" for 127.0.0.1 at 2017-07-28 14:15:31 +0200
+Processing by FiremenController#all as HTML
+  [1m[36mFiremen Load (0.4ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+  [1m[36mCACHE Firemen Load (0.0ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+Completed 200 OK in 3ms (Views: 0.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2017-07-28 14:20:00 +0200
+Processing by LoginController#login as HTML
+  Rendering layouts/main.html.erb within layouts/application
+  Rendered layouts/main.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 563ms (Views: 562.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/all_firemen" for 127.0.0.1 at 2017-07-28 14:20:02 +0200
+Processing by FiremenController#all as HTML
+  [1m[36mFiremen Load (0.4ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+  [1m[36mCACHE Firemen Load (0.0ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+Completed 200 OK in 3ms (Views: 0.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2017-07-28 14:21:42 +0200
+Processing by LoginController#login as HTML
+  Rendering layouts/main.html.erb within layouts/application
+  Rendered layouts/main.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 485ms (Views: 484.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/all_firemen" for 127.0.0.1 at 2017-07-28 14:21:43 +0200
+Processing by FiremenController#all as HTML
+  [1m[36mFiremen Load (0.2ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+  [1m[36mCACHE Firemen Load (0.0ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2017-07-28 14:22:13 +0200
+Processing by LoginController#login as HTML
+  Rendering layouts/main.html.erb within layouts/application
+  Rendered layouts/main.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 46ms (Views: 45.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/all_firemen" for 127.0.0.1 at 2017-07-28 14:22:13 +0200
+Processing by FiremenController#all as HTML
+  [1m[36mFiremen Load (0.2ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+  [1m[36mCACHE Firemen Load (0.0ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-28 14:22:45 +0200
+Processing by ApplicationController#angular as HTML
+  Rendering layouts/main.html.erb within layouts/application
+  Rendered layouts/main.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 444ms (Views: 443.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/all_firemen" for 127.0.0.1 at 2017-07-28 14:22:46 +0200
+Processing by FiremenController#all as HTML
+  [1m[36mFiremen Load (0.3ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+  [1m[36mCACHE Firemen Load (0.0ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+Completed 200 OK in 3ms (Views: 0.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2017-07-28 14:22:47 +0200
+Processing by LoginController#login as HTML
+  Rendering layouts/main.html.erb within layouts/application
+  Rendered layouts/main.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 50ms (Views: 49.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/all_firemen" for 127.0.0.1 at 2017-07-28 14:22:48 +0200
+Processing by FiremenController#all as HTML
+  [1m[36mFiremen Load (0.2ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+  [1m[36mCACHE Firemen Load (0.0ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 10.0.41.9 at 2017-07-28 14:23:50 +0200
+Cannot render console from 10.0.41.9! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ApplicationController#angular as HTML
+  Rendering layouts/main.html.erb within layouts/application
+  Rendered layouts/main.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 206ms (Views: 204.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/all_firemen" for 10.0.41.9 at 2017-07-28 14:23:52 +0200
+Cannot render console from 10.0.41.9! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by FiremenController#all as HTML
+  [1m[36mFiremen Load (0.6ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+  [1m[36mCACHE Firemen Load (0.0ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+Completed 200 OK in 3ms (Views: 0.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2017-07-28 14:25:52 +0200
+Processing by LoginController#login as HTML
+  Rendering layouts/main.html.erb within layouts/application
+  Rendered layouts/main.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 587ms (Views: 586.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/all_firemen" for 127.0.0.1 at 2017-07-28 14:25:53 +0200
+Processing by FiremenController#all as HTML
+  [1m[36mFiremen Load (0.5ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+  [1m[36mCACHE Firemen Load (0.0ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+Completed 200 OK in 3ms (Views: 0.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2017-07-28 14:29:18 +0200
+Processing by LoginController#login as HTML
+  Rendering layouts/main.html.erb within layouts/application
+  Rendered layouts/main.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 512ms (Views: 511.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/all_firemen" for 127.0.0.1 at 2017-07-28 14:29:19 +0200
+Processing by FiremenController#all as HTML
+  [1m[36mFiremen Load (0.3ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+  [1m[36mCACHE Firemen Load (0.0ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+Completed 200 OK in 3ms (Views: 0.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2017-07-28 14:29:27 +0200
+Processing by LoginController#login as HTML
+  Rendering layouts/main.html.erb within layouts/application
+  Rendered layouts/main.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 64ms (Views: 63.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/all_firemen" for 127.0.0.1 at 2017-07-28 14:29:29 +0200
+Processing by FiremenController#all as HTML
+  [1m[36mFiremen Load (0.3ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+  [1m[36mCACHE Firemen Load (0.0ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+Completed 200 OK in 3ms (Views: 0.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2017-07-28 14:29:38 +0200
+Processing by LoginController#login as HTML
+  Rendering layouts/main.html.erb within layouts/application
+  Rendered layouts/main.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 493ms (Views: 492.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/all_firemen" for 127.0.0.1 at 2017-07-28 14:29:39 +0200
+Processing by FiremenController#all as HTML
+  [1m[36mFiremen Load (0.3ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+  [1m[36mCACHE Firemen Load (0.0ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+Completed 200 OK in 3ms (Views: 0.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2017-07-28 14:29:44 +0200
+Processing by LoginController#login as HTML
+  Rendering layouts/main.html.erb within layouts/application
+  Rendered layouts/main.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 432ms (Views: 431.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/all_firemen" for 127.0.0.1 at 2017-07-28 14:29:45 +0200
+Processing by FiremenController#all as HTML
+  [1m[36mFiremen Load (0.3ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+  [1m[36mCACHE Firemen Load (0.0ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+Completed 200 OK in 2ms (Views: 0.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2017-07-28 14:29:54 +0200
+Processing by LoginController#login as HTML
+  Rendering layouts/main.html.erb within layouts/application
+  Rendered layouts/main.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 80ms (Views: 79.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/all_firemen" for 127.0.0.1 at 2017-07-28 14:29:55 +0200
+Processing by FiremenController#all as HTML
+  [1m[36mFiremen Load (0.3ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+  [1m[36mCACHE Firemen Load (0.0ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+Completed 200 OK in 3ms (Views: 0.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2017-07-28 14:41:28 +0200
+Processing by LoginController#login as HTML
+  Rendering layouts/main.html.erb within layouts/application
+  Rendered layouts/main.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 450ms (Views: 448.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/all_firemen" for 127.0.0.1 at 2017-07-28 14:41:29 +0200
+Processing by FiremenController#all as HTML
+  [1m[36mFiremen Load (0.3ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+  [1m[36mCACHE Firemen Load (0.0ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+Completed 200 OK in 2ms (Views: 0.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2017-07-28 14:43:02 +0200
+Processing by LoginController#login as HTML
+  Rendering layouts/main.html.erb within layouts/application
+  Rendered layouts/main.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 479ms (Views: 478.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2017-07-28 14:43:26 +0200
+Processing by LoginController#login as HTML
+  Rendering layouts/main.html.erb within layouts/application
+  Rendered layouts/main.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 70ms (Views: 69.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/all_firemen" for 127.0.0.1 at 2017-07-28 14:43:27 +0200
+Processing by FiremenController#all as HTML
+  [1m[36mFiremen Load (0.3ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+  [1m[36mCACHE Firemen Load (0.0ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+Completed 200 OK in 3ms (Views: 0.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2017-07-28 14:43:32 +0200
+Processing by LoginController#login as HTML
+  Rendering layouts/main.html.erb within layouts/application
+  Rendered layouts/main.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 619ms (Views: 617.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/all_firemen" for 127.0.0.1 at 2017-07-28 14:43:34 +0200
+Processing by FiremenController#all as HTML
+  [1m[36mFiremen Load (0.3ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+  [1m[36mCACHE Firemen Load (0.0ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+Completed 200 OK in 3ms (Views: 0.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2017-07-28 14:48:36 +0200
+Processing by LoginController#login as HTML
+  Rendering layouts/main.html.erb within layouts/application
+  Rendered layouts/main.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 698ms (Views: 695.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/all_firemen" for 127.0.0.1 at 2017-07-28 14:48:38 +0200
+Processing by FiremenController#all as HTML
+  [1m[36mFiremen Load (1.8ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+  [1m[36mCACHE Firemen Load (0.0ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+Completed 200 OK in 11ms (Views: 1.0ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2017-07-28 14:48:44 +0200
+Processing by LoginController#login as HTML
+  Rendering layouts/main.html.erb within layouts/application
+  Rendered layouts/main.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 680ms (Views: 679.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/all_firemen" for 127.0.0.1 at 2017-07-28 14:48:46 +0200
+Processing by FiremenController#all as HTML
+  [1m[36mFiremen Load (0.3ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+  [1m[36mCACHE Firemen Load (0.0ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+Completed 200 OK in 3ms (Views: 0.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2017-07-28 14:48:56 +0200
+Processing by LoginController#login as HTML
+  Rendering layouts/main.html.erb within layouts/application
+  Rendered layouts/main.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 626ms (Views: 624.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/all_firemen" for 127.0.0.1 at 2017-07-28 14:48:59 +0200
+Processing by FiremenController#all as HTML
+  [1m[36mFiremen Load (0.3ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+  [1m[36mCACHE Firemen Load (0.0ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+Completed 200 OK in 3ms (Views: 0.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2017-07-28 14:49:01 +0200
+Processing by LoginController#login as HTML
+  Rendering layouts/main.html.erb within layouts/application
+  Rendered layouts/main.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 96ms (Views: 95.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/all_firemen" for 127.0.0.1 at 2017-07-28 14:49:02 +0200
+Processing by FiremenController#all as HTML
+  [1m[36mFiremen Load (0.4ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+  [1m[36mCACHE Firemen Load (0.0ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+Completed 200 OK in 4ms (Views: 0.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2017-07-28 14:49:15 +0200
+Processing by LoginController#login as HTML
+  Rendering layouts/main.html.erb within layouts/application
+  Rendered layouts/main.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 115ms (Views: 114.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/all_firemen" for 127.0.0.1 at 2017-07-28 14:49:17 +0200
+Processing by FiremenController#all as HTML
+  [1m[36mFiremen Load (0.3ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+  [1m[36mCACHE Firemen Load (0.0ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+Completed 200 OK in 3ms (Views: 0.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2017-07-28 14:49:26 +0200
+Processing by LoginController#login as HTML
+  Rendering layouts/main.html.erb within layouts/application
+  Rendered layouts/main.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 614ms (Views: 613.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/all_firemen" for 127.0.0.1 at 2017-07-28 14:49:27 +0200
+Processing by FiremenController#all as HTML
+  [1m[36mFiremen Load (0.3ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+  [1m[36mCACHE Firemen Load (0.0ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+Completed 200 OK in 3ms (Views: 0.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2017-07-28 14:49:32 +0200
+Processing by LoginController#login as HTML
+  Rendering layouts/main.html.erb within layouts/application
+  Rendered layouts/main.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 82ms (Views: 81.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/all_firemen" for 127.0.0.1 at 2017-07-28 14:49:33 +0200
+Processing by FiremenController#all as HTML
+  [1m[36mFiremen Load (0.2ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+  [1m[36mCACHE Firemen Load (0.0ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+Completed 200 OK in 2ms (Views: 0.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2017-07-28 14:50:02 +0200
+Processing by LoginController#login as HTML
+  Rendering layouts/main.html.erb within layouts/application
+  Rendered layouts/main.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 67ms (Views: 65.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/all_firemen" for 127.0.0.1 at 2017-07-28 14:50:03 +0200
+Processing by FiremenController#all as HTML
+  [1m[36mFiremen Load (0.4ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+  [1m[36mCACHE Firemen Load (0.0ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+Completed 200 OK in 3ms (Views: 0.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-28 14:57:14 +0200
+Processing by ApplicationController#angular as HTML
+  Rendering layouts/main.html.erb within layouts/application
+  Rendered layouts/main.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 453ms (Views: 452.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/all_firemen" for 127.0.0.1 at 2017-07-28 14:57:16 +0200
+Processing by FiremenController#all as HTML
+  [1m[36mFiremen Load (0.3ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+  [1m[36mCACHE Firemen Load (0.0ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+Completed 200 OK in 3ms (Views: 0.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-28 19:19:01 +0200
+Started GET "/" for 127.0.0.1 at 2017-07-28 19:19:01 +0200
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ApplicationController#angular as HTML
+Processing by ApplicationController#angular as HTML
+  Rendering layouts/main.html.erb within layouts/application
+  Rendering layouts/main.html.erb within layouts/application
+  Rendered layouts/main.html.erb within layouts/application (1.1ms)
+  Rendered layouts/main.html.erb within layouts/application (0.6ms)
+Started GET "/login" for 127.0.0.1 at 2017-07-28 19:19:12 +0200
+Completed 200 OK in 19078ms (Views: 19066.6ms | ActiveRecord: 0.0ms)
+
+
+Completed 200 OK in 19072ms (Views: 19070.7ms | ActiveRecord: 0.0ms)
+
+
+Processing by LoginController#login as HTML
+  Rendering layouts/main.html.erb within layouts/application
+  Rendered layouts/main.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 49ms (Views: 48.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/all_firemen" for 127.0.0.1 at 2017-07-28 19:19:21 +0200
+Processing by FiremenController#all as HTML
+  [1m[36mFiremen Load (1.1ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+  [1m[36mCACHE Firemen Load (0.0ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+Completed 200 OK in 12ms (Views: 0.6ms | ActiveRecord: 3.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-28 19:19:23 +0200
+Processing by ApplicationController#angular as HTML
+  Rendering layouts/main.html.erb within layouts/application
+  Rendered layouts/main.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 51ms (Views: 50.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/all_firemen" for 127.0.0.1 at 2017-07-28 19:19:24 +0200
+Processing by FiremenController#all as HTML
+  [1m[36mFiremen Load (0.5ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+  [1m[36mCACHE Firemen Load (0.0ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+Completed 200 OK in 3ms (Views: 0.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-29 09:10:20 +0200
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ApplicationController#angular as HTML
+  Rendering layouts/main.html.erb within layouts/application
+  Rendered layouts/main.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 5843ms (Views: 5835.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/all_firemen" for 127.0.0.1 at 2017-07-29 09:10:27 +0200
+Processing by FiremenController#all as HTML
+  [1m[36mFiremen Load (1.0ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+  [1m[36mCACHE Firemen Load (0.0ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+Completed 200 OK in 22ms (Views: 0.6ms | ActiveRecord: 7.0ms)
+
+
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_try_advisory_lock(7864839756650184315);[0m
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (1.6ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_advisory_unlock(7864839756650184315)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (3.1ms)[0m  [1m[32mINSERT INTO "users" ("username", "password_digest", "email", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["username", "Michael Hartl"], ["password_digest", "$2a$10$VxIR0dqBcHcxiKCrg8r40.ekKd8OUhkDB3zO8Y8rHU/Ajvj.1J9Na"], ["email", "mhartl@example.com"], ["created_at", "2017-07-29 07:39:57.391638"], ["updated_at", "2017-07-29 07:39:57.391638"]]
+  [1m[35m (10.2ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/login" for 127.0.0.1 at 2017-07-29 10:39:14 +0200
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by LoginController#login as HTML
+  Rendering layouts/main.html.erb within layouts/application
+  Rendered layouts/main.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 6652ms (Views: 6644.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/all_firemen" for 127.0.0.1 at 2017-07-29 10:39:21 +0200
+Processing by FiremenController#all as HTML
+  [1m[36mFiremen Load (0.6ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+  [1m[36mCACHE Firemen Load (0.0ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+Completed 200 OK in 14ms (Views: 0.8ms | ActiveRecord: 2.2ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2017-07-29 10:39:24 +0200
+Processing by SessionsController#create as HTML
+  Parameters: {"username"=>"Michael Hartl", "password_digest"=>"[FILTERED]", "session"=>{"username"=>"Michael Hartl", "password_digest"=>"[FILTERED]"}}
+Can't verify CSRF token authenticity.
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "Michael Hartl"], ["LIMIT", 1]]
+Completed 200 OK in 120ms (Views: 0.2ms | ActiveRecord: 5.6ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2017-07-29 10:39:40 +0200
+Processing by SessionsController#create as HTML
+  Parameters: {"username"=>"Michael Hartl", "password_digest"=>"[FILTERED]", "session"=>{"username"=>"Michael Hartl", "password_digest"=>"[FILTERED]"}}
+Can't verify CSRF token authenticity.
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "Michael Hartl"], ["LIMIT", 1]]
+Completed 200 OK in 74ms (Views: 0.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2017-07-29 10:45:19 +0200
+Processing by LoginController#login as HTML
+  Rendering layouts/main.html.erb within layouts/application
+  Rendered layouts/main.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 677ms (Views: 676.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/all_firemen" for 127.0.0.1 at 2017-07-29 10:45:20 +0200
+Processing by FiremenController#all as HTML
+  [1m[36mFiremen Load (0.3ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+  [1m[36mCACHE Firemen Load (0.0ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2017-07-29 10:45:22 +0200
+Processing by SessionsController#create as HTML
+  Parameters: {"username"=>"Michael Hartl", "password_digest"=>"[FILTERED]", "session"=>{"username"=>"Michael Hartl", "password_digest"=>"[FILTERED]"}}
+Can't verify CSRF token authenticity.
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "Michael Hartl"], ["LIMIT", 1]]
+Completed 200 OK in 75ms (Views: 0.3ms | ActiveRecord: 0.6ms)
+
+
