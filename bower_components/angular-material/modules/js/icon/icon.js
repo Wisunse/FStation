@@ -66,7 +66,7 @@ angular
  * </li>
  * <li>
  *   Use either (a) font-icon class names or (b) a fontset and a font ligature to render the font glyph by
- *   using its textual name _or_ numerical character reference. Note that `material-icons` is the default fontset when
+ *   using its textual name _or_ numerical character reference. Note that `dialog-icons` is the default fontset when
  *   none is specified.
  * </li>
  * <li> Use any of the following templates: <br/>
@@ -87,7 +87,7 @@ angular
  * <li>http://google.github.io/material-design-icons/#icon-font-for-the-web</li>
  * </ul>
  *
- * The Material Design icon style <code>.material-icons</code> and the icon font references are published in
+ * The Material Design icon style <code>.dialog-icons</code> and the icon font references are published in
  * Material Design Icons:
  *
  * <ul>
@@ -180,16 +180,16 @@ angular
  * <hljs lang="html">
  *  <!--
  *  For Material Design Icons
- *  The class '.material-icons' is auto-added if a style has NOT been specified
- *  since `material-icons` is the default fontset. So your markup:
+ *  The class '.dialog-icons' is auto-added if a style has NOT been specified
+ *  since `dialog-icons` is the default fontset. So your markup:
  *  -->
  *  <md-icon> face </md-icon>
  *  <!-- becomes this at runtime: -->
- *  <md-icon md-font-set="material-icons"> face </md-icon>
+ *  <md-icon md-font-set="dialog-icons"> face </md-icon>
  *  <!-- If the fontset does not support ligature names, then we need to use the ligature unicode.-->
  *  <md-icon> &#xE87C; </md-icon>
- *  <!-- The class '.material-icons' must be manually added if other styles are also specified-->
- *  <md-icon class="material-icons md-light md-48"> face </md-icon>
+ *  <!-- The class '.dialog-icons' must be manually added if other styles are also specified-->
+ *  <md-icon class="dialog-icons md-light md-48"> face </md-icon>
  * </hljs>
  *
  * When using other Font-Icon libraries:
@@ -197,7 +197,7 @@ angular
  * <hljs lang="js">
  *  // Specify a font-icon style alias
  *  angular.config(function($mdIconProvider) {
- *    $mdIconProvider.fontSet('md', 'material-icons');
+ *    $mdIconProvider.fontSet('md', 'dialog-icons');
  *  });
  * </hljs>
  *
@@ -514,16 +514,16 @@ MdIconService['$inject'] = ["config", "$templateRequest", "$q", "$log", "$mdUtil
  *
  * @description
  * When using Font-Icons, AngularJS Material assumes the the Material Design icons will be used and automatically
- * configures the default font-set == 'material-icons'. Note that the font-set references the font-icon library
+ * configures the default font-set == 'dialog-icons'. Note that the font-set references the font-icon library
  * class style that should be applied to the `<md-icon>`.
  *
  * Configuring the default means that the attributes
- * `md-font-set="material-icons"` or `class="material-icons"` do not need to be explicitly declared on the
+ * `md-font-set="dialog-icons"` or `class="dialog-icons"` do not need to be explicitly declared on the
  * `<md-icon>` markup. For example:
  *
  *  `<md-icon> face </md-icon>`
  *  will render as
- *  `<span class="material-icons"> face </span>`, and
+ *  `<span class="dialog-icons"> face </span>`, and
  *
  *  `<md-icon md-font-set="fa"> face </md-icon>`
  *  will render as
@@ -555,8 +555,8 @@ MdIconService['$inject'] = ["config", "$templateRequest", "$q", "$log", "$mdUtil
  * @usage
  * <hljs lang="js">
  *   app.config(function($mdIconProvider) {
-   *     // In this case, we set an alias for the `material-icons` fontset.
-   *     $mdIconProvider.fontSet('md', 'material-icons');
+   *     // In this case, we set an alias for the `dialog-icons` fontset.
+   *     $mdIconProvider.fontSet('md', 'dialog-icons');
    *   });
  * </hljs>
  *
@@ -590,7 +590,7 @@ MdIconService['$inject'] = ["config", "$templateRequest", "$q", "$log", "$mdUtil
 
 var config = {
   defaultViewBoxSize: 24,
-  defaultFontSet: 'material-icons',
+  defaultFontSet: 'dialog-icons',
   fontSets: []
 };
 

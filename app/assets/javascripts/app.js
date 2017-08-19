@@ -53,7 +53,7 @@ angular.module('FireStation', ['ui.router', 'templates', 'ngMaterial'])
                 }
             })
             .state('firemen', {
-                url: '/authentication',
+                url: '/authenticated',
                 views: {
                     headerView: {
                         templateUrl: 'menu/_menu.html',
@@ -82,21 +82,30 @@ angular.module('FireStation', ['ui.router', 'templates', 'ngMaterial'])
 
     }])
 
-    .run(['$rootScope', '$state', '$stateParams', '$http',
-        function ($rootScope, $state, $stateParams, $http) {
+    .run(['$rootScope', '$state', '$stateParams', '$http', 'firemen',
+        function ($rootScope, $state, $stateParams, $http, firemen) {
 
             $rootScope.state = $state;
             $rootScope.stateParams = $stateParams;
-            $http.get('/all_firemen').then(function(res){
-                console.log(res.data);
-            });
-            $state.go('login');
+
             $rootScope.$on('$locationChangeStart', function (event, newLocation, oldLocation) {
+
+                $http.get('/is_logged').then(function(response){
+
+                    if (response) {
+                        $state.go('firemen');
+                    } else {
+                        $state.go('login');
+                    }
+
+                });
 
                 var newPath = newLocation.split('/').slice(-1)[0];
                 var oldPath = oldLocation.split('/').slice(-1)[0];
 
                 if ( newPath === 'authenticated' ) {
+                    firemen.getFiremen();
+                    console.log(firemen.allFiremen);
                 }
 
             });

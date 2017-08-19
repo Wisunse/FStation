@@ -7,13 +7,7 @@ class LoginController < ApplicationController
     render 'layouts/main'
   end
 
-  def login_try
-
-  end
-
   def all
-    # Login.create({username: 'mattLogin', password: '1234', email: 'Mm@pl.pl'})
-    puts Login.all
     render json: Login.all
   end
 

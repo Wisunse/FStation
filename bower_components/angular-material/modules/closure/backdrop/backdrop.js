@@ -8,7 +8,7 @@ goog.provide('ngmaterial.components.backdrop');
 goog.require('ngmaterial.core');
 /*
  * @ngdoc module
- * @name material.components.backdrop
+ * @name dialog.components.backdrop
  * @description Backdrop
  */
 

@@ -11,14 +11,13 @@
 // about supported directives.
 
 //= require rails-ujs
-//= require turbolinks
 //= require angular
 //= require angular-animate
 //= require angular-aria
 //= require angular-material
 //= require angular-rails-templates
 //= require angular-ui-router
-// add single file
+
 //= require app.js
 // add directory
 // require_tree ./login

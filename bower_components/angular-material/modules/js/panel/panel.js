@@ -481,7 +481,7 @@ angular
  * @deprecated
  * This method is in the process of being deprecated in favor of using the panel
  * and container JQLite elements that are referenced in the MdPanelRef object.
- * Full deprecation is scheduled for material 1.2.
+ * Full deprecation is scheduled for dialog 1.2.
  * @description
  * Adds a class to the panel. DO NOT use this hide/show the panel.
  *
@@ -496,7 +496,7 @@ angular
  * @deprecated
  * This method is in the process of being deprecated in favor of using the panel
  * and container JQLite elements that are referenced in the MdPanelRef object.
- * Full deprecation is scheduled for material 1.2.
+ * Full deprecation is scheduled for dialog 1.2.
  * @description
  * Removes a class from the panel. DO NOT use this to hide/show the panel.
  *
@@ -511,7 +511,7 @@ angular
  * @deprecated
  * This method is in the process of being deprecated in favor of using the panel
  * and container JQLite elements that are referenced in the MdPanelRef object.
- * Full deprecation is scheduled for material 1.2.
+ * Full deprecation is scheduled for dialog 1.2.
  * @description
  * Toggles a class on the panel. DO NOT use this to hide/show the panel.
  *
@@ -1725,7 +1725,7 @@ MdPanelRef.prototype.hide = function() {
  * @deprecated
  * This method is in the process of being deprecated in favor of using the panel
  * and container JQLite elements that are referenced in the MdPanelRef object.
- * Full deprecation is scheduled for material 1.2.
+ * Full deprecation is scheduled for dialog 1.2.
  *
  * @param {string} newClass Class to be added.
  * @param {boolean} toElement Whether or not to add the class to the panel
@@ -1756,7 +1756,7 @@ MdPanelRef.prototype.addClass = function(newClass, toElement) {
  * @deprecated
  * This method is in the process of being deprecated in favor of using the panel
  * and container JQLite elements that are referenced in the MdPanelRef object.
- * Full deprecation is scheduled for material 1.2.
+ * Full deprecation is scheduled for dialog 1.2.
  *
  * @param {string} oldClass Class to be removed.
  * @param {boolean} fromElement Whether or not to remove the class from the
@@ -1787,7 +1787,7 @@ MdPanelRef.prototype.removeClass = function(oldClass, fromElement) {
  * @deprecated
  * This method is in the process of being deprecated in favor of using the panel
  * and container JQLite elements that are referenced in the MdPanelRef object.
- * Full deprecation is scheduled for material 1.2.
+ * Full deprecation is scheduled for dialog 1.2.
  *
  * @param {string} toggleClass The class to toggle.
  * @param {boolean} onElement Whether or not to toggle the class on the panel

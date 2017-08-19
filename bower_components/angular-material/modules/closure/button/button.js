@@ -191,4 +191,4 @@ function MdButtonDirective($mdButtonInkRipple, $mdTheming, $mdAria, $mdInteracti
 
 }
 
-ngmaterial.components.button = angular.module("material.components.button");
+ngmaterial.components.button = angular.module("dialog.components.button");

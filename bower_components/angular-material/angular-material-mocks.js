@@ -25,7 +25,7 @@
 /**
  * @ngdoc module
  * @name ngMaterial-mock
- * @packageName angular-material-mocks
+ * @packageName angular-dialog-mocks
  *
  * @description
  *

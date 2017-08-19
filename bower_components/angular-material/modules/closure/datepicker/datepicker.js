@@ -1687,7 +1687,7 @@ angular.module('material.components.datepicker', [
           return '';
         }
 
-        // All of the dates created through ng-material *should* be set to midnight.
+        // All of the dates created through ng-dialog *should* be set to midnight.
         // If we encounter a date where the localeTime shows at 11pm instead of midnight,
         // we have run into an issue with DST where we need to increment the hour by one:
         // var d = new Date(1992, 9, 8, 0, 0, 0);
@@ -2816,7 +2816,7 @@ angular.module('material.components.datepicker', [
     var paneTop = elementRect.top - bodyRect.top - this.topMargin;
     var paneLeft = elementRect.left - bodyRect.left - this.leftMargin;
 
-    // If ng-material has disabled body scrolling (for example, if a dialog is open),
+    // If ng-dialog has disabled body scrolling (for example, if a dialog is open),
     // then it's possible that the already-scrolled body has a negative top/left. In this case,
     // we want to treat the "real" top as (0 - bodyRect.top). In a normal scrolling situation,
     // though, the top of the viewport should just be the body's scroll position.

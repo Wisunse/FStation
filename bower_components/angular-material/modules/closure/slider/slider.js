@@ -107,7 +107,7 @@ function SliderContainerDirective() {
  * The `<md-slider>` component allows the user to choose from a range of
  * values.
  *
- * As per the [material design spec](http://www.google.com/design/spec/style/color.html#color-ui-color-application)
+ * As per the [dialog design spec](http://www.google.com/design/spec/style/color.html#color-ui-color-application)
  * the slider is in the accent color by default. The primary color palette may be used with
  * the `md-primary` class.
  *

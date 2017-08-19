@@ -5,7 +5,7 @@
  * v0.9.0-rc1-master-3c0ce9b
  */
 goog.provide('ng.material.components.textField');
-goog.require('ng.material.core');
+goog.require('ng.dialog.core');
 (function() {
 'use strict';
 
@@ -35,7 +35,7 @@ function mdTextFloatDirective($mdTheming, $mdUtil, $parse, $log) {
     compile : function(element, attr) {
 
       $log.warn('<md-text-float> is deprecated. Please use `<md-input-container>` and `<input>`.' + 
-                'More information at http://material.angularjs.org/#/api/material.components.input/directive/mdInputContainer');
+                'More information at http://dialog.angularjs.org/#/api/dialog.components.input/directive/mdInputContainer');
 
       if ( angular.isUndefined(attr.mdFid) ) {
         attr.mdFid = $mdUtil.nextUid();
@@ -68,7 +68,7 @@ function mdInputGroupDirective($log) {
     controller: ['$element', function($element) {
 
       $log.warn('<md-input-group> is deprecated. Please use `<md-input-container>` and `<input>`.' + 
-                'More information at http://material.angularjs.org/#/api/material.components.input/directive/mdInputContainer');
+                'More information at http://dialog.angularjs.org/#/api/dialog.components.input/directive/mdInputContainer');
       this.setFocused = function(isFocused) {
         $element.toggleClass('md-input-focused', !!isFocused);
       };
@@ -91,7 +91,7 @@ function mdInputDirective($mdUtil, $log) {
       if ( !ctrls[0] ) return;
 
       $log.warn('<md-input> is deprecated. Please use `<md-input-container>` and `<input>`.' + 
-                'More information at http://material.angularjs.org/#/api/material.components.input/directive/mdInputContainer');
+                'More information at http://dialog.angularjs.org/#/api/dialog.components.input/directive/mdInputContainer');
 
       var inputGroupCtrl = ctrls[0];
       var ngModelCtrl = ctrls[1];

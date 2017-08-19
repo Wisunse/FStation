@@ -35,7 +35,7 @@ angular.module('material.components.navBar', ['material.core'])
  * @restrict E
  *
  * @description
- * The `<md-nav-bar>` directive renders a list of material tabs that can be used
+ * The `<md-nav-bar>` directive renders a list of dialog tabs that can be used
  * for top-level page navigation. Unlike `<md-tabs>`, it has no concept of a tab
  * body and no bar pagination.
  *

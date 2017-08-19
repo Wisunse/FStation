@@ -1,0 +1,23 @@
+{:uriI"‰file://app/assets/javascripts/firemen/_firemen.html?type=text/ng-html&id=a9cb8c78bd1eea854269c70d45a6210990980fa03f2cb72bc8d05c378c49b5e5:ET:load_pathI"app/assets/javascripts;T:filenameI"1app/assets/javascripts/firemen/_firemen.html;T:	nameI"firemen/_firemen;T:logical_pathI"firemen/_firemen.html;T:content_typeI"text/ng-html;T:sourceI" <div class="login-wrapper">
+    <div layout="flex" layout-fill ng-cloak>
+
+            <md-content>
+                <section layout="column" flex layout-align="center center" class="login">
+                    <div ng-repeat="fireman in firemen.allFiremen">
+                        {{fireman}}
+                    </div>
+                </section>
+            </md-content>
+            <md-content>
+
+                    <md-button ng-click="addNewFireman($event)">Dodaj nowego straÅ¼aka</md-button>
+
+            </md-content>
+
+
+    </div>
+</div>;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"8processors:type=text/ng-html&file_type=text/ng-html;TTI"?file-digest://app/assets/javascripts/firemen/_firemen.html;TTF:charsetI"
+utf-8;F:digest"%ù¶I]°^óÊ  £ƒ?À°jŒÛæ§ÿ_÷0ßô0ùšå:lengthi :dependencies_digest"%ŞºO›e¯Â¹‹ “†ÂvÇã÷ÉtfÔµ@¶A$:idI"Ea9cb8c78bd1eea854269c70d45a6210990980fa03f2cb72bc8d05c378c49b5e5;F:
+mtimel+tè…Y

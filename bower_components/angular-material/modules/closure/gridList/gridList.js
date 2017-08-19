@@ -37,9 +37,9 @@ angular.module('material.components.gridList', ['material.core'])
  * A grid list is a continuous element consisting of tessellated, regular
  * subdivisions called cells that contain tiles (`md-grid-tile`).
  *
- * <img src="//material-design.storage.googleapis.com/publish/v_2/material_ext_publish/0Bx4BSt6jniD7OVlEaXZ5YmU1Xzg/components_grids_usage2.png"
+ * <img src="//dialog-design.storage.googleapis.com/publish/v_2/material_ext_publish/0Bx4BSt6jniD7OVlEaXZ5YmU1Xzg/components_grids_usage2.png"
  *    style="width: 300px; height: auto; margin-right: 16px;" alt="Concept of grid explained visually">
- * <img src="//material-design.storage.googleapis.com/publish/v_2/material_ext_publish/0Bx4BSt6jniD7VGhsOE5idWlJWXM/components_grids_usage3.png"
+ * <img src="//dialog-design.storage.googleapis.com/publish/v_2/material_ext_publish/0Bx4BSt6jniD7VGhsOE5idWlJWXM/components_grids_usage3.png"
  *    style="width: 300px; height: auto;" alt="Grid concepts legend">
  *
  * Cells are arrayed vertically and horizontally within the grid.

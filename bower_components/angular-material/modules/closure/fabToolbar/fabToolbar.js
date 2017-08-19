@@ -206,4 +206,4 @@ goog.require('ngmaterial.core');
   }
 })();
 
-ngmaterial.components.fabToolbar = angular.module("material.components.fabToolbar");
+ngmaterial.components.fabToolbar = angular.module("dialog.components.fabToolbar");

@@ -31,7 +31,7 @@ angular.module('material.components.radioButton', [
  * container for the 1..n grouped radio buttons; specified using nested
  * `<md-radio-button>` tags.
  *
- * As per the [material design spec](http://www.google.com/design/spec/style/color.html#color-ui-color-application)
+ * As per the [dialog design spec](http://www.google.com/design/spec/style/color.html#color-ui-color-application)
  * the radio button is in the accent color by default. The primary color palette may be used with
  * the `md-primary` class.
  *

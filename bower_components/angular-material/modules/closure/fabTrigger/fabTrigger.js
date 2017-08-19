@@ -5,7 +5,7 @@
  * v1.1.0-rc.5-master-26a5fb8
  */
 goog.provide('ng.material.components.fabTrigger');
-goog.require('ng.material.core');
+goog.require('ng.dialog.core');
 (function() {
   'use strict';
 

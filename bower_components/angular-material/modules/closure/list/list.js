@@ -584,7 +584,7 @@ function mdListItemDirective($mdAria, $mdConstant, $mdUtil, $timeout) {
  * @private
  * @ngdoc controller
  * @name MdListController
- * @module material.components.list
+ * @module dialog.components.list
  *
  */
 function MdListController($scope, $element, $mdListInkRipple) {
@@ -597,4 +597,4 @@ function MdListController($scope, $element, $mdListInkRipple) {
   }
 }
 
-ngmaterial.components.list = angular.module("material.components.list");
+ngmaterial.components.list = angular.module("dialog.components.list");

@@ -514,7 +514,7 @@ function SidenavDirective($mdMedia, $mdUtil, $mdConstant, $mdTheming, $mdInterac
  * @private
  * @ngdoc controller
  * @name SidenavController
- * @module material.components.sidenav
+ * @module dialog.components.sidenav
  */
 function SidenavController($scope, $attrs, $mdComponentRegistry, $q, $interpolate) {
 

@@ -1,0 +1,12 @@
+{:uriI"‰file://app/assets/javascripts/firemen/_firemen.html?type=text/ng-html&id=de7c7255568afc2582b01b31366df877c9c0e389be7dcc34eb7fb11d5eacdd56:ET:load_pathI"app/assets/javascripts;T:filenameI"1app/assets/javascripts/firemen/_firemen.html;T:	nameI"firemen/_firemen;T:logical_pathI"firemen/_firemen.html;T:content_typeI"text/ng-html;T:sourceI"Ò<div class="login-wrapper">
+    <div layout="flex" layout-fill ng-cloak>
+        <section layout="column" flex layout-align="center center" class="login">
+<div>firemen</div>
+        </section>
+    </div>
+</div>;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"8processors:type=text/ng-html&file_type=text/ng-html;TTI"?file-digest://app/assets/javascripts/firemen/_firemen.html;TTF:charsetI"
+utf-8;F:digest"%¼ÂXí?$
++{ğ’æNQ¸¦")nê$æ;Úu|Ê‡å:lengthiÒ:dependencies_digest"%yy§Öö@çûˆçÜÄÜ‡A]ü13}»Ù@DıŸ4S:idI"Ede7c7255568afc2582b01b31366df877c9c0e389be7dcc34eb7fb11d5eacdd56;F:
+mtimel+”iY

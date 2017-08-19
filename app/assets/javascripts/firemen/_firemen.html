@@ -1,1 +1,19 @@
-<div>firemen.html</div>
+<div class="login-wrapper">
+    <div layout="flex" layout-fill ng-cloak>
+
+            <md-content>
+                <section layout="column" flex layout-align="center center" class="login">
+                    <div ng-repeat="fireman in firemen.allFiremen">
+                        {{fireman}}
+                    </div>
+                </section>
+            </md-content>
+            <md-content>
+
+                    <md-button ng-click="addNewFireman($event)">Dodaj nowego strażaka</md-button>
+
+            </md-content>
+
+
+    </div>
+</div>
