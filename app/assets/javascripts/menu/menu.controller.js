@@ -2,26 +2,38 @@
 
 angular.module('FireStation')
 
-    .controller('MenuController', ['$scope', '$http', '$mdSidenav', 'login', function($scope, $http, $mdSidenav, login) {
+.controller('MenuController', ['$scope', '$http', '$mdSidenav', '$state', 'login',
+    function($scope, $http, $mdSidenav, $state, login) {
 
-        $scope.login = login;
+    $scope.login = login;
 
-        // $scope.tabs = [
-        //     { title: 'p1', content: "page 1"},
-        //     { title: 'p2', content: "page 2"},
-        //     { title: 'p2', content: "page 3"}
-        // ];
-        // $scope.selectedIndex = 0;
+    $scope.goLogin = function (){
+        $state.go('login');
+    };
 
-        // var menuItems = []
-        //     {'name': 'strazacy' , 'goto': 'firemen', 'icon': 'portrait' }
-        //     var MenuItem = function(subtitle, goTo, icon){
-        //       this.subtitle = subtitle;
-        //       this.toTo = goTo;
-        //       this.icon = icon
-        //     };
-        //
-        //     menuItems.push(new)
+    $scope.goFiremen = function (){
+        $state.go('firemen');
+    };
+
+    $scope.goCars = function (){
+        $state.go('cars');
+    };
+
+    $scope.goActions = function (){
+        $state.go('actions');
+    };
+
+    $scope.goAlarms = function (){
+        $state.go('alarms');
+    };
+
+    $scope.goReminders = function (){
+        $state.go('reminders');
+    };
+
+    $scope.goSettings = function (){
+        $state.go('settings');
+    };
 
 
-    }]);
+}]);

@@ -3,18 +3,27 @@ Rails.application.routes.draw do
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
   # root to: 'application#angular'
-  # get '/all_firemen', to: 'firemen#all_firemen'
+  # resources :login, :authenticated, :is_logged, :firemen
 
   root to: 'application#angular'
 
   get '/login' => 'login#login'
-  get '/authenticated' => 'authenticated#authenticated'
 
-  post '/login' => 'sessions#create'
+  get '/' => 'authenticated#authenticated'
+  get '/firemen' => 'authenticated#authenticated'
+  get '/cars' => 'authenticated#authenticated'
+  get '/alarms' => 'authenticated#authenticated'
+  get '/reminders' => 'authenticated#authenticated'
+  get '/settings' => 'authenticated#authenticated'
+
+
+
   get '/is_logged' => 'sessions#is_logged'
+  post '/login' => 'sessions#create'
+
 
   get '/all_firemen' => 'firemen#all'
   post '/add_fireman' => 'firemen#add'
-  
+
 
 end

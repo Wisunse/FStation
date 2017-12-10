@@ -18604,3 +18604,3051 @@ Processing by FiremenController#all as HTML
 Completed 200 OK in 2ms (Views: 0.6ms | ActiveRecord: 0.3ms)
 
 
+Started GET "/authenticated" for 127.0.0.1 at 2017-08-19 11:27:42 +0200
+Processing by AuthenticatedController#authenticated as HTML
+  Rendering layouts/main.html.erb within layouts/application
+  Rendered layouts/main.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 420ms (Views: 419.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/is_logged" for 127.0.0.1 at 2017-08-19 11:27:45 +0200
+Processing by SessionsController#is_logged as HTML
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/all_firemen" for 127.0.0.1 at 2017-08-19 11:27:45 +0200
+Processing by FiremenController#all as HTML
+  [1m[36mFiremen Load (0.4ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+  [1m[36mCACHE Firemen Load (0.0ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+Completed 200 OK in 177ms (Views: 0.7ms | ActiveRecord: 2.0ms)
+
+
+Started POST "/add_fireman" for 127.0.0.1 at 2017-08-19 11:28:07 +0200
+  
+AbstractController::ActionNotFound (The action 'add' could not be found for FiremenController):
+  
+actionpack (5.1.2) lib/abstract_controller/base.rb:119:in `process'
+actionview (5.1.2) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.1.2) lib/action_controller/metal.rb:189:in `dispatch'
+actionpack (5.1.2) lib/action_controller/metal.rb:253:in `dispatch'
+actionpack (5.1.2) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (5.1.2) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (5.1.2) lib/action_dispatch/journey/router.rb:46:in `block in serve'
+actionpack (5.1.2) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.2) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.2) lib/action_dispatch/routing/route_set.rb:832:in `call'
+warden (1.2.7) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.7) lib/warden/manager.rb:35:in `catch'
+warden (1.2.7) lib/warden/manager.rb:35:in `call'
+rack (2.0.3) lib/rack/etag.rb:25:in `call'
+rack (2.0.3) lib/rack/conditional_get.rb:38:in `call'
+rack (2.0.3) lib/rack/head.rb:12:in `call'
+rack (2.0.3) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.3) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.2) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.2) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.2) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.2) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.2) lib/rails/engine.rb:522:in `call'
+rack (2.0.3) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.0.3) lib/rack/lint.rb:49:in `_call'
+rack (2.0.3) lib/rack/lint.rb:37:in `call'
+rack (2.0.3) lib/rack/show_exceptions.rb:23:in `call'
+rack (2.0.3) lib/rack/common_logger.rb:33:in `call'
+rack (2.0.3) lib/rack/chunked.rb:54:in `call'
+rack (2.0.3) lib/rack/content_length.rb:15:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started POST "/add_fireman" for 127.0.0.1 at 2017-08-19 11:28:58 +0200
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+AbstractController::ActionNotFound (The action 'add' could not be found for FiremenController):
+  
+actionpack (5.1.2) lib/abstract_controller/base.rb:119:in `process'
+actionview (5.1.2) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.1.2) lib/action_controller/metal.rb:189:in `dispatch'
+actionpack (5.1.2) lib/action_controller/metal.rb:253:in `dispatch'
+actionpack (5.1.2) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (5.1.2) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (5.1.2) lib/action_dispatch/journey/router.rb:46:in `block in serve'
+actionpack (5.1.2) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.2) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.2) lib/action_dispatch/routing/route_set.rb:832:in `call'
+warden (1.2.7) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.7) lib/warden/manager.rb:35:in `catch'
+warden (1.2.7) lib/warden/manager.rb:35:in `call'
+rack (2.0.3) lib/rack/etag.rb:25:in `call'
+rack (2.0.3) lib/rack/conditional_get.rb:38:in `call'
+rack (2.0.3) lib/rack/head.rb:12:in `call'
+rack (2.0.3) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.3) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.2) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.2) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.2) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.2) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.2) lib/rails/engine.rb:522:in `call'
+rack (2.0.3) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.0.3) lib/rack/lint.rb:49:in `_call'
+rack (2.0.3) lib/rack/lint.rb:37:in `call'
+rack (2.0.3) lib/rack/show_exceptions.rb:23:in `call'
+rack (2.0.3) lib/rack/common_logger.rb:33:in `call'
+rack (2.0.3) lib/rack/chunked.rb:54:in `call'
+rack (2.0.3) lib/rack/content_length.rb:15:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started POST "/add_fireman" for 127.0.0.1 at 2017-08-19 11:29:13 +0200
+  
+AbstractController::ActionNotFound (The action 'add' could not be found for FiremenController):
+  
+actionpack (5.1.2) lib/abstract_controller/base.rb:119:in `process'
+actionview (5.1.2) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.1.2) lib/action_controller/metal.rb:189:in `dispatch'
+actionpack (5.1.2) lib/action_controller/metal.rb:253:in `dispatch'
+actionpack (5.1.2) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (5.1.2) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (5.1.2) lib/action_dispatch/journey/router.rb:46:in `block in serve'
+actionpack (5.1.2) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.2) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.2) lib/action_dispatch/routing/route_set.rb:832:in `call'
+warden (1.2.7) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.7) lib/warden/manager.rb:35:in `catch'
+warden (1.2.7) lib/warden/manager.rb:35:in `call'
+rack (2.0.3) lib/rack/etag.rb:25:in `call'
+rack (2.0.3) lib/rack/conditional_get.rb:38:in `call'
+rack (2.0.3) lib/rack/head.rb:12:in `call'
+rack (2.0.3) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.3) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.2) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.2) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.2) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.2) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.2) lib/rails/engine.rb:522:in `call'
+rack (2.0.3) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.0.3) lib/rack/lint.rb:49:in `_call'
+rack (2.0.3) lib/rack/lint.rb:37:in `call'
+rack (2.0.3) lib/rack/show_exceptions.rb:23:in `call'
+rack (2.0.3) lib/rack/common_logger.rb:33:in `call'
+rack (2.0.3) lib/rack/chunked.rb:54:in `call'
+rack (2.0.3) lib/rack/content_length.rb:15:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/authenticated" for 127.0.0.1 at 2017-08-19 11:29:16 +0200
+Processing by AuthenticatedController#authenticated as HTML
+  Rendering layouts/main.html.erb within layouts/application
+  Rendered layouts/main.html.erb within layouts/application (0.6ms)
+Started GET "/authenticated" for 127.0.0.1 at 2017-08-19 11:29:19 +0200
+Processing by AuthenticatedController#authenticated as HTML
+  Rendering layouts/main.html.erb within layouts/application
+  Rendered layouts/main.html.erb within layouts/application (0.5ms)
+Started GET "/authenticated" for 127.0.0.1 at 2017-08-19 11:29:20 +0200
+Processing by AuthenticatedController#authenticated as HTML
+  Rendering layouts/main.html.erb within layouts/application
+  Rendered layouts/main.html.erb within layouts/application (0.5ms)
+Started GET "/authenticated" for 127.0.0.1 at 2017-08-19 11:29:21 +0200
+Processing by AuthenticatedController#authenticated as HTML
+  Rendering layouts/main.html.erb within layouts/application
+  Rendered layouts/main.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 25582ms (Views: 25575.5ms | ActiveRecord: 0.0ms)
+
+
+Completed 200 OK in 22686ms (Views: 22686.0ms | ActiveRecord: 0.0ms)
+
+
+Completed 200 OK in 21249ms (Views: 21248.4ms | ActiveRecord: 0.0ms)
+
+
+Completed 200 OK in 20056ms (Views: 20055.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/all_firemen" for 127.0.0.1 at 2017-08-19 11:29:45 +0200
+Started GET "/is_logged" for 127.0.0.1 at 2017-08-19 11:29:45 +0200
+Processing by FiremenController#all as HTML
+Processing by SessionsController#is_logged as HTML
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+  [1m[36mFiremen Load (8.5ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+  [1m[36mCACHE Firemen Load (0.0ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+Completed 200 OK in 41ms (Views: 2.9ms | ActiveRecord: 12.3ms)
+
+
+Started POST "/add_fireman" for 127.0.0.1 at 2017-08-19 11:29:59 +0200
+  
+AbstractController::ActionNotFound (The action 'add' could not be found for FiremenController):
+  
+actionpack (5.1.2) lib/abstract_controller/base.rb:119:in `process'
+actionview (5.1.2) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.1.2) lib/action_controller/metal.rb:189:in `dispatch'
+actionpack (5.1.2) lib/action_controller/metal.rb:253:in `dispatch'
+actionpack (5.1.2) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (5.1.2) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (5.1.2) lib/action_dispatch/journey/router.rb:46:in `block in serve'
+actionpack (5.1.2) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.2) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.2) lib/action_dispatch/routing/route_set.rb:832:in `call'
+warden (1.2.7) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.7) lib/warden/manager.rb:35:in `catch'
+warden (1.2.7) lib/warden/manager.rb:35:in `call'
+rack (2.0.3) lib/rack/etag.rb:25:in `call'
+rack (2.0.3) lib/rack/conditional_get.rb:38:in `call'
+rack (2.0.3) lib/rack/head.rb:12:in `call'
+rack (2.0.3) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.3) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.2) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.2) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.2) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.2) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.2) lib/rails/engine.rb:522:in `call'
+rack (2.0.3) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.0.3) lib/rack/lint.rb:49:in `_call'
+rack (2.0.3) lib/rack/lint.rb:37:in `call'
+rack (2.0.3) lib/rack/show_exceptions.rb:23:in `call'
+rack (2.0.3) lib/rack/common_logger.rb:33:in `call'
+rack (2.0.3) lib/rack/chunked.rb:54:in `call'
+rack (2.0.3) lib/rack/content_length.rb:15:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2017-08-19 11:31:26 +0200
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ApplicationController#angular as HTML
+  Rendering layouts/main.html.erb within layouts/application
+  Rendered layouts/main.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 6756ms (Views: 6750.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/is_logged" for 127.0.0.1 at 2017-08-19 11:31:33 +0200
+Processing by SessionsController#is_logged as HTML
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/is_logged" for 127.0.0.1 at 2017-08-19 11:31:34 +0200
+Processing by SessionsController#is_logged as HTML
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/all_firemen" for 127.0.0.1 at 2017-08-19 11:31:34 +0200
+Processing by FiremenController#all as HTML
+  [1m[36mFiremen Load (0.4ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+  [1m[36mCACHE Firemen Load (0.0ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+Completed 200 OK in 12ms (Views: 0.5ms | ActiveRecord: 1.8ms)
+
+
+Started POST "/add_fireman" for 127.0.0.1 at 2017-08-19 11:31:54 +0200
+  
+AbstractController::ActionNotFound (The action 'add' could not be found for FiremenController):
+  
+actionpack (5.1.2) lib/abstract_controller/base.rb:119:in `process'
+actionview (5.1.2) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.1.2) lib/action_controller/metal.rb:189:in `dispatch'
+actionpack (5.1.2) lib/action_controller/metal.rb:253:in `dispatch'
+actionpack (5.1.2) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (5.1.2) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (5.1.2) lib/action_dispatch/journey/router.rb:46:in `block in serve'
+actionpack (5.1.2) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.2) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.2) lib/action_dispatch/routing/route_set.rb:832:in `call'
+warden (1.2.7) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.7) lib/warden/manager.rb:35:in `catch'
+warden (1.2.7) lib/warden/manager.rb:35:in `call'
+rack (2.0.3) lib/rack/etag.rb:25:in `call'
+rack (2.0.3) lib/rack/conditional_get.rb:38:in `call'
+rack (2.0.3) lib/rack/head.rb:12:in `call'
+rack (2.0.3) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.3) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.2) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.2) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.2) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.2) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.2) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started POST "/add_fireman" for 127.0.0.1 at 2017-08-19 11:32:52 +0200
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by FiremenController#add as HTML
+  Parameters: {"name"=>"matt", "surname"=>"m", "email"=>"asd@asd.pl", "fireman"=>{"name"=>"matt", "surname"=>"m", "email"=>"asd@asd.pl"}}
+Completed 500 Internal Server Error in 37ms (ActiveRecord: 8.3ms)
+
+
+  
+ActiveModel::ForbiddenAttributesError (ActiveModel::ForbiddenAttributesError):
+  
+app/controllers/firemen_controller.rb:15:in `add'
+Started GET "/authenticated" for 127.0.0.1 at 2017-08-19 11:33:20 +0200
+Processing by AuthenticatedController#authenticated as HTML
+  Rendering layouts/main.html.erb within layouts/application
+  Rendered layouts/main.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 5882ms (Views: 5881.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/is_logged" for 127.0.0.1 at 2017-08-19 11:33:27 +0200
+Processing by SessionsController#is_logged as HTML
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/all_firemen" for 127.0.0.1 at 2017-08-19 11:33:27 +0200
+Processing by FiremenController#all as HTML
+  [1m[36mFiremen Load (0.5ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+  [1m[36mCACHE Firemen Load (0.0ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+Completed 200 OK in 4ms (Views: 0.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/authenticated" for 127.0.0.1 at 2017-08-19 11:34:13 +0200
+Processing by AuthenticatedController#authenticated as HTML
+  Rendering layouts/main.html.erb within layouts/application
+  Rendered layouts/main.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 72ms (Views: 71.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/is_logged" for 127.0.0.1 at 2017-08-19 11:34:14 +0200
+Processing by SessionsController#is_logged as HTML
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/all_firemen" for 127.0.0.1 at 2017-08-19 11:34:14 +0200
+Processing by FiremenController#all as HTML
+  [1m[36mFiremen Load (0.4ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+  [1m[36mCACHE Firemen Load (0.0ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+Completed 200 OK in 3ms (Views: 0.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/authenticated" for 127.0.0.1 at 2017-08-19 11:34:22 +0200
+Processing by AuthenticatedController#authenticated as HTML
+  Rendering layouts/main.html.erb within layouts/application
+  Rendered layouts/main.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 515ms (Views: 514.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/is_logged" for 127.0.0.1 at 2017-08-19 11:34:23 +0200
+Processing by SessionsController#is_logged as HTML
+Started GET "/all_firemen" for 127.0.0.1 at 2017-08-19 11:34:23 +0200
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Processing by FiremenController#all as HTML
+  [1m[36mFiremen Load (0.5ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+  [1m[36mCACHE Firemen Load (0.0ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+Completed 200 OK in 3ms (Views: 0.7ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/add_fireman" for 127.0.0.1 at 2017-08-19 11:34:29 +0200
+Processing by FiremenController#add as HTML
+  Parameters: {"name"=>"matt", "surname"=>"m", "email"=>"asd@asd.pl", "fireman"=>{"name"=>"matt", "surname"=>"m", "email"=>"asd@asd.pl"}}
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
+
+
+  
+ActiveModel::ForbiddenAttributesError (ActiveModel::ForbiddenAttributesError):
+  
+app/controllers/firemen_controller.rb:15:in `add'
+Started GET "/authenticated" for 127.0.0.1 at 2017-08-19 11:35:12 +0200
+Processing by AuthenticatedController#authenticated as HTML
+  Rendering layouts/main.html.erb within layouts/application
+  Rendered layouts/main.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 425ms (Views: 423.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/is_logged" for 127.0.0.1 at 2017-08-19 11:35:13 +0200
+Processing by SessionsController#is_logged as HTML
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/all_firemen" for 127.0.0.1 at 2017-08-19 11:35:13 +0200
+Processing by FiremenController#all as HTML
+  [1m[36mFiremen Load (0.3ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+  [1m[36mCACHE Firemen Load (0.0ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+Completed 200 OK in 10ms (Views: 0.8ms | ActiveRecord: 2.0ms)
+
+
+Started POST "/add_fireman" for 127.0.0.1 at 2017-08-19 11:37:16 +0200
+Processing by FiremenController#add as HTML
+  Parameters: {"name"=>"matt", "surname"=>"m", "email"=>"asd@asd.pl", "fireman"=>{"name"=>"matt", "surname"=>"m", "email"=>"asd@asd.pl"}}
+Completed 500 Internal Server Error in 25ms (ActiveRecord: 4.2ms)
+
+
+  
+ActiveModel::ForbiddenAttributesError (ActiveModel::ForbiddenAttributesError):
+  
+app/controllers/firemen_controller.rb:15:in `add'
+Started POST "/add_fireman" for 127.0.0.1 at 2017-08-19 11:44:51 +0200
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by FiremenController#add as HTML
+  Parameters: {"name"=>"matt", "surname"=>"m", "email"=>"asd@asd.pl", "fireman"=>{"name"=>"matt", "surname"=>"m", "email"=>"asd@asd.pl"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (176.9ms)[0m  [1m[32mINSERT INTO "firemen" ("name", "surname", "email", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "matt"], ["surname", "m"], ["email", "asd@asd.pl"], ["created_at", "2017-08-19 09:44:52.045997"], ["updated_at", "2017-08-19 09:44:52.045997"]]
+  [1m[35m (46.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mFiremen Load (0.4ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+Completed 200 OK in 265ms (Views: 3.9ms | ActiveRecord: 229.6ms)
+
+
+Started POST "/add_fireman" for 127.0.0.1 at 2017-08-19 11:44:57 +0200
+Processing by FiremenController#add as HTML
+  Parameters: {"name"=>"matt", "surname"=>"m", "email"=>"asd@asd.pl", "fireman"=>{"name"=>"matt", "surname"=>"m", "email"=>"asd@asd.pl"}}
+  [1m[35m (2.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "firemen" ("name", "surname", "email", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "matt"], ["surname", "m"], ["email", "asd@asd.pl"], ["created_at", "2017-08-19 09:44:57.246572"], ["updated_at", "2017-08-19 09:44:57.246572"]]
+  [1m[35m (60.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mFiremen Load (0.4ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+Completed 200 OK in 74ms (Views: 1.8ms | ActiveRecord: 63.8ms)
+
+
+Started POST "/add_fireman" for 127.0.0.1 at 2017-08-19 11:45:05 +0200
+Processing by FiremenController#add as HTML
+  Parameters: {"name"=>"matt", "surname"=>"m", "email"=>"asd@asd.pl", "fireman"=>{"name"=>"matt", "surname"=>"m", "email"=>"asd@asd.pl"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "firemen" ("name", "surname", "email", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "matt"], ["surname", "m"], ["email", "asd@asd.pl"], ["created_at", "2017-08-19 09:45:05.873593"], ["updated_at", "2017-08-19 09:45:05.873593"]]
+  [1m[35m (16.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mFiremen Load (0.3ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+Completed 200 OK in 23ms (Views: 1.4ms | ActiveRecord: 17.5ms)
+
+
+Started POST "/add_fireman" for 127.0.0.1 at 2017-08-19 11:45:09 +0200
+Processing by FiremenController#add as HTML
+  Parameters: {"name"=>"matt", "surname"=>"m", "email"=>"asd@asd.pl", "fireman"=>{"name"=>"matt", "surname"=>"m", "email"=>"asd@asd.pl"}}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "firemen" ("name", "surname", "email", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "matt"], ["surname", "m"], ["email", "asd@asd.pl"], ["created_at", "2017-08-19 09:45:09.649381"], ["updated_at", "2017-08-19 09:45:09.649381"]]
+  [1m[35m (60.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mFiremen Load (0.5ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+Completed 200 OK in 70ms (Views: 2.6ms | ActiveRecord: 62.1ms)
+
+
+Started POST "/add_fireman" for 127.0.0.1 at 2017-08-19 11:45:13 +0200
+Processing by FiremenController#add as HTML
+  Parameters: {"name"=>"matt", "surname"=>"m", "email"=>"asd@asd.pl", "fireman"=>{"name"=>"matt", "surname"=>"m", "email"=>"asd@asd.pl"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "firemen" ("name", "surname", "email", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "matt"], ["surname", "m"], ["email", "asd@asd.pl"], ["created_at", "2017-08-19 09:45:13.553283"], ["updated_at", "2017-08-19 09:45:13.553283"]]
+  [1m[35m (11.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mFiremen Load (0.3ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+Completed 200 OK in 18ms (Views: 1.9ms | ActiveRecord: 12.8ms)
+
+
+Started POST "/add_fireman" for 127.0.0.1 at 2017-08-19 11:45:15 +0200
+Processing by FiremenController#add as HTML
+  Parameters: {"name"=>"matt", "surname"=>"m", "email"=>"asd@asd.pl", "fireman"=>{"name"=>"matt", "surname"=>"m", "email"=>"asd@asd.pl"}}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "firemen" ("name", "surname", "email", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "matt"], ["surname", "m"], ["email", "asd@asd.pl"], ["created_at", "2017-08-19 09:45:15.299378"], ["updated_at", "2017-08-19 09:45:15.299378"]]
+  [1m[35m (12.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mFiremen Load (0.5ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+Completed 200 OK in 24ms (Views: 5.9ms | ActiveRecord: 13.7ms)
+
+
+Started POST "/add_fireman" for 127.0.0.1 at 2017-08-19 11:45:16 +0200
+Processing by FiremenController#add as HTML
+  Parameters: {"name"=>"matt", "surname"=>"m", "email"=>"asd@asd.pl", "fireman"=>{"name"=>"matt", "surname"=>"m", "email"=>"asd@asd.pl"}}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "firemen" ("name", "surname", "email", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "matt"], ["surname", "m"], ["email", "asd@asd.pl"], ["created_at", "2017-08-19 09:45:16.820050"], ["updated_at", "2017-08-19 09:45:16.820050"]]
+  [1m[35m (13.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mFiremen Load (0.4ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+Completed 200 OK in 22ms (Views: 3.9ms | ActiveRecord: 13.9ms)
+
+
+Started GET "/authenticated" for 127.0.0.1 at 2017-08-19 11:45:22 +0200
+Processing by AuthenticatedController#authenticated as HTML
+  Rendering layouts/main.html.erb within layouts/application
+  Rendered layouts/main.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 6622ms (Views: 6621.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/is_logged" for 127.0.0.1 at 2017-08-19 11:45:29 +0200
+Processing by SessionsController#is_logged as HTML
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/all_firemen" for 127.0.0.1 at 2017-08-19 11:45:29 +0200
+Processing by FiremenController#all as HTML
+  [1m[36mFiremen Load (0.5ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+  [1m[36mCACHE Firemen Load (0.0ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+Completed 200 OK in 7ms (Views: 3.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-08-19 12:20:37 +0200
+Processing by ApplicationController#angular as HTML
+  Rendering layouts/main.html.erb within layouts/application
+  Rendered layouts/main.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 264ms (Views: 263.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/is_logged" for 127.0.0.1 at 2017-08-19 12:20:38 +0200
+Processing by SessionsController#is_logged as HTML
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/is_logged" for 127.0.0.1 at 2017-08-19 12:20:38 +0200
+Processing by SessionsController#is_logged as HTML
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/all_firemen" for 127.0.0.1 at 2017-08-19 12:20:38 +0200
+Processing by FiremenController#all as HTML
+  [1m[36mFiremen Load (0.3ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+  [1m[36mCACHE Firemen Load (0.0ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+Completed 200 OK in 5ms (Views: 2.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/authenticated" for 127.0.0.1 at 2017-08-19 12:39:49 +0200
+Processing by AuthenticatedController#authenticated as HTML
+  Rendering layouts/main.html.erb within layouts/application
+  Rendered layouts/main.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 84ms (Views: 82.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/is_logged" for 127.0.0.1 at 2017-08-19 12:39:50 +0200
+Processing by SessionsController#is_logged as HTML
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/all_firemen" for 127.0.0.1 at 2017-08-19 12:39:50 +0200
+Processing by FiremenController#all as HTML
+  [1m[36mFiremen Load (0.3ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+  [1m[36mCACHE Firemen Load (0.0ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+Completed 200 OK in 6ms (Views: 3.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/authenticated" for 127.0.0.1 at 2017-08-19 12:39:52 +0200
+Processing by AuthenticatedController#authenticated as HTML
+  Rendering layouts/main.html.erb within layouts/application
+  Rendered layouts/main.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 620ms (Views: 619.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/is_logged" for 127.0.0.1 at 2017-08-19 12:39:53 +0200
+Processing by SessionsController#is_logged as HTML
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/all_firemen" for 127.0.0.1 at 2017-08-19 12:39:53 +0200
+Processing by FiremenController#all as HTML
+  [1m[36mFiremen Load (0.4ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+  [1m[36mCACHE Firemen Load (0.1ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+Completed 200 OK in 9ms (Views: 5.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/authenticated" for 127.0.0.1 at 2017-08-19 12:58:40 +0200
+Processing by AuthenticatedController#authenticated as HTML
+  Rendering layouts/main.html.erb within layouts/application
+  Rendered layouts/main.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 458ms (Views: 457.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/is_logged" for 127.0.0.1 at 2017-08-19 12:58:41 +0200
+Processing by SessionsController#is_logged as HTML
+Started GET "/all_firemen" for 127.0.0.1 at 2017-08-19 12:58:41 +0200
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Processing by FiremenController#all as HTML
+  [1m[36mFiremen Load (0.3ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+  [1m[36mCACHE Firemen Load (0.0ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+Completed 200 OK in 4ms (Views: 2.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/authenticated" for 127.0.0.1 at 2017-08-19 12:59:15 +0200
+Processing by AuthenticatedController#authenticated as HTML
+  Rendering layouts/main.html.erb within layouts/application
+  Rendered layouts/main.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 647ms (Views: 646.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/is_logged" for 127.0.0.1 at 2017-08-19 12:59:17 +0200
+Processing by SessionsController#is_logged as HTML
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/all_firemen" for 127.0.0.1 at 2017-08-19 12:59:17 +0200
+Processing by FiremenController#all as HTML
+  [1m[36mFiremen Load (0.3ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+  [1m[36mCACHE Firemen Load (0.0ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+Completed 200 OK in 5ms (Views: 2.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/authenticated" for 127.0.0.1 at 2017-08-19 12:59:22 +0200
+Processing by AuthenticatedController#authenticated as HTML
+  Rendering layouts/main.html.erb within layouts/application
+  Rendered layouts/main.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 586ms (Views: 585.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/is_logged" for 127.0.0.1 at 2017-08-19 12:59:23 +0200
+Processing by SessionsController#is_logged as HTML
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/all_firemen" for 127.0.0.1 at 2017-08-19 12:59:23 +0200
+Processing by FiremenController#all as HTML
+  [1m[36mFiremen Load (0.5ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+  [1m[36mCACHE Firemen Load (0.0ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+Completed 200 OK in 5ms (Views: 2.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/authenticated" for 127.0.0.1 at 2017-08-19 12:59:51 +0200
+Processing by AuthenticatedController#authenticated as HTML
+  Rendering layouts/main.html.erb within layouts/application
+  Rendered layouts/main.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 69ms (Views: 68.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/is_logged" for 127.0.0.1 at 2017-08-19 12:59:51 +0200
+Processing by SessionsController#is_logged as HTML
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/all_firemen" for 127.0.0.1 at 2017-08-19 12:59:51 +0200
+Processing by FiremenController#all as HTML
+  [1m[36mFiremen Load (0.3ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+  [1m[36mCACHE Firemen Load (0.0ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+Completed 200 OK in 5ms (Views: 3.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/authenticated" for 127.0.0.1 at 2017-08-19 12:59:54 +0200
+Processing by AuthenticatedController#authenticated as HTML
+  Rendering layouts/main.html.erb within layouts/application
+  Rendered layouts/main.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 49ms (Views: 48.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/is_logged" for 127.0.0.1 at 2017-08-19 12:59:54 +0200
+Processing by SessionsController#is_logged as HTML
+Started GET "/all_firemen" for 127.0.0.1 at 2017-08-19 12:59:54 +0200
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Processing by FiremenController#all as HTML
+  [1m[36mFiremen Load (0.3ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+  [1m[36mCACHE Firemen Load (0.0ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+Completed 200 OK in 5ms (Views: 2.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-17 20:41:18 +0200
+  [1m[35m (3.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ApplicationController#angular as HTML
+  Rendering layouts/main.html.erb within layouts/application
+  Rendered layouts/main.html.erb within layouts/application (1.1ms)
+Started GET "/apartments" for 127.0.0.1 at 2017-10-17 20:41:19 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/apartments"):
+  
+actionpack (5.1.2) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.2) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.2) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Completed 200 OK in 7143ms (Views: 7136.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-17 20:41:28 +0200
+Processing by ApplicationController#angular as HTML
+  Rendering layouts/main.html.erb within layouts/application
+  Rendered layouts/main.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 54ms (Views: 53.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/is_logged" for 127.0.0.1 at 2017-10-17 20:41:29 +0200
+Processing by SessionsController#is_logged as HTML
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/is_logged" for 127.0.0.1 at 2017-10-17 20:41:29 +0200
+Processing by SessionsController#is_logged as HTML
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/all_firemen" for 127.0.0.1 at 2017-10-17 20:41:29 +0200
+Processing by FiremenController#all as HTML
+  [1m[36mFiremen Load (1.2ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+  [1m[36mCACHE Firemen Load (0.0ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+Completed 200 OK in 33ms (Views: 3.7ms | ActiveRecord: 5.5ms)
+
+
+Started GET "/authenticated" for 127.0.0.1 at 2017-10-17 20:41:30 +0200
+Processing by AuthenticatedController#authenticated as HTML
+  Rendering layouts/main.html.erb within layouts/application
+  Rendered layouts/main.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 54ms (Views: 53.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/is_logged" for 127.0.0.1 at 2017-10-17 20:41:30 +0200
+Processing by SessionsController#is_logged as HTML
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/all_firemen" for 127.0.0.1 at 2017-10-17 20:41:30 +0200
+Processing by FiremenController#all as HTML
+  [1m[36mFiremen Load (1.5ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+  [1m[36mCACHE Firemen Load (0.0ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+Completed 200 OK in 9ms (Views: 3.1ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/is_logged" for 127.0.0.1 at 2017-10-17 20:41:35 +0200
+Processing by SessionsController#is_logged as HTML
+Started GET "/all_firemen" for 127.0.0.1 at 2017-10-17 20:41:35 +0200
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Processing by FiremenController#all as HTML
+  [1m[36mFiremen Load (0.4ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+  [1m[36mCACHE Firemen Load (0.0ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+Completed 200 OK in 6ms (Views: 3.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 192.168.0.204 at 2017-10-21 12:20:20 +0200
+Cannot render console from 192.168.0.204! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ApplicationController#angular as HTML
+  Rendering layouts/main.html.erb within layouts/application
+  Rendered layouts/main.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 5415ms (Views: 5408.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/is_logged" for 192.168.0.204 at 2017-10-21 12:20:32 +0200
+Cannot render console from 192.168.0.204! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#is_logged as HTML
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/is_logged" for 192.168.0.204 at 2017-10-21 12:20:34 +0200
+Cannot render console from 192.168.0.204! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#is_logged as HTML
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/all_firemen" for 192.168.0.204 at 2017-10-21 12:20:34 +0200
+Cannot render console from 192.168.0.204! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by FiremenController#all as HTML
+  [1m[36mFiremen Load (1.6ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+  [1m[36mCACHE Firemen Load (0.0ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+Completed 200 OK in 68ms (Views: 2.1ms | ActiveRecord: 5.6ms)
+
+
+Started GET "/authenticated" for 127.0.0.1 at 2017-12-04 17:36:03 +0100
+  [1m[35m (2.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by AuthenticatedController#authenticated as HTML
+  Rendering layouts/main.html.erb within layouts/application
+  Rendered layouts/main.html.erb within layouts/application (1.0ms)
+Started GET "/" for 127.0.0.1 at 2017-12-04 17:36:07 +0100
+Processing by ApplicationController#angular as HTML
+  Rendering layouts/main.html.erb within layouts/application
+  Rendered layouts/main.html.erb within layouts/application (1.0ms)
+Started GET "/authenticated" for 127.0.0.1 at 2017-12-04 17:36:15 +0100
+Processing by AuthenticatedController#authenticated as HTML
+  Rendering layouts/main.html.erb within layouts/application
+  Rendered layouts/main.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 3980ms (Views: 3978.9ms | ActiveRecord: 0.0ms)
+
+
+Completed 200 OK in 16678ms (Views: 16672.5ms | ActiveRecord: 0.0ms)
+
+
+Completed 200 OK in 12494ms (Views: 12493.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/is_logged" for 127.0.0.1 at 2017-12-04 17:36:20 +0100
+Processing by SessionsController#is_logged as HTML
+Started GET "/all_firemen" for 127.0.0.1 at 2017-12-04 17:36:20 +0100
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Processing by FiremenController#all as HTML
+  [1m[36mFiremen Load (4.9ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+  [1m[36mCACHE Firemen Load (0.1ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+Completed 200 OK in 47ms (Views: 4.0ms | ActiveRecord: 16.1ms)
+
+
+Started GET "/authenticated" for 127.0.0.1 at 2017-12-04 17:36:28 +0100
+Processing by AuthenticatedController#authenticated as HTML
+  Rendering layouts/main.html.erb within layouts/application
+  Rendered layouts/main.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 70ms (Views: 69.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/is_logged" for 127.0.0.1 at 2017-12-04 17:36:28 +0100
+Processing by SessionsController#is_logged as HTML
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/all_firemen" for 127.0.0.1 at 2017-12-04 17:36:28 +0100
+Processing by FiremenController#all as HTML
+  [1m[36mFiremen Load (0.3ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+  [1m[36mCACHE Firemen Load (0.0ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+Completed 200 OK in 4ms (Views: 1.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/statistics_data?module_index=0&module_status=active&selected_month=12&selected_year=2017&time_range=day" for 10.0.41.33 at 2017-12-04 17:41:19 +0100
+Cannot render console from 10.0.41.33! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (No route matches [GET] "/statistics_data"):
+  
+actionpack (5.1.2) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:20:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.2) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.2) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/authenticated" for 10.0.41.33 at 2017-12-04 17:41:23 +0100
+Cannot render console from 10.0.41.33! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by AuthenticatedController#authenticated as HTML
+  Rendering layouts/main.html.erb within layouts/application
+  Rendered layouts/main.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 85ms (Views: 83.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/is_logged" for 10.0.41.33 at 2017-12-04 17:41:26 +0100
+Cannot render console from 10.0.41.33! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#is_logged as HTML
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/all_firemen" for 10.0.41.33 at 2017-12-04 17:41:26 +0100
+Cannot render console from 10.0.41.33! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by FiremenController#all as HTML
+  [1m[36mFiremen Load (1.4ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+  [1m[36mCACHE Firemen Load (0.0ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+Completed 200 OK in 17ms (Views: 2.7ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/" for 10.0.41.33 at 2017-12-04 17:41:48 +0100
+Cannot render console from 10.0.41.33! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ApplicationController#angular as HTML
+  Rendering layouts/main.html.erb within layouts/application
+  Rendered layouts/main.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 63ms (Views: 61.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/is_logged" for 10.0.41.33 at 2017-12-04 17:41:49 +0100
+Cannot render console from 10.0.41.33! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#is_logged as HTML
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/is_logged" for 10.0.41.33 at 2017-12-04 17:41:49 +0100
+Cannot render console from 10.0.41.33! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#is_logged as HTML
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/all_firemen" for 10.0.41.33 at 2017-12-04 17:41:49 +0100
+Cannot render console from 10.0.41.33! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by FiremenController#all as HTML
+  [1m[36mFiremen Load (0.5ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+  [1m[36mCACHE Firemen Load (0.0ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+Completed 200 OK in 8ms (Views: 4.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-12-07 08:30:09 +0100
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ApplicationController#angular as HTML
+  Rendering layouts/main.html.erb within layouts/application
+  Rendered layouts/main.html.erb within layouts/application (1.6ms)
+Started GET "/" for 127.0.0.1 at 2017-12-07 08:30:12 +0100
+Processing by ApplicationController#angular as HTML
+  Rendering layouts/main.html.erb within layouts/application
+  Rendered layouts/main.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 16966ms (Views: 16964.5ms | ActiveRecord: 0.0ms)
+
+
+Completed 200 OK in 19631ms (Views: 19625.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/is_logged" for 127.0.0.1 at 2017-12-07 08:30:30 +0100
+Processing by SessionsController#is_logged as HTML
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/is_logged" for 127.0.0.1 at 2017-12-07 08:30:30 +0100
+Processing by SessionsController#is_logged as HTML
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/all_firemen" for 127.0.0.1 at 2017-12-07 08:30:30 +0100
+Processing by FiremenController#all as HTML
+  [1m[36mFiremen Load (1.7ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+  [1m[36mCACHE Firemen Load (0.0ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+Completed 200 OK in 46ms (Views: 3.7ms | ActiveRecord: 7.1ms)
+
+
+Started GET "/authenticated" for 127.0.0.1 at 2017-12-07 08:34:45 +0100
+Processing by AuthenticatedController#authenticated as HTML
+  Rendering layouts/main.html.erb within layouts/application
+  Rendered layouts/main.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 69ms (Views: 68.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/all_firemen" for 127.0.0.1 at 2017-12-07 08:34:46 +0100
+Processing by FiremenController#all as HTML
+Started GET "/is_logged" for 127.0.0.1 at 2017-12-07 08:34:46 +0100
+Processing by SessionsController#is_logged as HTML
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+  [1m[36mFiremen Load (1.1ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+  [1m[36mCACHE Firemen Load (0.0ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+Completed 200 OK in 11ms (Views: 2.6ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/statistics_column?module_index=0&selected_month=12&selected_year=2017&time_range=week" for 127.0.0.1 at 2017-12-07 08:37:34 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/statistics_column"):
+  
+actionpack (5.1.2) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.2) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.2) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/is_logged" for 127.0.0.1 at 2017-12-07 08:37:42 +0100
+Processing by SessionsController#is_logged as HTML
+Started GET "/all_firemen" for 127.0.0.1 at 2017-12-07 08:37:42 +0100
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Processing by FiremenController#all as HTML
+  [1m[36mFiremen Load (0.2ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+  [1m[36mCACHE Firemen Load (0.0ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+Completed 200 OK in 24ms (Views: 2.5ms | ActiveRecord: 6.4ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2017-12-07 08:54:28 +0100
+Processing by LoginController#login as HTML
+  Rendering layouts/main.html.erb within layouts/application
+  Rendered layouts/main.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 99ms (Views: 97.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/is_logged" for 127.0.0.1 at 2017-12-07 08:54:29 +0100
+Processing by SessionsController#is_logged as HTML
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/is_logged" for 127.0.0.1 at 2017-12-07 08:54:29 +0100
+Processing by SessionsController#is_logged as HTML
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/all_firemen" for 127.0.0.1 at 2017-12-07 08:54:29 +0100
+Processing by FiremenController#all as HTML
+  [1m[36mFiremen Load (0.3ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+  [1m[36mCACHE Firemen Load (0.0ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+Completed 200 OK in 34ms (Views: 4.4ms | ActiveRecord: 6.0ms)
+
+
+Started GET "/views/dialogs/edit_mode" for 127.0.0.1 at 2017-12-08 07:20:48 +0100
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (No route matches [GET] "/views/dialogs/edit_mode"):
+  
+actionpack (5.1.2) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.2) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.2) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/views/dialogs/edit_mode" for 127.0.0.1 at 2017-12-08 07:20:49 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/views/dialogs/edit_mode"):
+  
+actionpack (5.1.2) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.2) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.2) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2017-12-08 07:21:30 +0100
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ApplicationController#angular as HTML
+  Rendering layouts/main.html.erb within layouts/application
+  Rendered layouts/main.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 7816ms (Views: 7809.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/is_logged" for 127.0.0.1 at 2017-12-08 07:21:38 +0100
+Processing by SessionsController#is_logged as HTML
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/is_logged" for 127.0.0.1 at 2017-12-08 07:21:39 +0100
+Processing by SessionsController#is_logged as HTML
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/all_firemen" for 127.0.0.1 at 2017-12-08 07:21:39 +0100
+Processing by FiremenController#all as HTML
+  [1m[36mFiremen Load (1.2ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+  [1m[36mCACHE Firemen Load (0.0ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+Completed 200 OK in 84ms (Views: 3.7ms | ActiveRecord: 5.4ms)
+
+
+Started GET "/authenticated" for 127.0.0.1 at 2017-12-08 07:38:18 +0100
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by AuthenticatedController#authenticated as HTML
+  Rendering layouts/main.html.erb within layouts/application
+  Rendered layouts/main.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 9460ms (Views: 9451.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/is_logged" for 127.0.0.1 at 2017-12-08 07:38:29 +0100
+Started GET "/all_firemen" for 127.0.0.1 at 2017-12-08 07:38:29 +0100
+Processing by SessionsController#is_logged as HTML
+Processing by FiremenController#all as HTML
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+  [1m[36mFiremen Load (1.3ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+  [1m[36mCACHE Firemen Load (0.0ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+Completed 200 OK in 39ms (Views: 3.3ms | ActiveRecord: 6.7ms)
+
+
+Started GET "/authenticated" for 127.0.0.1 at 2017-12-08 07:38:34 +0100
+Processing by AuthenticatedController#authenticated as HTML
+  Rendering layouts/main.html.erb within layouts/application
+  Rendered layouts/main.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 91ms (Views: 90.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/is_logged" for 127.0.0.1 at 2017-12-08 07:38:34 +0100
+Processing by SessionsController#is_logged as HTML
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/all_firemen" for 127.0.0.1 at 2017-12-08 07:38:34 +0100
+Processing by FiremenController#all as HTML
+  [1m[36mFiremen Load (0.3ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+  [1m[36mCACHE Firemen Load (0.0ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+Completed 200 OK in 8ms (Views: 4.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/authenticated" for 127.0.0.1 at 2017-12-08 07:38:57 +0100
+Processing by AuthenticatedController#authenticated as HTML
+  Rendering layouts/main.html.erb within layouts/application
+  Rendered layouts/main.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 72ms (Views: 71.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/is_logged" for 127.0.0.1 at 2017-12-08 07:38:58 +0100
+Processing by SessionsController#is_logged as HTML
+Started GET "/all_firemen" for 127.0.0.1 at 2017-12-08 07:38:58 +0100
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Processing by FiremenController#all as HTML
+  [1m[36mFiremen Load (0.3ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+  [1m[36mCACHE Firemen Load (0.0ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+Completed 200 OK in 5ms (Views: 2.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-12-08 07:52:13 +0100
+Processing by ApplicationController#angular as HTML
+  Rendering layouts/main.html.erb within layouts/application
+  Rendered layouts/main.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 295ms (Views: 293.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/is_logged" for 127.0.0.1 at 2017-12-08 07:52:14 +0100
+Processing by SessionsController#is_logged as HTML
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/is_logged" for 127.0.0.1 at 2017-12-08 07:52:14 +0100
+Started GET "/all_firemen" for 127.0.0.1 at 2017-12-08 07:52:14 +0100
+Processing by FiremenController#all as HTML
+  [1m[36mFiremen Load (0.4ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+Processing by SessionsController#is_logged as HTML
+  [1m[36mCACHE Firemen Load (0.0ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Completed 200 OK in 15ms (Views: 11.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/authenticated" for 127.0.0.1 at 2017-12-08 07:52:15 +0100
+Processing by AuthenticatedController#authenticated as HTML
+  Rendering layouts/main.html.erb within layouts/application
+  Rendered layouts/main.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 63ms (Views: 62.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/is_logged" for 127.0.0.1 at 2017-12-08 07:52:16 +0100
+Processing by SessionsController#is_logged as HTML
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/all_firemen" for 127.0.0.1 at 2017-12-08 07:52:16 +0100
+Processing by FiremenController#all as HTML
+  [1m[36mFiremen Load (0.3ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+  [1m[36mCACHE Firemen Load (0.0ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+Completed 200 OK in 5ms (Views: 2.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-12-10 16:50:32 +0100
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ApplicationController#angular as HTML
+  Rendering layouts/main.html.erb within layouts/application
+  Rendered layouts/main.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 7671ms (Views: 7664.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/is_logged" for 127.0.0.1 at 2017-12-10 16:50:41 +0100
+Processing by SessionsController#is_logged as HTML
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/is_logged" for 127.0.0.1 at 2017-12-10 16:50:41 +0100
+Processing by SessionsController#is_logged as HTML
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/all_firemen" for 127.0.0.1 at 2017-12-10 16:50:41 +0100
+Processing by FiremenController#all as HTML
+  [1m[36mFiremen Load (1.4ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+  [1m[36mCACHE Firemen Load (0.0ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+Completed 200 OK in 43ms (Views: 3.6ms | ActiveRecord: 7.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-12-10 17:15:05 +0100
+Processing by ApplicationController#angular as HTML
+  Rendering layouts/main.html.erb within layouts/application
+  Rendered layouts/main.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 110ms (Views: 109.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/is_logged" for 127.0.0.1 at 2017-12-10 17:15:06 +0100
+Processing by SessionsController#is_logged as HTML
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/is_logged" for 127.0.0.1 at 2017-12-10 17:15:07 +0100
+Processing by SessionsController#is_logged as HTML
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/all_firemen" for 127.0.0.1 at 2017-12-10 17:15:07 +0100
+Processing by FiremenController#all as HTML
+  [1m[36mFiremen Load (0.3ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+  [1m[36mCACHE Firemen Load (0.0ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+Completed 200 OK in 7ms (Views: 3.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-12-10 17:15:34 +0100
+Processing by ApplicationController#angular as HTML
+  Rendering layouts/main.html.erb within layouts/application
+  Rendered layouts/main.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 63ms (Views: 61.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/is_logged" for 127.0.0.1 at 2017-12-10 17:15:35 +0100
+Processing by SessionsController#is_logged as HTML
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/is_logged" for 127.0.0.1 at 2017-12-10 17:15:35 +0100
+Processing by SessionsController#is_logged as HTML
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/all_firemen" for 127.0.0.1 at 2017-12-10 17:15:35 +0100
+Processing by FiremenController#all as HTML
+  [1m[36mFiremen Load (0.3ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+  [1m[36mCACHE Firemen Load (0.0ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+Completed 200 OK in 6ms (Views: 2.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/authenticated" for 127.0.0.1 at 2017-12-10 17:26:27 +0100
+Processing by AuthenticatedController#authenticated as HTML
+  Rendering layouts/main.html.erb within layouts/application
+  Rendered layouts/main.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 451ms (Views: 449.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-12-10 17:26:34 +0100
+Processing by ApplicationController#angular as HTML
+  Rendering layouts/main.html.erb within layouts/application
+  Rendered layouts/main.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 56ms (Views: 55.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/firemen" for 127.0.0.1 at 2017-12-10 17:26:40 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/firemen"):
+  
+actionpack (5.1.2) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.2) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.2) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/firemen" for 127.0.0.1 at 2017-12-10 17:26:45 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/firemen"):
+  
+actionpack (5.1.2) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.2) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.2) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2017-12-10 17:28:19 +0100
+Processing by ApplicationController#angular as HTML
+  Rendering layouts/main.html.erb within layouts/application
+  Rendered layouts/main.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 689ms (Views: 688.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/is_logged" for 127.0.0.1 at 2017-12-10 17:28:20 +0100
+Processing by SessionsController#is_logged as HTML
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/is_logged" for 127.0.0.1 at 2017-12-10 17:28:21 +0100
+Processing by SessionsController#is_logged as HTML
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/firemen" for 127.0.0.1 at 2017-12-10 17:55:45 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/firemen"):
+  
+actionpack (5.1.2) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.2) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.2) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/firemen" for 127.0.0.1 at 2017-12-10 17:55:47 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/firemen"):
+  
+actionpack (5.1.2) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.2) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.2) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/firemen" for 127.0.0.1 at 2017-12-10 17:56:06 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/firemen"):
+  
+actionpack (5.1.2) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.2) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.2) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2017-12-10 17:56:11 +0100
+Processing by ApplicationController#angular as HTML
+  Rendering layouts/main.html.erb within layouts/application
+  Rendered layouts/main.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 561ms (Views: 560.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/is_logged" for 127.0.0.1 at 2017-12-10 17:56:12 +0100
+Processing by SessionsController#is_logged as HTML
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/is_logged" for 127.0.0.1 at 2017-12-10 17:56:12 +0100
+Processing by SessionsController#is_logged as HTML
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/is_logged" for 127.0.0.1 at 2017-12-10 17:56:12 +0100
+Processing by SessionsController#is_logged as HTML
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/firemen" for 127.0.0.1 at 2017-12-10 17:56:15 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/firemen"):
+  
+actionpack (5.1.2) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.2) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.2) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2017-12-10 17:56:30 +0100
+Processing by ApplicationController#angular as HTML
+  Rendering layouts/main.html.erb within layouts/application
+  Rendered layouts/main.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 56ms (Views: 55.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/is_logged" for 127.0.0.1 at 2017-12-10 17:56:30 +0100
+Processing by SessionsController#is_logged as HTML
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/is_logged" for 127.0.0.1 at 2017-12-10 17:56:30 +0100
+Processing by SessionsController#is_logged as HTML
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/is_logged" for 127.0.0.1 at 2017-12-10 17:56:30 +0100
+Processing by SessionsController#is_logged as HTML
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/firemen" for 127.0.0.1 at 2017-12-10 17:57:28 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/firemen"):
+  
+actionpack (5.1.2) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.2) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.2) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2017-12-10 17:57:33 +0100
+Processing by ApplicationController#angular as HTML
+  Rendering layouts/main.html.erb within layouts/application
+  Rendered layouts/main.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 443ms (Views: 442.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/is_logged" for 127.0.0.1 at 2017-12-10 17:57:34 +0100
+Processing by SessionsController#is_logged as HTML
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/is_logged" for 127.0.0.1 at 2017-12-10 17:57:34 +0100
+Processing by SessionsController#is_logged as HTML
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/is_logged" for 127.0.0.1 at 2017-12-10 17:57:34 +0100
+Processing by SessionsController#is_logged as HTML
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/actions/_actions.html" for 127.0.0.1 at 2017-12-10 17:57:39 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/actions/_actions.html"):
+  
+actionpack (5.1.2) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.2) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.2) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/firemen" for 127.0.0.1 at 2017-12-10 17:59:10 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/firemen"):
+  
+actionpack (5.1.2) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.2) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.2) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2017-12-10 17:59:12 +0100
+Processing by ApplicationController#angular as HTML
+  Rendering layouts/main.html.erb within layouts/application
+  Rendered layouts/main.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 90ms (Views: 89.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/is_logged" for 127.0.0.1 at 2017-12-10 17:59:13 +0100
+Processing by SessionsController#is_logged as HTML
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/is_logged" for 127.0.0.1 at 2017-12-10 17:59:13 +0100
+Processing by SessionsController#is_logged as HTML
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/is_logged" for 127.0.0.1 at 2017-12-10 17:59:14 +0100
+Processing by SessionsController#is_logged as HTML
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-12-10 18:00:50 +0100
+Processing by ApplicationController#angular as HTML
+  Rendering layouts/main.html.erb within layouts/application
+  Rendered layouts/main.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 113ms (Views: 112.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/is_logged" for 127.0.0.1 at 2017-12-10 18:00:51 +0100
+Processing by SessionsController#is_logged as HTML
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/is_logged" for 127.0.0.1 at 2017-12-10 18:00:51 +0100
+Processing by SessionsController#is_logged as HTML
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/is_logged" for 127.0.0.1 at 2017-12-10 18:00:51 +0100
+Processing by SessionsController#is_logged as HTML
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/firemen" for 127.0.0.1 at 2017-12-10 18:00:53 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/firemen"):
+  
+actionpack (5.1.2) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.2) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.2) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2017-12-10 18:00:58 +0100
+Processing by ApplicationController#angular as HTML
+  Rendering layouts/main.html.erb within layouts/application
+  Rendered layouts/main.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 67ms (Views: 65.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/is_logged" for 127.0.0.1 at 2017-12-10 18:00:59 +0100
+Processing by SessionsController#is_logged as HTML
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/is_logged" for 127.0.0.1 at 2017-12-10 18:00:59 +0100
+Processing by SessionsController#is_logged as HTML
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/is_logged" for 127.0.0.1 at 2017-12-10 18:00:59 +0100
+Processing by SessionsController#is_logged as HTML
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/actions/_actions.html" for 127.0.0.1 at 2017-12-10 18:01:01 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/actions/_actions.html"):
+  
+actionpack (5.1.2) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.2) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.2) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/actions/_alarms.html" for 127.0.0.1 at 2017-12-10 18:01:02 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/actions/_alarms.html"):
+  
+actionpack (5.1.2) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.2) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.2) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/actions/_reminders.html" for 127.0.0.1 at 2017-12-10 18:01:03 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/actions/_reminders.html"):
+  
+actionpack (5.1.2) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.2) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.2) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2017-12-10 18:15:33 +0100
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ApplicationController#angular as HTML
+  Rendering layouts/main.html.erb within layouts/application
+  Rendered layouts/main.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 7604ms (Views: 7597.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/is_logged" for 127.0.0.1 at 2017-12-10 18:15:42 +0100
+Processing by SessionsController#is_logged as HTML
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/is_logged" for 127.0.0.1 at 2017-12-10 18:15:42 +0100
+Processing by SessionsController#is_logged as HTML
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/is_logged" for 127.0.0.1 at 2017-12-10 18:15:43 +0100
+Processing by SessionsController#is_logged as HTML
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/firemen/_cars.html" for 127.0.0.1 at 2017-12-10 18:15:45 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/firemen/_cars.html"):
+  
+actionpack (5.1.2) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.2) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.2) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/firemen" for 127.0.0.1 at 2017-12-10 18:16:25 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/firemen"):
+  
+actionpack (5.1.2) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.2) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.2) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2017-12-10 18:16:35 +0100
+Processing by ApplicationController#angular as HTML
+  Rendering layouts/main.html.erb within layouts/application
+  Rendered layouts/main.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 574ms (Views: 572.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/is_logged" for 127.0.0.1 at 2017-12-10 18:16:36 +0100
+Processing by SessionsController#is_logged as HTML
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/is_logged" for 127.0.0.1 at 2017-12-10 18:16:37 +0100
+Processing by SessionsController#is_logged as HTML
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/is_logged" for 127.0.0.1 at 2017-12-10 18:16:37 +0100
+Processing by SessionsController#is_logged as HTML
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/is_logged" for 127.0.0.1 at 2017-12-10 18:16:38 +0100
+Processing by SessionsController#is_logged as HTML
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/is_logged" for 127.0.0.1 at 2017-12-10 18:16:38 +0100
+Processing by SessionsController#is_logged as HTML
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/is_logged" for 127.0.0.1 at 2017-12-10 18:16:41 +0100
+Processing by SessionsController#is_logged as HTML
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/is_logged" for 127.0.0.1 at 2017-12-10 18:16:41 +0100
+Processing by SessionsController#is_logged as HTML
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/is_logged" for 127.0.0.1 at 2017-12-10 18:16:42 +0100
+Processing by SessionsController#is_logged as HTML
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/is_logged" for 127.0.0.1 at 2017-12-10 18:16:42 +0100
+Processing by SessionsController#is_logged as HTML
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/is_logged" for 127.0.0.1 at 2017-12-10 18:19:43 +0100
+Processing by SessionsController#is_logged as HTML
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/is_logged" for 127.0.0.1 at 2017-12-10 18:19:43 +0100
+Processing by SessionsController#is_logged as HTML
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/firemen" for 127.0.0.1 at 2017-12-10 18:21:56 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/firemen"):
+  
+actionpack (5.1.2) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.2) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.2) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2017-12-10 18:21:59 +0100
+Processing by ApplicationController#angular as HTML
+  Rendering layouts/main.html.erb within layouts/application
+  Rendered layouts/main.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 89ms (Views: 88.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/is_logged" for 127.0.0.1 at 2017-12-10 18:22:01 +0100
+Processing by SessionsController#is_logged as HTML
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/is_logged" for 127.0.0.1 at 2017-12-10 18:22:01 +0100
+Processing by SessionsController#is_logged as HTML
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/is_logged" for 127.0.0.1 at 2017-12-10 18:22:01 +0100
+Processing by SessionsController#is_logged as HTML
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/firemen" for 127.0.0.1 at 2017-12-10 18:22:30 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/firemen"):
+  
+actionpack (5.1.2) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.2) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.2) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2017-12-10 18:22:36 +0100
+Processing by ApplicationController#angular as HTML
+  Rendering layouts/main.html.erb within layouts/application
+  Rendered layouts/main.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 591ms (Views: 590.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/is_logged" for 127.0.0.1 at 2017-12-10 18:22:38 +0100
+Processing by SessionsController#is_logged as HTML
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/is_logged" for 127.0.0.1 at 2017-12-10 18:22:38 +0100
+Processing by SessionsController#is_logged as HTML
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/is_logged" for 127.0.0.1 at 2017-12-10 18:22:38 +0100
+Processing by SessionsController#is_logged as HTML
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-12-10 18:39:38 +0100
+Processing by ApplicationController#angular as HTML
+  Rendering layouts/main.html.erb within layouts/application
+  Rendered layouts/main.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 505ms (Views: 504.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/is_logged" for 127.0.0.1 at 2017-12-10 18:39:40 +0100
+Processing by SessionsController#is_logged as HTML
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/is_logged" for 127.0.0.1 at 2017-12-10 18:39:40 +0100
+Processing by SessionsController#is_logged as HTML
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/is_logged" for 127.0.0.1 at 2017-12-10 18:39:40 +0100
+Processing by SessionsController#is_logged as HTML
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/actions/_reminders.html" for 127.0.0.1 at 2017-12-10 18:43:33 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/actions/_reminders.html"):
+  
+actionpack (5.1.2) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.2) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.2) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/actions/_alarms.html" for 127.0.0.1 at 2017-12-10 18:43:33 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/actions/_alarms.html"):
+  
+actionpack (5.1.2) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.2) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.2) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/actions/_reminders.html" for 127.0.0.1 at 2017-12-10 18:43:34 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/actions/_reminders.html"):
+  
+actionpack (5.1.2) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.2) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.2) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/actions/_actions.html" for 127.0.0.1 at 2017-12-10 18:43:34 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/actions/_actions.html"):
+  
+actionpack (5.1.2) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.2) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.2) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/is_logged" for 127.0.0.1 at 2017-12-10 18:43:34 +0100
+Processing by SessionsController#is_logged as HTML
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/is_logged" for 127.0.0.1 at 2017-12-10 18:43:34 +0100
+Processing by SessionsController#is_logged as HTML
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/is_logged" for 127.0.0.1 at 2017-12-10 18:43:35 +0100
+Processing by SessionsController#is_logged as HTML
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/is_logged" for 127.0.0.1 at 2017-12-10 18:43:35 +0100
+Processing by SessionsController#is_logged as HTML
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/firemen" for 127.0.0.1 at 2017-12-10 18:57:52 +0100
+Processing by AuthenticatedController#authenticated as HTML
+  Rendering layouts/main.html.erb within layouts/application
+  Rendered layouts/main.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 54ms (Views: 53.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/is_logged" for 127.0.0.1 at 2017-12-10 18:57:53 +0100
+Processing by SessionsController#is_logged as HTML
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/is_logged" for 127.0.0.1 at 2017-12-10 18:57:55 +0100
+Processing by SessionsController#is_logged as HTML
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/is_logged" for 127.0.0.1 at 2017-12-10 18:57:55 +0100
+Processing by SessionsController#is_logged as HTML
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/firemen" for 127.0.0.1 at 2017-12-10 18:59:26 +0100
+Processing by AuthenticatedController#authenticated as HTML
+  Rendering layouts/main.html.erb within layouts/application
+  Rendered layouts/main.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 467ms (Views: 466.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/is_logged" for 127.0.0.1 at 2017-12-10 18:59:28 +0100
+Processing by SessionsController#is_logged as HTML
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/is_logged" for 127.0.0.1 at 2017-12-10 18:59:30 +0100
+Processing by SessionsController#is_logged as HTML
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/is_logged" for 127.0.0.1 at 2017-12-10 18:59:30 +0100
+Processing by SessionsController#is_logged as HTML
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/is_logged" for 127.0.0.1 at 2017-12-10 18:59:33 +0100
+Processing by SessionsController#is_logged as HTML
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/is_logged" for 127.0.0.1 at 2017-12-10 18:59:33 +0100
+Processing by SessionsController#is_logged as HTML
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/is_logged" for 127.0.0.1 at 2017-12-10 18:59:34 +0100
+Processing by SessionsController#is_logged as HTML
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/is_logged" for 127.0.0.1 at 2017-12-10 18:59:34 +0100
+Processing by SessionsController#is_logged as HTML
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/is_logged" for 127.0.0.1 at 2017-12-10 18:59:34 +0100
+Processing by SessionsController#is_logged as HTML
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/is_logged" for 127.0.0.1 at 2017-12-10 18:59:35 +0100
+Processing by SessionsController#is_logged as HTML
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/is_logged" for 127.0.0.1 at 2017-12-10 18:59:43 +0100
+Processing by SessionsController#is_logged as HTML
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/is_logged" for 127.0.0.1 at 2017-12-10 18:59:43 +0100
+Processing by SessionsController#is_logged as HTML
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/is_logged" for 127.0.0.1 at 2017-12-10 18:59:45 +0100
+Processing by SessionsController#is_logged as HTML
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/is_logged" for 127.0.0.1 at 2017-12-10 18:59:45 +0100
+Processing by SessionsController#is_logged as HTML
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/is_logged" for 127.0.0.1 at 2017-12-10 18:59:46 +0100
+Processing by SessionsController#is_logged as HTML
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/is_logged" for 127.0.0.1 at 2017-12-10 18:59:46 +0100
+Processing by SessionsController#is_logged as HTML
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/is_logged" for 127.0.0.1 at 2017-12-10 18:59:46 +0100
+Processing by SessionsController#is_logged as HTML
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/is_logged" for 127.0.0.1 at 2017-12-10 18:59:46 +0100
+Processing by SessionsController#is_logged as HTML
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/is_logged" for 127.0.0.1 at 2017-12-10 19:00:11 +0100
+Processing by SessionsController#is_logged as HTML
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/is_logged" for 127.0.0.1 at 2017-12-10 19:00:11 +0100
+Processing by SessionsController#is_logged as HTML
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/is_logged" for 127.0.0.1 at 2017-12-10 19:00:12 +0100
+Processing by SessionsController#is_logged as HTML
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/is_logged" for 127.0.0.1 at 2017-12-10 19:00:12 +0100
+Processing by SessionsController#is_logged as HTML
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/is_logged" for 127.0.0.1 at 2017-12-10 19:01:31 +0100
+Processing by SessionsController#is_logged as HTML
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/is_logged" for 127.0.0.1 at 2017-12-10 19:01:31 +0100
+Processing by SessionsController#is_logged as HTML
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/is_logged" for 127.0.0.1 at 2017-12-10 19:01:36 +0100
+Processing by SessionsController#is_logged as HTML
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/is_logged" for 127.0.0.1 at 2017-12-10 19:01:36 +0100
+Processing by SessionsController#is_logged as HTML
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/is_logged" for 127.0.0.1 at 2017-12-10 19:01:39 +0100
+Processing by SessionsController#is_logged as HTML
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/is_logged" for 127.0.0.1 at 2017-12-10 19:01:39 +0100
+Processing by SessionsController#is_logged as HTML
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/is_logged" for 127.0.0.1 at 2017-12-10 19:01:40 +0100
+Processing by SessionsController#is_logged as HTML
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/is_logged" for 127.0.0.1 at 2017-12-10 19:01:40 +0100
+Processing by SessionsController#is_logged as HTML
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/is_logged" for 127.0.0.1 at 2017-12-10 19:01:40 +0100
+Processing by SessionsController#is_logged as HTML
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/is_logged" for 127.0.0.1 at 2017-12-10 19:01:40 +0100
+Processing by SessionsController#is_logged as HTML
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/is_logged" for 127.0.0.1 at 2017-12-10 19:01:43 +0100
+Processing by SessionsController#is_logged as HTML
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/is_logged" for 127.0.0.1 at 2017-12-10 19:01:43 +0100
+Processing by SessionsController#is_logged as HTML
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/is_logged" for 127.0.0.1 at 2017-12-10 19:02:04 +0100
+Processing by SessionsController#is_logged as HTML
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/is_logged" for 127.0.0.1 at 2017-12-10 19:02:04 +0100
+Processing by SessionsController#is_logged as HTML
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/is_logged" for 127.0.0.1 at 2017-12-10 19:03:30 +0100
+Processing by SessionsController#is_logged as HTML
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/is_logged" for 127.0.0.1 at 2017-12-10 19:03:30 +0100
+Processing by SessionsController#is_logged as HTML
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/actions/_actions.html" for 127.0.0.1 at 2017-12-10 19:03:31 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/actions/_actions.html"):
+  
+actionpack (5.1.2) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.2) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.2) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/actions/_reminders.html" for 127.0.0.1 at 2017-12-10 19:03:32 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/actions/_reminders.html"):
+  
+actionpack (5.1.2) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.2) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.2) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/actions/_alarms.html" for 127.0.0.1 at 2017-12-10 19:03:33 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/actions/_alarms.html"):
+  
+actionpack (5.1.2) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.2) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.2) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/actions/_reminders.html" for 127.0.0.1 at 2017-12-10 19:03:33 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/actions/_reminders.html"):
+  
+actionpack (5.1.2) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.2) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.2) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/is_logged" for 127.0.0.1 at 2017-12-10 19:03:44 +0100
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by SessionsController#is_logged as HTML
+Completed 200 OK in 7ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/is_logged" for 127.0.0.1 at 2017-12-10 19:03:44 +0100
+Processing by SessionsController#is_logged as HTML
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-12-10 19:03:47 +0100
+Processing by ApplicationController#angular as HTML
+  Rendering layouts/main.html.erb within layouts/application
+  Rendered layouts/main.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 6756ms (Views: 6755.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/is_logged" for 127.0.0.1 at 2017-12-10 19:03:55 +0100
+Processing by SessionsController#is_logged as HTML
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/is_logged" for 127.0.0.1 at 2017-12-10 19:03:55 +0100
+Processing by SessionsController#is_logged as HTML
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/is_logged" for 127.0.0.1 at 2017-12-10 19:03:55 +0100
+Processing by SessionsController#is_logged as HTML
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/is_logged" for 127.0.0.1 at 2017-12-10 19:04:10 +0100
+Processing by SessionsController#is_logged as HTML
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/is_logged" for 127.0.0.1 at 2017-12-10 19:04:10 +0100
+Processing by SessionsController#is_logged as HTML
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/is_logged" for 127.0.0.1 at 2017-12-10 19:04:15 +0100
+Processing by SessionsController#is_logged as HTML
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/is_logged" for 127.0.0.1 at 2017-12-10 19:04:15 +0100
+Processing by SessionsController#is_logged as HTML
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/is_logged" for 127.0.0.1 at 2017-12-10 19:04:22 +0100
+Processing by SessionsController#is_logged as HTML
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/is_logged" for 127.0.0.1 at 2017-12-10 19:04:22 +0100
+Processing by SessionsController#is_logged as HTML
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/is_logged" for 127.0.0.1 at 2017-12-10 19:04:28 +0100
+Processing by SessionsController#is_logged as HTML
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/is_logged" for 127.0.0.1 at 2017-12-10 19:04:28 +0100
+Processing by SessionsController#is_logged as HTML
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/firemen" for 127.0.0.1 at 2017-12-10 19:04:47 +0100
+Processing by AuthenticatedController#authenticated as HTML
+  Rendering layouts/main.html.erb within layouts/application
+  Rendered layouts/main.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 602ms (Views: 600.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/is_logged" for 127.0.0.1 at 2017-12-10 19:04:49 +0100
+Processing by SessionsController#is_logged as HTML
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/is_logged" for 127.0.0.1 at 2017-12-10 19:04:50 +0100
+Processing by SessionsController#is_logged as HTML
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/is_logged" for 127.0.0.1 at 2017-12-10 19:04:50 +0100
+Processing by SessionsController#is_logged as HTML
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/is_logged" for 127.0.0.1 at 2017-12-10 19:05:38 +0100
+Processing by SessionsController#is_logged as HTML
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/is_logged" for 127.0.0.1 at 2017-12-10 19:05:38 +0100
+Processing by SessionsController#is_logged as HTML
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/firemen" for 127.0.0.1 at 2017-12-10 19:15:52 +0100
+Processing by AuthenticatedController#authenticated as HTML
+  Rendering layouts/main.html.erb within layouts/application
+  Rendered layouts/main.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 53ms (Views: 52.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/is_logged" for 127.0.0.1 at 2017-12-10 19:15:53 +0100
+Processing by SessionsController#is_logged as HTML
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/is_logged" for 127.0.0.1 at 2017-12-10 19:15:55 +0100
+Processing by SessionsController#is_logged as HTML
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/is_logged" for 127.0.0.1 at 2017-12-10 19:15:55 +0100
+Processing by SessionsController#is_logged as HTML
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/is_logged" for 127.0.0.1 at 2017-12-10 19:16:02 +0100
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by SessionsController#is_logged as HTML
+Completed 200 OK in 9ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/is_logged" for 127.0.0.1 at 2017-12-10 19:16:02 +0100
+Processing by SessionsController#is_logged as HTML
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/cars" for 127.0.0.1 at 2017-12-10 19:16:15 +0100
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by AuthenticatedController#authenticated as HTML
+  Rendering layouts/main.html.erb within layouts/application
+  Rendered layouts/main.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 6293ms (Views: 6286.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/is_logged" for 127.0.0.1 at 2017-12-10 19:16:22 +0100
+Processing by SessionsController#is_logged as HTML
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/is_logged" for 127.0.0.1 at 2017-12-10 19:16:22 +0100
+Processing by SessionsController#is_logged as HTML
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/firemen" for 127.0.0.1 at 2017-12-10 19:22:33 +0100
+Processing by AuthenticatedController#authenticated as HTML
+  Rendering layouts/main.html.erb within layouts/application
+  Rendered layouts/main.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 698ms (Views: 697.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/actions/_actions.html" for 127.0.0.1 at 2017-12-10 19:22:38 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/actions/_actions.html"):
+  
+actionpack (5.1.2) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.2) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.2) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/firemen" for 127.0.0.1 at 2017-12-10 19:23:49 +0100
+Processing by AuthenticatedController#authenticated as HTML
+  Rendering layouts/main.html.erb within layouts/application
+  Rendered layouts/main.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 581ms (Views: 580.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/actions/_reminders.html" for 127.0.0.1 at 2017-12-10 19:23:55 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/actions/_reminders.html"):
+  
+actionpack (5.1.2) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.2) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.2) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/actions" for 127.0.0.1 at 2017-12-10 19:24:51 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/actions"):
+  
+actionpack (5.1.2) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.2) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.2) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2017-12-10 19:24:56 +0100
+Processing by ApplicationController#angular as HTML
+  Rendering layouts/main.html.erb within layouts/application
+  Rendered layouts/main.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 724ms (Views: 723.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-12-10 19:25:32 +0100
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ApplicationController#angular as HTML
+  Rendering layouts/main.html.erb within layouts/application
+  Rendered layouts/main.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 6321ms (Views: 6315.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-12-10 19:26:51 +0100
+Processing by ApplicationController#angular as HTML
+  Rendering layouts/main.html.erb within layouts/application
+  Rendered layouts/main.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 71ms (Views: 70.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-12-10 19:27:00 +0100
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ApplicationController#angular as HTML
+  Rendering layouts/main.html.erb within layouts/application
+  Rendered layouts/main.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 5862ms (Views: 5855.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-12-10 19:27:52 +0100
+Processing by ApplicationController#angular as HTML
+  Rendering layouts/main.html.erb within layouts/application
+  Rendered layouts/main.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 60ms (Views: 59.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2017-12-10 19:28:22 +0100
+Processing by LoginController#login as HTML
+  Rendering layouts/main.html.erb within layouts/application
+  Rendered layouts/main.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 117ms (Views: 116.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/actions/_reminders.html" for 127.0.0.1 at 2017-12-10 19:28:42 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/actions/_reminders.html"):
+  
+actionpack (5.1.2) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.2) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.2) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/alarms" for 127.0.0.1 at 2017-12-10 19:30:29 +0100
+Processing by AuthenticatedController#authenticated as HTML
+  Rendering layouts/main.html.erb within layouts/application
+  Rendered layouts/main.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 529ms (Views: 528.3ms | ActiveRecord: 0.0ms)
+
+

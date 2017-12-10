@@ -1,65 +1,150 @@
 <div class="login-header" ng-cloak>
     <div layout="column" layout-fill>
+        <md-toolbar>
 
-            <md-toolbar>
-                <!--<md-button md-icon-button hide-gt-sm class="menuBtn" ng-click="login.openLeftMenu()" ng-cloak>-->
-                    <!--<md-icon class="md-24" ng-cloak>menu</md-icon>-->
-                <!--</md-button>-->
-                <md-tabs md-dynamic-height hide-gt-sm md-no-ink-bar>
-                    <md-tab ng-click="login.openLeftMenu()">
-                        <md-tab-label>
-                            <md-icon class="md-24" ng-cloak>menu</md-icon>
-                        </md-tab-label>
-                    </md-tab>
-                </md-tabs>
+            <div class="top-menu bg-transparent">
 
-                <md-tabs md-dynamic-height md-center-tabs hide show-gt-sm>
+                <md-button md-dynamic-height hide-gt-sm md-no-ink-bar
+                           class="top-menu__button bg-top-menu__button"
+                           aria-label="Open Menu"
+                           ng-click="openLeftMenu()">
+                    <md-icon class="md-24" ng-cloak>portrait</md-icon>
+                    <div>menu...</div>
+                </md-button>
 
-                    <md-tab>
-                        <md-tab-label>
-                            <md-icon class="md-24" ng-cloak>portrait</md-icon>
+                <div class="top-menu" md-dynamic-height md-center-tabs hide show-gt-sm>
+
+                    <div class="top-menu__button bg-top-menu__button"
+                         ng-class="[ {true: 'bg-top-menu__button--selected'}[state.current.name === 'firemen'] ]"
+                         ng-click="goFiremen()">
+                        <md-icon class="md-24" ng-cloak>portrait</md-icon>
+                        <div><div>Straƶacy</div></div>
+                    </div>
+                    <div class="top-menu__button bg-top-menu__button"
+                         ng-class="[ {true: 'bg-top-menu__button--selected'}[state.current.name === 'cars'] ]"
+                         ng-click="goCars()">
+                        <md-icon class="md-24" ng-cloak>portrait</md-icon>
+                        <div><div>Pojazdy</div></div>
+                    </div>
+
+                    <div class="top-menu__button bg-top-menu__button"
+                         ng-class="[ {true: 'bg-top-menu__button--selected'}[state.current.name === 'actions'] ]"
+                         ng-click="goActions()">
+                        <md-icon class="md-24" ng-cloak>time_to_leave</md-icon>
+                        <div>Wyjazdy</div>
+                    </div>
+
+                    <div class="top-menu__button bg-top-menu__button"
+                         ng-class="[ {true: 'bg-top-menu__button--selected'}[state.current.name === 'remainders'] ]"
+                         ng-click="goReminders()">
+                        <md-icon class="md-24" ng-cloak>add_alert</md-icon>
+                        <div>Przypomnienia</div>
+                    </div>
+
+                    <div class="top-menu__button bg-top-menu__button"
+                         ng-class="[ {true: 'bg-top-menu__button--selected'}[state.current.name === 'alarms'] ]"
+                         ng-click="goAlarms()">
+                        <md-icon class="md-24" ng-cloak>error</md-icon>
+                        <div>Alarmy</div>
+                    </div>
+
+                    <div class="top-menu__button bg-top-menu__button"
+                         ng-class="[ {true: 'bg-top-menu__button--selected'}[state.current.name === 'settings'] ]"
+                         ng-click="goSettings()">
+                        <md-icon class="md-24" ng-cloak>settings</md-icon>
+                        <div>Ustawienia</div>
+                    </div>
+
+                    <div md-dynamic-height md-center-tabs hide show-gt-sm
+                         class="top-menu__element color-light cursor-pointer"
+                         ng-click="authentication.logout()">
+                        <md-icon class="md-24" ng-cloak>settings</md-icon>
+                        <div>Wyloguj</div>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <md-sidenav-container>
+                <md-sidenav md-component-id="left" class="md-sidenav-left  bg-transparent">
+
+                    <md-list>
+                        <md-button class="side-menu__button bg-transparent" md-whiteframe="9"
+                                   layout-fill
+                                   aria-label="show menu"
+                                   ng-click="homeScreen()"
+                                   layout="row">
+                            <div>
+                                <md-icon class="md-24" ng-cloak>portrait</md-icon>
+                            </div>
                             <div>Straƶacy</div>
-                        </md-tab-label>
-                    </md-tab>
 
-                    <md-tab>
-                        <md-tab-label>
-                            <md-icon class="md-24" ng-cloak>time_to_leave</md-icon>
+                        </md-button>
+
+                        <md-button class="side-menu__button bg-transparent" md-whiteframe="9"
+                                   layout-fill
+                                   aria-label="scheduleScreen"
+                                   ng-click="scheduleScreen()"
+                                   layout="row">
+                            <div>
+                                <md-icon class="md-24" ng-cloak>portrait</md-icon>
+                            </div>
                             <div>Pojazdy</div>
-                        </md-tab-label>
-                    </md-tab>
+                        </md-button>
 
-                    <md-tab>
-                        <md-tab-label>
-                            <md-icon class="md-24" ng-cloak>time_to_leave</md-icon>
+                        <md-button class="side-menu__button bg-transparent" md-whiteframe="9"
+                                   layout-fill
+                                   aria-label="scheduleScreen"
+                                   ng-click="settingsScreen()"
+                                   layout="row">
+                            <div>
+                                <md-icon class="md-24" ng-cloak>time_to_leave</md-icon>
+                            </div>
                             <div>Wyjazdy</div>
-                        </md-tab-label>
-                    </md-tab>
 
-                    <md-tab>
-                        <md-tab-label>
-                            <md-icon class="md-24" ng-cloak>add_alert</md-icon>
+                        </md-button>
+
+                        <md-button class="side-menu__button bg-transparent" md-whiteframe="9"
+                                   layout-fill
+                                   aria-label="scheduleScreen"
+                                   ng-click="usersScreen()"
+                                   layout="row">
+                            <div>
+                                <md-icon class="md-24" ng-cloak>add_alert</md-icon>
+
+                            </div>
                             <div>Przypomnienia</div>
-                        </md-tab-label>
-                    </md-tab>
+                        </md-button>
 
-                    <md-tab>
-                        <md-tab-label>
-                            <md-icon class="md-24" ng-cloak>error</md-icon>
+                        <md-button class="side-menu__button bg-transparent" md-whiteframe="9"
+                                   layout-fill
+                                   aria-label="scheduleScreen"
+                                   ng-click="apartmentsScreen()"
+                                   layout="row">
+                            <div>
+                                <md-icon class="md-24" ng-cloak>error</md-icon>
+                            </div>
                             <div>Alarmy</div>
-                        </md-tab-label>
-                    </md-tab>
+                        </md-button>
 
-                    <md-tab>
-                        <md-tab-label>
-                            <md-icon class="md-24" ng-cloak>settings</md-icon>
+                        <md-button class="side-menu__button bg-transparent" md-whiteframe="9"
+                                   layout-fill
+                                   aria-label="scheduleScreen"
+                                   ng-click="authentication.logout()"
+                                   layout="row">
+                            <div>
+                                <md-icon class="md-24" ng-cloak>settings</md-icon>
+                            </div>
                             <div>Ustawienia</div>
-                        </md-tab-label>
-                    </md-tab>
+                        </md-button>
 
-                </md-tabs>
+                    </md-list>
 
-            </md-toolbar>
+                </md-sidenav>
+            </md-sidenav-container>
+
+        </md-toolbar>
 
     </div>
 </div>

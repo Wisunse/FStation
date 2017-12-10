@@ -10,6 +10,5 @@ angular.module('FireStation')
             $mdSidenav('left').toggle();
         };
 
-
         return factory;
     }]);

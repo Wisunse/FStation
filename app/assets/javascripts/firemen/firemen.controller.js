@@ -2,9 +2,10 @@
 
 angular.module('FireStation')
 
-    .controller('FiremenController', ['$scope', '$http', '$state', '$mdDialog', 'firemen', function($scope, $http, $state, $mdDialog, firemen ) {
+    .controller('FiremenController', ['$scope', '$http', '$state', '$mdDialog', 'firemen',
+        function($scope, $http, $state, $mdDialog, firemen ) {
 
-        console.log('LoginController');
+        console.log('FiremenController');
 
         $scope.firemen = firemen;
         $scope.customFullscreen = true;
