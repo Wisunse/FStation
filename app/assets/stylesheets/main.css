@@ -8,6 +8,16 @@ body {
     height: 90%;
     overflow: auto; }
 
+.main-wrapper {
+    width:100%;
+    height:100%;
+    background: #dcdcdc url('/images/login_background.jpeg') no-repeat center;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 @media all and (max-width: 960px) {
     .main-wrapper {
         display: flex;

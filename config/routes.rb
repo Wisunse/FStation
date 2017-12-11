@@ -8,6 +8,9 @@ Rails.application.routes.draw do
   root to: 'application#angular'
 
   get '/login' => 'login#login'
+  post '/login' => 'sessions#create'
+
+  get '/is_logged' => 'sessions#is_logged'
 
   get '/' => 'authenticated#authenticated'
   get '/firemen' => 'authenticated#authenticated'
@@ -15,12 +18,6 @@ Rails.application.routes.draw do
   get '/alarms' => 'authenticated#authenticated'
   get '/reminders' => 'authenticated#authenticated'
   get '/settings' => 'authenticated#authenticated'
-
-
-
-  get '/is_logged' => 'sessions#is_logged'
-  post '/login' => 'sessions#create'
-
 
   get '/all_firemen' => 'firemen#all'
   post '/add_fireman' => 'firemen#add'

@@ -1,26 +1,27 @@
-<div class="login-wrapper">
-    <div layout="flex" layout-fill ng-cloak>
+<div layout="column">
+    <!--class="main-wrapper__firemen-wrapper"-->
 
-        <!--<md-content>-->
-            <md-sidenav flex="15" md-is-locked-open="true" >
+    <div layout="row" >
 
-            <section layout="column" flex layout-align="center center" class="login">
-                <div ng-repeat="fireman in firemen.allFiremen">
+        <md-content flex="33">
 
-                    {{fireman.name}}
-                    {{fireman.surname}}
-
+            <md-card>
+                <div layout="column">
+                    <div ng-repeat="fireman in firemen.allFiremen" layout="row">
+                        <div> {{fireman.name}}</div>
+                        <div>{{fireman.surname}}</div>
+                    </div>
                 </div>
-            </section>
-            </md-sidenav>
-        <!--</md-content>-->
-
-        <md-content>
-
-            <md-button ng-click="addNewFireman($event)">Dodaj nowego strażaka</md-button>
+            </md-card>
 
         </md-content>
 
+        <md-content flex="66">
+            <md-card>
+                asd
+            </md-card>
+        </md-content>
 
     </div>
+
 </div>

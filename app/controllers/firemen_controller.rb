@@ -5,7 +5,6 @@ class FiremenController < ApplicationController
   end
 
   def all
-    puts Firemen.all
     render json: Firemen.all
   end
 

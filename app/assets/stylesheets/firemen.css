@@ -1,0 +1,19 @@
+.main-wrapper__firemen-wrapper {
+    width:100%;
+    height: 100%;
+}
+
+.firemen-wrapper__information {
+    width: 100%;
+    height:90%;
+}
+
+.information__name-list {
+    width: 30%;
+    height: 100%;
+}
+
+.information__details-list {
+    width: 70%;
+    height: 100%;
+}

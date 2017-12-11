@@ -7,10 +7,10 @@ angular.module('FireStation')
         var factory = [];
         factory.getFiremen = function() {
             $http.get('/all_firemen').then(function(result){
-                console.log(result.data)
+                console.log(result.data);
                 factory.allFiremen = result.data;
             });
-        };
+        };factory.getFiremen();
 
 
         return factory;
