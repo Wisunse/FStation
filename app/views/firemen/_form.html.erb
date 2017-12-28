@@ -1,0 +1,17 @@
+<%= form_with(model: fireman, local: true) do |form| %>
+  <% if fireman.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(fireman.errors.count, "error") %> prohibited this fireman from being saved:</h2>
+
+      <ul>
+      <% fireman.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

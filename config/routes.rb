@@ -13,14 +13,16 @@ Rails.application.routes.draw do
   get '/is_logged' => 'sessions#is_logged'
 
   get '/' => 'authenticated#authenticated'
-  get '/firemen' => 'authenticated#authenticated'
-  get '/cars' => 'authenticated#authenticated'
-  get '/alarms' => 'authenticated#authenticated'
-  get '/reminders' => 'authenticated#authenticated'
-  get '/settings' => 'authenticated#authenticated'
+  get '/firemen_view' => 'authenticated#authenticated'
+  get '/cars_view' => 'authenticated#authenticated'
+  get '/alarms_view' => 'authenticated#authenticated'
+  get '/reminders_view' => 'authenticated#authenticated'
+  get '/settings_view' => 'authenticated#authenticated'
 
-  get '/all_firemen' => 'firemen#all'
-  post '/add_fireman' => 'firemen#add'
+  # get '/all_firemen' => 'firemen#all'
+  # post '/add_fireman' => 'firemen#add'
 
+  resources :firemen, :defaults => { :format => :json }
+  resources :cars, :defaults => { :format => :json }
 
 end

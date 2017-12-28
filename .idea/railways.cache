@@ -1,6 +1,42 @@
-      Prefix Verb URI Pattern             Controller#Action
-sessions_new GET  /sessions/new(.:format) sessions#new
-        root GET  /                       application#angular
-       login GET  /login(.:format)        login#login
-             POST /login(.:format)        sessions#create
- all_firemen GET  /all_firemen(.:format)  firemen#all
+                   Prefix Verb   URI Pattern                     Controller#Action
+        new_model_session GET    /models/sign_in(.:format)       devise/sessions#new
+            model_session POST   /models/sign_in(.:format)       devise/sessions#create
+    destroy_model_session DELETE /models/sign_out(.:format)      devise/sessions#destroy
+       new_model_password GET    /models/password/new(.:format)  devise/passwords#new
+      edit_model_password GET    /models/password/edit(.:format) devise/passwords#edit
+           model_password PATCH  /models/password(.:format)      devise/passwords#update
+                          PUT    /models/password(.:format)      devise/passwords#update
+                          POST   /models/password(.:format)      devise/passwords#create
+cancel_model_registration GET    /models/cancel(.:format)        devise/registrations#cancel
+   new_model_registration GET    /models/sign_up(.:format)       devise/registrations#new
+  edit_model_registration GET    /models/edit(.:format)          devise/registrations#edit
+       model_registration PATCH  /models(.:format)               devise/registrations#update
+                          PUT    /models(.:format)               devise/registrations#update
+                          DELETE /models(.:format)               devise/registrations#destroy
+                          POST   /models(.:format)               devise/registrations#create
+                     root GET    /                               application#angular
+                    login GET    /login(.:format)                login#login
+                          POST   /login(.:format)                sessions#create
+                is_logged GET    /is_logged(.:format)            sessions#is_logged
+                          GET    /                               authenticated#authenticated
+                  firemen GET    /firemen(.:format)              authenticated#authenticated
+                     cars GET    /cars(.:format)                 authenticated#authenticated
+                   alarms GET    /alarms(.:format)               authenticated#authenticated
+                reminders GET    /reminders(.:format)            authenticated#authenticated
+                 settings GET    /settings(.:format)             authenticated#authenticated
+                          GET    /firemen(.:format)              firemen#index
+                          POST   /firemen(.:format)              firemen#create
+              new_fireman GET    /firemen/new(.:format)          firemen#new
+             edit_fireman GET    /firemen/:id/edit(.:format)     firemen#edit
+                  fireman GET    /firemen/:id(.:format)          firemen#show
+                          PATCH  /firemen/:id(.:format)          firemen#update
+                          PUT    /firemen/:id(.:format)          firemen#update
+                          DELETE /firemen/:id(.:format)          firemen#destroy
+                          GET    /cars(.:format)                 cars#index
+                          POST   /cars(.:format)                 cars#create
+                  new_car GET    /cars/new(.:format)             cars#new
+                 edit_car GET    /cars/:id/edit(.:format)        cars#edit
+                      car GET    /cars/:id(.:format)             cars#show
+                          PATCH  /cars/:id(.:format)             cars#update
+                          PUT    /cars/:id(.:format)             cars#update
+                          DELETE /cars/:id(.:format)             cars#destroy

@@ -54,7 +54,7 @@ function($stateProvider, $locationProvider, $urlRouterProvider, $httpProvider, $
             }
         })
         .state('firemen', {
-            url: '/firemen',
+            url: '/firemen_view',
             views: {
                 headerView: {
                     templateUrl: 'menu/_menu.html',
@@ -67,7 +67,7 @@ function($stateProvider, $locationProvider, $urlRouterProvider, $httpProvider, $
             }
         })
         .state('cars', {
-            url: '/cars',
+            url: '/cars_view',
             views: {
                 headerView: {
                     templateUrl: 'menu/_menu.html',
@@ -80,7 +80,7 @@ function($stateProvider, $locationProvider, $urlRouterProvider, $httpProvider, $
             }
         })
         .state('actions', {
-            url: '/actions',
+            url: '/actions_view',
             views: {
                 headerView: {
                     templateUrl: 'menu/_menu.html',
@@ -93,7 +93,7 @@ function($stateProvider, $locationProvider, $urlRouterProvider, $httpProvider, $
             }
         })
         .state('alarms', {
-            url: '/alarms',
+            url: '/alarms_view',
             views: {
                 headerView: {
                     templateUrl: 'menu/_menu.html',
@@ -106,7 +106,7 @@ function($stateProvider, $locationProvider, $urlRouterProvider, $httpProvider, $
             }
         })
         .state('reminders', {
-            url: '/reminders',
+            url: '/reminders_view',
             views: {
                 headerView: {
                     templateUrl: 'menu/_menu.html',
@@ -119,7 +119,7 @@ function($stateProvider, $locationProvider, $urlRouterProvider, $httpProvider, $
             }
         })
         .state('settings', {
-                url: '/settings',
+                url: '/settings_view',
                 views: {
                     headerView: {
                         templateUrl: 'menu/_menu.html',

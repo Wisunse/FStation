@@ -1,5 +1,4 @@
 <div layout="column">
-    <!--class="main-wrapper__firemen-wrapper"-->
 
     <div layout="row" >
 
@@ -7,7 +6,10 @@
 
             <md-card>
                 <div layout="column">
-                    <div ng-repeat="fireman in firemen.allFiremen" layout="row">
+                    <div ng-repeat="fireman in firemen.allFiremen track by $index"
+                         layout="row"
+                         ng-click="selectedFireman(fireman)"
+                         class="">
                         <div> {{fireman.name}}</div>
                         <div>{{fireman.surname}}</div>
                     </div>
@@ -18,7 +20,94 @@
 
         <md-content flex="66">
             <md-card>
-                asd
+
+                <div layout-gt-sm="row" layout-padding>
+
+                    <div>
+                        <md-input-container>
+                            <label>Imie</label>
+                            <input ng-model="firemen.selectedFireman.name">
+                        </md-input-container>
+
+                        <md-input-container>
+                            <label>Drugie Imie</label>
+                            <input ng-model="firemen.selectedFireman.second_name">
+                        </md-input-container>
+
+                        <md-input-container>
+                            <label>Nazwisko</label>
+                            <input ng-model="firemen.selectedFireman.surname">
+                        </md-input-container>
+
+                        <md-input-container>
+                            <label>Imie ojca</label>
+                            <input ng-model="firemen.selectedFireman.father_name">
+                        </md-input-container>
+
+                        <md-input-container>
+                            <label>Data urodzenia</label>
+                            <input ng-model="firemen.selectedFireman.birth_date">
+                        </md-input-container>
+
+                        <md-input-container>
+                            <label>Miejsce urodzenia</label>
+                            <input ng-model="firemen.selectedFireman.birt_place">
+                        </md-input-container>
+                    </div>
+
+                    <div>
+
+                        <md-input-container>
+                            <label>Płeć</label>
+                            <input ng-model="firemen.selectedFireman.sex">
+                        </md-input-container>
+
+                        <md-input-container>
+                            <label>Adres</label>
+                            <input ng-model="firemen.selectedFireman.adres">
+                        </md-input-container>
+
+                        <md-input-container>
+                            <label>Kod pocztowy</label>
+                            <input ng-model="firemen.selectedFireman.zip_code">
+                        </md-input-container>
+
+                        <md-input-container>
+                            <label>Miejscowość</label>
+                            <input ng-model="firemen.selectedFireman.place">
+                        </md-input-container>
+
+                        <md-input-container>
+                            <label>Pesel</label>
+                            <input ng-model="firemen.selectedFireman.pesel">
+                        </md-input-container>
+
+                        <md-input-container>
+                            <label>Telefon</label>
+                            <input ng-model="firemen.selectedFireman.phone">
+                        </md-input-container>
+
+                        <md-input-container>
+                            <label>Email</label>
+                            <input ng-model="firemen.selectedFireman.email">
+                        </md-input-container>
+
+                        <md-input-container>
+                            <label>Notatki</label>
+                            <textarea ng-model="firemen.selectedFireman.note"></textarea>
+                        </md-input-container>
+
+                        <md-button class="md-raised md-primary" ng-click="saveEditFiremen()">Zapisz zmiany</md-button>
+
+                    </div>
+
+
+                </div>
+
+
+                <!--{"id":6,"name":"Elai","surname":"Thor","email":"asd@asd.pl","created_at":"2017-08-19T09:45:15.299Z","updated_at":"2017-08-19T09:45:15.299Z",-->
+                <!--"second_name":null,"father_name":null,"birth_date":null,"birt_place":null,"sex":null,"adres":null,"phone":null,"zip_code":null,"place":null,"-->
+                <!--id_station":null,"pesel":null,"note":null}-->
             </md-card>
         </md-content>
 

@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: 
+  registationNumber: 
+  servicingTo: 2017-12-12
+
+two:
+  name: 
+  registationNumber: 
+  servicingTo: 2017-12-12

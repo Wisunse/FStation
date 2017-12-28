@@ -29,5 +29,22 @@ angular.module('FireStation')
                 });
         };
 
+        $scope.selectedFireman = function(fireman) {
+
+            firemen.selectedFireman = fireman;
+
+        };
+
+        $scope.saveEditFiremen = function() {
+
+            console.log(firemen.selectedFireman.url);
+
+            var url = '/firemen/' + firemen.selectedFireman.id;
+            $http.patch(url, firemen.selectedFireman).then(function(callback) {
+                console.log(callback);
+            });
+
+        }
+
 
     }]);

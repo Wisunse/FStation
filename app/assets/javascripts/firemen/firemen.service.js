@@ -6,7 +6,7 @@ angular.module('FireStation')
 
         var factory = [];
         factory.getFiremen = function() {
-            $http.get('/all_firemen').then(function(result){
+            $http.get('/firemen').then(function(result){
                 console.log(result.data);
                 factory.allFiremen = result.data;
             });
