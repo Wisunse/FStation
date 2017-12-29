@@ -1,34 +1,0 @@
-{:uriI"‰file://app/assets/javascripts/firemen/_firemen.html?type=text/ng-html&id=5ccab02e8a6786e9517ad06358337000cab4709f624b42a17679156aee6a339f:ET:load_pathI"app/assets/javascripts;T:filenameI"1app/assets/javascripts/firemen/_firemen.html;T:	nameI"firemen/_firemen;T:logical_pathI"firemen/_firemen.html;T:content_typeI"text/ng-html;T:sourceI"<div class="login-wrapper">
-    <div layout="flex" layout-fill ng-cloak>
-        <div layout="column">
-
-            <div layout="row">
-
-                <md-content>
-
-                    <md-card>
-                        <div layout="column">
-                            <div ng-repeat="fireman in firemen.allFiremen" layout="row">
-                                <div> {{fireman.name}}</div>
-                                <div>{{fireman.surname}}</div>
-                            </div>
-                        </div>
-                    </md-card>
-
-                </md-content>
-
-                <md-content>
-                    <md-card layout="column">
-                    </md-card>
-                </md-content>
-
-            </div>
-
-        </div>
-    </div>
-</div>;T:metadata{	:dependencieso:Set:
-@hash}
-I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"8processors:type=text/ng-html&file_type=text/ng-html;TTI"?file-digest://app/assets/javascripts/firemen/_firemen.html;TTF:charsetI"
-utf-8;F:digest"%Ò|ÊûÝì"uJ‘Õ'ù†ÊFšžAj—[ïiá,¥ÂÝ=:lengthi:dependencies_digest"%ùX±uúVy¿ð[o”8’‰
-{"	&K~Ž×JP™Šn:idI"E5ccab02e8a6786e9517ad06358337000cab4709f624b42a17679156aee6a339f;F:
-mtimel+†-Z

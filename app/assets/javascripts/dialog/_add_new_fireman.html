@@ -13,17 +13,75 @@
 
         <md-dialog-content>
             <div class="md-dialog-content">
+
                 <md-input-container>
-                    <label>Imie:</label>
-                    <input ng-model="fireman.name">
+                    <label>Imie</label>
+                    <input ng-model="newFireman.name">
                 </md-input-container>
+
                 <md-input-container>
-                    <label>Nazwisko:</label>
-                    <input ng-model="fireman.surname">
+                    <label>Drugie Imie</label>
+                    <input ng-model="newFireman.second_name">
                 </md-input-container>
+
                 <md-input-container>
-                    <label>Email:</label>
-                    <input ng-model="fireman.email">
+                    <label>Nazwisko</label>
+                    <input ng-model="newFireman.surname">
+                </md-input-container>
+
+                <md-input-container>
+                    <label>Imie ojca</label>
+                    <input ng-model="newFireman.father_name">
+                </md-input-container>
+
+                <md-input-container>
+                    <label>Data urodzenia</label>
+                    <input ng-model="newFireman.birth_date">
+                </md-input-container>
+
+                <md-input-container>
+                    <label>Miejsce urodzenia</label>
+                    <input ng-model="newFireman.birt_place">
+                </md-input-container>
+
+                <md-input-container>
+                    <label>Płeć</label>
+                    <input ng-model="newFireman.sex">
+                </md-input-container>
+
+                <md-input-container>
+                    <label>Adres</label>
+                    <input ng-model="newFireman.adres">
+                </md-input-container>
+
+                <md-input-container>
+                    <label>Kod pocztowy</label>
+                    <input ng-model="newFireman.zip_code">
+                </md-input-container>
+
+                <md-input-container>
+                    <label>Miejscowość</label>
+                    <input ng-model="newFireman.place">
+                </md-input-container>
+
+                <md-input-container>
+                    <label>Pesel</label>
+                    <input ng-model="newFireman.pesel">
+                </md-input-container>
+
+                <md-input-container>
+                    <label>Telefon</label>
+                    <input ng-model="newFireman.phone">
+                </md-input-container>
+
+                <md-input-container>
+                    <label>Email</label>
+                    <input ng-model="newFireman.email">
+                </md-input-container>
+
+                <md-input-container>
+                    <label>Notatki</label>
+                    <textarea ng-model="newFireman.note"></textarea>
                 </md-input-container>
 
             </div>
@@ -37,9 +95,11 @@
             <!--<md-button ng-click="answer('not useful')">-->
                 <!--Not Useful-->
             <!--</md-button>-->
+
             <md-button ng-click="addFireman()" class="md-raised md-cornered md-primary">
                 Dodaj
             </md-button>
+
         </md-dialog-actions>
     </form>
 </md-dialog>

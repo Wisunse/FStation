@@ -25,7 +25,9 @@ class FiremenController < ApplicationController
   # POST /firemen
   # POST /firemen.json
   def create
-    @fireman = Firemen.new(fireman_params)
+    hash = {}
+    fireman_params.each { |key, value| hash[key] = value }
+    @fireman = Firemen.new(hash)
 
     respond_to do |format|
       if @fireman.save
@@ -44,7 +46,6 @@ class FiremenController < ApplicationController
 
     @firemen = Firemen.find(fireman_params[:id])
     hash = {}
-
     fireman_params.each { |key, value| hash[key] = value }
     hash.delete('id')
     hash.delete('url')

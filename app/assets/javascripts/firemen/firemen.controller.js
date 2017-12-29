@@ -9,6 +9,7 @@ angular.module('FireStation')
 
         $scope.firemen = firemen;
         $scope.customFullscreen = true;
+        $scope.sections = ['MDP', 'CZYNNI', 'ZWYKLI', 'HONOROWI'];
 
         console.log(firemen.allFiremen);
 
@@ -35,16 +36,20 @@ angular.module('FireStation')
 
         };
 
-        $scope.saveEditFiremen = function() {
-
-            console.log(firemen.selectedFireman.url);
+        $scope.saveEditFireman = function() {
 
             var url = '/firemen/' + firemen.selectedFireman.id;
             $http.patch(url, firemen.selectedFireman).then(function(callback) {
                 console.log(callback);
             });
 
-        }
+        };
+
+        $scope.deleteFireman = function() {
+            $http.delete('/firemen/' + firemen.selectedFireman.id).then(function(callback) {
+                console.log(callback);
+            });
+        };
 
 
     }]);

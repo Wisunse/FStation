@@ -1,32 +1,0 @@
-{:uriI"âfile://app/assets/javascripts/firemen/_firemen.html?type=text/ng-html&id=95d35f02bd88a9db417bc078f88794f4f2143512800b0b615d643b8474a43587:ET:load_pathI"app/assets/javascripts;T:filenameI"1app/assets/javascripts/firemen/_firemen.html;T:	nameI"firemen/_firemen;T:logical_pathI"firemen/_firemen.html;T:content_typeI"text/ng-html;T:sourceI"e<div layout="column">
-    <!--class="main-wrapper__firemen-wrapper"-->
-
-    <div layout="row" >
-
-        <md-content flex="33">
-
-            <md-card>
-                <div layout="column">
-                    <div ng-repeat="fireman in firemen.allFiremen" layout="row">
-                        <div> {{fireman.name}}</div>
-                        <div>{{fireman.surname}}</div>
-                    </div>
-                </div>
-            </md-card>
-
-        </md-content>
-
-        <md-content flex="66">
-            <md-card>
-                asd
-            </md-card>
-        </md-content>
-
-    </div>
-
-</div>
-;T:metadata{	:dependencieso:Set:
-@hash}
-I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"8processors:type=text/ng-html&file_type=text/ng-html;TTI"?file-digest://app/assets/javascripts/firemen/_firemen.html;TTF:charsetI"
-utf-8;F:digest"%R£π1¨=ã}‘Âfc≠qÆâÓ>É-‚ŸG$lç#ß∞Ü:lengthie:dependencies_digest"%îÅÚ÷-<·ˆYÕ]ﬁ‘–£P·F¸TèQ:Im≥‰¬@Ω:idI"E95d35f02bd88a9db417bc078f88794f4f2143512800b0b615d643b8474a43587;F:
-mtimel+≠å-Z

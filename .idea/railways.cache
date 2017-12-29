@@ -19,24 +19,24 @@ cancel_model_registration GET    /models/cancel(.:format)        devise/registra
                           POST   /login(.:format)                sessions#create
                 is_logged GET    /is_logged(.:format)            sessions#is_logged
                           GET    /                               authenticated#authenticated
-                  firemen GET    /firemen(.:format)              authenticated#authenticated
-                     cars GET    /cars(.:format)                 authenticated#authenticated
-                   alarms GET    /alarms(.:format)               authenticated#authenticated
-                reminders GET    /reminders(.:format)            authenticated#authenticated
-                 settings GET    /settings(.:format)             authenticated#authenticated
-                          GET    /firemen(.:format)              firemen#index
-                          POST   /firemen(.:format)              firemen#create
-              new_fireman GET    /firemen/new(.:format)          firemen#new
-             edit_fireman GET    /firemen/:id/edit(.:format)     firemen#edit
-                  fireman GET    /firemen/:id(.:format)          firemen#show
-                          PATCH  /firemen/:id(.:format)          firemen#update
-                          PUT    /firemen/:id(.:format)          firemen#update
-                          DELETE /firemen/:id(.:format)          firemen#destroy
-                          GET    /cars(.:format)                 cars#index
-                          POST   /cars(.:format)                 cars#create
-                  new_car GET    /cars/new(.:format)             cars#new
-                 edit_car GET    /cars/:id/edit(.:format)        cars#edit
-                      car GET    /cars/:id(.:format)             cars#show
-                          PATCH  /cars/:id(.:format)             cars#update
-                          PUT    /cars/:id(.:format)             cars#update
-                          DELETE /cars/:id(.:format)             cars#destroy
+             firemen_view GET    /firemen_view(.:format)         authenticated#authenticated
+                cars_view GET    /cars_view(.:format)            authenticated#authenticated
+              alarms_view GET    /alarms_view(.:format)          authenticated#authenticated
+           reminders_view GET    /reminders_view(.:format)       authenticated#authenticated
+            settings_view GET    /settings_view(.:format)        authenticated#authenticated
+                  firemen GET    /firemen(.:format)              firemen#index {:format=>:json}
+                          POST   /firemen(.:format)              firemen#create {:format=>:json}
+              new_fireman GET    /firemen/new(.:format)          firemen#new {:format=>:json}
+             edit_fireman GET    /firemen/:id/edit(.:format)     firemen#edit {:format=>:json}
+                  fireman GET    /firemen/:id(.:format)          firemen#show {:format=>:json}
+                          PATCH  /firemen/:id(.:format)          firemen#update {:format=>:json}
+                          PUT    /firemen/:id(.:format)          firemen#update {:format=>:json}
+                          DELETE /firemen/:id(.:format)          firemen#destroy {:format=>:json}
+                     cars GET    /cars(.:format)                 cars#index {:format=>:json}
+                          POST   /cars(.:format)                 cars#create {:format=>:json}
+                  new_car GET    /cars/new(.:format)             cars#new {:format=>:json}
+                 edit_car GET    /cars/:id/edit(.:format)        cars#edit {:format=>:json}
+                      car GET    /cars/:id(.:format)             cars#show {:format=>:json}
+                          PATCH  /cars/:id(.:format)             cars#update {:format=>:json}
+                          PUT    /cars/:id(.:format)             cars#update {:format=>:json}
+                          DELETE /cars/:id(.:format)             cars#destroy {:format=>:json}

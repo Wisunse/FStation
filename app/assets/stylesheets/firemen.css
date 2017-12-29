@@ -17,3 +17,16 @@
     width: 70%;
     height: 100%;
 }
+
+.firemen-row {
+    height: 33px;
+}
+
+.firemen-row:hover {
+    cursor: pointer;
+    background: radial-gradient(#ded232, #c6aa2a, #fdea40);
+}
+
+.firemen-row__selected {
+    background: radial-gradient(#ded232, #c6aa2a, #fdea40);
+}

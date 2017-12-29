@@ -15,6 +15,6 @@ class Firemen < ApplicationRecord
   has_one  :IdStation
   has_one  :Pesel
   has_one  :Note
-  has_one :IdSection
+  has_one :Section
 
 end

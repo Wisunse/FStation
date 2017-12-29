@@ -25112,3 +25112,1745 @@ Processing by FiremenController#index as JSON
 Completed 200 OK in 29ms (Views: 25.6ms | ActiveRecord: 0.4ms)
 
 
+Started GET "/" for 127.0.0.1 at 2017-12-29 08:32:02 +0100
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ApplicationController#angular as HTML
+  Rendering layouts/main.html.erb within layouts/application
+  Rendered layouts/main.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 8198ms (Views: 8192.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/firemen" for 127.0.0.1 at 2017-12-29 08:32:11 +0100
+Processing by FiremenController#index as JSON
+  Rendering firemen/index.json.jbuilder
+  [1m[36mFiremen Load (2.6ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+  Rendered firemen/_fireman.json.jbuilder (1.8ms)
+  Rendered firemen/_fireman.json.jbuilder (0.6ms)
+  Rendered firemen/_fireman.json.jbuilder (0.5ms)
+  Rendered firemen/_fireman.json.jbuilder (0.5ms)
+  Rendered firemen/_fireman.json.jbuilder (0.5ms)
+  Rendered firemen/_fireman.json.jbuilder (0.5ms)
+  Rendered firemen/_fireman.json.jbuilder (0.5ms)
+  Rendered firemen/index.json.jbuilder (53.5ms)
+Completed 200 OK in 73ms (Views: 49.3ms | ActiveRecord: 8.6ms)
+
+
+Started GET "/firemen_view" for 127.0.0.1 at 2017-12-29 08:32:35 +0100
+Processing by AuthenticatedController#authenticated as HTML
+  Rendering layouts/main.html.erb within layouts/application
+  Rendered layouts/main.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 86ms (Views: 85.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/firemen" for 127.0.0.1 at 2017-12-29 08:32:36 +0100
+Processing by FiremenController#index as JSON
+  Rendering firemen/index.json.jbuilder
+  [1m[36mFiremen Load (0.5ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+  Rendered firemen/_fireman.json.jbuilder (1.2ms)
+  Rendered firemen/_fireman.json.jbuilder (0.7ms)
+  Rendered firemen/_fireman.json.jbuilder (0.7ms)
+  Rendered firemen/_fireman.json.jbuilder (0.5ms)
+  Rendered firemen/_fireman.json.jbuilder (0.5ms)
+  Rendered firemen/_fireman.json.jbuilder (0.4ms)
+  Rendered firemen/_fireman.json.jbuilder (0.4ms)
+  Rendered firemen/index.json.jbuilder (13.2ms)
+Completed 200 OK in 19ms (Views: 16.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/firemen_view" for 127.0.0.1 at 2017-12-29 09:08:26 +0100
+Processing by AuthenticatedController#authenticated as HTML
+  Rendering layouts/main.html.erb within layouts/application
+  Rendered layouts/main.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 577ms (Views: 576.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/firemen" for 127.0.0.1 at 2017-12-29 09:08:27 +0100
+Processing by FiremenController#index as JSON
+  Rendering firemen/index.json.jbuilder
+  [1m[36mFiremen Load (0.3ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+  Rendered firemen/_fireman.json.jbuilder (1.4ms)
+  Rendered firemen/_fireman.json.jbuilder (0.6ms)
+  Rendered firemen/_fireman.json.jbuilder (0.5ms)
+  Rendered firemen/_fireman.json.jbuilder (0.4ms)
+  Rendered firemen/_fireman.json.jbuilder (0.5ms)
+  Rendered firemen/_fireman.json.jbuilder (0.4ms)
+  Rendered firemen/_fireman.json.jbuilder (0.5ms)
+  Rendered firemen/index.json.jbuilder (12.8ms)
+Completed 200 OK in 18ms (Views: 16.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/firemen_view" for 127.0.0.1 at 2017-12-29 09:09:39 +0100
+Processing by AuthenticatedController#authenticated as HTML
+  Rendering layouts/main.html.erb within layouts/application
+  Rendered layouts/main.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 811ms (Views: 810.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/firemen" for 127.0.0.1 at 2017-12-29 09:09:40 +0100
+Processing by FiremenController#index as JSON
+  Rendering firemen/index.json.jbuilder
+  [1m[36mFiremen Load (0.4ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+  Rendered firemen/_fireman.json.jbuilder (1.1ms)
+  Rendered firemen/_fireman.json.jbuilder (0.6ms)
+  Rendered firemen/_fireman.json.jbuilder (0.6ms)
+  Rendered firemen/_fireman.json.jbuilder (0.5ms)
+  Rendered firemen/_fireman.json.jbuilder (0.4ms)
+  Rendered firemen/_fireman.json.jbuilder (0.4ms)
+  Rendered firemen/_fireman.json.jbuilder (0.4ms)
+  Rendered firemen/index.json.jbuilder (12.1ms)
+Completed 200 OK in 17ms (Views: 15.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/firemen_view" for 127.0.0.1 at 2017-12-29 09:09:55 +0100
+Processing by AuthenticatedController#authenticated as HTML
+  Rendering layouts/main.html.erb within layouts/application
+  Rendered layouts/main.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 651ms (Views: 650.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/firemen" for 127.0.0.1 at 2017-12-29 09:09:56 +0100
+Processing by FiremenController#index as JSON
+  Rendering firemen/index.json.jbuilder
+  [1m[36mFiremen Load (0.6ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+  Rendered firemen/_fireman.json.jbuilder (1.6ms)
+  Rendered firemen/_fireman.json.jbuilder (0.5ms)
+  Rendered firemen/_fireman.json.jbuilder (0.5ms)
+  Rendered firemen/_fireman.json.jbuilder (0.7ms)
+  Rendered firemen/_fireman.json.jbuilder (0.5ms)
+  Rendered firemen/_fireman.json.jbuilder (0.5ms)
+  Rendered firemen/_fireman.json.jbuilder (0.6ms)
+  Rendered firemen/index.json.jbuilder (14.0ms)
+Completed 200 OK in 17ms (Views: 15.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/firemen_view" for 127.0.0.1 at 2017-12-29 09:09:58 +0100
+Processing by AuthenticatedController#authenticated as HTML
+  Rendering layouts/main.html.erb within layouts/application
+  Rendered layouts/main.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 73ms (Views: 72.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/firemen" for 127.0.0.1 at 2017-12-29 09:09:59 +0100
+Processing by FiremenController#index as JSON
+  Rendering firemen/index.json.jbuilder
+  [1m[36mFiremen Load (0.4ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+  Rendered firemen/_fireman.json.jbuilder (0.7ms)
+  Rendered firemen/_fireman.json.jbuilder (0.3ms)
+  Rendered firemen/_fireman.json.jbuilder (0.3ms)
+  Rendered firemen/_fireman.json.jbuilder (0.3ms)
+  Rendered firemen/_fireman.json.jbuilder (0.3ms)
+  Rendered firemen/_fireman.json.jbuilder (0.3ms)
+  Rendered firemen/_fireman.json.jbuilder (0.5ms)
+  Rendered firemen/index.json.jbuilder (7.9ms)
+Completed 200 OK in 11ms (Views: 9.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/firemen_view" for 127.0.0.1 at 2017-12-29 09:10:10 +0100
+Processing by AuthenticatedController#authenticated as HTML
+  Rendering layouts/main.html.erb within layouts/application
+  Rendered layouts/main.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 613ms (Views: 612.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/firemen" for 127.0.0.1 at 2017-12-29 09:10:11 +0100
+Processing by FiremenController#index as JSON
+  Rendering firemen/index.json.jbuilder
+  [1m[36mFiremen Load (0.3ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+  Rendered firemen/_fireman.json.jbuilder (0.7ms)
+  Rendered firemen/_fireman.json.jbuilder (0.6ms)
+  Rendered firemen/_fireman.json.jbuilder (0.5ms)
+  Rendered firemen/_fireman.json.jbuilder (0.3ms)
+  Rendered firemen/_fireman.json.jbuilder (0.3ms)
+  Rendered firemen/_fireman.json.jbuilder (0.5ms)
+  Rendered firemen/_fireman.json.jbuilder (0.5ms)
+  Rendered firemen/index.json.jbuilder (9.5ms)
+Completed 200 OK in 13ms (Views: 11.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/firemen_view" for 127.0.0.1 at 2017-12-29 09:11:25 +0100
+Processing by AuthenticatedController#authenticated as HTML
+  Rendering layouts/main.html.erb within layouts/application
+  Rendered layouts/main.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 512ms (Views: 511.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/firemen" for 127.0.0.1 at 2017-12-29 09:11:26 +0100
+Processing by FiremenController#index as JSON
+  Rendering firemen/index.json.jbuilder
+  [1m[36mFiremen Load (0.2ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+  Rendered firemen/_fireman.json.jbuilder (0.7ms)
+  Rendered firemen/_fireman.json.jbuilder (0.3ms)
+  Rendered firemen/_fireman.json.jbuilder (0.3ms)
+  Rendered firemen/_fireman.json.jbuilder (0.5ms)
+  Rendered firemen/_fireman.json.jbuilder (0.3ms)
+  Rendered firemen/_fireman.json.jbuilder (0.3ms)
+  Rendered firemen/_fireman.json.jbuilder (0.5ms)
+  Rendered firemen/index.json.jbuilder (9.1ms)
+Completed 200 OK in 14ms (Views: 11.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/firemen_view" for 127.0.0.1 at 2017-12-29 09:17:25 +0100
+Processing by AuthenticatedController#authenticated as HTML
+  Rendering layouts/main.html.erb within layouts/application
+  Rendered layouts/main.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 490ms (Views: 489.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/firemen" for 127.0.0.1 at 2017-12-29 09:17:26 +0100
+Processing by FiremenController#index as JSON
+  Rendering firemen/index.json.jbuilder
+  [1m[36mFiremen Load (0.5ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+  Rendered firemen/_fireman.json.jbuilder (0.8ms)
+  Rendered firemen/_fireman.json.jbuilder (0.3ms)
+  Rendered firemen/_fireman.json.jbuilder (0.3ms)
+  Rendered firemen/_fireman.json.jbuilder (0.3ms)
+  Rendered firemen/_fireman.json.jbuilder (0.2ms)
+  Rendered firemen/_fireman.json.jbuilder (0.3ms)
+  Rendered firemen/_fireman.json.jbuilder (0.5ms)
+  Rendered firemen/index.json.jbuilder (8.8ms)
+Completed 200 OK in 13ms (Views: 10.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/firemen_view" for 127.0.0.1 at 2017-12-29 09:21:28 +0100
+Processing by AuthenticatedController#authenticated as HTML
+  Rendering layouts/main.html.erb within layouts/application
+  Rendered layouts/main.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 73ms (Views: 72.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/firemen" for 127.0.0.1 at 2017-12-29 09:21:29 +0100
+Processing by FiremenController#index as JSON
+  Rendering firemen/index.json.jbuilder
+  [1m[36mFiremen Load (0.2ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+  Rendered firemen/_fireman.json.jbuilder (0.7ms)
+  Rendered firemen/_fireman.json.jbuilder (0.3ms)
+  Rendered firemen/_fireman.json.jbuilder (0.3ms)
+  Rendered firemen/_fireman.json.jbuilder (0.5ms)
+  Rendered firemen/_fireman.json.jbuilder (0.7ms)
+  Rendered firemen/_fireman.json.jbuilder (0.4ms)
+  Rendered firemen/_fireman.json.jbuilder (0.3ms)
+  Rendered firemen/index.json.jbuilder (8.9ms)
+Completed 200 OK in 14ms (Views: 12.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/firemen_view" for 127.0.0.1 at 2017-12-29 09:22:20 +0100
+Processing by AuthenticatedController#authenticated as HTML
+  Rendering layouts/main.html.erb within layouts/application
+  Rendered layouts/main.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 554ms (Views: 553.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/firemen" for 127.0.0.1 at 2017-12-29 09:22:22 +0100
+Processing by FiremenController#index as JSON
+  Rendering firemen/index.json.jbuilder
+  [1m[36mFiremen Load (0.5ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+  Rendered firemen/_fireman.json.jbuilder (1.6ms)
+  Rendered firemen/_fireman.json.jbuilder (0.6ms)
+  Rendered firemen/_fireman.json.jbuilder (0.4ms)
+  Rendered firemen/_fireman.json.jbuilder (0.4ms)
+  Rendered firemen/_fireman.json.jbuilder (0.4ms)
+  Rendered firemen/_fireman.json.jbuilder (0.4ms)
+  Rendered firemen/_fireman.json.jbuilder (0.3ms)
+  Rendered firemen/index.json.jbuilder (13.5ms)
+Completed 200 OK in 20ms (Views: 16.8ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/firemen" for 127.0.0.1 at 2017-12-29 09:22:54 +0100
+Processing by FiremenController#create as JSON
+  Parameters: {"name"=>"qwe", "second_name"=>"aasdsd", "surname"=>"zxc", "father_name"=>"rtyrty", "fireman"=>{"name"=>"qwe", "second_name"=>"aasdsd", "surname"=>"zxc", "father_name"=>"rtyrty"}}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+
+  
+ActiveModel::ForbiddenAttributesError (ActiveModel::ForbiddenAttributesError):
+  
+app/controllers/firemen_controller.rb:28:in `create'
+Started GET "/firemen_view" for 127.0.0.1 at 2017-12-29 09:24:31 +0100
+Processing by AuthenticatedController#authenticated as HTML
+  Rendering layouts/main.html.erb within layouts/application
+  Rendered layouts/main.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 97ms (Views: 95.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/firemen" for 127.0.0.1 at 2017-12-29 09:24:32 +0100
+Processing by FiremenController#index as JSON
+  Rendering firemen/index.json.jbuilder
+  [1m[36mFiremen Load (0.3ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+  Rendered firemen/_fireman.json.jbuilder (1.5ms)
+  Rendered firemen/_fireman.json.jbuilder (0.6ms)
+  Rendered firemen/_fireman.json.jbuilder (0.4ms)
+  Rendered firemen/_fireman.json.jbuilder (0.5ms)
+  Rendered firemen/_fireman.json.jbuilder (0.4ms)
+  Rendered firemen/_fireman.json.jbuilder (0.5ms)
+  Rendered firemen/_fireman.json.jbuilder (0.6ms)
+  Rendered firemen/index.json.jbuilder (14.0ms)
+Completed 200 OK in 19ms (Views: 17.3ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/firemen" for 127.0.0.1 at 2017-12-29 09:27:10 +0100
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by FiremenController#create as JSON
+  Parameters: {"name"=>"asdasd", "second_name"=>"asd", "surname"=>"asd", "father_name"=>"asd", "adres"=>"asd", "fireman"=>{"name"=>"asdasd", "second_name"=>"asd", "surname"=>"asd", "father_name"=>"asd", "adres"=>"asd"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (2.3ms)[0m  [1m[32mINSERT INTO "firemen" ("name", "surname", "created_at", "updated_at", "second_name", "father_name", "adres") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "asdasd"], ["surname", "asd"], ["created_at", "2017-12-29 08:27:10.366248"], ["updated_at", "2017-12-29 08:27:10.366248"], ["second_name", "asd"], ["father_name", "asd"], ["adres", "asd"]]
+  [1m[35m (24.6ms)[0m  [1m[35mCOMMIT[0m
+  Rendering firemen/show.json.jbuilder
+  Rendered firemen/_fireman.json.jbuilder (0.6ms)
+  Rendered firemen/show.json.jbuilder (4.0ms)
+Completed 201 Created in 90ms (Views: 13.0ms | ActiveRecord: 31.3ms)
+
+
+Started GET "/firemen_view" for 127.0.0.1 at 2017-12-29 09:27:17 +0100
+Processing by AuthenticatedController#authenticated as HTML
+  Rendering layouts/main.html.erb within layouts/application
+  Rendered layouts/main.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 6699ms (Views: 6698.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/firemen" for 127.0.0.1 at 2017-12-29 09:27:24 +0100
+Processing by FiremenController#index as JSON
+  Rendering firemen/index.json.jbuilder
+  [1m[36mFiremen Load (0.6ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+  Rendered firemen/_fireman.json.jbuilder (1.6ms)
+  Rendered firemen/_fireman.json.jbuilder (0.8ms)
+  Rendered firemen/_fireman.json.jbuilder (0.6ms)
+  Rendered firemen/_fireman.json.jbuilder (0.6ms)
+  Rendered firemen/_fireman.json.jbuilder (0.6ms)
+  Rendered firemen/_fireman.json.jbuilder (0.6ms)
+  Rendered firemen/_fireman.json.jbuilder (1.5ms)
+  Rendered firemen/_fireman.json.jbuilder (0.7ms)
+  Rendered firemen/index.json.jbuilder (26.4ms)
+Completed 200 OK in 31ms (Views: 29.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/firemen_view" for 127.0.0.1 at 2017-12-29 09:28:14 +0100
+Processing by AuthenticatedController#authenticated as HTML
+  Rendering layouts/main.html.erb within layouts/application
+  Rendered layouts/main.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 715ms (Views: 713.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/firemen" for 127.0.0.1 at 2017-12-29 09:28:16 +0100
+Processing by FiremenController#index as JSON
+  Rendering firemen/index.json.jbuilder
+  [1m[36mFiremen Load (2.2ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+  Rendered firemen/_fireman.json.jbuilder (1.3ms)
+  Rendered firemen/_fireman.json.jbuilder (0.6ms)
+  Rendered firemen/_fireman.json.jbuilder (0.6ms)
+  Rendered firemen/_fireman.json.jbuilder (0.6ms)
+  Rendered firemen/_fireman.json.jbuilder (0.6ms)
+  Rendered firemen/_fireman.json.jbuilder (0.6ms)
+  Rendered firemen/_fireman.json.jbuilder (0.7ms)
+  Rendered firemen/_fireman.json.jbuilder (0.7ms)
+  Rendered firemen/index.json.jbuilder (26.2ms)
+Completed 200 OK in 32ms (Views: 27.8ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/firemen_view" for 127.0.0.1 at 2017-12-29 09:28:47 +0100
+Processing by AuthenticatedController#authenticated as HTML
+  Rendering layouts/main.html.erb within layouts/application
+  Rendered layouts/main.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 710ms (Views: 709.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/firemen" for 127.0.0.1 at 2017-12-29 09:28:49 +0100
+Processing by FiremenController#index as JSON
+  Rendering firemen/index.json.jbuilder
+  [1m[36mFiremen Load (0.3ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+  Rendered firemen/_fireman.json.jbuilder (0.8ms)
+  Rendered firemen/_fireman.json.jbuilder (0.3ms)
+  Rendered firemen/_fireman.json.jbuilder (0.3ms)
+  Rendered firemen/_fireman.json.jbuilder (0.3ms)
+  Rendered firemen/_fireman.json.jbuilder (0.6ms)
+  Rendered firemen/_fireman.json.jbuilder (0.3ms)
+  Rendered firemen/_fireman.json.jbuilder (0.3ms)
+  Rendered firemen/_fireman.json.jbuilder (0.3ms)
+  Rendered firemen/index.json.jbuilder (9.7ms)
+Completed 200 OK in 13ms (Views: 11.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/firemen_view" for 127.0.0.1 at 2017-12-29 09:28:51 +0100
+Processing by AuthenticatedController#authenticated as HTML
+  Rendering layouts/main.html.erb within layouts/application
+  Rendered layouts/main.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 74ms (Views: 73.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/firemen" for 127.0.0.1 at 2017-12-29 09:28:52 +0100
+Processing by FiremenController#index as JSON
+  Rendering firemen/index.json.jbuilder
+  [1m[36mFiremen Load (0.3ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+  Rendered firemen/_fireman.json.jbuilder (0.9ms)
+  Rendered firemen/_fireman.json.jbuilder (0.5ms)
+  Rendered firemen/_fireman.json.jbuilder (0.5ms)
+  Rendered firemen/_fireman.json.jbuilder (0.4ms)
+  Rendered firemen/_fireman.json.jbuilder (0.4ms)
+  Rendered firemen/_fireman.json.jbuilder (0.3ms)
+  Rendered firemen/_fireman.json.jbuilder (0.4ms)
+  Rendered firemen/_fireman.json.jbuilder (0.4ms)
+  Rendered firemen/index.json.jbuilder (11.5ms)
+Completed 200 OK in 17ms (Views: 15.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/firemen_view" for 127.0.0.1 at 2017-12-29 09:28:58 +0100
+Processing by AuthenticatedController#authenticated as HTML
+  Rendering layouts/main.html.erb within layouts/application
+  Rendered layouts/main.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 663ms (Views: 662.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/firemen" for 127.0.0.1 at 2017-12-29 09:28:59 +0100
+Processing by FiremenController#index as JSON
+  Rendering firemen/index.json.jbuilder
+  [1m[36mFiremen Load (0.3ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+  Rendered firemen/_fireman.json.jbuilder (0.7ms)
+  Rendered firemen/_fireman.json.jbuilder (0.3ms)
+  Rendered firemen/_fireman.json.jbuilder (0.3ms)
+  Rendered firemen/_fireman.json.jbuilder (0.3ms)
+  Rendered firemen/_fireman.json.jbuilder (0.5ms)
+  Rendered firemen/_fireman.json.jbuilder (0.3ms)
+  Rendered firemen/_fireman.json.jbuilder (0.3ms)
+  Rendered firemen/_fireman.json.jbuilder (0.3ms)
+  Rendered firemen/index.json.jbuilder (9.0ms)
+Completed 200 OK in 14ms (Views: 11.9ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/firemen" for 127.0.0.1 at 2017-12-29 09:39:07 +0100
+Processing by FiremenController#create as JSON
+  Parameters: {"name"=>"imie", "second_name"=>"drugie", "surname"=>"nazwisko", "father_name"=>"ojca", "fireman"=>{"name"=>"imie", "second_name"=>"drugie", "surname"=>"nazwisko", "father_name"=>"ojca"}}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "firemen" ("name", "surname", "created_at", "updated_at", "second_name", "father_name") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "imie"], ["surname", "nazwisko"], ["created_at", "2017-12-29 08:39:07.507412"], ["updated_at", "2017-12-29 08:39:07.507412"], ["second_name", "drugie"], ["father_name", "ojca"]]
+  [1m[35m (12.7ms)[0m  [1m[35mCOMMIT[0m
+  Rendering firemen/show.json.jbuilder
+  Rendered firemen/_fireman.json.jbuilder (0.7ms)
+  Rendered firemen/show.json.jbuilder (2.1ms)
+Completed 201 Created in 23ms (Views: 4.8ms | ActiveRecord: 13.4ms)
+
+
+Started GET "/firemen_view" for 127.0.0.1 at 2017-12-29 09:39:23 +0100
+Processing by AuthenticatedController#authenticated as HTML
+  Rendering layouts/main.html.erb within layouts/application
+  Rendered layouts/main.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 582ms (Views: 581.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/firemen" for 127.0.0.1 at 2017-12-29 09:39:24 +0100
+Processing by FiremenController#index as JSON
+  Rendering firemen/index.json.jbuilder
+  [1m[36mFiremen Load (0.2ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+  Rendered firemen/_fireman.json.jbuilder (0.7ms)
+  Rendered firemen/_fireman.json.jbuilder (0.4ms)
+  Rendered firemen/_fireman.json.jbuilder (0.3ms)
+  Rendered firemen/_fireman.json.jbuilder (0.3ms)
+  Rendered firemen/_fireman.json.jbuilder (0.4ms)
+  Rendered firemen/_fireman.json.jbuilder (0.3ms)
+  Rendered firemen/_fireman.json.jbuilder (0.3ms)
+  Rendered firemen/_fireman.json.jbuilder (0.4ms)
+  Rendered firemen/_fireman.json.jbuilder (0.3ms)
+  Rendered firemen/index.json.jbuilder (9.6ms)
+Completed 200 OK in 14ms (Views: 12.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/firemen_view" for 127.0.0.1 at 2017-12-29 09:44:08 +0100
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by AuthenticatedController#authenticated as HTML
+  Rendering layouts/main.html.erb within layouts/application
+  Rendered layouts/main.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 6762ms (Views: 6756.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/firemen" for 127.0.0.1 at 2017-12-29 09:44:16 +0100
+Processing by FiremenController#index as JSON
+  Rendering firemen/index.json.jbuilder
+  [1m[36mFiremen Load (0.7ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+  Rendered firemen/_fireman.json.jbuilder (1.5ms)
+  Rendered firemen/_fireman.json.jbuilder (0.5ms)
+  Rendered firemen/_fireman.json.jbuilder (0.6ms)
+  Rendered firemen/_fireman.json.jbuilder (1.7ms)
+  Rendered firemen/_fireman.json.jbuilder (0.7ms)
+  Rendered firemen/_fireman.json.jbuilder (0.5ms)
+  Rendered firemen/_fireman.json.jbuilder (0.4ms)
+  Rendered firemen/_fireman.json.jbuilder (0.4ms)
+  Rendered firemen/_fireman.json.jbuilder (0.3ms)
+  Rendered firemen/index.json.jbuilder (48.3ms)
+Completed 200 OK in 66ms (Views: 46.7ms | ActiveRecord: 6.1ms)
+
+
+Started DELETE "/firemen" for 127.0.0.1 at 2017-12-29 09:44:19 +0100
+  
+ActionController::RoutingError (No route matches [DELETE] "/firemen"):
+  
+actionpack (5.1.2) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.2) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.2) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/firemen_view" for 127.0.0.1 at 2017-12-29 09:44:59 +0100
+Processing by AuthenticatedController#authenticated as HTML
+  Rendering layouts/main.html.erb within layouts/application
+  Rendered layouts/main.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 498ms (Views: 497.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/firemen" for 127.0.0.1 at 2017-12-29 09:45:00 +0100
+Processing by FiremenController#index as JSON
+  Rendering firemen/index.json.jbuilder
+  [1m[36mFiremen Load (0.4ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+  Rendered firemen/_fireman.json.jbuilder (0.9ms)
+  Rendered firemen/_fireman.json.jbuilder (0.3ms)
+  Rendered firemen/_fireman.json.jbuilder (0.5ms)
+  Rendered firemen/_fireman.json.jbuilder (0.3ms)
+  Rendered firemen/_fireman.json.jbuilder (0.3ms)
+  Rendered firemen/_fireman.json.jbuilder (0.3ms)
+  Rendered firemen/_fireman.json.jbuilder (0.4ms)
+  Rendered firemen/_fireman.json.jbuilder (0.3ms)
+  Rendered firemen/_fireman.json.jbuilder (0.3ms)
+  Rendered firemen/index.json.jbuilder (10.8ms)
+Completed 200 OK in 16ms (Views: 14.0ms | ActiveRecord: 0.4ms)
+
+
+Started DELETE "/firemen/" for 127.0.0.1 at 2017-12-29 09:45:03 +0100
+  
+ActionController::RoutingError (No route matches [DELETE] "/firemen"):
+  
+actionpack (5.1.2) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.2) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.2) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/firemen_view" for 127.0.0.1 at 2017-12-29 09:45:53 +0100
+Processing by AuthenticatedController#authenticated as HTML
+  Rendering layouts/main.html.erb within layouts/application
+  Rendered layouts/main.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 75ms (Views: 73.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/firemen" for 127.0.0.1 at 2017-12-29 09:45:54 +0100
+Processing by FiremenController#index as JSON
+  Rendering firemen/index.json.jbuilder
+  [1m[36mFiremen Load (0.5ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+  Rendered firemen/_fireman.json.jbuilder (1.2ms)
+  Rendered firemen/_fireman.json.jbuilder (0.6ms)
+  Rendered firemen/_fireman.json.jbuilder (0.5ms)
+  Rendered firemen/_fireman.json.jbuilder (0.7ms)
+  Rendered firemen/_fireman.json.jbuilder (0.7ms)
+  Rendered firemen/_fireman.json.jbuilder (0.6ms)
+  Rendered firemen/_fireman.json.jbuilder (0.6ms)
+  Rendered firemen/_fireman.json.jbuilder (1.2ms)
+  Rendered firemen/_fireman.json.jbuilder (0.6ms)
+  Rendered firemen/index.json.jbuilder (22.0ms)
+Completed 200 OK in 28ms (Views: 25.7ms | ActiveRecord: 0.5ms)
+
+
+Started DELETE "/firemen/" for 127.0.0.1 at 2017-12-29 09:45:58 +0100
+  
+ActionController::RoutingError (No route matches [DELETE] "/firemen"):
+  
+actionpack (5.1.2) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.2) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.2) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/firemen_view" for 127.0.0.1 at 2017-12-29 09:46:25 +0100
+Processing by AuthenticatedController#authenticated as HTML
+  Rendering layouts/main.html.erb within layouts/application
+  Rendered layouts/main.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 505ms (Views: 504.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/firemen" for 127.0.0.1 at 2017-12-29 09:46:26 +0100
+Processing by FiremenController#index as JSON
+  Rendering firemen/index.json.jbuilder
+  [1m[36mFiremen Load (0.7ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+  Rendered firemen/_fireman.json.jbuilder (1.0ms)
+  Rendered firemen/_fireman.json.jbuilder (0.8ms)
+  Rendered firemen/_fireman.json.jbuilder (0.7ms)
+  Rendered firemen/_fireman.json.jbuilder (0.4ms)
+  Rendered firemen/_fireman.json.jbuilder (0.5ms)
+  Rendered firemen/_fireman.json.jbuilder (1.1ms)
+  Rendered firemen/_fireman.json.jbuilder (1.2ms)
+  Rendered firemen/_fireman.json.jbuilder (0.5ms)
+  Rendered firemen/_fireman.json.jbuilder (0.4ms)
+  Rendered firemen/index.json.jbuilder (17.5ms)
+Completed 200 OK in 24ms (Views: 20.7ms | ActiveRecord: 0.7ms)
+
+
+Started DELETE "/firemen/" for 127.0.0.1 at 2017-12-29 09:46:31 +0100
+  
+ActionController::RoutingError (No route matches [DELETE] "/firemen"):
+  
+actionpack (5.1.2) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.2) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.2) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/firemen_view" for 127.0.0.1 at 2017-12-29 09:47:13 +0100
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by AuthenticatedController#authenticated as HTML
+  Rendering layouts/main.html.erb within layouts/application
+  Rendered layouts/main.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 6839ms (Views: 6833.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/firemen" for 127.0.0.1 at 2017-12-29 09:47:21 +0100
+Processing by FiremenController#index as JSON
+  Rendering firemen/index.json.jbuilder
+  [1m[36mFiremen Load (0.6ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+  Rendered firemen/_fireman.json.jbuilder (1.5ms)
+  Rendered firemen/_fireman.json.jbuilder (0.5ms)
+  Rendered firemen/_fireman.json.jbuilder (0.4ms)
+  Rendered firemen/_fireman.json.jbuilder (0.4ms)
+  Rendered firemen/_fireman.json.jbuilder (0.5ms)
+  Rendered firemen/_fireman.json.jbuilder (0.5ms)
+  Rendered firemen/_fireman.json.jbuilder (0.5ms)
+  Rendered firemen/_fireman.json.jbuilder (0.5ms)
+  Rendered firemen/_fireman.json.jbuilder (0.6ms)
+  Rendered firemen/index.json.jbuilder (54.9ms)
+Completed 200 OK in 77ms (Views: 54.9ms | ActiveRecord: 4.2ms)
+
+
+Started DELETE "/firemen/9" for 127.0.0.1 at 2017-12-29 09:47:23 +0100
+Processing by FiremenController#destroy as JSON
+  Parameters: {"id"=>"9"}
+  [1m[36mFiremen Load (0.3ms)[0m  [1m[34mSELECT  "firemen".* FROM "firemen" WHERE "firemen"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[36mFiremen Load (0.2ms)[0m  [1m[34mSELECT  "firemen".* FROM "firemen" WHERE "firemen"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+Completed 404 Not Found in 9ms (ActiveRecord: 0.8ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Firemen with 'id'=):
+  
+app/controllers/firemen_controller.rb:62:in `destroy'
+Started GET "/firemen_view" for 127.0.0.1 at 2017-12-29 09:47:56 +0100
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by AuthenticatedController#authenticated as HTML
+  Rendering layouts/main.html.erb within layouts/application
+  Rendered layouts/main.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 6002ms (Views: 5994.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/firemen" for 127.0.0.1 at 2017-12-29 09:48:03 +0100
+Processing by FiremenController#index as JSON
+  Rendering firemen/index.json.jbuilder
+  [1m[36mFiremen Load (1.4ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+  Rendered firemen/_fireman.json.jbuilder (1.6ms)
+  Rendered firemen/_fireman.json.jbuilder (0.4ms)
+  Rendered firemen/_fireman.json.jbuilder (0.4ms)
+  Rendered firemen/_fireman.json.jbuilder (0.4ms)
+  Rendered firemen/_fireman.json.jbuilder (0.4ms)
+  Rendered firemen/_fireman.json.jbuilder (0.5ms)
+  Rendered firemen/_fireman.json.jbuilder (0.4ms)
+  Rendered firemen/_fireman.json.jbuilder (0.4ms)
+  Rendered firemen/_fireman.json.jbuilder (0.5ms)
+  Rendered firemen/index.json.jbuilder (55.0ms)
+Completed 200 OK in 78ms (Views: 54.2ms | ActiveRecord: 5.5ms)
+
+
+Started DELETE "/firemen/9" for 127.0.0.1 at 2017-12-29 09:48:06 +0100
+Processing by FiremenController#destroy as JSON
+  Parameters: {"id"=>"9"}
+  [1m[36mFiremen Load (0.3ms)[0m  [1m[34mSELECT  "firemen".* FROM "firemen" WHERE "firemen"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "firemen" WHERE "firemen"."id" = $1[0m  [["id", 9]]
+  [1m[35m (12.8ms)[0m  [1m[35mCOMMIT[0m
+Completed 204 No Content in 23ms (ActiveRecord: 14.3ms)
+
+
+Started GET "/firemen_view" for 127.0.0.1 at 2017-12-29 09:48:08 +0100
+Processing by AuthenticatedController#authenticated as HTML
+  Rendering layouts/main.html.erb within layouts/application
+  Rendered layouts/main.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 88ms (Views: 87.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/firemen" for 127.0.0.1 at 2017-12-29 09:48:08 +0100
+Processing by FiremenController#index as JSON
+  Rendering firemen/index.json.jbuilder
+  [1m[36mFiremen Load (0.5ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+  Rendered firemen/_fireman.json.jbuilder (1.3ms)
+  Rendered firemen/_fireman.json.jbuilder (0.8ms)
+  Rendered firemen/_fireman.json.jbuilder (0.6ms)
+  Rendered firemen/_fireman.json.jbuilder (0.6ms)
+  Rendered firemen/_fireman.json.jbuilder (0.6ms)
+  Rendered firemen/_fireman.json.jbuilder (0.8ms)
+  Rendered firemen/_fireman.json.jbuilder (0.5ms)
+  Rendered firemen/_fireman.json.jbuilder (0.6ms)
+  Rendered firemen/index.json.jbuilder (16.0ms)
+Completed 200 OK in 21ms (Views: 19.2ms | ActiveRecord: 0.5ms)
+
+
+Started DELETE "/firemen/8" for 127.0.0.1 at 2017-12-29 09:48:13 +0100
+Processing by FiremenController#destroy as JSON
+  Parameters: {"id"=>"8"}
+  [1m[36mFiremen Load (0.4ms)[0m  [1m[34mSELECT  "firemen".* FROM "firemen" WHERE "firemen"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "firemen" WHERE "firemen"."id" = $1[0m  [["id", 8]]
+  [1m[35m (12.8ms)[0m  [1m[35mCOMMIT[0m
+Completed 204 No Content in 17ms (ActiveRecord: 13.7ms)
+
+
+Started GET "/firemen_view" for 127.0.0.1 at 2017-12-29 09:48:15 +0100
+Processing by AuthenticatedController#authenticated as HTML
+  Rendering layouts/main.html.erb within layouts/application
+  Rendered layouts/main.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 78ms (Views: 76.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/firemen" for 127.0.0.1 at 2017-12-29 09:48:16 +0100
+Processing by FiremenController#index as JSON
+  Rendering firemen/index.json.jbuilder
+  [1m[36mFiremen Load (0.4ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+  Rendered firemen/_fireman.json.jbuilder (4.6ms)
+  Rendered firemen/_fireman.json.jbuilder (0.6ms)
+  Rendered firemen/_fireman.json.jbuilder (0.6ms)
+  Rendered firemen/_fireman.json.jbuilder (0.6ms)
+  Rendered firemen/_fireman.json.jbuilder (0.6ms)
+  Rendered firemen/_fireman.json.jbuilder (0.6ms)
+  Rendered firemen/_fireman.json.jbuilder (0.5ms)
+  Rendered firemen/index.json.jbuilder (18.1ms)
+Completed 200 OK in 24ms (Views: 21.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/firemen_view" for 127.0.0.1 at 2017-12-29 10:32:44 +0100
+Processing by AuthenticatedController#authenticated as HTML
+  Rendering layouts/main.html.erb within layouts/application
+  Rendered layouts/main.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 649ms (Views: 648.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/firemen" for 127.0.0.1 at 2017-12-29 10:32:45 +0100
+Processing by FiremenController#index as JSON
+  Rendering firemen/index.json.jbuilder
+  [1m[36mFiremen Load (0.4ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+  Rendered firemen/_fireman.json.jbuilder (2.3ms)
+  Rendered firemen/_fireman.json.jbuilder (0.8ms)
+  Rendered firemen/_fireman.json.jbuilder (0.5ms)
+  Rendered firemen/_fireman.json.jbuilder (0.5ms)
+  Rendered firemen/_fireman.json.jbuilder (0.3ms)
+  Rendered firemen/_fireman.json.jbuilder (0.3ms)
+  Rendered firemen/_fireman.json.jbuilder (0.5ms)
+  Rendered firemen/index.json.jbuilder (14.9ms)
+Completed 200 OK in 21ms (Views: 18.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/firemen_view" for 127.0.0.1 at 2017-12-29 10:34:24 +0100
+Processing by AuthenticatedController#authenticated as HTML
+  Rendering layouts/main.html.erb within layouts/application
+  Rendered layouts/main.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 1024ms (Views: 1023.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/firemen" for 127.0.0.1 at 2017-12-29 10:34:26 +0100
+Processing by FiremenController#index as JSON
+  Rendering firemen/index.json.jbuilder
+  [1m[36mFiremen Load (0.2ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+  Rendered firemen/_fireman.json.jbuilder (0.8ms)
+  Rendered firemen/_fireman.json.jbuilder (0.3ms)
+  Rendered firemen/_fireman.json.jbuilder (0.3ms)
+  Rendered firemen/_fireman.json.jbuilder (0.3ms)
+  Rendered firemen/_fireman.json.jbuilder (0.3ms)
+  Rendered firemen/_fireman.json.jbuilder (0.3ms)
+  Rendered firemen/_fireman.json.jbuilder (0.3ms)
+  Rendered firemen/index.json.jbuilder (7.9ms)
+Completed 200 OK in 11ms (Views: 10.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/firemen_view" for 127.0.0.1 at 2017-12-29 10:34:51 +0100
+Processing by AuthenticatedController#authenticated as HTML
+  Rendering layouts/main.html.erb within layouts/application
+  Rendered layouts/main.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 914ms (Views: 912.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/firemen" for 127.0.0.1 at 2017-12-29 10:34:53 +0100
+Processing by FiremenController#index as JSON
+  Rendering firemen/index.json.jbuilder
+  [1m[36mFiremen Load (0.3ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+  Rendered firemen/_fireman.json.jbuilder (0.9ms)
+  Rendered firemen/_fireman.json.jbuilder (0.3ms)
+  Rendered firemen/_fireman.json.jbuilder (0.3ms)
+  Rendered firemen/_fireman.json.jbuilder (0.5ms)
+  Rendered firemen/_fireman.json.jbuilder (0.8ms)
+  Rendered firemen/_fireman.json.jbuilder (0.5ms)
+  Rendered firemen/_fireman.json.jbuilder (0.3ms)
+  Rendered firemen/index.json.jbuilder (9.7ms)
+Completed 200 OK in 14ms (Views: 11.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/firemen_view" for 127.0.0.1 at 2017-12-29 10:35:22 +0100
+Processing by AuthenticatedController#authenticated as HTML
+  Rendering layouts/main.html.erb within layouts/application
+  Rendered layouts/main.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 756ms (Views: 754.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/firemen" for 127.0.0.1 at 2017-12-29 10:35:24 +0100
+Processing by FiremenController#index as JSON
+  Rendering firemen/index.json.jbuilder
+  [1m[36mFiremen Load (0.3ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+  Rendered firemen/_fireman.json.jbuilder (0.8ms)
+  Rendered firemen/_fireman.json.jbuilder (0.3ms)
+  Rendered firemen/_fireman.json.jbuilder (0.3ms)
+  Rendered firemen/_fireman.json.jbuilder (0.3ms)
+  Rendered firemen/_fireman.json.jbuilder (0.5ms)
+  Rendered firemen/_fireman.json.jbuilder (0.5ms)
+  Rendered firemen/_fireman.json.jbuilder (0.5ms)
+  Rendered firemen/index.json.jbuilder (9.4ms)
+Completed 200 OK in 16ms (Views: 15.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/firemen_view" for 127.0.0.1 at 2017-12-29 10:35:56 +0100
+Processing by AuthenticatedController#authenticated as HTML
+  Rendering layouts/main.html.erb within layouts/application
+  Rendered layouts/main.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 719ms (Views: 717.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/firemen" for 127.0.0.1 at 2017-12-29 10:35:58 +0100
+Processing by FiremenController#index as JSON
+  Rendering firemen/index.json.jbuilder
+  [1m[36mFiremen Load (0.4ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+  Rendered firemen/_fireman.json.jbuilder (1.4ms)
+  Rendered firemen/_fireman.json.jbuilder (0.8ms)
+  Rendered firemen/_fireman.json.jbuilder (0.8ms)
+  Rendered firemen/_fireman.json.jbuilder (0.6ms)
+  Rendered firemen/_fireman.json.jbuilder (0.6ms)
+  Rendered firemen/_fireman.json.jbuilder (0.6ms)
+  Rendered firemen/_fireman.json.jbuilder (0.9ms)
+  Rendered firemen/index.json.jbuilder (18.1ms)
+Completed 200 OK in 25ms (Views: 22.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/firemen_view" for 127.0.0.1 at 2017-12-29 10:37:15 +0100
+Processing by AuthenticatedController#authenticated as HTML
+  Rendering layouts/main.html.erb within layouts/application
+  Rendered layouts/main.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 661ms (Views: 660.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/firemen" for 127.0.0.1 at 2017-12-29 10:37:17 +0100
+Processing by FiremenController#index as JSON
+  Rendering firemen/index.json.jbuilder
+  [1m[36mFiremen Load (0.3ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+  Rendered firemen/_fireman.json.jbuilder (1.2ms)
+  Rendered firemen/_fireman.json.jbuilder (3.3ms)
+  Rendered firemen/_fireman.json.jbuilder (0.6ms)
+  Rendered firemen/_fireman.json.jbuilder (0.7ms)
+  Rendered firemen/_fireman.json.jbuilder (0.6ms)
+  Rendered firemen/_fireman.json.jbuilder (0.7ms)
+  Rendered firemen/_fireman.json.jbuilder (0.6ms)
+  Rendered firemen/index.json.jbuilder (17.9ms)
+Completed 200 OK in 23ms (Views: 21.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/firemen_view" for 127.0.0.1 at 2017-12-29 10:37:44 +0100
+Processing by AuthenticatedController#authenticated as HTML
+  Rendering layouts/main.html.erb within layouts/application
+  Rendered layouts/main.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 690ms (Views: 689.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/firemen" for 127.0.0.1 at 2017-12-29 10:37:46 +0100
+Processing by FiremenController#index as JSON
+  Rendering firemen/index.json.jbuilder
+  [1m[36mFiremen Load (0.4ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+  Rendered firemen/_fireman.json.jbuilder (1.2ms)
+  Rendered firemen/_fireman.json.jbuilder (0.7ms)
+  Rendered firemen/_fireman.json.jbuilder (0.6ms)
+  Rendered firemen/_fireman.json.jbuilder (0.6ms)
+  Rendered firemen/_fireman.json.jbuilder (3.3ms)
+  Rendered firemen/_fireman.json.jbuilder (0.6ms)
+  Rendered firemen/_fireman.json.jbuilder (0.5ms)
+  Rendered firemen/index.json.jbuilder (19.1ms)
+Completed 200 OK in 26ms (Views: 23.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/firemen_view" for 127.0.0.1 at 2017-12-29 10:37:55 +0100
+Processing by AuthenticatedController#authenticated as HTML
+  Rendering layouts/main.html.erb within layouts/application
+  Rendered layouts/main.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 820ms (Views: 818.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/firemen" for 127.0.0.1 at 2017-12-29 10:37:58 +0100
+Processing by FiremenController#index as JSON
+  Rendering firemen/index.json.jbuilder
+  [1m[36mFiremen Load (0.4ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+  Rendered firemen/_fireman.json.jbuilder (1.6ms)
+  Rendered firemen/_fireman.json.jbuilder (1.0ms)
+  Rendered firemen/_fireman.json.jbuilder (0.9ms)
+  Rendered firemen/_fireman.json.jbuilder (0.6ms)
+  Rendered firemen/_fireman.json.jbuilder (0.6ms)
+  Rendered firemen/_fireman.json.jbuilder (0.6ms)
+  Rendered firemen/_fireman.json.jbuilder (0.6ms)
+  Rendered firemen/index.json.jbuilder (17.2ms)
+Completed 200 OK in 22ms (Views: 20.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/firemen_view" for 127.0.0.1 at 2017-12-29 10:38:36 +0100
+Processing by AuthenticatedController#authenticated as HTML
+  Rendering layouts/main.html.erb within layouts/application
+  Rendered layouts/main.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 717ms (Views: 715.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/firemen" for 127.0.0.1 at 2017-12-29 10:38:38 +0100
+Processing by FiremenController#index as JSON
+  Rendering firemen/index.json.jbuilder
+  [1m[36mFiremen Load (0.3ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+  Rendered firemen/_fireman.json.jbuilder (3.8ms)
+  Rendered firemen/_fireman.json.jbuilder (0.6ms)
+  Rendered firemen/_fireman.json.jbuilder (0.6ms)
+  Rendered firemen/_fireman.json.jbuilder (0.6ms)
+  Rendered firemen/_fireman.json.jbuilder (0.6ms)
+  Rendered firemen/_fireman.json.jbuilder (0.4ms)
+  Rendered firemen/_fireman.json.jbuilder (0.4ms)
+  Rendered firemen/index.json.jbuilder (16.2ms)
+Completed 200 OK in 22ms (Views: 19.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/firemen_view" for 127.0.0.1 at 2017-12-29 10:39:18 +0100
+Processing by AuthenticatedController#authenticated as HTML
+  Rendering layouts/main.html.erb within layouts/application
+  Rendered layouts/main.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 151ms (Views: 150.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/firemen" for 127.0.0.1 at 2017-12-29 10:39:19 +0100
+Processing by FiremenController#index as JSON
+  Rendering firemen/index.json.jbuilder
+  [1m[36mFiremen Load (0.4ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+  Rendered firemen/_fireman.json.jbuilder (1.3ms)
+  Rendered firemen/_fireman.json.jbuilder (0.7ms)
+  Rendered firemen/_fireman.json.jbuilder (0.6ms)
+  Rendered firemen/_fireman.json.jbuilder (0.6ms)
+  Rendered firemen/_fireman.json.jbuilder (0.7ms)
+  Rendered firemen/_fireman.json.jbuilder (0.6ms)
+  Rendered firemen/_fireman.json.jbuilder (0.6ms)
+  Rendered firemen/index.json.jbuilder (22.3ms)
+Completed 200 OK in 28ms (Views: 25.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/firemen_view" for 127.0.0.1 at 2017-12-29 10:40:01 +0100
+Processing by AuthenticatedController#authenticated as HTML
+  Rendering layouts/main.html.erb within layouts/application
+  Rendered layouts/main.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 217ms (Views: 215.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/firemen" for 127.0.0.1 at 2017-12-29 10:40:03 +0100
+Processing by FiremenController#index as JSON
+  Rendering firemen/index.json.jbuilder
+  [1m[36mFiremen Load (0.4ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+  Rendered firemen/_fireman.json.jbuilder (2.8ms)
+  Rendered firemen/_fireman.json.jbuilder (0.6ms)
+  Rendered firemen/_fireman.json.jbuilder (0.6ms)
+  Rendered firemen/_fireman.json.jbuilder (0.6ms)
+  Rendered firemen/_fireman.json.jbuilder (0.5ms)
+  Rendered firemen/_fireman.json.jbuilder (0.6ms)
+  Rendered firemen/_fireman.json.jbuilder (0.6ms)
+  Rendered firemen/index.json.jbuilder (18.3ms)
+Completed 200 OK in 24ms (Views: 21.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/firemen_view" for 127.0.0.1 at 2017-12-29 10:42:36 +0100
+Processing by AuthenticatedController#authenticated as HTML
+  Rendering layouts/main.html.erb within layouts/application
+  Rendered layouts/main.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 517ms (Views: 516.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/firemen" for 127.0.0.1 at 2017-12-29 10:42:38 +0100
+Processing by FiremenController#index as JSON
+  Rendering firemen/index.json.jbuilder
+  [1m[36mFiremen Load (0.4ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+  Rendered firemen/_fireman.json.jbuilder (1.3ms)
+  Rendered firemen/_fireman.json.jbuilder (0.4ms)
+  Rendered firemen/_fireman.json.jbuilder (0.3ms)
+  Rendered firemen/_fireman.json.jbuilder (0.5ms)
+  Rendered firemen/_fireman.json.jbuilder (0.6ms)
+  Rendered firemen/_fireman.json.jbuilder (0.3ms)
+  Rendered firemen/_fireman.json.jbuilder (0.3ms)
+  Rendered firemen/index.json.jbuilder (10.8ms)
+Completed 200 OK in 15ms (Views: 13.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/firemen_view" for 127.0.0.1 at 2017-12-29 10:42:41 +0100
+Processing by AuthenticatedController#authenticated as HTML
+  Rendering layouts/main.html.erb within layouts/application
+  Rendered layouts/main.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 103ms (Views: 101.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/firemen" for 127.0.0.1 at 2017-12-29 10:42:42 +0100
+Processing by FiremenController#index as JSON
+  Rendering firemen/index.json.jbuilder
+  [1m[36mFiremen Load (0.3ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+  Rendered firemen/_fireman.json.jbuilder (1.2ms)
+  Rendered firemen/_fireman.json.jbuilder (0.7ms)
+  Rendered firemen/_fireman.json.jbuilder (0.6ms)
+  Rendered firemen/_fireman.json.jbuilder (0.4ms)
+  Rendered firemen/_fireman.json.jbuilder (0.6ms)
+  Rendered firemen/_fireman.json.jbuilder (0.7ms)
+  Rendered firemen/_fireman.json.jbuilder (0.7ms)
+  Rendered firemen/index.json.jbuilder (12.9ms)
+Completed 200 OK in 16ms (Views: 14.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/firemen_view" for 127.0.0.1 at 2017-12-29 10:43:18 +0100
+Processing by AuthenticatedController#authenticated as HTML
+  Rendering layouts/main.html.erb within layouts/application
+  Rendered layouts/main.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 548ms (Views: 546.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/firemen" for 127.0.0.1 at 2017-12-29 10:43:20 +0100
+Processing by FiremenController#index as JSON
+  Rendering firemen/index.json.jbuilder
+  [1m[36mFiremen Load (0.4ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+  Rendered firemen/_fireman.json.jbuilder (1.8ms)
+  Rendered firemen/_fireman.json.jbuilder (0.8ms)
+  Rendered firemen/_fireman.json.jbuilder (0.6ms)
+  Rendered firemen/_fireman.json.jbuilder (0.7ms)
+  Rendered firemen/_fireman.json.jbuilder (0.6ms)
+  Rendered firemen/_fireman.json.jbuilder (0.9ms)
+  Rendered firemen/_fireman.json.jbuilder (0.7ms)
+  Rendered firemen/index.json.jbuilder (17.1ms)
+Completed 200 OK in 23ms (Views: 20.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/firemen_view" for 127.0.0.1 at 2017-12-29 10:43:51 +0100
+Processing by AuthenticatedController#authenticated as HTML
+  Rendering layouts/main.html.erb within layouts/application
+  Rendered layouts/main.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 530ms (Views: 529.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/firemen" for 127.0.0.1 at 2017-12-29 10:43:53 +0100
+Processing by FiremenController#index as JSON
+  Rendering firemen/index.json.jbuilder
+  [1m[36mFiremen Load (0.5ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+  Rendered firemen/_fireman.json.jbuilder (1.5ms)
+  Rendered firemen/_fireman.json.jbuilder (0.8ms)
+  Rendered firemen/_fireman.json.jbuilder (0.6ms)
+  Rendered firemen/_fireman.json.jbuilder (2.3ms)
+  Rendered firemen/_fireman.json.jbuilder (0.8ms)
+  Rendered firemen/_fireman.json.jbuilder (0.7ms)
+  Rendered firemen/_fireman.json.jbuilder (0.6ms)
+  Rendered firemen/index.json.jbuilder (20.3ms)
+Completed 200 OK in 27ms (Views: 24.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/firemen_view" for 127.0.0.1 at 2017-12-29 10:44:18 +0100
+Processing by AuthenticatedController#authenticated as HTML
+  Rendering layouts/main.html.erb within layouts/application
+  Rendered layouts/main.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 149ms (Views: 148.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/firemen" for 127.0.0.1 at 2017-12-29 10:44:20 +0100
+Processing by FiremenController#index as JSON
+  Rendering firemen/index.json.jbuilder
+  [1m[36mFiremen Load (0.4ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+  Rendered firemen/_fireman.json.jbuilder (2.6ms)
+  Rendered firemen/_fireman.json.jbuilder (0.6ms)
+  Rendered firemen/_fireman.json.jbuilder (0.5ms)
+  Rendered firemen/_fireman.json.jbuilder (0.6ms)
+  Rendered firemen/_fireman.json.jbuilder (0.6ms)
+  Rendered firemen/_fireman.json.jbuilder (0.6ms)
+  Rendered firemen/_fireman.json.jbuilder (0.6ms)
+  Rendered firemen/index.json.jbuilder (15.9ms)
+Completed 200 OK in 22ms (Views: 19.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/firemen_view" for 127.0.0.1 at 2017-12-29 10:44:51 +0100
+Processing by AuthenticatedController#authenticated as HTML
+  Rendering layouts/main.html.erb within layouts/application
+  Rendered layouts/main.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 782ms (Views: 781.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/firemen" for 127.0.0.1 at 2017-12-29 10:44:53 +0100
+Processing by FiremenController#index as JSON
+  Rendering firemen/index.json.jbuilder
+  [1m[36mFiremen Load (0.4ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+  Rendered firemen/_fireman.json.jbuilder (1.2ms)
+  Rendered firemen/_fireman.json.jbuilder (0.8ms)
+  Rendered firemen/_fireman.json.jbuilder (0.6ms)
+  Rendered firemen/_fireman.json.jbuilder (0.5ms)
+  Rendered firemen/_fireman.json.jbuilder (0.5ms)
+  Rendered firemen/_fireman.json.jbuilder (0.5ms)
+  Rendered firemen/_fireman.json.jbuilder (0.6ms)
+  Rendered firemen/index.json.jbuilder (18.6ms)
+Completed 200 OK in 27ms (Views: 25.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/firemen_view" for 127.0.0.1 at 2017-12-29 10:45:08 +0100
+Processing by AuthenticatedController#authenticated as HTML
+  Rendering layouts/main.html.erb within layouts/application
+  Rendered layouts/main.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 595ms (Views: 594.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/firemen" for 127.0.0.1 at 2017-12-29 10:45:10 +0100
+Processing by FiremenController#index as JSON
+  Rendering firemen/index.json.jbuilder
+  [1m[36mFiremen Load (0.4ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+  Rendered firemen/_fireman.json.jbuilder (1.2ms)
+  Rendered firemen/_fireman.json.jbuilder (1.2ms)
+  Rendered firemen/_fireman.json.jbuilder (0.7ms)
+  Rendered firemen/_fireman.json.jbuilder (0.9ms)
+  Rendered firemen/_fireman.json.jbuilder (0.8ms)
+  Rendered firemen/_fireman.json.jbuilder (0.7ms)
+  Rendered firemen/_fireman.json.jbuilder (0.7ms)
+  Rendered firemen/index.json.jbuilder (18.2ms)
+Completed 200 OK in 24ms (Views: 21.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/firemen_view" for 127.0.0.1 at 2017-12-29 10:45:24 +0100
+Processing by AuthenticatedController#authenticated as HTML
+  Rendering layouts/main.html.erb within layouts/application
+  Rendered layouts/main.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 707ms (Views: 705.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/firemen" for 127.0.0.1 at 2017-12-29 10:45:26 +0100
+Processing by FiremenController#index as JSON
+  Rendering firemen/index.json.jbuilder
+  [1m[36mFiremen Load (0.3ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+  Rendered firemen/_fireman.json.jbuilder (1.0ms)
+  Rendered firemen/_fireman.json.jbuilder (0.5ms)
+  Rendered firemen/_fireman.json.jbuilder (0.6ms)
+  Rendered firemen/_fireman.json.jbuilder (0.6ms)
+  Rendered firemen/_fireman.json.jbuilder (0.7ms)
+  Rendered firemen/_fireman.json.jbuilder (0.9ms)
+  Rendered firemen/_fireman.json.jbuilder (1.1ms)
+  Rendered firemen/index.json.jbuilder (15.6ms)
+Completed 200 OK in 20ms (Views: 18.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/firemen_view" for 127.0.0.1 at 2017-12-29 10:45:40 +0100
+Processing by AuthenticatedController#authenticated as HTML
+  Rendering layouts/main.html.erb within layouts/application
+  Rendered layouts/main.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 770ms (Views: 768.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/firemen" for 127.0.0.1 at 2017-12-29 10:45:42 +0100
+Processing by FiremenController#index as JSON
+  Rendering firemen/index.json.jbuilder
+  [1m[36mFiremen Load (0.4ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+  Rendered firemen/_fireman.json.jbuilder (1.4ms)
+  Rendered firemen/_fireman.json.jbuilder (0.4ms)
+  Rendered firemen/_fireman.json.jbuilder (0.3ms)
+  Rendered firemen/_fireman.json.jbuilder (0.5ms)
+  Rendered firemen/_fireman.json.jbuilder (0.5ms)
+  Rendered firemen/_fireman.json.jbuilder (0.5ms)
+  Rendered firemen/_fireman.json.jbuilder (0.7ms)
+  Rendered firemen/index.json.jbuilder (12.0ms)
+Completed 200 OK in 16ms (Views: 14.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/firemen_view" for 127.0.0.1 at 2017-12-29 10:48:50 +0100
+Processing by AuthenticatedController#authenticated as HTML
+  Rendering layouts/main.html.erb within layouts/application
+  Rendered layouts/main.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 687ms (Views: 685.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/firemen" for 127.0.0.1 at 2017-12-29 10:48:52 +0100
+Processing by FiremenController#index as JSON
+  Rendering firemen/index.json.jbuilder
+  [1m[36mFiremen Load (0.5ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+  Rendered firemen/_fireman.json.jbuilder (1.2ms)
+  Rendered firemen/_fireman.json.jbuilder (0.7ms)
+  Rendered firemen/_fireman.json.jbuilder (0.8ms)
+  Rendered firemen/_fireman.json.jbuilder (0.7ms)
+  Rendered firemen/_fireman.json.jbuilder (0.5ms)
+  Rendered firemen/_fireman.json.jbuilder (0.6ms)
+  Rendered firemen/_fireman.json.jbuilder (0.7ms)
+  Rendered firemen/index.json.jbuilder (20.8ms)
+Completed 200 OK in 27ms (Views: 24.3ms | ActiveRecord: 0.5ms)
+
+
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT pg_try_advisory_lock(7864839756650184315);[0m
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to AddSectionToFiremen (20171229100048)
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (3.9ms)[0m  [1m[35mALTER TABLE "firemen" ADD "section" character varying[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20171229100048"]]
+  [1m[35m (11.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (1.5ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(7864839756650184315)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/firemen_view" for 127.0.0.1 at 2017-12-29 11:04:37 +0100
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by AuthenticatedController#authenticated as HTML
+  Rendering layouts/main.html.erb within layouts/application
+  Rendered layouts/main.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 6810ms (Views: 6804.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/firemen" for 127.0.0.1 at 2017-12-29 11:04:45 +0100
+Processing by FiremenController#index as JSON
+  Rendering firemen/index.json.jbuilder
+  [1m[36mFiremen Load (0.6ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+  Rendered firemen/_fireman.json.jbuilder (1.0ms)
+  Rendered firemen/_fireman.json.jbuilder (0.3ms)
+  Rendered firemen/_fireman.json.jbuilder (0.3ms)
+  Rendered firemen/_fireman.json.jbuilder (0.3ms)
+  Rendered firemen/_fireman.json.jbuilder (0.3ms)
+  Rendered firemen/_fireman.json.jbuilder (0.3ms)
+  Rendered firemen/_fireman.json.jbuilder (0.3ms)
+  Rendered firemen/index.json.jbuilder (54.8ms)
+Completed 200 OK in 70ms (Views: 51.4ms | ActiveRecord: 6.4ms)
+
+
+Started GET "/firemen_view" for 127.0.0.1 at 2017-12-29 11:05:28 +0100
+Processing by AuthenticatedController#authenticated as HTML
+  Rendering layouts/main.html.erb within layouts/application
+  Rendered layouts/main.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 486ms (Views: 485.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/firemen" for 127.0.0.1 at 2017-12-29 11:05:29 +0100
+Processing by FiremenController#index as JSON
+  Rendering firemen/index.json.jbuilder
+  [1m[36mFiremen Load (0.3ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+  Rendered firemen/_fireman.json.jbuilder (1.3ms)
+  Rendered firemen/_fireman.json.jbuilder (0.9ms)
+  Rendered firemen/_fireman.json.jbuilder (0.7ms)
+  Rendered firemen/_fireman.json.jbuilder (0.6ms)
+  Rendered firemen/_fireman.json.jbuilder (0.5ms)
+  Rendered firemen/_fireman.json.jbuilder (0.5ms)
+  Rendered firemen/_fireman.json.jbuilder (0.5ms)
+  Rendered firemen/index.json.jbuilder (14.4ms)
+Completed 200 OK in 18ms (Views: 16.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/firemen_view" for 127.0.0.1 at 2017-12-29 11:06:51 +0100
+Processing by AuthenticatedController#authenticated as HTML
+  Rendering layouts/main.html.erb within layouts/application
+  Rendered layouts/main.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 752ms (Views: 750.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/firemen" for 127.0.0.1 at 2017-12-29 11:06:53 +0100
+Processing by FiremenController#index as JSON
+  Rendering firemen/index.json.jbuilder
+  [1m[36mFiremen Load (0.4ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+  Rendered firemen/_fireman.json.jbuilder (1.2ms)
+  Rendered firemen/_fireman.json.jbuilder (0.6ms)
+  Rendered firemen/_fireman.json.jbuilder (0.7ms)
+  Rendered firemen/_fireman.json.jbuilder (0.6ms)
+  Rendered firemen/_fireman.json.jbuilder (0.6ms)
+  Rendered firemen/_fireman.json.jbuilder (0.8ms)
+  Rendered firemen/_fireman.json.jbuilder (0.8ms)
+  Rendered firemen/index.json.jbuilder (15.2ms)
+Completed 200 OK in 21ms (Views: 18.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/firemen_view" for 127.0.0.1 at 2017-12-29 11:08:19 +0100
+Processing by AuthenticatedController#authenticated as HTML
+  Rendering layouts/main.html.erb within layouts/application
+  Rendered layouts/main.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 609ms (Views: 607.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/firemen" for 127.0.0.1 at 2017-12-29 11:08:20 +0100
+Processing by FiremenController#index as JSON
+  Rendering firemen/index.json.jbuilder
+  [1m[36mFiremen Load (0.3ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+  Rendered firemen/_fireman.json.jbuilder (0.8ms)
+  Rendered firemen/_fireman.json.jbuilder (0.3ms)
+  Rendered firemen/_fireman.json.jbuilder (0.3ms)
+  Rendered firemen/_fireman.json.jbuilder (0.5ms)
+  Rendered firemen/_fireman.json.jbuilder (0.4ms)
+  Rendered firemen/_fireman.json.jbuilder (0.4ms)
+  Rendered firemen/_fireman.json.jbuilder (0.7ms)
+  Rendered firemen/index.json.jbuilder (10.4ms)
+Completed 200 OK in 14ms (Views: 12.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/firemen_view" for 127.0.0.1 at 2017-12-29 11:08:34 +0100
+Processing by AuthenticatedController#authenticated as HTML
+  Rendering layouts/main.html.erb within layouts/application
+  Rendered layouts/main.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 630ms (Views: 628.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/firemen_view" for 127.0.0.1 at 2017-12-29 11:08:36 +0100
+Processing by AuthenticatedController#authenticated as HTML
+  Rendering layouts/main.html.erb within layouts/application
+  Rendered layouts/main.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 139ms (Views: 138.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/firemen" for 127.0.0.1 at 2017-12-29 11:08:37 +0100
+Processing by FiremenController#index as JSON
+  Rendering firemen/index.json.jbuilder
+  [1m[36mFiremen Load (0.4ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+  Rendered firemen/_fireman.json.jbuilder (1.3ms)
+  Rendered firemen/_fireman.json.jbuilder (0.8ms)
+  Rendered firemen/_fireman.json.jbuilder (0.6ms)
+  Rendered firemen/_fireman.json.jbuilder (1.8ms)
+  Rendered firemen/_fireman.json.jbuilder (0.9ms)
+  Rendered firemen/_fireman.json.jbuilder (0.7ms)
+  Rendered firemen/_fireman.json.jbuilder (0.8ms)
+  Rendered firemen/index.json.jbuilder (19.1ms)
+Completed 200 OK in 25ms (Views: 22.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/firemen_view" for 127.0.0.1 at 2017-12-29 11:08:38 +0100
+Processing by AuthenticatedController#authenticated as HTML
+  Rendering layouts/main.html.erb within layouts/application
+  Rendered layouts/main.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 139ms (Views: 138.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/firemen" for 127.0.0.1 at 2017-12-29 11:08:39 +0100
+Processing by FiremenController#index as JSON
+  Rendering firemen/index.json.jbuilder
+  [1m[36mFiremen Load (0.4ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+  Rendered firemen/_fireman.json.jbuilder (1.2ms)
+  Rendered firemen/_fireman.json.jbuilder (0.8ms)
+  Rendered firemen/_fireman.json.jbuilder (0.9ms)
+  Rendered firemen/_fireman.json.jbuilder (0.4ms)
+  Rendered firemen/_fireman.json.jbuilder (0.4ms)
+  Rendered firemen/_fireman.json.jbuilder (0.5ms)
+  Rendered firemen/_fireman.json.jbuilder (0.6ms)
+  Rendered firemen/index.json.jbuilder (12.8ms)
+Completed 200 OK in 18ms (Views: 15.7ms | ActiveRecord: 0.4ms)
+
+
+Started PATCH "/firemen/1" for 127.0.0.1 at 2017-12-29 11:08:55 +0100
+Processing by FiremenController#update as JSON
+  Parameters: {"id"=>"1", "name"=>"Mateuszzz", "surname"=>"Mydlarz", "email"=>"asd@asd.pl", "created_at"=>"2017-08-19T09:44:52.045Z", "updated_at"=>"2017-12-28T11:02:54.916Z", "second_name"=>"SD", "father_name"=>nil, "birth_date"=>nil, "birt_place"=>nil, "sex"=>nil, "adres"=>nil, "phone"=>nil, "zip_code"=>nil, "place"=>nil, "id_station"=>nil, "pesel"=>nil, "note"=>nil, "section"=>"CZYNNY", "url"=>"http://localhost:3000/firemen/1", "fireman"=>{"id"=>"1", "name"=>"Mateuszzz", "surname"=>"Mydlarz", "email"=>"asd@asd.pl", "created_at"=>"2017-08-19T09:44:52.045Z", "updated_at"=>"2017-12-28T11:02:54.916Z", "second_name"=>"SD", "father_name"=>nil, "birth_date"=>nil, "birt_place"=>nil, "sex"=>nil, "adres"=>nil, "phone"=>nil, "zip_code"=>nil, "place"=>nil, "id_station"=>nil, "pesel"=>nil, "note"=>nil, "section"=>"CZYNNY", "url"=>"http://localhost:3000/firemen/1"}}
+  [1m[36mFiremen Load (0.3ms)[0m  [1m[34mSELECT  "firemen".* FROM "firemen" WHERE "firemen"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mFiremen Load (0.2ms)[0m  [1m[34mSELECT  "firemen".* FROM "firemen" WHERE "firemen"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.9ms)[0m  [1m[33mUPDATE "firemen" SET "updated_at" = $1, "section" = $2 WHERE "firemen"."id" = $3[0m  [["updated_at", "2017-12-29 10:08:55.182046"], ["section", "CZYNNY"], ["id", 1]]
+  [1m[35m (11.0ms)[0m  [1m[35mCOMMIT[0m
+Completed 204 No Content in 36ms (ActiveRecord: 12.8ms)
+
+
+Started GET "/firemen_view" for 127.0.0.1 at 2017-12-29 11:08:56 +0100
+Processing by AuthenticatedController#authenticated as HTML
+  Rendering layouts/main.html.erb within layouts/application
+  Rendered layouts/main.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 96ms (Views: 94.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/firemen" for 127.0.0.1 at 2017-12-29 11:08:57 +0100
+Processing by FiremenController#index as JSON
+  Rendering firemen/index.json.jbuilder
+  [1m[36mFiremen Load (0.3ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+  Rendered firemen/_fireman.json.jbuilder (0.9ms)
+  Rendered firemen/_fireman.json.jbuilder (0.6ms)
+  Rendered firemen/_fireman.json.jbuilder (0.6ms)
+  Rendered firemen/_fireman.json.jbuilder (0.6ms)
+  Rendered firemen/_fireman.json.jbuilder (0.8ms)
+  Rendered firemen/_fireman.json.jbuilder (0.6ms)
+  Rendered firemen/_fireman.json.jbuilder (0.7ms)
+  Rendered firemen/index.json.jbuilder (14.2ms)
+Completed 200 OK in 18ms (Views: 16.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/firemen_view" for 127.0.0.1 at 2017-12-29 11:09:14 +0100
+Processing by AuthenticatedController#authenticated as HTML
+  Rendering layouts/main.html.erb within layouts/application
+  Rendered layouts/main.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 544ms (Views: 542.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/firemen" for 127.0.0.1 at 2017-12-29 11:09:16 +0100
+Processing by FiremenController#index as JSON
+  Rendering firemen/index.json.jbuilder
+  [1m[36mFiremen Load (0.5ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+  Rendered firemen/_fireman.json.jbuilder (1.3ms)
+  Rendered firemen/_fireman.json.jbuilder (0.6ms)
+  Rendered firemen/_fireman.json.jbuilder (0.8ms)
+  Rendered firemen/_fireman.json.jbuilder (0.8ms)
+  Rendered firemen/_fireman.json.jbuilder (0.7ms)
+  Rendered firemen/_fireman.json.jbuilder (0.8ms)
+  Rendered firemen/_fireman.json.jbuilder (0.8ms)
+  Rendered firemen/index.json.jbuilder (19.2ms)
+Completed 200 OK in 25ms (Views: 22.7ms | ActiveRecord: 0.5ms)
+
+
+Started PATCH "/firemen/1" for 127.0.0.1 at 2017-12-29 11:09:31 +0100
+Processing by FiremenController#update as JSON
+  Parameters: {"id"=>"1", "name"=>"Mateuszzz", "surname"=>"Mydlarz", "email"=>"asd@asd.pl", "created_at"=>"2017-08-19T09:44:52.045Z", "updated_at"=>"2017-12-29T10:08:55.182Z", "second_name"=>"SD", "father_name"=>nil, "birth_date"=>nil, "birt_place"=>nil, "sex"=>nil, "adres"=>nil, "phone"=>nil, "zip_code"=>nil, "place"=>nil, "id_station"=>nil, "pesel"=>nil, "note"=>nil, "section"=>"CZYNNY", "url"=>"http://localhost:3000/firemen/1", "fireman"=>{"id"=>"1", "name"=>"Mateuszzz", "surname"=>"Mydlarz", "email"=>"asd@asd.pl", "created_at"=>"2017-08-19T09:44:52.045Z", "updated_at"=>"2017-12-29T10:08:55.182Z", "second_name"=>"SD", "father_name"=>nil, "birth_date"=>nil, "birt_place"=>nil, "sex"=>nil, "adres"=>nil, "phone"=>nil, "zip_code"=>nil, "place"=>nil, "id_station"=>nil, "pesel"=>nil, "note"=>nil, "section"=>"CZYNNY", "url"=>"http://localhost:3000/firemen/1"}}
+  [1m[36mFiremen Load (0.4ms)[0m  [1m[34mSELECT  "firemen".* FROM "firemen" WHERE "firemen"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mFiremen Load (0.4ms)[0m  [1m[34mSELECT  "firemen".* FROM "firemen" WHERE "firemen"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[33mUPDATE "firemen" SET "updated_at" = $1 WHERE "firemen"."id" = $2[0m  [["updated_at", "2017-12-29 10:08:55.182000"], ["id", 1]]
+  [1m[35m (196.3ms)[0m  [1m[35mCOMMIT[0m
+Completed 204 No Content in 207ms (ActiveRecord: 198.0ms)
+
+
+Started GET "/firemen_view" for 127.0.0.1 at 2017-12-29 11:09:54 +0100
+Processing by AuthenticatedController#authenticated as HTML
+  Rendering layouts/main.html.erb within layouts/application
+  Rendered layouts/main.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 139ms (Views: 137.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/firemen" for 127.0.0.1 at 2017-12-29 11:09:56 +0100
+Processing by FiremenController#index as JSON
+  Rendering firemen/index.json.jbuilder
+  [1m[36mFiremen Load (0.4ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+  Rendered firemen/_fireman.json.jbuilder (1.6ms)
+  Rendered firemen/_fireman.json.jbuilder (0.6ms)
+  Rendered firemen/_fireman.json.jbuilder (0.5ms)
+  Rendered firemen/_fireman.json.jbuilder (0.9ms)
+  Rendered firemen/_fireman.json.jbuilder (0.7ms)
+  Rendered firemen/_fireman.json.jbuilder (0.6ms)
+  Rendered firemen/_fireman.json.jbuilder (0.7ms)
+  Rendered firemen/index.json.jbuilder (21.0ms)
+Completed 200 OK in 27ms (Views: 24.4ms | ActiveRecord: 0.4ms)
+
+
+Started PATCH "/firemen/1" for 127.0.0.1 at 2017-12-29 11:10:03 +0100
+Processing by FiremenController#update as JSON
+  Parameters: {"id"=>"1", "name"=>"Mateuszzz", "surname"=>"Mydlarz", "email"=>"asd@asd.pl", "created_at"=>"2017-08-19T09:44:52.045Z", "updated_at"=>"2017-12-29T10:08:55.182Z", "second_name"=>"SD", "father_name"=>nil, "birth_date"=>nil, "birt_place"=>nil, "sex"=>nil, "adres"=>nil, "phone"=>nil, "zip_code"=>nil, "place"=>nil, "id_station"=>nil, "pesel"=>nil, "note"=>nil, "section"=>"ZWYKŁY", "url"=>"http://localhost:3000/firemen/1", "fireman"=>{"id"=>"1", "name"=>"Mateuszzz", "surname"=>"Mydlarz", "email"=>"asd@asd.pl", "created_at"=>"2017-08-19T09:44:52.045Z", "updated_at"=>"2017-12-29T10:08:55.182Z", "second_name"=>"SD", "father_name"=>nil, "birth_date"=>nil, "birt_place"=>nil, "sex"=>nil, "adres"=>nil, "phone"=>nil, "zip_code"=>nil, "place"=>nil, "id_station"=>nil, "pesel"=>nil, "note"=>nil, "section"=>"ZWYKŁY", "url"=>"http://localhost:3000/firemen/1"}}
+  [1m[36mFiremen Load (0.4ms)[0m  [1m[34mSELECT  "firemen".* FROM "firemen" WHERE "firemen"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mFiremen Load (0.4ms)[0m  [1m[34mSELECT  "firemen".* FROM "firemen" WHERE "firemen"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.1ms)[0m  [1m[33mUPDATE "firemen" SET "updated_at" = $1, "section" = $2 WHERE "firemen"."id" = $3[0m  [["updated_at", "2017-12-29 10:10:03.527665"], ["section", "ZWYKŁY"], ["id", 1]]
+  [1m[35m (11.9ms)[0m  [1m[35mCOMMIT[0m
+Completed 204 No Content in 24ms (ActiveRecord: 14.1ms)
+
+
+Started PATCH "/firemen/5" for 127.0.0.1 at 2017-12-29 11:10:09 +0100
+Processing by FiremenController#update as JSON
+  Parameters: {"id"=>"5", "name"=>"Gerard", "surname"=>"Konieczny", "email"=>"asd@asd.pl", "created_at"=>"2017-08-19T09:45:13.553Z", "updated_at"=>"2017-08-19T09:45:13.553Z", "second_name"=>nil, "father_name"=>"Franciszek", "birth_date"=>nil, "birt_place"=>nil, "sex"=>nil, "adres"=>nil, "phone"=>nil, "zip_code"=>nil, "place"=>nil, "id_station"=>nil, "pesel"=>nil, "note"=>nil, "section"=>"MDP", "url"=>"http://localhost:3000/firemen/5", "fireman"=>{"id"=>"5", "name"=>"Gerard", "surname"=>"Konieczny", "email"=>"asd@asd.pl", "created_at"=>"2017-08-19T09:45:13.553Z", "updated_at"=>"2017-08-19T09:45:13.553Z", "second_name"=>nil, "father_name"=>"Franciszek", "birth_date"=>nil, "birt_place"=>nil, "sex"=>nil, "adres"=>nil, "phone"=>nil, "zip_code"=>nil, "place"=>nil, "id_station"=>nil, "pesel"=>nil, "note"=>nil, "section"=>"MDP", "url"=>"http://localhost:3000/firemen/5"}}
+  [1m[36mFiremen Load (0.3ms)[0m  [1m[34mSELECT  "firemen".* FROM "firemen" WHERE "firemen"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mFiremen Load (0.2ms)[0m  [1m[34mSELECT  "firemen".* FROM "firemen" WHERE "firemen"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[33mUPDATE "firemen" SET "updated_at" = $1, "section" = $2 WHERE "firemen"."id" = $3[0m  [["updated_at", "2017-12-29 10:10:09.014192"], ["section", "MDP"], ["id", 5]]
+  [1m[35m (141.5ms)[0m  [1m[35mCOMMIT[0m
+Completed 204 No Content in 150ms (ActiveRecord: 142.5ms)
+
+
+Started GET "/firemen_view" for 127.0.0.1 at 2017-12-29 11:10:10 +0100
+Processing by AuthenticatedController#authenticated as HTML
+  Rendering layouts/main.html.erb within layouts/application
+  Rendered layouts/main.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 110ms (Views: 109.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/firemen" for 127.0.0.1 at 2017-12-29 11:10:11 +0100
+Processing by FiremenController#index as JSON
+  Rendering firemen/index.json.jbuilder
+  [1m[36mFiremen Load (1.2ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+  Rendered firemen/_fireman.json.jbuilder (1.1ms)
+  Rendered firemen/_fireman.json.jbuilder (0.6ms)
+  Rendered firemen/_fireman.json.jbuilder (0.5ms)
+  Rendered firemen/_fireman.json.jbuilder (0.8ms)
+  Rendered firemen/_fireman.json.jbuilder (0.6ms)
+  Rendered firemen/_fireman.json.jbuilder (0.5ms)
+  Rendered firemen/_fireman.json.jbuilder (0.6ms)
+  Rendered firemen/index.json.jbuilder (21.5ms)
+Completed 200 OK in 27ms (Views: 24.3ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/firemen_view" for 127.0.0.1 at 2017-12-29 11:11:19 +0100
+Processing by AuthenticatedController#authenticated as HTML
+  Rendering layouts/main.html.erb within layouts/application
+  Rendered layouts/main.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 638ms (Views: 636.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/firemen" for 127.0.0.1 at 2017-12-29 11:11:20 +0100
+Processing by FiremenController#index as JSON
+  Rendering firemen/index.json.jbuilder
+  [1m[36mFiremen Load (0.3ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+  Rendered firemen/_fireman.json.jbuilder (1.1ms)
+  Rendered firemen/_fireman.json.jbuilder (0.4ms)
+  Rendered firemen/_fireman.json.jbuilder (0.5ms)
+  Rendered firemen/_fireman.json.jbuilder (0.6ms)
+  Rendered firemen/_fireman.json.jbuilder (1.6ms)
+  Rendered firemen/_fireman.json.jbuilder (0.6ms)
+  Rendered firemen/_fireman.json.jbuilder (0.6ms)
+  Rendered firemen/index.json.jbuilder (14.2ms)
+Completed 200 OK in 19ms (Views: 17.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/firemen_view" for 127.0.0.1 at 2017-12-29 11:12:19 +0100
+Processing by AuthenticatedController#authenticated as HTML
+  Rendering layouts/main.html.erb within layouts/application
+  Rendered layouts/main.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 552ms (Views: 551.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/firemen" for 127.0.0.1 at 2017-12-29 11:12:21 +0100
+Processing by FiremenController#index as JSON
+  Rendering firemen/index.json.jbuilder
+  [1m[36mFiremen Load (0.4ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+  Rendered firemen/_fireman.json.jbuilder (1.1ms)
+  Rendered firemen/_fireman.json.jbuilder (0.7ms)
+  Rendered firemen/_fireman.json.jbuilder (0.6ms)
+  Rendered firemen/_fireman.json.jbuilder (0.5ms)
+  Rendered firemen/_fireman.json.jbuilder (0.5ms)
+  Rendered firemen/_fireman.json.jbuilder (0.5ms)
+  Rendered firemen/_fireman.json.jbuilder (0.8ms)
+  Rendered firemen/index.json.jbuilder (21.7ms)
+Completed 200 OK in 27ms (Views: 24.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/firemen_view" for 127.0.0.1 at 2017-12-29 11:13:08 +0100
+Processing by AuthenticatedController#authenticated as HTML
+  Rendering layouts/main.html.erb within layouts/application
+  Rendered layouts/main.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 501ms (Views: 500.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/firemen" for 127.0.0.1 at 2017-12-29 11:13:10 +0100
+Processing by FiremenController#index as JSON
+  Rendering firemen/index.json.jbuilder
+  [1m[36mFiremen Load (0.4ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+  Rendered firemen/_fireman.json.jbuilder (0.8ms)
+  Rendered firemen/_fireman.json.jbuilder (0.4ms)
+  Rendered firemen/_fireman.json.jbuilder (0.6ms)
+  Rendered firemen/_fireman.json.jbuilder (0.4ms)
+  Rendered firemen/_fireman.json.jbuilder (0.4ms)
+  Rendered firemen/_fireman.json.jbuilder (0.3ms)
+  Rendered firemen/_fireman.json.jbuilder (0.3ms)
+  Rendered firemen/index.json.jbuilder (11.1ms)
+Completed 200 OK in 22ms (Views: 13.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/firemen_view" for 127.0.0.1 at 2017-12-29 11:13:23 +0100
+Processing by AuthenticatedController#authenticated as HTML
+  Rendering layouts/main.html.erb within layouts/application
+  Rendered layouts/main.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 1065ms (Views: 1063.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/firemen" for 127.0.0.1 at 2017-12-29 11:13:25 +0100
+Processing by FiremenController#index as JSON
+  Rendering firemen/index.json.jbuilder
+  [1m[36mFiremen Load (0.4ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+  Rendered firemen/_fireman.json.jbuilder (2.4ms)
+  Rendered firemen/_fireman.json.jbuilder (0.6ms)
+  Rendered firemen/_fireman.json.jbuilder (0.5ms)
+  Rendered firemen/_fireman.json.jbuilder (0.5ms)
+  Rendered firemen/_fireman.json.jbuilder (0.5ms)
+  Rendered firemen/_fireman.json.jbuilder (0.6ms)
+  Rendered firemen/_fireman.json.jbuilder (0.7ms)
+  Rendered firemen/index.json.jbuilder (14.8ms)
+Completed 200 OK in 21ms (Views: 18.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/firemen_view" for 127.0.0.1 at 2017-12-29 11:14:08 +0100
+Processing by AuthenticatedController#authenticated as HTML
+  Rendering layouts/main.html.erb within layouts/application
+  Rendered layouts/main.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 492ms (Views: 491.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/firemen" for 127.0.0.1 at 2017-12-29 11:14:10 +0100
+Processing by FiremenController#index as JSON
+  Rendering firemen/index.json.jbuilder
+  [1m[36mFiremen Load (0.4ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+  Rendered firemen/_fireman.json.jbuilder (1.5ms)
+  Rendered firemen/_fireman.json.jbuilder (0.7ms)
+  Rendered firemen/_fireman.json.jbuilder (0.6ms)
+  Rendered firemen/_fireman.json.jbuilder (0.7ms)
+  Rendered firemen/_fireman.json.jbuilder (0.6ms)
+  Rendered firemen/_fireman.json.jbuilder (0.5ms)
+  Rendered firemen/_fireman.json.jbuilder (0.6ms)
+  Rendered firemen/index.json.jbuilder (17.4ms)
+Completed 200 OK in 23ms (Views: 21.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/firemen_view" for 127.0.0.1 at 2017-12-29 11:15:06 +0100
+Processing by AuthenticatedController#authenticated as HTML
+  Rendering layouts/main.html.erb within layouts/application
+  Rendered layouts/main.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 585ms (Views: 584.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/firemen" for 127.0.0.1 at 2017-12-29 11:15:08 +0100
+Processing by FiremenController#index as JSON
+  Rendering firemen/index.json.jbuilder
+  [1m[36mFiremen Load (0.4ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+  Rendered firemen/_fireman.json.jbuilder (1.1ms)
+  Rendered firemen/_fireman.json.jbuilder (1.5ms)
+  Rendered firemen/_fireman.json.jbuilder (0.5ms)
+  Rendered firemen/_fireman.json.jbuilder (0.6ms)
+  Rendered firemen/_fireman.json.jbuilder (0.5ms)
+  Rendered firemen/_fireman.json.jbuilder (0.3ms)
+  Rendered firemen/_fireman.json.jbuilder (0.3ms)
+  Rendered firemen/index.json.jbuilder (12.7ms)
+Completed 200 OK in 18ms (Views: 15.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/firemen_view" for 127.0.0.1 at 2017-12-29 11:16:30 +0100
+Processing by AuthenticatedController#authenticated as HTML
+  Rendering layouts/main.html.erb within layouts/application
+  Rendered layouts/main.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 672ms (Views: 670.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/firemen" for 127.0.0.1 at 2017-12-29 11:16:31 +0100
+Processing by FiremenController#index as JSON
+  Rendering firemen/index.json.jbuilder
+  [1m[36mFiremen Load (0.3ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+  Rendered firemen/_fireman.json.jbuilder (1.2ms)
+  Rendered firemen/_fireman.json.jbuilder (0.6ms)
+  Rendered firemen/_fireman.json.jbuilder (0.8ms)
+  Rendered firemen/_fireman.json.jbuilder (0.9ms)
+  Rendered firemen/_fireman.json.jbuilder (0.7ms)
+  Rendered firemen/_fireman.json.jbuilder (0.6ms)
+  Rendered firemen/_fireman.json.jbuilder (0.5ms)
+  Rendered firemen/index.json.jbuilder (15.0ms)
+Completed 200 OK in 21ms (Views: 18.4ms | ActiveRecord: 0.3ms)
+
+
+Started PATCH "/firemen/2" for 127.0.0.1 at 2017-12-29 11:16:37 +0100
+Processing by FiremenController#update as JSON
+  Parameters: {"id"=>"2", "name"=>"Krzysztof", "surname"=>"Nowak", "email"=>"asd@asd.pl", "created_at"=>"2017-08-19T09:44:57.246Z", "updated_at"=>"2017-08-19T09:44:57.246Z", "second_name"=>nil, "father_name"=>nil, "birth_date"=>nil, "birt_place"=>nil, "sex"=>nil, "adres"=>nil, "phone"=>nil, "zip_code"=>nil, "place"=>nil, "id_station"=>nil, "pesel"=>nil, "note"=>nil, "section"=>"CZYNNI", "url"=>"http://localhost:3000/firemen/2", "fireman"=>{"id"=>"2", "name"=>"Krzysztof", "surname"=>"Nowak", "email"=>"asd@asd.pl", "created_at"=>"2017-08-19T09:44:57.246Z", "updated_at"=>"2017-08-19T09:44:57.246Z", "second_name"=>nil, "father_name"=>nil, "birth_date"=>nil, "birt_place"=>nil, "sex"=>nil, "adres"=>nil, "phone"=>nil, "zip_code"=>nil, "place"=>nil, "id_station"=>nil, "pesel"=>nil, "note"=>nil, "section"=>"CZYNNI", "url"=>"http://localhost:3000/firemen/2"}}
+  [1m[36mFiremen Load (0.3ms)[0m  [1m[34mSELECT  "firemen".* FROM "firemen" WHERE "firemen"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mFiremen Load (0.3ms)[0m  [1m[34mSELECT  "firemen".* FROM "firemen" WHERE "firemen"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[33mUPDATE "firemen" SET "created_at" = $1, "updated_at" = $2, "section" = $3 WHERE "firemen"."id" = $4[0m  [["created_at", "2017-08-19 09:44:57.246000"], ["updated_at", "2017-08-19 09:44:57.246000"], ["section", "CZYNNI"], ["id", 2]]
+  [1m[35m (12.1ms)[0m  [1m[35mCOMMIT[0m
+Completed 204 No Content in 20ms (ActiveRecord: 13.3ms)
+
+
+Started PATCH "/firemen/3" for 127.0.0.1 at 2017-12-29 11:16:41 +0100
+Processing by FiremenController#update as JSON
+  Parameters: {"id"=>"3", "name"=>"Adrian", "surname"=>"Kowalski", "email"=>"asd@asd.pl", "created_at"=>"2017-08-19T09:45:05.873Z", "updated_at"=>"2017-08-19T09:45:05.873Z", "second_name"=>nil, "father_name"=>nil, "birth_date"=>nil, "birt_place"=>nil, "sex"=>nil, "adres"=>nil, "phone"=>nil, "zip_code"=>nil, "place"=>nil, "id_station"=>nil, "pesel"=>nil, "note"=>nil, "section"=>"ZWYKLI", "url"=>"http://localhost:3000/firemen/3", "fireman"=>{"id"=>"3", "name"=>"Adrian", "surname"=>"Kowalski", "email"=>"asd@asd.pl", "created_at"=>"2017-08-19T09:45:05.873Z", "updated_at"=>"2017-08-19T09:45:05.873Z", "second_name"=>nil, "father_name"=>nil, "birth_date"=>nil, "birt_place"=>nil, "sex"=>nil, "adres"=>nil, "phone"=>nil, "zip_code"=>nil, "place"=>nil, "id_station"=>nil, "pesel"=>nil, "note"=>nil, "section"=>"ZWYKLI", "url"=>"http://localhost:3000/firemen/3"}}
+  [1m[36mFiremen Load (0.2ms)[0m  [1m[34mSELECT  "firemen".* FROM "firemen" WHERE "firemen"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mFiremen Load (0.3ms)[0m  [1m[34mSELECT  "firemen".* FROM "firemen" WHERE "firemen"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[33mUPDATE "firemen" SET "created_at" = $1, "updated_at" = $2, "section" = $3 WHERE "firemen"."id" = $4[0m  [["created_at", "2017-08-19 09:45:05.873000"], ["updated_at", "2017-08-19 09:45:05.873000"], ["section", "ZWYKLI"], ["id", 3]]
+  [1m[35m (12.8ms)[0m  [1m[35mCOMMIT[0m
+Completed 204 No Content in 20ms (ActiveRecord: 13.9ms)
+
+
+Started PATCH "/firemen/4" for 127.0.0.1 at 2017-12-29 11:16:46 +0100
+Processing by FiremenController#update as JSON
+  Parameters: {"id"=>"4", "name"=>"Robert", "surname"=>"Gwidoń", "email"=>"asd@asd.pl", "created_at"=>"2017-08-19T09:45:09.649Z", "updated_at"=>"2017-08-19T09:45:09.649Z", "second_name"=>nil, "father_name"=>nil, "birth_date"=>nil, "birt_place"=>nil, "sex"=>nil, "adres"=>nil, "phone"=>nil, "zip_code"=>nil, "place"=>nil, "id_station"=>nil, "pesel"=>nil, "note"=>nil, "section"=>"HONOROWI", "url"=>"http://localhost:3000/firemen/4", "fireman"=>{"id"=>"4", "name"=>"Robert", "surname"=>"Gwidoń", "email"=>"asd@asd.pl", "created_at"=>"2017-08-19T09:45:09.649Z", "updated_at"=>"2017-08-19T09:45:09.649Z", "second_name"=>nil, "father_name"=>nil, "birth_date"=>nil, "birt_place"=>nil, "sex"=>nil, "adres"=>nil, "phone"=>nil, "zip_code"=>nil, "place"=>nil, "id_station"=>nil, "pesel"=>nil, "note"=>nil, "section"=>"HONOROWI", "url"=>"http://localhost:3000/firemen/4"}}
+  [1m[36mFiremen Load (0.2ms)[0m  [1m[34mSELECT  "firemen".* FROM "firemen" WHERE "firemen"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mFiremen Load (0.3ms)[0m  [1m[34mSELECT  "firemen".* FROM "firemen" WHERE "firemen"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[33mUPDATE "firemen" SET "created_at" = $1, "updated_at" = $2, "section" = $3 WHERE "firemen"."id" = $4[0m  [["created_at", "2017-08-19 09:45:09.649000"], ["updated_at", "2017-08-19 09:45:09.649000"], ["section", "HONOROWI"], ["id", 4]]
+  [1m[35m (16.7ms)[0m  [1m[35mCOMMIT[0m
+Completed 204 No Content in 25ms (ActiveRecord: 17.9ms)
+
+
+Started GET "/firemen_view" for 127.0.0.1 at 2017-12-29 11:16:48 +0100
+Processing by AuthenticatedController#authenticated as HTML
+  Rendering layouts/main.html.erb within layouts/application
+  Rendered layouts/main.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 90ms (Views: 89.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/firemen" for 127.0.0.1 at 2017-12-29 11:16:49 +0100
+Processing by FiremenController#index as JSON
+  Rendering firemen/index.json.jbuilder
+  [1m[36mFiremen Load (0.7ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen"[0m
+  Rendered firemen/_fireman.json.jbuilder (2.1ms)
+  Rendered firemen/_fireman.json.jbuilder (0.8ms)
+  Rendered firemen/_fireman.json.jbuilder (0.6ms)
+  Rendered firemen/_fireman.json.jbuilder (0.6ms)
+  Rendered firemen/_fireman.json.jbuilder (0.6ms)
+  Rendered firemen/_fireman.json.jbuilder (0.7ms)
+  Rendered firemen/_fireman.json.jbuilder (0.7ms)
+  Rendered firemen/index.json.jbuilder (17.5ms)
+Completed 200 OK in 23ms (Views: 20.4ms | ActiveRecord: 0.7ms)
+
+
