@@ -1,49 +1,0 @@
-{:uriI"êfile://app/assets/javascripts/dialog/_add_new_fireman.html?type=text/ng-html&id=7d0f64e9da7a36caf06c5d5710e3ed494a325af7393e3570aa4b683749e42906:ET:load_pathI"app/assets/javascripts;T:filenameI"8app/assets/javascripts/dialog/_add_new_fireman.html;T:	nameI"dialog/_add_new_fireman;T:logical_pathI"!dialog/_add_new_fireman.html;T:content_typeI"text/ng-html;T:sourceI"ä<md-dialog aria-label="Mango (Fruit)">
-    <form ng-cloak>
-        <md-toolbar>
-            <div class="md-toolbar-tools">
-                <h2>Dodaj</h2>
-                <span flex></span>
-                <md-button class="md-icon-button" ng-click="cancel()">
-                    X
-                    <!--<md-icon md-svg-src="img/icons/ic_close_24px.svg" aria-label="Close dialog"></md-icon>-->
-                </md-button>
-            </div>
-        </md-toolbar>
-
-        <md-dialog-content>
-            <div class="md-dialog-content">
-                <md-input-container>
-                    <label>Imie:</label>
-                    <input ng-model="fireman.name">
-                </md-input-container>
-                <md-input-container>
-                    <label>Nazwisko:</label>
-                    <input ng-model="fireman.surname">
-                </md-input-container>
-                <md-input-container>
-                    <label>Email:</label>
-                    <input ng-model="fireman.email">
-                </md-input-container>
-
-            </div>
-        </md-dialog-content>
-
-        <md-dialog-actions layout="row">
-            <!--<md-button href="http://en.wikipedia.org/wiki/Mango" target="_blank" md-autofocus>-->
-                <!--More on Wikipedia-->
-            <!--</md-button>-->
-            <!--<span flex></span>-->
-            <!--<md-button ng-click="answer('not useful')">-->
-                <!--Not Useful-->
-            <!--</md-button>-->
-            <md-button ng-click="addFireman()" class="md-raised md-cornered md-primary">
-                Dodaj
-            </md-button>
-        </md-dialog-actions>
-    </form>
-</md-dialog>;T:metadata{	:dependencieso:Set:
-@hash}
-I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"8processors:type=text/ng-html&file_type=text/ng-html;TTI"Ffile-digest://app/assets/javascripts/dialog/_add_new_fireman.html;TTF:charsetI"
-utf-8;F:digest"%Ú©—|Zz€˚°à„.“‹´T'«}aI∑/±4µJÀ:lengthiä:dependencies_digest"%|°ßæ\|◊MGOÂ®H«À∞DíÎ[ò˜-ì¯Ì:idI"E7d0f64e9da7a36caf06c5d5710e3ed494a325af7393e3570aa4b683749e42906;F:
-mtimel+;òY

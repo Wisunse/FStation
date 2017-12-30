@@ -40,3 +40,11 @@ cancel_model_registration GET    /models/cancel(.:format)        devise/registra
                           PATCH  /cars/:id(.:format)             cars#update {:format=>:json}
                           PUT    /cars/:id(.:format)             cars#update {:format=>:json}
                           DELETE /cars/:id(.:format)             cars#destroy {:format=>:json}
+                 medicals GET    /medicals(.:format)             medicals#index {:format=>:json}
+                          POST   /medicals(.:format)             medicals#create {:format=>:json}
+              new_medical GET    /medicals/new(.:format)         medicals#new {:format=>:json}
+             edit_medical GET    /medicals/:id/edit(.:format)    medicals#edit {:format=>:json}
+                  medical GET    /medicals/:id(.:format)         medicals#show {:format=>:json}
+                          PATCH  /medicals/:id(.:format)         medicals#update {:format=>:json}
+                          PUT    /medicals/:id(.:format)         medicals#update {:format=>:json}
+                          DELETE /medicals/:id(.:format)         medicals#destroy {:format=>:json}

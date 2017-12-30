@@ -8,7 +8,13 @@ angular.module('FireStation')
 
         $scope.addFireman = function() {
             $http.post('/firemen', $scope.newFireman).then(function successCallback(response) {
-                console.log(response);
+                $mdDialog.cancel();
+                firemen.getFiremen();
             });
         };
+
+        $scope.cancel = function(){
+            $mdDialog.cancel()
+        };
+
     }]);

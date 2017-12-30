@@ -19,10 +19,8 @@ Rails.application.routes.draw do
   get '/reminders_view' => 'authenticated#authenticated'
   get '/settings_view' => 'authenticated#authenticated'
 
-  # get '/all_firemen' => 'firemen#all'
-  # post '/add_fireman' => 'firemen#add'
-
   resources :firemen, :defaults => { :format => :json }
   resources :cars, :defaults => { :format => :json }
+  resources :medicals, :defaults => { :format => :json }
 
 end

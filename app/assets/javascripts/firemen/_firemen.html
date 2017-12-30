@@ -1,6 +1,6 @@
-<div layout="column">
+<div layout="column" layout="column" layout-fill>
 
-    <div layout="row" >
+    <div layout="row" layout="column" layout-fill>
 
         <md-content flex="33">
 
@@ -12,9 +12,9 @@
                             <div ng-repeat="fireman in firemen.allFiremen track by $index"
                                  layout="row"
                                  layout-align="center center"
-                                 ng-click="selectedFireman(fireman)"
+                                 ng-click="firemen.selectFireman(fireman)"
                                  class="firemen-row"
-                                 ng-class="{'firemen-row__selected':firemen.selectedFireman == fireman}">
+                                 ng-class="{'firemen-row__selected':firemen.selectedFireman.data == fireman}">
                                 <div flex="33" ng-bind="fireman.name"></div>
                                 <div flex="66" ng-bind="fireman.surname"></div>
                             </div>
@@ -90,104 +90,145 @@
 
         </md-content>
 
-        <md-content flex="66">
-            <md-card>
+        <md-card flex="66" layout="column" layout-fill>
 
-                <md-tabs md-dynamic-height md-border-bottom md-center-tabs="true">
-
+                <md-tabs md-border-bottom md-center-tabs="true" layout="column" layout-fill md-stretch-tabs="always" flex>
                     <md-tab label="DANE">
-                        <div layout-gt-sm="row" layout-padding>
 
-                    <div>
-                        <md-input-container>
-                            <label>Imie</label>
-                            <input ng-model="firemen.selectedFireman.name">
-                        </md-input-container>
+                        <!--<div layout="column" layout-fill layout-padding >-->
 
-                        <md-input-container>
-                            <label>Drugie Imie</label>
-                            <input ng-model="firemen.selectedFireman.second_name">
-                        </md-input-container>
+                            <div layout="row">
 
-                        <md-input-container>
-                            <label>Nazwisko</label>
-                            <input ng-model="firemen.selectedFireman.surname">
-                        </md-input-container>
+                                <md-input-container>
+                                    <label>Imie</label>
+                                    <input ng-model="firemen.selectedFireman.data.name">
+                                </md-input-container>
 
-                        <md-input-container>
-                            <label>Imie ojca</label>
-                            <input ng-model="firemen.selectedFireman.father_name">
-                        </md-input-container>
+                                <md-input-container>
+                                    <label>Drugie Imie</label>
+                                    <input ng-model="firemen.selectedFireman.data.second_name">
+                                </md-input-container>
 
-                        <md-input-container>
-                            <label>Data urodzenia</label>
-                            <input ng-model="firemen.selectedFireman.birth_date">
-                        </md-input-container>
+                                <md-input-container>
+                                    <label>Nazwisko</label>
+                                    <input ng-model="firemen.selectedFireman.data.surname">
+                                </md-input-container>
+                            </div>
+                            <div layout-gt-sm="row">
+                                <md-input-container>
+                                    <label>Imie ojca</label>
+                                    <input ng-model="firemen.selectedFireman.data.father_name">
+                                </md-input-container>
 
-                        <md-input-container>
-                            <label>Miejsce urodzenia</label>
-                            <input ng-model="firemen.selectedFireman.birt_place">
-                        </md-input-container>
-                    </div>
+                                <div flex-gt-xs>
+                                    <h4>Data urodzenia</h4>
+                                    <md-datepicker ng-model="firemen.selectedFireman.data.birth_date" md-placeholder="12/11/1980" md-open-on-focus></md-datepicker>
+                                </div>
 
-                    <div>
+                                <md-input-container>
+                                    <label>Miejsce urodzenia</label>
+                                    <input ng-model="firemen.selectedFireman.data.birt_place">
+                                </md-input-container>
 
-                        <md-input-container>
-                            <label>Płeć</label>
-                            <input ng-model="firemen.selectedFireman.sex">
-                        </md-input-container>
+                            </div>
+                            <div layout-gt-sm="row">
 
-                        <md-input-container>
-                            <label>Adres</label>
-                            <input ng-model="firemen.selectedFireman.adres">
-                        </md-input-container>
+                                <md-input-container>
+                                    <label>Płeć</label>
+                                    <input ng-model="firemen.selectedFireman.data.data.sex">
+                                </md-input-container>
 
-                        <md-input-container>
-                            <label>Kod pocztowy</label>
-                            <input ng-model="firemen.selectedFireman.zip_code">
-                        </md-input-container>
+                                <md-input-container>
+                                    <label>Adres</label>
+                                    <input ng-model="firemen.selectedFireman.data.adres">
+                                </md-input-container>
 
-                        <md-input-container>
-                            <label>Miejscowość</label>
-                            <input ng-model="firemen.selectedFireman.place">
-                        </md-input-container>
+                                <md-input-container>
+                                    <label>Kod pocztowy</label>
+                                    <input ng-model="firemen.selectedFireman.data.zip_code">
+                                </md-input-container>
+                            </div>
+                            <div layout-gt-sm="row">
+                                <md-input-container>
+                                    <label>Miejscowość</label>
+                                    <input ng-model="firemen.selectedFireman.data.place">
+                                </md-input-container>
 
-                        <md-input-container>
-                            <label>Pesel</label>
-                            <input ng-model="firemen.selectedFireman.pesel">
-                        </md-input-container>
+                                <md-input-container>
+                                    <label>Pesel</label>
+                                    <input ng-model="firemen.selectedFireman.data.pesel">
+                                </md-input-container>
 
-                        <md-input-container>
-                            <label>Telefon</label>
-                            <input ng-model="firemen.selectedFireman.phone">
-                        </md-input-container>
+                                <md-input-container>
+                                    <label>Telefon</label>
+                                    <input ng-model="firemen.selectedFireman.data.phone">
+                                </md-input-container>
+                            </div>
+                            <div layout-gt-sm="row">
+                                <md-input-container>
+                                    <label>Email</label>
+                                    <input ng-model="firemen.selectedFireman.data.email">
+                                </md-input-container>
 
-                        <md-input-container>
-                            <label>Email</label>
-                            <input ng-model="firemen.selectedFireman.email">
-                        </md-input-container>
+                                <md-input-container>
+                                    <label>Sekcja</label>
+                                    <md-select ng-model="firemen.selectedFireman.data.section">
+                                        <md-option ng-repeat="section in sections"
+                                                   ng-value="section">{{section}}</md-option>
+                                    </md-select>
+                                </md-input-container>
 
-                        <md-input-container>
-                            <label>Sekcja</label>
-                            <md-select ng-model="firemen.selectedFireman.section">
-                                <md-option ng-repeat="section in sections" ng-value="section">{{section}}</md-option>
-                            </md-select>
-                        </md-input-container>
+                                <md-input-container>
+                                    <label>Notatki</label>
+                                    <textarea ng-model="firemen.selectedFireman.data.note"></textarea>
+                                </md-input-container>
 
-                        <md-input-container>
-                            <label>Notatki</label>
-                            <textarea ng-model="firemen.selectedFireman.note"></textarea>
-                        </md-input-container>
+                            </div>
+                        <!--</div>-->
+                        <div layout-align="space-between center" layout="row">
+                            <div layout-align="center center">
+                                <md-button class="md-raised md-primary"
+                                           ng-click="saveEditFireman()">Zapisz zmiany</md-button>
+                                <md-button class="md-raised md-primary"
+                                           ng-click="saveEditFireman()">Drukuj</md-button>
+                            </div>
+                            <div layout-align="center center">
+                                <md-button class="md-raised md-warn"
+                                           ng-click="deleteFireman()">Usuń</md-button>
+                            </div>
+                        </div>
 
-                        <md-button class="md-raised md-primary" ng-click="saveEditFireman()">Zapisz zmiany</md-button>
-                        <md-button class="md-raised md-warn" ng-click="deleteFireman()">Usuń</md-button>
-
-                    </div>
-
-                </div>
+                    </md-tab-body>
                     </md-tab>
 
                     <md-tab label="BADANIA">
+
+                        <div layout="row" layout-align="space-around center" layout-padding>
+                            <div>Lp.</div>
+                            <div>Nazwa</div>
+                            <div>Data badania</div>
+                            <div>Ważność od</div>
+                            <div>Ważność do</div>
+                        </div>
+
+                        <div ng-repeat="medical in firemen.selectedFireman.medicals track by $index"
+                             layout="row"
+                             layout-align="space-around center"
+                             layout-padding>
+                            <div ng-bind="$index+1"></div>
+                            <div ng-bind="medical.name"></div>
+                            <div ng-bind="medical.examination_date"></div>
+                            <div ng-bind="medical.start_date"></div>
+                            <div ng-bind="medical.end_date"></div>
+                        </div>
+
+                        <button class="md-fab md-fab-bottom-right docs-scroll-fab md-button md-ink-ripple scrolling"
+                                type="button"
+                                ng-click="addNewMedical()"
+                                aria-label="add new medical">
+                            <div>+</div>
+                        </button>
+
                     </md-tab>
 
                     <md-tab label="SZKOLENIA">
@@ -195,11 +236,11 @@
 
                     <md-tab label="ODZNACZENIA">
                     </md-tab>
+                    </md-card>
 
                 </md-tabs>
 
-            </md-card>
-        </md-content>
+        </md-card>
 
     </div>
 
