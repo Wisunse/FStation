@@ -1,4 +1,5 @@
 class FiremenController < ApplicationController
+
   before_action :set_fireman, only: [:show, :edit, :update, :destroy]
   respond_to :json
 

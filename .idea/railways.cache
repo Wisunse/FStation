@@ -1,50 +1,50 @@
-                   Prefix Verb   URI Pattern                     Controller#Action
-        new_model_session GET    /models/sign_in(.:format)       devise/sessions#new
-            model_session POST   /models/sign_in(.:format)       devise/sessions#create
-    destroy_model_session DELETE /models/sign_out(.:format)      devise/sessions#destroy
-       new_model_password GET    /models/password/new(.:format)  devise/passwords#new
-      edit_model_password GET    /models/password/edit(.:format) devise/passwords#edit
-           model_password PATCH  /models/password(.:format)      devise/passwords#update
-                          PUT    /models/password(.:format)      devise/passwords#update
-                          POST   /models/password(.:format)      devise/passwords#create
-cancel_model_registration GET    /models/cancel(.:format)        devise/registrations#cancel
-   new_model_registration GET    /models/sign_up(.:format)       devise/registrations#new
-  edit_model_registration GET    /models/edit(.:format)          devise/registrations#edit
-       model_registration PATCH  /models(.:format)               devise/registrations#update
-                          PUT    /models(.:format)               devise/registrations#update
-                          DELETE /models(.:format)               devise/registrations#destroy
-                          POST   /models(.:format)               devise/registrations#create
-                     root GET    /                               application#angular
-                    login GET    /login(.:format)                login#login
-                          POST   /login(.:format)                sessions#create
-                is_logged GET    /is_logged(.:format)            sessions#is_logged
-                          GET    /                               authenticated#authenticated
-             firemen_view GET    /firemen_view(.:format)         authenticated#authenticated
-                cars_view GET    /cars_view(.:format)            authenticated#authenticated
-              alarms_view GET    /alarms_view(.:format)          authenticated#authenticated
-           reminders_view GET    /reminders_view(.:format)       authenticated#authenticated
-            settings_view GET    /settings_view(.:format)        authenticated#authenticated
-                  firemen GET    /firemen(.:format)              firemen#index {:format=>:json}
-                          POST   /firemen(.:format)              firemen#create {:format=>:json}
-              new_fireman GET    /firemen/new(.:format)          firemen#new {:format=>:json}
-             edit_fireman GET    /firemen/:id/edit(.:format)     firemen#edit {:format=>:json}
-                  fireman GET    /firemen/:id(.:format)          firemen#show {:format=>:json}
-                          PATCH  /firemen/:id(.:format)          firemen#update {:format=>:json}
-                          PUT    /firemen/:id(.:format)          firemen#update {:format=>:json}
-                          DELETE /firemen/:id(.:format)          firemen#destroy {:format=>:json}
-                     cars GET    /cars(.:format)                 cars#index {:format=>:json}
-                          POST   /cars(.:format)                 cars#create {:format=>:json}
-                  new_car GET    /cars/new(.:format)             cars#new {:format=>:json}
-                 edit_car GET    /cars/:id/edit(.:format)        cars#edit {:format=>:json}
-                      car GET    /cars/:id(.:format)             cars#show {:format=>:json}
-                          PATCH  /cars/:id(.:format)             cars#update {:format=>:json}
-                          PUT    /cars/:id(.:format)             cars#update {:format=>:json}
-                          DELETE /cars/:id(.:format)             cars#destroy {:format=>:json}
-                 medicals GET    /medicals(.:format)             medicals#index {:format=>:json}
-                          POST   /medicals(.:format)             medicals#create {:format=>:json}
-              new_medical GET    /medicals/new(.:format)         medicals#new {:format=>:json}
-             edit_medical GET    /medicals/:id/edit(.:format)    medicals#edit {:format=>:json}
-                  medical GET    /medicals/:id(.:format)         medicals#show {:format=>:json}
-                          PATCH  /medicals/:id(.:format)         medicals#update {:format=>:json}
-                          PUT    /medicals/:id(.:format)         medicals#update {:format=>:json}
-                          DELETE /medicals/:id(.:format)         medicals#destroy {:format=>:json}
+                  Prefix Verb   URI Pattern                    Controller#Action
+        new_user_session GET    /users/sign_in(.:format)       devise/sessions#new
+            user_session POST   /users/sign_in(.:format)       devise/sessions#create
+    destroy_user_session DELETE /users/sign_out(.:format)      devise/sessions#destroy
+       new_user_password GET    /users/password/new(.:format)  devise/passwords#new
+      edit_user_password GET    /users/password/edit(.:format) devise/passwords#edit
+           user_password PATCH  /users/password(.:format)      devise/passwords#update
+                         PUT    /users/password(.:format)      devise/passwords#update
+                         POST   /users/password(.:format)      devise/passwords#create
+cancel_user_registration GET    /users/cancel(.:format)        devise/registrations#cancel
+   new_user_registration GET    /users/sign_up(.:format)       devise/registrations#new
+  edit_user_registration GET    /users/edit(.:format)          devise/registrations#edit
+       user_registration PATCH  /users(.:format)               devise/registrations#update
+                         PUT    /users(.:format)               devise/registrations#update
+                         DELETE /users(.:format)               devise/registrations#destroy
+                         POST   /users(.:format)               devise/registrations#create
+                    root GET    /                              authenticated#authenticated
+                   login GET    /login(.:format)               login#login
+                         POST   /login(.:format)               sessions#create
+               is_logged GET    /is_logged(.:format)           sessions#is_logged
+                  logout POST   /logout(.:format)              sessions#logout
+            firemen_view GET    /firemen_view(.:format)        authenticated#authenticated
+               cars_view GET    /cars_view(.:format)           authenticated#authenticated
+             alarms_view GET    /alarms_view(.:format)         authenticated#authenticated
+          reminders_view GET    /reminders_view(.:format)      authenticated#authenticated
+           settings_view GET    /settings_view(.:format)       authenticated#authenticated
+                 firemen GET    /firemen(.:format)             firemen#index {:format=>:json}
+                         POST   /firemen(.:format)             firemen#create {:format=>:json}
+             new_fireman GET    /firemen/new(.:format)         firemen#new {:format=>:json}
+            edit_fireman GET    /firemen/:id/edit(.:format)    firemen#edit {:format=>:json}
+                 fireman GET    /firemen/:id(.:format)         firemen#show {:format=>:json}
+                         PATCH  /firemen/:id(.:format)         firemen#update {:format=>:json}
+                         PUT    /firemen/:id(.:format)         firemen#update {:format=>:json}
+                         DELETE /firemen/:id(.:format)         firemen#destroy {:format=>:json}
+                    cars GET    /cars(.:format)                cars#index {:format=>:json}
+                         POST   /cars(.:format)                cars#create {:format=>:json}
+                 new_car GET    /cars/new(.:format)            cars#new {:format=>:json}
+                edit_car GET    /cars/:id/edit(.:format)       cars#edit {:format=>:json}
+                     car GET    /cars/:id(.:format)            cars#show {:format=>:json}
+                         PATCH  /cars/:id(.:format)            cars#update {:format=>:json}
+                         PUT    /cars/:id(.:format)            cars#update {:format=>:json}
+                         DELETE /cars/:id(.:format)            cars#destroy {:format=>:json}
+                medicals GET    /medicals(.:format)            medicals#index {:format=>:json}
+                         POST   /medicals(.:format)            medicals#create {:format=>:json}
+             new_medical GET    /medicals/new(.:format)        medicals#new {:format=>:json}
+            edit_medical GET    /medicals/:id/edit(.:format)   medicals#edit {:format=>:json}
+                 medical GET    /medicals/:id(.:format)        medicals#show {:format=>:json}
+                         PATCH  /medicals/:id(.:format)        medicals#update {:format=>:json}
+                         PUT    /medicals/:id(.:format)        medicals#update {:format=>:json}
+                         DELETE /medicals/:id(.:format)        medicals#destroy {:format=>:json}

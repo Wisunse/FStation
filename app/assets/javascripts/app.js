@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('FireStation', ['ui.router', 'templates', 'ngMaterial'])
+angular.module('FireStation', ['ui.router', 'templates', 'ngMaterial', 'Devise'])
 
 .config(['$stateProvider', '$locationProvider', '$urlRouterProvider', '$httpProvider', '$mdThemingProvider',
 function($stateProvider, $locationProvider, $urlRouterProvider, $httpProvider, $mdThemingProvider) {
@@ -44,12 +44,38 @@ function($stateProvider, $locationProvider, $urlRouterProvider, $httpProvider, $
             url: '/login',
             views: {
                 headerView: {
-                    templateUrl: 'menu/_menu.html',
-                    controller: 'MenuController'
+                    templateUrl: 'login_menu/_login_menu.html',
+                    controller: 'LoginMenuController'
                 },
                 mainView: {
                     templateUrl: 'login/_login.html',
                     controller: 'LoginController'
+                }
+            }
+        })
+        .state('register', {
+            url: '/register',
+            views: {
+                headerView: {
+                    templateUrl: 'login_menu/_login_menu.html',
+                    controller: 'LoginMenuController'
+                },
+                mainView: {
+                    templateUrl: 'register/_register.html',
+                    controller: 'RegisterController'
+                }
+            }
+        })
+        .state('home', {
+            url: '/',
+            views: {
+                headerView: {
+                    templateUrl: 'menu/_menu.html',
+                    controller: 'MenuController'
+                },
+                mainView: {
+                    templateUrl: 'firemen/_firemen.html',
+                    controller: 'FiremenController'
                 }
             }
         })

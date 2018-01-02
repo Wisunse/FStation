@@ -1,0 +1,43 @@
+{:uriI"ˆfile://app/assets/javascripts/menu/_side_menu.html?type=text/ng-html&id=325b201204b6b1f306b8b34fd29f8cdcc3874630fb9a6013ca38d652ad952e6f:ET:load_pathI"app/assets/javascripts;T:filenameI"0app/assets/javascripts/menu/_side_menu.html;T:	nameI"menu/_side_menu;T:logical_pathI"menu/_side_menu.html;T:content_typeI"text/ng-html;T:sourceI"¸<md-sidenav-container>
+    <md-sidenav md-component-id="left" class="md-sidenav-left">
+
+        <md-list >
+            <md-button class="menu text-left" layout-fill aria-label="show menu">
+                <md-icon class="md-24" ng-cloak>portrait</md-icon> StraÆ¶acy
+            </md-button>
+        </md-list>
+
+        <md-list>
+            <md-button class="menu text-left" layout-fill aria-label="show menu">
+                <md-icon class="md-24" ng-cloak>time_to_leave</md-icon>Pojazdy
+            </md-button>
+        </md-list>
+
+        <md-list>
+            <md-button class="menu text-left" layout-fill aria-label="show menu">
+                <md-icon class="md-24" ng-cloak>time_to_leave</md-icon> Wyjazdy
+            </md-button>
+        </md-list>
+        <md-list>
+            <md-button class="menu text-left" layout-fill aria-label="show menu">
+                <md-icon class="md-24" ng-cloak>add_alert</md-icon> Przypomnienia
+            </md-button>
+        </md-list>
+        <md-list>
+            <md-button class="menu text-left" layout-fill aria-label="show menu">
+                <md-icon class="md-24" ng-cloak>error</md-icon> Alarmy
+            </md-button>
+        </md-list>
+        <md-list>
+            <md-button class="menu text-left" layout-fill aria-label="show menu">
+                <md-icon class="md-24" ng-cloak>settings</md-icon> Ustawienia
+            </md-button>
+        </md-list>
+
+    </md-sidenav>
+</md-sidenav-container>;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"8processors:type=text/ng-html&file_type=text/ng-html;TTI">file-digest://app/assets/javascripts/menu/_side_menu.html;TTF:charsetI"
+utf-8;F:digest"%Q‡zèÂï«¦¦).Íœsrm&ˆIÝ}z'½@Ï›:lengthi¸:dependencies_digest"%Ù¥{#‘vz|™õŽz³SÐ~8ÔL`’¤y¿B
+I:idI"E325b201204b6b1f306b8b34fd29f8cdcc3874630fb9a6013ca38d652ad952e6f;F:
+mtimel+%{Y

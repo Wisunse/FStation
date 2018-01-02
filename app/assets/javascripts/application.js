@@ -12,6 +12,7 @@
 
 //= require rails-ujs
 //= require angular
+//= require angular-devise
 //= require angular-animate
 //= require angular-aria
 //= require angular-material

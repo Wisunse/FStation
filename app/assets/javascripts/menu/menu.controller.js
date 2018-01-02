@@ -2,8 +2,8 @@
 
 angular.module('FireStation')
 
-.controller('MenuController', ['$scope', '$http', '$mdSidenav', '$state', 'login',
-    function($scope, $http, $mdSidenav, $state, login) {
+.controller('MenuController', ['$scope', '$http', '$mdSidenav', '$state', 'login', 'Auth',
+    function($scope, $http, $mdSidenav, $state, login, Auth) {
 
     $scope.login = login;
 
@@ -33,6 +33,23 @@ angular.module('FireStation')
 
     $scope.goSettings = function (){
         $state.go('settings');
+    };
+
+    $scope.goLogout = function() {
+
+        var config = {
+            headers: {
+                'X-HTTP-Method-Override': 'DELETE'
+            }
+        };
+
+        Auth.logout(config).then(function(oldUser) {
+            $state.go('login');
+        }, function(error) {
+            // An error occurred logging out.
+        });
+
+
     };
 
 

@@ -1,72 +1,11 @@
 <div class="login-header" ng-cloak>
     <md-content layout="column" layout-fill>
 
-        <!--<md-toolbar>-->
-            <!--<md-button md-icon-button hide-gt-sm class="menuBtn" ng-click="login.openLeftMenu()" ng-cloak>-->
-            <!--<md-icon class="md-24" ng-cloak>menu</md-icon>-->
-            <!--</md-button>-->
-            <!--<md-tabs md-dynamic-height hide-gt-sm md-no-ink-bar>-->
-                <!--<md-tab ng-click="login.openLeftMenu()">-->
-                    <!--<md-tab-label>-->
-                        <!--<md-icon class="md-24" ng-cloak>menu</md-icon>-->
-                    <!--</md-tab-label>-->
-                <!--</md-tab>-->
-            <!--</md-tabs>-->
-
-            <!--<md-tabs md-dynamic-height md-center-tabs hide show-gt-sm>-->
-
-                <!--<md-tab>-->
-                    <!--<md-tab-label>-->
-                        <!--<md-icon class="md-24" ng-cloak>portrait</md-icon>-->
-                        <!--<div>Straƶacy</div>-->
-                    <!--</md-tab-label>-->
-                <!--</md-tab>-->
-
-                <!--<md-tab>-->
-                    <!--<md-tab-label>-->
-                        <!--<md-icon class="md-24" ng-cloak>time_to_leave</md-icon>-->
-                        <!--<div>Pojazdy</div>-->
-                    <!--</md-tab-label>-->
-                <!--</md-tab>-->
-
-                <!--<md-tab>-->
-                    <!--<md-tab-label>-->
-                        <!--<md-icon class="md-24" ng-cloak>time_to_leave</md-icon>-->
-                        <!--<div>Wyjazdy</div>-->
-                    <!--</md-tab-label>-->
-                <!--</md-tab>-->
-
-                <!--<md-tab>-->
-                    <!--<md-tab-label>-->
-                        <!--<md-icon class="md-24" ng-cloak>add_alert</md-icon>-->
-                        <!--<div>Przypomnienia</div>-->
-                    <!--</md-tab-label>-->
-                <!--</md-tab>-->
-
-                <!--<md-tab>-->
-                    <!--<md-tab-label>-->
-                        <!--<md-icon class="md-24" ng-cloak>error</md-icon>-->
-                        <!--<div>Alarmy</div>-->
-                    <!--</md-tab-label>-->
-                <!--</md-tab>-->
-
-                <!--<md-tab>-->
-                    <!--<md-tab-label>-->
-                        <!--<md-icon class="md-24" ng-cloak>settings</md-icon>-->
-                        <!--<div>Ustawienia</div>-->
-                    <!--</md-tab-label>-->
-                <!--</md-tab>-->
-
-            <!--</md-tabs>-->
-
-        <!--</md-toolbar>-->
-
-        <!--<md-content layout-padding flex>-->
             <md-toolbar layout="row" ng-cloak layout-fill md-dynamic-height md-center-tabs>
                 <div flex layout="row" layout-align="space-around center">
-                    <md-button class="menu" layout-fill aria-label="show menu"> Logowanie </md-button>
+                    <md-button class="menu" layout-fill aria-label="show menu" ng-click="goLogin()"> Logowanie </md-button>
                     <md-button class="menu" layout-fill aria-label="show menu"> O Aplikacji </md-button>
-                    <md-button class="menu" layout-fill aria-label="show menu"> Rejestracja </md-button>
+                    <md-button class="menu" layout-fill aria-label="show menu" ng-click="goRegistration()"> Rejestracja </md-button>
                     <md-button class="menu" layout-fill aria-label="show menu"> Kontakt </md-button>
                 </div>
             </md-toolbar>

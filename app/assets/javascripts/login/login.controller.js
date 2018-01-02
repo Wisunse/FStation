@@ -2,24 +2,29 @@
 
 angular.module('FireStation')
 
-    .controller('LoginController', ['$scope', '$http', '$state', function($scope, $http, $state) {
+    .controller('LoginController', ['$scope', '$state', 'Auth', '$rootScope',
+        function($scope, $state, Auth, $rootScope) {
 
         console.log('LoginController');
 
+        var config = {
+                headers: {
+                    'X-HTTP-Method-Override': 'POST'
+                }
+            };
+
         $scope.user = {
-            'username': 'Michael Hartl',
-            'password_digest': 'foobar'
+            'email': 'matt@gmail.com',
+            'password': 'password'
         };
 
         $scope.login = function() {
 
-            $http.post('/login', $scope.user).then(function successCallback(response) {
-               if(response.data === true) {
-                 $state.go('firemen');
-               } else {
-                   alert('try again')
-               }
+            Auth.login($scope.user, config).then(function(user){
+                $rootScope.user = user;
+                $state.go('firemen');
             });
+
         }
 
     }]);

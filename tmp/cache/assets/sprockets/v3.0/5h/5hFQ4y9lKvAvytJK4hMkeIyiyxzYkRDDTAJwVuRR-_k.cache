@@ -1,0 +1,19 @@
+{:uriI"èfile://app/assets/javascripts/login_menu/_login_menu.html?type=text/ng-html&id=7f4d9f4d219c93a7d1088aec941473cffb8b579a2911fc8fcbd0c445b6437ecb:ET:load_pathI"app/assets/javascripts;T:filenameI"7app/assets/javascripts/login_menu/_login_menu.html;T:	nameI"login_menu/_login_menu;T:logical_pathI" login_menu/_login_menu.html;T:content_typeI"text/ng-html;T:sourceI"!<div class="login-header" ng-cloak>
+    <md-content layout="column" layout-fill>
+
+            <md-toolbar layout="row" ng-cloak layout-fill md-dynamic-height md-center-tabs>
+                <div flex layout="row" layout-align="space-around center">
+                    <md-button class="menu" layout-fill aria-label="show menu" ng-click="goLogin()"> Logowanie </md-button>
+                    <md-button class="menu" layout-fill aria-label="show menu"> O Aplikacji </md-button>
+                    <md-button class="menu" layout-fill aria-label="show menu" ng-click="goRegistration()"> Rejestracja </md-button>
+                    <md-button class="menu" layout-fill aria-label="show menu"> Kontakt </md-button>
+                </div>
+            </md-toolbar>
+        </md-content>
+
+    </div>
+</div>;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"8processors:type=text/ng-html&file_type=text/ng-html;TTI"Efile-digest://app/assets/javascripts/login_menu/_login_menu.html;TTF:charsetI"
+utf-8;F:digest"%)’fèú‡— ¨z8≥!∆3è‡&Üfç<F˝•(Fb:lengthi!:dependencies_digest"%¬XOß˜Ns√©„QW˙’Uèu8H1Q˘óHÈyB:idI"E7f4d9f4d219c93a7d1088aec941473cffb8b579a2911fc8fcbd0c445b6437ecb;F:
+mtimel+f¨KZ
