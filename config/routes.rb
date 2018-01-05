@@ -16,8 +16,10 @@ Rails.application.routes.draw do
   get '/settings_view' => 'authenticated#authenticated'
   get '/register' => 'authenticated#authenticated'
 
-  resources :firemen, :defaults => { :format => :json }
-  resources :cars, :defaults => { :format => :json }
-  resources :medicals, :defaults => { :format => :json }
+  authenticated :user do
+    resources :firemen, :defaults => { :format => :json }
+    resources :cars, :defaults => { :format => :json }
+    resources :medicals, :defaults => { :format => :json }
+  end
 
 end

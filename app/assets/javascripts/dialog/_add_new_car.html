@@ -1,0 +1,46 @@
+<md-dialog aria-label="Mango (Fruit)">
+    <form ng-cloak>
+        <md-toolbar>
+            <div class="md-toolbar-tools">
+                <h2>Dodaj</h2>
+                <span flex></span>
+                <md-button class="md-icon-button" ng-click="cancel()">
+                    X
+                </md-button>
+            </div>
+        </md-toolbar>
+
+        <md-dialog-content>
+            <div class="md-dialog-content">
+
+                <md-input-container>
+                    <label>Nazwa</label>
+                    <input ng-model="newCar.name">
+                </md-input-container>
+
+                <md-input-container>
+                    <label>numer rejestracyjny</label>
+                    <input ng-model="newCar.registration_number">
+                </md-input-container>
+
+                <div>
+                    <div>Przegląd do</div>
+                    <md-datepicker ng-model="newCar.servicing_to" md-open-on-focus></md-datepicker>
+                </div>
+
+            </div>
+
+
+            </button>
+
+        </md-dialog-content>
+
+        <md-dialog-actions layout="row">
+
+            <md-button ng-click="addCar()" class="md-raised md-cornered md-primary">
+                Dodaj
+            </md-button>
+
+        </md-dialog-actions>
+    </form>
+</md-dialog>

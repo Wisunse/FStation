@@ -1,31 +1,0 @@
-{:uriI"ƒfile://app/assets/javascripts/cars/_cars.html?type=text/ng-html&id=931f8b79672844ec38e6ef2d65915c8ea37792e12fadf7c287287309b0c49a6f:ET:load_pathI"app/assets/javascripts;T:filenameI"+app/assets/javascripts/cars/_cars.html;T:	nameI"cars/_cars;T:logical_pathI"cars/_cars.html;T:content_typeI"text/ng-html;T:sourceI"4<div layout="column">
-
-    <div layout="row" >
-
-        <md-content flex="33">
-
-            <md-card>
-                <div layout="column">
-                    <div ng-repeat="fireman in firemen.allFiremen" layout="row">
-                        <div> {{fireman.name}}</div>
-                        <div>{{fireman.surname}}</div>
-                    </div>
-                </div>
-            </md-card>
-
-        </md-content>
-
-        <md-content flex="66">
-            <md-card>
-                asd
-            </md-card>
-        </md-content>
-
-    </div>
-
-</div>
-;T:metadata{	:dependencieso:Set:
-@hash}
-I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"8processors:type=text/ng-html&file_type=text/ng-html;TTI"9file-digest://app/assets/javascripts/cars/_cars.html;TTF:charsetI"
-utf-8;F:digest"%é»o*£bg8£ÐÙIòùs8èQÀ-Ñ™|‹‘a¿ãÁÎœ:lengthi4:dependencies_digest"%º“16g9~÷<hd	ßjG	§­}KêµSi:idI"E931f8b79672844ec38e6ef2d65915c8ea37792e12fadf7c287287309b0c49a6f;F:
-mtimel+±30Z

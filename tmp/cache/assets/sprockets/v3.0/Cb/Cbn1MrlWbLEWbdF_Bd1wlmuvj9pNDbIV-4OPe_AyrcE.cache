@@ -1,0 +1,58 @@
+{:uriI"Éfile://app/assets/javascripts/cars/_cars.html?type=text/ng-html&id=69387df740571a2de230a93f5a4b07d65783c8bc89f95cb65a396d7576b75c6b:ET:load_pathI"app/assets/javascripts;T:filenameI"+app/assets/javascripts/cars/_cars.html;T:	nameI"cars/_cars;T:logical_pathI"cars/_cars.html;T:content_typeI"text/ng-html;T:sourceI"F<div layout="row" layout-fill>
+
+    <div layout="column" layout-fill layout-align="center center" md-scroll-y>
+
+        <md-content layout-align="center center">
+
+                <div layout="column" layout-align="center center" class="md-padding">
+
+                    <div layout="column"
+                         layout-align="center center">
+
+                        <md-card layout-align="center center"
+                                  ng-repeat="car in cars.allCars">
+
+                            <md-card-title>
+                                <span class="md-headline" ng-bind="car.name"></span>
+                                <span class="md-subhead" ng-bind="car.registration_number"></span>
+                                <span class="md-subhead" ng-bind="car.servicing_to"></span>
+                            </md-card-title>
+
+                            <md-card-title-media>
+                                <div class="md-media-sm card-media"></div>
+                            </md-card-title-media>
+
+                            <md-card-actions>
+                                <md-button
+                                        class="md-raised md-primary"
+                                        ng-click="editCar(car)">Edytuj</md-button>
+                                <md-button
+                                        class="md-raised md-warn"
+                                        ng-click="deleteCar(car)">Usu≈Ñ</md-button>
+                            </md-card-actions>
+
+                        </md-card>
+
+                    </div>
+
+                </div>
+
+        </md-content>
+    </div>
+
+    <button class="md-fab md-fab-bottom-right docs-scroll-fab md-button
+                   md-ink-ripple scrolling"
+            ng-click="addNewCar()"
+            aria-label="add new medical">
+        <div>+</div>
+    </button>
+
+
+</div>
+
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"8processors:type=text/ng-html&file_type=text/ng-html;TTI"9file-digest://app/assets/javascripts/cars/_cars.html;TTF:charsetI"
+utf-8;F:digest"%&%ñÍ·¡lqS8`&^Ø¢ı
+≤¿…§ä;—‡wyñ9Âç:lengthiF:dependencies_digest"%0wsﬁ∑ñÆköUãΩ˜$–Í•¸æÙ+¥ãÆæ@ﬁòHN:idI"E69387df740571a2de230a93f5a4b07d65783c8bc89f95cb65a396d7576b75c6b;F:
+mtimel+√=OZ

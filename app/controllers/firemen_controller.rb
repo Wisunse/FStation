@@ -26,6 +26,7 @@ class FiremenController < ApplicationController
   # POST /firemen
   # POST /firemen.json
   def create
+
     hash = {}
     fireman_params.each { |key, value| hash[key] = value }
     @fireman = Firemen.new(hash)

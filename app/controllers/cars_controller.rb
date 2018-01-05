@@ -1,5 +1,6 @@
 class CarsController < ApplicationController
   before_action :set_car, only: [:show, :edit, :update, :destroy]
+  respond_to :json
 
   # GET /cars
   # GET /cars.json
@@ -24,7 +25,10 @@ class CarsController < ApplicationController
   # POST /cars
   # POST /cars.json
   def create
-    @car = Car.new(car_params)
+    hash = {}
+    car_params.each { |key, value| hash[key] = value }
+    puts car_params.inspect
+    @car = Car.new(hash)
 
     respond_to do |format|
       if @car.save
@@ -40,8 +44,13 @@ class CarsController < ApplicationController
   # PATCH/PUT /cars/1
   # PATCH/PUT /cars/1.json
   def update
+    @car = Car.find(car_params[:id])
+    hash = {}
+    car_params.each { |key, value| hash[key] = value }
+    hash.delete('id')
+    hash.delete('url')
     respond_to do |format|
-      if @car.update(car_params)
+      if @car.update(hash)
         format.html { redirect_to @car, notice: 'Car was successfully updated.' }
         format.json { render :show, status: :ok, location: @car }
       else
@@ -54,6 +63,8 @@ class CarsController < ApplicationController
   # DELETE /cars/1
   # DELETE /cars/1.json
   def destroy
+    puts @car.inspect
+    puts car_params
     @car.destroy
     respond_to do |format|
       format.html { redirect_to cars_url, notice: 'Car was successfully destroyed.' }

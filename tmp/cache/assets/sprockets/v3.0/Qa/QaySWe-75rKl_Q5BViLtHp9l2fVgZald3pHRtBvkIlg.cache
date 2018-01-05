@@ -1,0 +1,50 @@
+{:uriI"‰file://app/assets/javascripts/dialog/_edit_car.html?type=text/ng-html&id=afcddc18a85d7c0bdba828b17de53abe4b47b01c619c89e4ae261469e2cecba8:ET:load_pathI"app/assets/javascripts;T:filenameI"1app/assets/javascripts/dialog/_edit_car.html;T:	nameI"dialog/_edit_car;T:logical_pathI"dialog/_edit_car.html;T:content_typeI"text/ng-html;T:sourceI""<md-dialog aria-label="Mango (Fruit)">
+    <form ng-cloak>
+        <md-toolbar>
+            <div class="md-toolbar-tools">
+                <h2>Dodaj</h2>
+                <span flex></span>
+                <md-button class="md-icon-button" ng-click="cancel()">
+                    X
+                </md-button>
+            </div>
+        </md-toolbar>
+
+        <md-dialog-content>
+            <div class="md-dialog-content">
+
+                <md-input-container>
+                    <label>Nazwa</label>
+                    <input ng-model="cars.selectedCar.name">
+                </md-input-container>
+
+                <md-input-container>
+                    <label>numer rejestracyjny</label>
+                    <input ng-model="cars.selectedCar.registration_number">
+                </md-input-container>
+
+                <div>
+                    <div>PrzeglÄ…d do</div>
+                    <md-datepicker ng-model="cars.selectedCar.servicing_to" md-open-on-focus></md-datepicker>
+                </div>
+
+            </div>
+
+
+            </button>
+
+        </md-dialog-content>
+
+        <md-dialog-actions layout="row">
+
+            <md-button ng-click="editCar()" class="md-raised md-cornered md-primary">
+                Dodaj
+            </md-button>
+
+        </md-dialog-actions>
+    </form>
+</md-dialog>;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"8processors:type=text/ng-html&file_type=text/ng-html;TTI"?file-digest://app/assets/javascripts/dialog/_edit_car.html;TTF:charsetI"
+utf-8;F:digest"%¬úH2¯AÑ7ûÁíØú¢Ö*À! ë³¼uÂ:lengthi":dependencies_digest"%YøÎ¨½Q7.¦lÆX‰µàm«òö#¶ªû)‡ƒæ£:idI"Eafcddc18a85d7c0bdba828b17de53abe4b47b01c619c89e4ae261469e2cecba8;F:
+mtimel+6JOZ

@@ -1,50 +1,0 @@
-{:uriI"êfile://app/assets/javascripts/dialog/_add_new_medical.html?type=text/ng-html&id=0ddfaae9f12b9af86517ca8532f0d6c345dc03cad8539242cb8c7de5fe0217ac:ET:load_pathI"app/assets/javascripts;T:filenameI"8app/assets/javascripts/dialog/_add_new_medical.html;T:	nameI"dialog/_add_new_medical;T:logical_pathI"!dialog/_add_new_medical.html;T:content_typeI"text/ng-html;T:sourceI"<md-dialog aria-label="Badania Lekarskie">
-    <form ng-cloak>
-        <md-toolbar>
-            <div class="md-toolbar-tools">
-                <h2>Dodaj</h2>
-                <span flex></span>
-                <md-button class="md-icon-button" ng-click="cancel()">X</md-button>
-            </div>
-        </md-toolbar>
-
-
-        <md-dialog-content>
-            <div class="md-dialog-content">
-
-                <md-input-container>
-                    <label>Nazwa</label>
-                    <input ng-model="newMedical.name">
-                </md-input-container>
-
-                <div flex-gt-xs>
-                    <div>Data badania</div>
-                    <md-datepicker ng-model="newMedical.examination_date" md-placeholder="12/11/2017" md-open-on-focus></md-datepicker>
-                </div>
-
-                <div flex-gt-xs>
-                    <div>Wa≈ºno≈õƒá od:</div>
-                    <md-datepicker ng-model="newMedical.start_date" md-placeholder="12/11/2017" md-open-on-focus></md-datepicker>
-                </div>
-
-                <div flex-gt-xs>
-                    <div>Wa≈ºno≈õƒá do:</div>
-                    <md-datepicker ng-model="newMedical.end_date" md-placeholder="12/11/2017" md-open-on-focus></md-datepicker>
-                </div>
-
-            </div>
-        </md-dialog-content>
-
-        <md-dialog-actions layout="row">
-
-            <md-button ng-click="addMedical()" class="md-raised md-cornered md-primary">
-                Dodaj
-            </md-button>
-
-        </md-dialog-actions>
-    </form>
-</md-dialog>;T:metadata{	:dependencieso:Set:
-@hash}
-I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"8processors:type=text/ng-html&file_type=text/ng-html;TTI"Ffile-digest://app/assets/javascripts/dialog/_add_new_medical.html;TTF:charsetI"
-utf-8;F:digest"%›A§µÔﬁîk§[2†ºï˝ﬁò0ï˚™Õ˚ß8jd«.:lengthi:dependencies_digest"%‹È·zÒ‡óm„tÿó∂ÁÁ›vè]∏Ó¥óÍSÑqè:idI"E0ddfaae9f12b9af86517ca8532f0d6c345dc03cad8539242cb8c7de5fe0217ac;F:
-mtimel+çéGZ

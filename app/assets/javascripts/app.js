@@ -174,8 +174,8 @@ function($stateProvider, $locationProvider, $urlRouterProvider, $httpProvider, $
 
         }])
 
-.run(['$rootScope', '$state', '$stateParams', '$http', 'firemen',
-    function ($rootScope, $state, $stateParams, $http, firemen) {
+.run(['$rootScope', '$state', '$stateParams', '$http',
+    function ($rootScope, $state, $stateParams, $http) {
 
         $rootScope.state = $state;
         $rootScope.stateParams = $stateParams;
@@ -185,9 +185,8 @@ function($stateProvider, $locationProvider, $urlRouterProvider, $httpProvider, $
             var newPath = newLocation.split('/').slice(-1)[0];
             var oldPath = oldLocation.split('/').slice(-1)[0];
 
-            if ( newPath === 'authenticated' ) {
-                firemen.getFiremen();
-                console.log(firemen.allFiremen);
+            if ( newPath === 'firemen' ) {
+
             }
 
         });
