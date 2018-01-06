@@ -6,7 +6,7 @@ class FiremenController < ApplicationController
   # GET /firemen
   # GET /firemen.json
   def index
-    @firemen = Firemen.all
+    @firemen = Firemen.all.order(:id)
   end
 
   # GET /firemen/1

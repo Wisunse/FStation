@@ -2,18 +2,20 @@
 
     <div layout="row" layout="column" layout-fill>
 
-        <md-content flex="33">
+        <md-content flex="40">
 
             <md-card>
+                <div><input type="text" placeholder="Szukaj" ng-model="firemenFilter"></div>
                 <md-tabs md-dynamic-height md-border-bottom md-center-tabs="true">
 
                     <md-tab label="WSZYSCY">
                         <div layout="column">
-                            <div ng-repeat="fireman in firemen.allFiremen track by $index"
+
+                            <div ng-repeat="fireman in firemen.allFiremen | filter:firemenFilter track by $index"
                                  layout="row"
                                  layout-align="center center"
                                  ng-click="firemen.selectFireman(fireman)"
-                                 class="firemen-row"
+                                 class="firemen-row" md-scroll-y
                                  ng-class="{'firemen-row__selected':firemen.selectedFireman.data == fireman}">
                                 <div flex="33" ng-bind="fireman.name"></div>
                                 <div flex="66" ng-bind="fireman.surname"></div>
@@ -90,7 +92,7 @@
 
         </md-content>
 
-        <md-card flex="66" layout="column" layout-fill>
+        <md-card flex="60" layout="column" layout-fill>
 
                 <md-tabs md-border-bottom md-center-tabs="true" layout="column" layout-fill md-stretch-tabs="always" flex>
                     <md-tab label="DANE">

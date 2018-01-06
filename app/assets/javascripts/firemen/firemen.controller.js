@@ -2,14 +2,15 @@
 
 angular.module('FireStation')
 
-    .controller('FiremenController', ['$scope', '$http', '$state', '$mdDialog', 'firemen',
-        function($scope, $http, $state, $mdDialog, firemen ) {
+    .controller('FiremenController', ['$scope', '$http', '$state', '$mdDialog', 'firemen', '$mdToast',
+        function($scope, $http, $state, $mdDialog, firemen, $mdToast ) {
 
         console.log('FiremenController');
 
         $scope.firemen = firemen;
         $scope.customFullscreen = true;
         $scope.sections = ['MDP', 'CZYNNI', 'ZWYKLI', 'HONOROWI'];
+        $scope.firemenFilter = '';
 
         console.log(firemen.allFiremen);
 
@@ -33,10 +34,16 @@ angular.module('FireStation')
 
 
         $scope.saveEditFireman = function() {
-
-            var url = '/firemen/' + firemen.selectedFireman.id;
-            $http.patch(url, firemen.selectedFireman).then(function(callback) {
+            console.log(firemen.selectedFireman.data);
+            var url = '/firemen/' + firemen.selectedFireman.data.id;
+            $http.patch(url, firemen.selectedFireman.data).then(function(callback) {
                 firemen.getFiremen();
+                $mdToast.show(
+                    $mdToast.simple()
+                        .textContent('Zapisano!')
+                        .position('top right')
+                        .hideDelay(3000)
+                );
             });
 
         };
