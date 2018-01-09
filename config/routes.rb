@@ -20,6 +20,7 @@ Rails.application.routes.draw do
     resources :firemen, :defaults => { :format => :json }
     resources :cars, :defaults => { :format => :json }
     resources :medicals, :defaults => { :format => :json }
+    resources :courses, :defaults => { :format => :json }
   end
 
 end

@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180102143151) do
+ActiveRecord::Schema.define(version: 20180109213930) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -21,6 +21,19 @@ ActiveRecord::Schema.define(version: 20180102143151) do
     t.date "servicing_to"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+  end
+
+  create_table "courses", force: :cascade do |t|
+    t.string "name"
+    t.string "date_course"
+    t.string "date"
+    t.date "expiry_date"
+    t.date "medical_examination_from"
+    t.date "medical_examination_to"
+    t.bigint "firemen_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["firemen_id"], name: "index_courses_on_firemen_id"
   end
 
   create_table "firemen", force: :cascade do |t|
@@ -75,7 +88,6 @@ ActiveRecord::Schema.define(version: 20180102143151) do
 
   create_table "users", force: :cascade do |t|
     t.string "username"
-    t.string "password_digest"
     t.string "email"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
@@ -92,4 +104,5 @@ ActiveRecord::Schema.define(version: 20180102143151) do
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
 
+  add_foreign_key "courses", "firemen", column: "firemen_id"
 end

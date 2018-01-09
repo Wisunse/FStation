@@ -1,0 +1,73 @@
+{:uriI"Éfile://app/assets/javascripts/cars/_cars.html?type=text/ng-html&id=c0b6794b9837970de85e6a003d838f7369a3d49ee7e91304f78b726bc0e9aa0e:ET:load_pathI"app/assets/javascripts;T:filenameI"+app/assets/javascripts/cars/_cars.html;T:	nameI"cars/_cars;T:logical_pathI"cars/_cars.html;T:content_typeI"text/ng-html;T:sourceI"£
+<div layout="row" layout-fill>
+
+    <div layout="column" layout-fill layout-align="center center" md-scroll-y>
+
+        <md-content layout-align="center center">
+
+                <div layout="column" layout-align="center center" class="md-padding">
+
+                    <div layout="row"
+                         layout-align="center center"
+                         layout-wrap>
+
+                        <md-card layout-align="center center"
+                                  ng-repeat="car in cars.allCars">
+
+                            <md-card-title>
+                                <div layout="column" layout-align="space-around center">
+                                <span class="md-headline" ng-bind="car.name"></span>
+
+                                    <div layout="row">
+                                        <div class="md-padding">Numer rejestracyjny:</div>
+                                        <span class="md-padding md-subhead" ng-bind="car.registration_number"></span>
+                                    </div>
+                                    <div layout="row">
+                                        <div class="md-padding">PrzeglƒÖd do:</div>
+                                        <span class="md-padding md-subhead" ng-bind="car.servicing_to"></span>
+                                    </div>
+                                    <div layout="row">
+                                        <div class="md-padding">Pozosta≈Ço:</div>
+                                        <div class="md-padding md-subhead md-warn"> 125 dni</div>
+                                    </div>
+                                </div>
+                            </md-card-title>
+
+                            <md-card-title-media>
+                                <div class="md-media-sm card-media"></div>
+                            </md-card-title-media>
+
+                            <md-card-actions>
+                                <md-button
+                                        class="md-raised md-primary"
+                                        ng-click="showEditCar(event, car)">Edytuj</md-button>
+                                <md-button
+                                        class="md-raised md-warn"
+                                        ng-click="deleteCar(car)">Usu≈Ñ</md-button>
+                            </md-card-actions>
+
+                        </md-card>
+
+                    </div>
+
+                </div>
+
+        </md-content>
+    </div>
+
+    <button class="md-fab md-fab-bottom-right docs-scroll-fab md-button
+                   md-ink-ripple scrolling"
+            ng-click="addNewCar()"
+            aria-label="add new medical">
+        <div>+</div>
+    </button>
+
+
+</div>
+
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"8processors:type=text/ng-html&file_type=text/ng-html;TTI"9file-digest://app/assets/javascripts/cars/_cars.html;TTF:charsetI"
+utf-8;F:digest"%ÄÎÊ¨|¨.ÏH≈{;·ôº‰®˙ó^ŒÙM+‡êö¢:lengthi£
+:dependencies_digest"%¶klâΩK˙rÔ•·?+§±ÓZKuæÀ‘pr˝ïx¯ﬂn:idI"Ec0b6794b9837970de85e6a003d838f7369a3d49ee7e91304f78b726bc0e9aa0e;F:
+mtimel+a‡TZ

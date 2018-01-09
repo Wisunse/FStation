@@ -1,0 +1,91 @@
+{:uriI"ãfile://app/assets/javascripts/settings/_settings.html?type=text/ng-html&id=180f0c3302d5c98408f264b2a5fed233482a9cc7ca60d529923031b34ed0e903:ET:load_pathI"app/assets/javascripts;T:filenameI"3app/assets/javascripts/settings/_settings.html;T:	nameI"settings/_settings;T:logical_pathI"settings/_settings.html;T:content_typeI"text/ng-html;T:sourceI"›<div layout="row" layout-fill>
+
+    <div layout="column" layout-fill layout-align="center center" md-scroll-y>
+
+        <md-content layout-align="center center">
+
+            <div layout="column" layout-align="center center" class="md-padding">
+
+                <div layout="row"
+                     layout-align="center center"
+                     layout-wrap>
+
+                    <md-card layout-align="center center">
+
+                        <md-card-title>
+
+                            <div layout="column" layout-align="space-around center">
+                                <span class="md-headline">Zmiana has≈Ça</span>
+
+                                <md-input-container>
+                                    <label>Podaj has≈Ço:</label>
+                                    <input type="password" ng-model="parameters.password">
+                                </md-input-container>
+                                <md-input-container>
+                                    <label>Potwierd≈∫ has≈Ço:</label>
+                                    <input type="password" ng-model="parameters.password_confirmation">
+                                </md-input-container>
+                            </div>
+
+                        </md-card-title>
+
+                        <md-card-title-media>
+                            <div class="md-media-sm card-media"></div>
+                        </md-card-title-media>
+
+                        <md-card-actions>
+                            <md-button class="md-raised md-primary"
+                                       ng-click="saveChangePassword()">Zapisz</md-button>
+                        </md-card-actions>
+
+                    </md-card>
+
+                    <md-card layout-align="center center">
+
+                        <md-card-title>
+
+                            <div layout="column" layout-align="space-around center">
+                                <span class="md-headline">Zmiana emaila</span>
+
+                                <md-input-container>
+                                    <label>Potwierd≈∫ has≈Ço:</label>
+                                    <input ng-model="newEmail">
+                                </md-input-container>
+                            </div>
+
+                        </md-card-title>
+
+                        <md-card-title-media>
+                            <div class="md-media-sm card-media"></div>
+                        </md-card-title-media>
+
+                        <md-card-actions>
+                            <md-button class="md-raised md-primary"
+                                       ng-click="saveChangePassword()">Zapisz</md-button>
+                        </md-card-actions>
+
+                    </md-card>
+
+                </div>
+
+            </div>
+
+        </md-content>
+    </div>
+
+
+    <button class="md-fab md-fab-bottom-right docs-scroll-fab md-button
+                   md-ink-ripple scrolling"
+            ng-click="addNewCar()"
+            aria-label="add new medical">
+        <div>+</div>
+    </button>
+
+
+</div>
+
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"8processors:type=text/ng-html&file_type=text/ng-html;TTI"Afile-digest://app/assets/javascripts/settings/_settings.html;TTF:charsetI"
+utf-8;F:digest"%ÉÆŸA{©õTñ($è¶Âÿ>‰˙&oœî3^π⁄ﬁ-Ï˝:lengthi›:dependencies_digest"%°ç∞w÷‹—Øì¯ƒ≥Ùô1èöt”õ‡ª‡UpûŸº˙“:idI"E180f0c3302d5c98408f264b2a5fed233482a9cc7ca60d529923031b34ed0e903;F:
+mtimel+ÙÚTZ

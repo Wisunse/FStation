@@ -1,0 +1,86 @@
+<div layout="row" layout-fill>
+
+    <div layout="column" layout-fill layout-align="center center" md-scroll-y>
+
+        <md-content layout-align="center center">
+
+            <div layout="column" layout-align="center center" class="md-padding">
+
+                <div layout="row"
+                     layout-align="center center"
+                     layout-wrap>
+
+                    <md-card layout-align="center center">
+
+                        <md-card-title>
+
+                            <div layout="column" layout-align="space-around center">
+                                <span class="md-headline">Zmiana hasła</span>
+
+                                <md-input-container>
+                                    <label>Podaj hasło:</label>
+                                    <input type="password" ng-model="parameters.password">
+                                </md-input-container>
+                                <md-input-container>
+                                    <label>Potwierdź hasło:</label>
+                                    <input type="password" ng-model="parameters.password_confirmation">
+                                </md-input-container>
+                            </div>
+
+                        </md-card-title>
+
+                        <md-card-title-media>
+                            <div class="md-media-sm card-media"></div>
+                        </md-card-title-media>
+
+                        <md-card-actions>
+                            <md-button class="md-raised md-primary"
+                                       ng-click="saveChangePassword()">Zapisz</md-button>
+                        </md-card-actions>
+
+                    </md-card>
+
+                    <md-card layout-align="center center">
+
+                        <md-card-title>
+
+                            <div layout="column" layout-align="space-around center">
+                                <span class="md-headline">Zmiana emaila</span>
+
+                                <md-input-container>
+                                    <label>Potwierdź hasło:</label>
+                                    <input ng-model="newEmail">
+                                </md-input-container>
+                            </div>
+
+                        </md-card-title>
+
+                        <md-card-title-media>
+                            <div class="md-media-sm card-media"></div>
+                        </md-card-title-media>
+
+                        <md-card-actions>
+                            <md-button class="md-raised md-primary"
+                                       ng-click="saveChangePassword()">Zapisz</md-button>
+                        </md-card-actions>
+
+                    </md-card>
+
+                </div>
+
+            </div>
+
+        </md-content>
+    </div>
+
+
+    <button class="md-fab md-fab-bottom-right docs-scroll-fab md-button
+                   md-ink-ripple scrolling"
+            ng-click="addNewCar()"
+            aria-label="add new medical">
+        <div>+</div>
+    </button>
+
+
+</div>
+

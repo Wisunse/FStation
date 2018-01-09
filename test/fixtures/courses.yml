@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: 
+  date_course: MyString
+  date,: MyString
+  expiry_date: 
+  medical_examination_from: 
+  medical_examination_to: 
+  firemen: one
+
+two:
+  name: 
+  date_course: MyString
+  date,: MyString
+  expiry_date: 
+  medical_examination_from: 
+  medical_examination_to: 
+  firemen: two

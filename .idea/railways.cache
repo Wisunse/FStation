@@ -15,15 +15,13 @@ cancel_user_registration GET    /users/cancel(.:format)        devise/registrati
                          DELETE /users(.:format)               devise/registrations#destroy
                          POST   /users(.:format)               devise/registrations#create
                     root GET    /                              authenticated#authenticated
-                   login GET    /login(.:format)               login#login
-                         POST   /login(.:format)               sessions#create
-               is_logged GET    /is_logged(.:format)           sessions#is_logged
-                  logout POST   /logout(.:format)              sessions#logout
+                   login GET    /login(.:format)               authenticated#authenticated
             firemen_view GET    /firemen_view(.:format)        authenticated#authenticated
                cars_view GET    /cars_view(.:format)           authenticated#authenticated
              alarms_view GET    /alarms_view(.:format)         authenticated#authenticated
           reminders_view GET    /reminders_view(.:format)      authenticated#authenticated
            settings_view GET    /settings_view(.:format)       authenticated#authenticated
+                register GET    /register(.:format)            authenticated#authenticated
                  firemen GET    /firemen(.:format)             firemen#index {:format=>:json}
                          POST   /firemen(.:format)             firemen#create {:format=>:json}
              new_fireman GET    /firemen/new(.:format)         firemen#new {:format=>:json}
