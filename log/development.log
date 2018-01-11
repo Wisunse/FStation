@@ -47081,3 +47081,1311 @@ FOREIGN KEY ("firemen_id")
   [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
   [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_advisory_unlock(7864839756650184315)[0m
   [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for 127.0.0.1 at 2018-01-11 21:17:57 +0100
+  [1m[35m (2.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by AuthenticatedController#authenticated as HTML
+  Rendering layouts/main.html.erb within layouts/application
+  Rendered layouts/main.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 8421ms (Views: 8414.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/firemen" for 127.0.0.1 at 2018-01-11 21:18:07 +0100
+Started GET "/medicals" for 127.0.0.1 at 2018-01-11 21:18:07 +0100
+  [1m[36mUser Load (2.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Processing by FiremenController#index as JSON
+  Rendering firemen/index.json.jbuilder
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Processing by MedicalsController#index as JSON
+  [1m[36mFiremen Load (15.4ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen" ORDER BY "firemen"."id" ASC[0m
+  Rendered firemen/_fireman.json.jbuilder (1.6ms)
+  Rendered firemen/_fireman.json.jbuilder (0.8ms)
+  Rendered firemen/_fireman.json.jbuilder (0.8ms)
+  Rendered firemen/_fireman.json.jbuilder (0.7ms)
+  Rendered firemen/_fireman.json.jbuilder (0.7ms)
+  Rendered firemen/_fireman.json.jbuilder (0.7ms)
+  Rendered firemen/_fireman.json.jbuilder (0.6ms)
+  Rendering medicals/index.json.jbuilder
+  Rendered firemen/_fireman.json.jbuilder (0.7ms)
+  Rendered firemen/_fireman.json.jbuilder (0.7ms)
+  Rendered firemen/_fireman.json.jbuilder (0.8ms)
+  [1m[36mMedical Load (4.5ms)[0m  [1m[34mSELECT "medicals".* FROM "medicals"[0m
+  Rendered firemen/_fireman.json.jbuilder (0.7ms)
+  Rendered firemen/_fireman.json.jbuilder (0.6ms)
+  Rendered firemen/_fireman.json.jbuilder (0.6ms)
+  Rendered firemen/_fireman.json.jbuilder (0.6ms)
+  Rendered firemen/_fireman.json.jbuilder (1.2ms)
+  Rendered medicals/_medical.json.jbuilder (1.2ms)
+  Rendered medicals/_medical.json.jbuilder (0.5ms)
+  Rendered medicals/_medical.json.jbuilder (0.5ms)
+  Rendered medicals/_medical.json.jbuilder (0.5ms)
+  Rendered medicals/_medical.json.jbuilder (0.7ms)
+  Rendered firemen/_fireman.json.jbuilder (1.0ms)
+  Rendered firemen/_fireman.json.jbuilder (0.7ms)
+  Rendered medicals/_medical.json.jbuilder (0.6ms)
+  Rendered medicals/_medical.json.jbuilder (0.7ms)
+  Rendered medicals/_medical.json.jbuilder (0.6ms)
+  Rendered medicals/_medical.json.jbuilder (0.6ms)
+  Rendered medicals/_medical.json.jbuilder (0.6ms)
+  Rendered medicals/_medical.json.jbuilder (0.6ms)
+  Rendered medicals/_medical.json.jbuilder (0.6ms)
+  Rendered firemen/index.json.jbuilder (130.1ms)
+Completed 200 OK in 174ms (Views: 127.2ms | ActiveRecord: 20.0ms)
+
+
+  Rendered medicals/_medical.json.jbuilder (0.6ms)
+  Rendered medicals/_medical.json.jbuilder (0.5ms)
+  Rendered medicals/_medical.json.jbuilder (0.6ms)
+  Rendered medicals/_medical.json.jbuilder (0.6ms)
+  Rendered medicals/index.json.jbuilder (83.1ms)
+Completed 200 OK in 151ms (Views: 90.2ms | ActiveRecord: 10.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-01-11 21:19:34 +0100
+Processing by AuthenticatedController#authenticated as HTML
+  Rendering layouts/main.html.erb within layouts/application
+  Rendered layouts/main.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 574ms (Views: 572.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/firemen" for 127.0.0.1 at 2018-01-11 21:19:35 +0100
+Started GET "/medicals" for 127.0.0.1 at 2018-01-11 21:19:35 +0100
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Processing by FiremenController#index as JSON
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Processing by MedicalsController#index as JSON
+  Rendering firemen/index.json.jbuilder
+  Rendering medicals/index.json.jbuilder
+  [1m[36mFiremen Load (1.0ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen" ORDER BY "firemen"."id" ASC[0m
+  Rendered firemen/_fireman.json.jbuilder (1.2ms)
+  Rendered firemen/_fireman.json.jbuilder (0.6ms)
+  [1m[36mMedical Load (3.5ms)[0m  [1m[34mSELECT "medicals".* FROM "medicals"[0m
+  Rendered firemen/_fireman.json.jbuilder (0.9ms)
+  Rendered firemen/_fireman.json.jbuilder (0.9ms)
+  Rendered medicals/_medical.json.jbuilder (1.5ms)
+  Rendered medicals/_medical.json.jbuilder (0.6ms)
+  Rendered medicals/_medical.json.jbuilder (0.9ms)
+  Rendered medicals/_medical.json.jbuilder (0.8ms)
+  Rendered firemen/_fireman.json.jbuilder (0.6ms)
+  Rendered firemen/_fireman.json.jbuilder (0.9ms)
+  Rendered firemen/_fireman.json.jbuilder (0.6ms)
+  Rendered firemen/_fireman.json.jbuilder (0.7ms)
+  Rendered firemen/_fireman.json.jbuilder (1.0ms)
+  Rendered firemen/_fireman.json.jbuilder (0.7ms)
+  Rendered medicals/_medical.json.jbuilder (1.1ms)
+  Rendered firemen/_fireman.json.jbuilder (0.8ms)
+  Rendered medicals/_medical.json.jbuilder (0.6ms)
+  Rendered firemen/_fireman.json.jbuilder (0.6ms)
+  Rendered medicals/_medical.json.jbuilder (0.7ms)
+  Rendered firemen/_fireman.json.jbuilder (0.5ms)
+  Rendered medicals/_medical.json.jbuilder (0.6ms)
+  Rendered firemen/_fireman.json.jbuilder (0.9ms)
+  Rendered medicals/_medical.json.jbuilder (1.8ms)
+  Rendered medicals/_medical.json.jbuilder (0.6ms)
+  Rendered medicals/_medical.json.jbuilder (0.8ms)
+  Rendered medicals/_medical.json.jbuilder (0.7ms)
+  Rendered medicals/_medical.json.jbuilder (0.5ms)
+  Rendered medicals/_medical.json.jbuilder (0.5ms)
+  Rendered medicals/_medical.json.jbuilder (0.7ms)
+  Rendered firemen/_fireman.json.jbuilder (0.8ms)
+  Rendered medicals/_medical.json.jbuilder (5.0ms)
+  Rendered medicals/index.json.jbuilder (66.5ms)
+Completed 200 OK in 72ms (Views: 67.7ms | ActiveRecord: 3.5ms)
+
+
+  Rendered firemen/_fireman.json.jbuilder (0.7ms)
+  Rendered firemen/_fireman.json.jbuilder (0.6ms)
+  Rendered firemen/index.json.jbuilder (81.2ms)
+Completed 200 OK in 91ms (Views: 88.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/dialog/_add_new_course.html" for 127.0.0.1 at 2018-01-11 21:19:38 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/dialog/_add_new_course.html"):
+  
+actionpack (5.1.2) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.2) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.2) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2018-01-11 21:19:57 +0100
+Processing by AuthenticatedController#authenticated as HTML
+  Rendering layouts/main.html.erb within layouts/application
+  Rendered layouts/main.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 730ms (Views: 729.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/firemen" for 127.0.0.1 at 2018-01-11 21:19:59 +0100
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Processing by FiremenController#index as JSON
+  Rendering firemen/index.json.jbuilder
+  [1m[36mFiremen Load (0.9ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen" ORDER BY "firemen"."id" ASC[0m
+  Rendered firemen/_fireman.json.jbuilder (1.4ms)
+Started GET "/medicals" for 127.0.0.1 at 2018-01-11 21:19:59 +0100
+  Rendered firemen/_fireman.json.jbuilder (2.0ms)
+  Rendered firemen/_fireman.json.jbuilder (0.8ms)
+  Rendered firemen/_fireman.json.jbuilder (0.5ms)
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered firemen/_fireman.json.jbuilder (0.4ms)
+Processing by MedicalsController#index as JSON
+  Rendering medicals/index.json.jbuilder
+  [1m[36mMedical Load (0.9ms)[0m  [1m[34mSELECT "medicals".* FROM "medicals"[0m
+  Rendered medicals/_medical.json.jbuilder (1.1ms)
+  Rendered medicals/_medical.json.jbuilder (0.7ms)
+  Rendered firemen/_fireman.json.jbuilder (0.7ms)
+  Rendered firemen/_fireman.json.jbuilder (0.6ms)
+  Rendered firemen/_fireman.json.jbuilder (0.4ms)
+  Rendered medicals/_medical.json.jbuilder (0.7ms)
+  Rendered medicals/_medical.json.jbuilder (0.4ms)
+  Rendered medicals/_medical.json.jbuilder (0.3ms)
+  Rendered medicals/_medical.json.jbuilder (0.5ms)
+  Rendered medicals/_medical.json.jbuilder (0.5ms)
+  Rendered firemen/_fireman.json.jbuilder (0.3ms)
+  Rendered firemen/_fireman.json.jbuilder (0.7ms)
+  Rendered firemen/_fireman.json.jbuilder (0.6ms)
+  Rendered medicals/_medical.json.jbuilder (0.7ms)
+  Rendered medicals/_medical.json.jbuilder (0.6ms)
+  Rendered medicals/_medical.json.jbuilder (0.7ms)
+  Rendered firemen/_fireman.json.jbuilder (0.3ms)
+  Rendered firemen/_fireman.json.jbuilder (0.7ms)
+  Rendered medicals/_medical.json.jbuilder (0.4ms)
+  Rendered firemen/_fireman.json.jbuilder (0.4ms)
+  Rendered medicals/_medical.json.jbuilder (0.3ms)
+  Rendered firemen/_fireman.json.jbuilder (0.5ms)
+  Rendered medicals/_medical.json.jbuilder (0.4ms)
+  Rendered medicals/_medical.json.jbuilder (0.5ms)
+  Rendered medicals/_medical.json.jbuilder (0.7ms)
+  Rendered medicals/_medical.json.jbuilder (0.7ms)
+  Rendered firemen/_fireman.json.jbuilder (0.6ms)
+  Rendered firemen/_fireman.json.jbuilder (0.9ms)
+  Rendered medicals/index.json.jbuilder (41.3ms)
+Completed 200 OK in 54ms (Views: 52.1ms | ActiveRecord: 0.9ms)
+
+
+  Rendered firemen/index.json.jbuilder (68.9ms)
+Completed 200 OK in 75ms (Views: 73.3ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-01-11 21:20:13 +0100
+Processing by AuthenticatedController#authenticated as HTML
+  Rendering layouts/main.html.erb within layouts/application
+  Rendered layouts/main.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 788ms (Views: 786.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/firemen" for 127.0.0.1 at 2018-01-11 21:20:15 +0100
+Started GET "/medicals" for 127.0.0.1 at 2018-01-11 21:20:15 +0100
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Processing by FiremenController#index as JSON
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Processing by MedicalsController#index as JSON
+  Rendering firemen/index.json.jbuilder
+  Rendering medicals/index.json.jbuilder
+  [1m[36mFiremen Load (1.1ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen" ORDER BY "firemen"."id" ASC[0m
+  [1m[36mMedical Load (1.7ms)[0m  [1m[34mSELECT "medicals".* FROM "medicals"[0m
+  Rendered firemen/_fireman.json.jbuilder (1.1ms)
+  Rendered firemen/_fireman.json.jbuilder (0.5ms)
+  Rendered firemen/_fireman.json.jbuilder (0.5ms)
+  Rendered firemen/_fireman.json.jbuilder (0.6ms)
+  Rendered medicals/_medical.json.jbuilder (0.9ms)
+  Rendered medicals/_medical.json.jbuilder (0.6ms)
+  Rendered medicals/_medical.json.jbuilder (0.6ms)
+  Rendered medicals/_medical.json.jbuilder (0.5ms)
+  Rendered medicals/_medical.json.jbuilder (0.5ms)
+  Rendered medicals/_medical.json.jbuilder (0.6ms)
+  Rendered firemen/_fireman.json.jbuilder (0.7ms)
+  Rendered firemen/_fireman.json.jbuilder (0.6ms)
+  Rendered firemen/_fireman.json.jbuilder (0.6ms)
+  Rendered firemen/_fireman.json.jbuilder (0.6ms)
+  Rendered firemen/_fireman.json.jbuilder (0.4ms)
+  Rendered firemen/_fireman.json.jbuilder (0.4ms)
+  Rendered firemen/_fireman.json.jbuilder (0.5ms)
+  Rendered firemen/_fireman.json.jbuilder (0.3ms)
+  Rendered firemen/_fireman.json.jbuilder (0.5ms)
+  Rendered medicals/_medical.json.jbuilder (0.5ms)
+  Rendered medicals/_medical.json.jbuilder (0.4ms)
+  Rendered medicals/_medical.json.jbuilder (0.3ms)
+  Rendered medicals/_medical.json.jbuilder (0.2ms)
+  Rendered medicals/_medical.json.jbuilder (0.2ms)
+  Rendered firemen/_fireman.json.jbuilder (0.6ms)
+  Rendered medicals/_medical.json.jbuilder (0.3ms)
+  Rendered firemen/_fireman.json.jbuilder (0.3ms)
+  Rendered medicals/_medical.json.jbuilder (0.2ms)
+  Rendered firemen/_fireman.json.jbuilder (0.3ms)
+  Rendered medicals/_medical.json.jbuilder (0.2ms)
+  Rendered medicals/_medical.json.jbuilder (0.2ms)
+  Rendered firemen/_fireman.json.jbuilder (0.3ms)
+  Rendered medicals/_medical.json.jbuilder (0.3ms)
+  Rendered firemen/index.json.jbuilder (41.0ms)
+Completed 200 OK in 56ms (Views: 53.4ms | ActiveRecord: 1.1ms)
+
+
+  Rendered medicals/index.json.jbuilder (47.2ms)
+Completed 200 OK in 56ms (Views: 51.1ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-01-11 21:20:43 +0100
+Processing by AuthenticatedController#authenticated as HTML
+  Rendering layouts/main.html.erb within layouts/application
+  Rendered layouts/main.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 507ms (Views: 506.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/firemen" for 127.0.0.1 at 2018-01-11 21:20:45 +0100
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Processing by FiremenController#index as JSON
+Started GET "/medicals" for 127.0.0.1 at 2018-01-11 21:20:45 +0100
+  Rendering firemen/index.json.jbuilder
+  [1m[36mUser Load (2.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Processing by MedicalsController#index as JSON
+  Rendering medicals/index.json.jbuilder
+  [1m[36mFiremen Load (9.6ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen" ORDER BY "firemen"."id" ASC[0m
+  Rendered firemen/_fireman.json.jbuilder (1.1ms)
+  Rendered firemen/_fireman.json.jbuilder (0.6ms)
+  [1m[36mMedical Load (3.2ms)[0m  [1m[34mSELECT "medicals".* FROM "medicals"[0m
+  Rendered medicals/_medical.json.jbuilder (1.4ms)
+  Rendered medicals/_medical.json.jbuilder (0.5ms)
+  Rendered firemen/_fireman.json.jbuilder (0.7ms)
+  Rendered medicals/_medical.json.jbuilder (0.8ms)
+  Rendered firemen/_fireman.json.jbuilder (0.8ms)
+  Rendered firemen/_fireman.json.jbuilder (0.7ms)
+  Rendered firemen/_fireman.json.jbuilder (0.7ms)
+  Rendered medicals/_medical.json.jbuilder (0.8ms)
+  Rendered medicals/_medical.json.jbuilder (0.7ms)
+  Rendered firemen/_fireman.json.jbuilder (0.6ms)
+  Rendered medicals/_medical.json.jbuilder (0.6ms)
+  Rendered firemen/_fireman.json.jbuilder (0.4ms)
+  Rendered medicals/_medical.json.jbuilder (0.5ms)
+  Rendered firemen/_fireman.json.jbuilder (0.4ms)
+  Rendered medicals/_medical.json.jbuilder (0.5ms)
+  Rendered firemen/_fireman.json.jbuilder (0.6ms)
+  Rendered medicals/_medical.json.jbuilder (0.5ms)
+  Rendered firemen/_fireman.json.jbuilder (0.6ms)
+  Rendered firemen/_fireman.json.jbuilder (0.7ms)
+  Rendered firemen/_fireman.json.jbuilder (0.7ms)
+  Rendered firemen/_fireman.json.jbuilder (0.6ms)
+  Rendered firemen/_fireman.json.jbuilder (0.7ms)
+  Rendered medicals/_medical.json.jbuilder (0.7ms)
+  Rendered medicals/_medical.json.jbuilder (0.4ms)
+  Rendered medicals/_medical.json.jbuilder (0.6ms)
+  Rendered medicals/_medical.json.jbuilder (0.6ms)
+  Rendered firemen/_fireman.json.jbuilder (0.5ms)
+  Rendered firemen/_fireman.json.jbuilder (0.6ms)
+  Rendered firemen/index.json.jbuilder (56.1ms)
+Completed 200 OK in 65ms (Views: 51.9ms | ActiveRecord: 9.6ms)
+
+
+  Rendered medicals/_medical.json.jbuilder (0.6ms)
+  Rendered medicals/_medical.json.jbuilder (0.8ms)
+  Rendered medicals/_medical.json.jbuilder (0.6ms)
+  Rendered medicals/index.json.jbuilder (57.6ms)
+Completed 200 OK in 63ms (Views: 58.4ms | ActiveRecord: 3.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-01-11 21:20:57 +0100
+Processing by AuthenticatedController#authenticated as HTML
+  Rendering layouts/main.html.erb within layouts/application
+  Rendered layouts/main.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 115ms (Views: 114.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/firemen" for 127.0.0.1 at 2018-01-11 21:20:58 +0100
+Started GET "/medicals" for 127.0.0.1 at 2018-01-11 21:20:58 +0100
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Processing by FiremenController#index as JSON
+Processing by MedicalsController#index as JSON
+  Rendering medicals/index.json.jbuilder
+  Rendering firemen/index.json.jbuilder
+  [1m[36mMedical Load (2.7ms)[0m  [1m[34mSELECT "medicals".* FROM "medicals"[0m
+  Rendered medicals/_medical.json.jbuilder (1.2ms)
+  Rendered medicals/_medical.json.jbuilder (0.5ms)
+  Rendered medicals/_medical.json.jbuilder (0.6ms)
+  [1m[36mFiremen Load (2.7ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen" ORDER BY "firemen"."id" ASC[0m
+  Rendered firemen/_fireman.json.jbuilder (1.5ms)
+  Rendered medicals/_medical.json.jbuilder (0.6ms)
+  Rendered firemen/_fireman.json.jbuilder (0.5ms)
+  Rendered firemen/_fireman.json.jbuilder (0.6ms)
+  Rendered firemen/_fireman.json.jbuilder (0.4ms)
+  Rendered firemen/_fireman.json.jbuilder (0.6ms)
+  Rendered firemen/_fireman.json.jbuilder (0.9ms)
+  Rendered medicals/_medical.json.jbuilder (0.7ms)
+  Rendered medicals/_medical.json.jbuilder (0.8ms)
+  Rendered medicals/_medical.json.jbuilder (0.4ms)
+  Rendered medicals/_medical.json.jbuilder (0.9ms)
+  Rendered medicals/_medical.json.jbuilder (0.7ms)
+  Rendered firemen/_fireman.json.jbuilder (0.7ms)
+  Rendered medicals/_medical.json.jbuilder (0.4ms)
+  Rendered firemen/_fireman.json.jbuilder (0.9ms)
+  Rendered medicals/_medical.json.jbuilder (0.3ms)
+  Rendered firemen/_fireman.json.jbuilder (0.8ms)
+  Rendered medicals/_medical.json.jbuilder (0.3ms)
+  Rendered firemen/_fireman.json.jbuilder (0.6ms)
+  Rendered firemen/_fireman.json.jbuilder (0.6ms)
+  Rendered medicals/_medical.json.jbuilder (0.9ms)
+  Rendered firemen/_fireman.json.jbuilder (0.6ms)
+  Rendered firemen/_fireman.json.jbuilder (0.7ms)
+  Rendered firemen/_fireman.json.jbuilder (1.1ms)
+  Rendered medicals/_medical.json.jbuilder (0.6ms)
+  Rendered medicals/_medical.json.jbuilder (0.8ms)
+  Rendered medicals/_medical.json.jbuilder (0.6ms)
+  Rendered medicals/index.json.jbuilder (60.5ms)
+Completed 200 OK in 65ms (Views: 60.4ms | ActiveRecord: 2.7ms)
+
+
+  Rendered firemen/_fireman.json.jbuilder (0.7ms)
+  Rendered firemen/_fireman.json.jbuilder (0.5ms)
+  Rendered firemen/_fireman.json.jbuilder (0.6ms)
+  Rendered firemen/index.json.jbuilder (65.6ms)
+Completed 200 OK in 74ms (Views: 69.4ms | ActiveRecord: 2.7ms)
+
+
+Started POST "/courses" for 127.0.0.1 at 2018-01-11 21:22:18 +0100
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Processing by CoursesController#create as JSON
+  Parameters: {"firemen_id"=>1, "course"=>{"firemen_id"=>1}}
+Completed 500 Internal Server Error in 18ms (ActiveRecord: 3.2ms)
+
+
+  
+ActiveModel::ForbiddenAttributesError (ActiveModel::ForbiddenAttributesError):
+  
+app/controllers/courses_controller.rb:28:in `create'
+Started GET "/" for 127.0.0.1 at 2018-01-11 21:23:04 +0100
+Processing by AuthenticatedController#authenticated as HTML
+  Rendering layouts/main.html.erb within layouts/application
+  Rendered layouts/main.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 537ms (Views: 536.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/medicals" for 127.0.0.1 at 2018-01-11 21:23:06 +0100
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Processing by MedicalsController#index as JSON
+  Rendering medicals/index.json.jbuilder
+  [1m[36mMedical Load (0.4ms)[0m  [1m[34mSELECT "medicals".* FROM "medicals"[0m
+  Rendered medicals/_medical.json.jbuilder (1.3ms)
+Started GET "/firemen" for 127.0.0.1 at 2018-01-11 21:23:06 +0100
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Processing by FiremenController#index as JSON
+  Rendering firemen/index.json.jbuilder
+  Rendered medicals/_medical.json.jbuilder (0.9ms)
+  Rendered medicals/_medical.json.jbuilder (0.4ms)
+  [1m[36mFiremen Load (1.4ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen" ORDER BY "firemen"."id" ASC[0m
+  Rendered medicals/_medical.json.jbuilder (0.8ms)
+  Rendered medicals/_medical.json.jbuilder (0.5ms)
+  Rendered firemen/_fireman.json.jbuilder (1.0ms)
+  Rendered firemen/_fireman.json.jbuilder (1.0ms)
+  Rendered firemen/_fireman.json.jbuilder (0.9ms)
+  Rendered firemen/_fireman.json.jbuilder (0.5ms)
+  Rendered medicals/_medical.json.jbuilder (0.8ms)
+  Rendered firemen/_fireman.json.jbuilder (0.3ms)
+  Rendered medicals/_medical.json.jbuilder (0.4ms)
+  Rendered firemen/_fireman.json.jbuilder (0.3ms)
+  Rendered medicals/_medical.json.jbuilder (0.3ms)
+  Rendered firemen/_fireman.json.jbuilder (0.3ms)
+  Rendered medicals/_medical.json.jbuilder (0.5ms)
+  Rendered medicals/_medical.json.jbuilder (0.7ms)
+  Rendered medicals/_medical.json.jbuilder (0.6ms)
+  Rendered medicals/_medical.json.jbuilder (0.6ms)
+  Rendered firemen/_fireman.json.jbuilder (0.6ms)
+  Rendered firemen/_fireman.json.jbuilder (0.7ms)
+  Rendered firemen/_fireman.json.jbuilder (0.7ms)
+  Rendered medicals/_medical.json.jbuilder (0.9ms)
+  Rendered medicals/_medical.json.jbuilder (0.7ms)
+  Rendered firemen/_fireman.json.jbuilder (0.8ms)
+  Rendered medicals/_medical.json.jbuilder (0.5ms)
+  Rendered firemen/_fireman.json.jbuilder (0.5ms)
+  Rendered firemen/_fireman.json.jbuilder (0.6ms)
+  Rendered medicals/_medical.json.jbuilder (0.7ms)
+  Rendered firemen/_fireman.json.jbuilder (1.1ms)
+  Rendered firemen/_fireman.json.jbuilder (0.6ms)
+  Rendered medicals/index.json.jbuilder (62.7ms)
+Completed 200 OK in 69ms (Views: 67.4ms | ActiveRecord: 0.4ms)
+
+
+  Rendered firemen/_fireman.json.jbuilder (0.6ms)
+  Rendered firemen/_fireman.json.jbuilder (0.6ms)
+  Rendered firemen/index.json.jbuilder (57.4ms)
+Completed 200 OK in 63ms (Views: 60.2ms | ActiveRecord: 1.4ms)
+
+
+Started POST "/courses" for 127.0.0.1 at 2018-01-11 21:23:24 +0100
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Processing by CoursesController#create as JSON
+  Parameters: {"name"=>"zxxc", "date_course"=>"2018-01-01T23:00:00.000Z", "date"=>"2018-01-08T23:00:00.000Z", "expiry_date"=>"2018-01-08T23:00:00.000Z", "medical_examination_from"=>"2018-01-16T23:00:00.000Z", "medical_examination_to"=>"2018-01-23T23:00:00.000Z", "firemen_id"=>1, "course"=>{"name"=>"zxxc", "date_course"=>"2018-01-01T23:00:00.000Z", "date"=>"2018-01-08T23:00:00.000Z", "expiry_date"=>"2018-01-08T23:00:00.000Z", "medical_examination_from"=>"2018-01-16T23:00:00.000Z", "medical_examination_to"=>"2018-01-23T23:00:00.000Z", "firemen_id"=>1}}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+ActiveModel::ForbiddenAttributesError (ActiveModel::ForbiddenAttributesError):
+  
+app/controllers/courses_controller.rb:28:in `create'
+Started GET "/" for 127.0.0.1 at 2018-01-11 21:25:59 +0100
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by AuthenticatedController#authenticated as HTML
+  Rendering layouts/main.html.erb within layouts/application
+  Rendered layouts/main.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 6580ms (Views: 6571.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/firemen" for 127.0.0.1 at 2018-01-11 21:26:07 +0100
+Started GET "/medicals" for 127.0.0.1 at 2018-01-11 21:26:07 +0100
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Processing by FiremenController#index as JSON
+  Rendering firemen/index.json.jbuilder
+  [1m[36mFiremen Load (2.8ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen" ORDER BY "firemen"."id" ASC[0m
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Processing by MedicalsController#index as JSON
+  Rendering medicals/index.json.jbuilder
+  Rendered firemen/_fireman.json.jbuilder (1.0ms)
+  Rendered firemen/_fireman.json.jbuilder (0.5ms)
+  Rendered firemen/_fireman.json.jbuilder (0.5ms)
+  Rendered firemen/_fireman.json.jbuilder (0.9ms)
+  [1m[36mMedical Load (27.6ms)[0m  [1m[34mSELECT "medicals".* FROM "medicals"[0m
+  Rendered firemen/_fireman.json.jbuilder (0.7ms)
+  Rendered firemen/_fireman.json.jbuilder (0.6ms)
+  Rendered firemen/_fireman.json.jbuilder (0.7ms)
+  Rendered firemen/_fireman.json.jbuilder (0.5ms)
+  Rendered medicals/_medical.json.jbuilder (0.9ms)
+  Rendered firemen/_fireman.json.jbuilder (0.5ms)
+  Rendered medicals/_medical.json.jbuilder (0.6ms)
+  Rendered firemen/_fireman.json.jbuilder (0.7ms)
+  Rendered medicals/_medical.json.jbuilder (0.5ms)
+  Rendered medicals/_medical.json.jbuilder (0.5ms)
+  Rendered firemen/_fireman.json.jbuilder (0.5ms)
+  Rendered firemen/_fireman.json.jbuilder (0.6ms)
+  Rendered firemen/_fireman.json.jbuilder (0.6ms)
+  Rendered firemen/_fireman.json.jbuilder (0.3ms)
+  Rendered medicals/_medical.json.jbuilder (0.6ms)
+  Rendered medicals/_medical.json.jbuilder (0.3ms)
+  Rendered medicals/_medical.json.jbuilder (0.3ms)
+  Rendered medicals/_medical.json.jbuilder (0.3ms)
+  Rendered medicals/_medical.json.jbuilder (0.3ms)
+  Rendered medicals/_medical.json.jbuilder (0.3ms)
+  Rendered medicals/_medical.json.jbuilder (0.3ms)
+  Rendered firemen/_fireman.json.jbuilder (0.3ms)
+  Rendered medicals/_medical.json.jbuilder (0.3ms)
+  Rendered medicals/_medical.json.jbuilder (0.5ms)
+  Rendered medicals/_medical.json.jbuilder (0.4ms)
+  Rendered medicals/_medical.json.jbuilder (0.3ms)
+  Rendered medicals/_medical.json.jbuilder (0.5ms)
+  Rendered firemen/_fireman.json.jbuilder (0.5ms)
+  Rendered firemen/_fireman.json.jbuilder (0.4ms)
+  Rendered medicals/index.json.jbuilder (76.9ms)
+Completed 200 OK in 100ms (Views: 54.6ms | ActiveRecord: 33.1ms)
+
+
+  Rendered firemen/index.json.jbuilder (115.0ms)
+Completed 200 OK in 143ms (Views: 94.0ms | ActiveRecord: 30.8ms)
+
+
+Started POST "/courses" for 127.0.0.1 at 2018-01-11 21:26:24 +0100
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Processing by CoursesController#create as JSON
+  Parameters: {"name"=>"XCVV", "date_course"=>"2018-01-09T23:00:00.000Z", "date"=>"2018-01-02T23:00:00.000Z", "expiry_date"=>"2018-01-08T23:00:00.000Z", "medical_examination_from"=>"2018-01-15T23:00:00.000Z", "medical_examination_to"=>"2018-01-15T23:00:00.000Z", "firemen_id"=>2, "course"=>{"name"=>"XCVV", "date_course"=>"2018-01-09T23:00:00.000Z", "date"=>"2018-01-02T23:00:00.000Z", "expiry_date"=>"2018-01-08T23:00:00.000Z", "medical_examination_from"=>"2018-01-15T23:00:00.000Z", "medical_examination_to"=>"2018-01-15T23:00:00.000Z", "firemen_id"=>2}}
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 3.4ms)
+
+
+  
+ActiveModel::ForbiddenAttributesError (ActiveModel::ForbiddenAttributesError):
+  
+app/controllers/courses_controller.rb:28:in `create'
+Started GET "/" for 127.0.0.1 at 2018-01-11 21:32:07 +0100
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by AuthenticatedController#authenticated as HTML
+  Rendering layouts/main.html.erb within layouts/application
+  Rendered layouts/main.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 6698ms (Views: 6689.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/firemen" for 127.0.0.1 at 2018-01-11 21:32:15 +0100
+Started GET "/medicals" for 127.0.0.1 at 2018-01-11 21:32:15 +0100
+  [1m[36mUser Load (2.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Processing by FiremenController#index as JSON
+  [1m[36mUser Load (19.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering firemen/index.json.jbuilder
+Processing by MedicalsController#index as JSON
+  [1m[36mFiremen Load (11.4ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen" ORDER BY "firemen"."id" ASC[0m
+  Rendering medicals/index.json.jbuilder
+  [1m[36mMedical Load (5.2ms)[0m  [1m[34mSELECT "medicals".* FROM "medicals"[0m
+  Rendered medicals/_medical.json.jbuilder (1.5ms)
+  Rendered firemen/_fireman.json.jbuilder (1.2ms)
+  Rendered firemen/_fireman.json.jbuilder (0.6ms)
+  Rendered firemen/_fireman.json.jbuilder (0.6ms)
+  Rendered firemen/_fireman.json.jbuilder (0.5ms)
+  Rendered firemen/_fireman.json.jbuilder (0.5ms)
+  Rendered medicals/_medical.json.jbuilder (0.6ms)
+  Rendered medicals/_medical.json.jbuilder (0.6ms)
+  Rendered firemen/_fireman.json.jbuilder (0.4ms)
+  Rendered medicals/_medical.json.jbuilder (0.3ms)
+  Rendered firemen/_fireman.json.jbuilder (0.4ms)
+  Rendered medicals/_medical.json.jbuilder (0.3ms)
+  Rendered firemen/_fireman.json.jbuilder (0.4ms)
+  Rendered firemen/_fireman.json.jbuilder (0.4ms)
+  Rendered medicals/_medical.json.jbuilder (0.3ms)
+  Rendered firemen/_fireman.json.jbuilder (0.6ms)
+  Rendered medicals/_medical.json.jbuilder (0.5ms)
+  Rendered firemen/_fireman.json.jbuilder (0.6ms)
+  Rendered medicals/_medical.json.jbuilder (0.3ms)
+  Rendered firemen/_fireman.json.jbuilder (0.6ms)
+  Rendered medicals/_medical.json.jbuilder (0.4ms)
+  Rendered firemen/_fireman.json.jbuilder (0.5ms)
+  Rendered medicals/_medical.json.jbuilder (0.3ms)
+  Rendered medicals/_medical.json.jbuilder (0.3ms)
+  Rendered firemen/_fireman.json.jbuilder (0.6ms)
+  Rendered medicals/_medical.json.jbuilder (0.3ms)
+  Rendered firemen/_fireman.json.jbuilder (0.5ms)
+  Rendered medicals/_medical.json.jbuilder (0.3ms)
+  Rendered medicals/_medical.json.jbuilder (0.3ms)
+  Rendered firemen/_fireman.json.jbuilder (0.5ms)
+  Rendered firemen/_fireman.json.jbuilder (0.5ms)
+  Rendered medicals/_medical.json.jbuilder (0.4ms)
+  Rendered firemen/index.json.jbuilder (110.4ms)
+  Rendered medicals/_medical.json.jbuilder (0.7ms)
+Completed 200 OK in 137ms (Views: 97.0ms | ActiveRecord: 20.1ms)
+
+
+  Rendered medicals/index.json.jbuilder (101.1ms)
+Completed 200 OK in 116ms (Views: 73.9ms | ActiveRecord: 32.3ms)
+
+
+Started POST "/courses" for 127.0.0.1 at 2018-01-11 21:32:34 +0100
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Processing by CoursesController#create as JSON
+  Parameters: {"name"=>"asdd", "date_course"=>"2018-01-01T23:00:00.000Z", "date"=>"2018-01-16T23:00:00.000Z", "expiry_date"=>"2018-01-09T23:00:00.000Z", "medical_examination_from"=>"2018-01-17T23:00:00.000Z", "medical_examination_to"=>"2018-01-25T23:00:00.000Z", "firemen_id"=>2, "course"=>{"name"=>"asdd", "date_course"=>"2018-01-01T23:00:00.000Z", "date"=>"2018-01-16T23:00:00.000Z", "expiry_date"=>"2018-01-09T23:00:00.000Z", "medical_examination_from"=>"2018-01-17T23:00:00.000Z", "medical_examination_to"=>"2018-01-25T23:00:00.000Z", "firemen_id"=>2}}
+Completed 500 Internal Server Error in 201ms (ActiveRecord: 3.6ms)
+
+
+  
+NameError (uninitialized constant Course::Name):
+  
+app/controllers/courses_controller.rb:30:in `create'
+Started GET "/" for 127.0.0.1 at 2018-01-11 21:33:15 +0100
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by AuthenticatedController#authenticated as HTML
+  Rendering layouts/main.html.erb within layouts/application
+  Rendered layouts/main.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 5957ms (Views: 5948.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/firemen" for 127.0.0.1 at 2018-01-11 21:33:22 +0100
+Started GET "/medicals" for 127.0.0.1 at 2018-01-11 21:33:22 +0100
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Processing by FiremenController#index as JSON
+  Rendering firemen/index.json.jbuilder
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Processing by MedicalsController#index as JSON
+  [1m[36mFiremen Load (6.3ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen" ORDER BY "firemen"."id" ASC[0m
+  Rendering medicals/index.json.jbuilder
+  [1m[36mMedical Load (0.6ms)[0m  [1m[34mSELECT "medicals".* FROM "medicals"[0m
+  Rendered firemen/_fireman.json.jbuilder (1.4ms)
+  Rendered firemen/_fireman.json.jbuilder (0.5ms)
+  Rendered firemen/_fireman.json.jbuilder (0.5ms)
+  Rendered firemen/_fireman.json.jbuilder (0.5ms)
+  Rendered firemen/_fireman.json.jbuilder (0.4ms)
+  Rendered firemen/_fireman.json.jbuilder (0.3ms)
+  Rendered firemen/_fireman.json.jbuilder (0.3ms)
+  Rendered firemen/_fireman.json.jbuilder (2.7ms)
+  Rendered medicals/_medical.json.jbuilder (1.2ms)
+  Rendered firemen/_fireman.json.jbuilder (0.6ms)
+  Rendered medicals/_medical.json.jbuilder (0.4ms)
+  Rendered firemen/_fireman.json.jbuilder (0.4ms)
+  Rendered medicals/_medical.json.jbuilder (0.3ms)
+  Rendered firemen/_fireman.json.jbuilder (0.3ms)
+  Rendered medicals/_medical.json.jbuilder (0.3ms)
+  Rendered firemen/_fireman.json.jbuilder (0.3ms)
+  Rendered medicals/_medical.json.jbuilder (0.4ms)
+  Rendered firemen/_fireman.json.jbuilder (0.5ms)
+  Rendered firemen/_fireman.json.jbuilder (0.5ms)
+  Rendered firemen/_fireman.json.jbuilder (0.6ms)
+  Rendered medicals/_medical.json.jbuilder (0.5ms)
+  Rendered medicals/_medical.json.jbuilder (0.6ms)
+  Rendered medicals/_medical.json.jbuilder (0.6ms)
+  Rendered firemen/_fireman.json.jbuilder (0.6ms)
+  Rendered firemen/_fireman.json.jbuilder (0.6ms)
+  Rendered medicals/_medical.json.jbuilder (0.6ms)
+  Rendered medicals/_medical.json.jbuilder (1.0ms)
+  Rendered medicals/_medical.json.jbuilder (0.6ms)
+  Rendered medicals/_medical.json.jbuilder (0.5ms)
+  Rendered medicals/_medical.json.jbuilder (0.5ms)
+  Rendered medicals/_medical.json.jbuilder (0.6ms)
+  Rendered firemen/index.json.jbuilder (107.5ms)
+Completed 200 OK in 134ms (Views: 98.5ms | ActiveRecord: 20.7ms)
+
+
+  Rendered medicals/_medical.json.jbuilder (0.6ms)
+  Rendered medicals/_medical.json.jbuilder (0.7ms)
+  Rendered medicals/index.json.jbuilder (96.6ms)
+Completed 200 OK in 114ms (Views: 95.0ms | ActiveRecord: 9.3ms)
+
+
+Started POST "/courses" for 127.0.0.1 at 2018-01-11 21:33:39 +0100
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Processing by CoursesController#create as JSON
+  Parameters: {"name"=>"vbnn", "date_course"=>"2018-01-01T23:00:00.000Z", "date"=>"2018-01-09T23:00:00.000Z", "expiry_date"=>"2018-01-15T23:00:00.000Z", "medical_examination_from"=>"2018-01-16T23:00:00.000Z", "medical_examination_to"=>"2018-01-24T23:00:00.000Z", "firemen_id"=>2, "course"=>{"name"=>"vbnn", "date_course"=>"2018-01-01T23:00:00.000Z", "date"=>"2018-01-09T23:00:00.000Z", "expiry_date"=>"2018-01-15T23:00:00.000Z", "medical_examination_from"=>"2018-01-16T23:00:00.000Z", "medical_examination_to"=>"2018-01-24T23:00:00.000Z", "firemen_id"=>2}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFiremen Load (0.4ms)[0m  [1m[34mSELECT  "firemen".* FROM "firemen" WHERE "firemen"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35mSQL (3.7ms)[0m  [1m[32mINSERT INTO "courses" ("name", "date_course", "date", "expiry_date", "medical_examination_from", "medical_examination_to", "firemen_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "vbnn"], ["date_course", "2018-01-01T23:00:00.000Z"], ["date", "2018-01-09T23:00:00.000Z"], ["expiry_date", "2018-01-15"], ["medical_examination_from", "2018-01-16"], ["medical_examination_to", "2018-01-24"], ["firemen_id", 2], ["created_at", "2018-01-11 20:33:39.861502"], ["updated_at", "2018-01-11 20:33:39.861502"]]
+  [1m[35m (11.0ms)[0m  [1m[35mCOMMIT[0m
+  Rendering courses/show.json.jbuilder
+  Rendered courses/_course.json.jbuilder (0.7ms)
+  Rendered courses/show.json.jbuilder (2.2ms)
+Completed 201 Created in 229ms (Views: 8.6ms | ActiveRecord: 18.8ms)
+
+
+Started GET "/medicals" for 127.0.0.1 at 2018-01-11 21:33:39 +0100
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Processing by MedicalsController#index as JSON
+  Rendering medicals/index.json.jbuilder
+  [1m[36mMedical Load (0.4ms)[0m  [1m[34mSELECT "medicals".* FROM "medicals"[0m
+  Rendered medicals/_medical.json.jbuilder (1.1ms)
+  Rendered medicals/_medical.json.jbuilder (0.5ms)
+  Rendered medicals/_medical.json.jbuilder (0.5ms)
+  Rendered medicals/_medical.json.jbuilder (0.5ms)
+  Rendered medicals/_medical.json.jbuilder (0.5ms)
+  Rendered medicals/_medical.json.jbuilder (0.5ms)
+  Rendered medicals/_medical.json.jbuilder (0.5ms)
+  Rendered medicals/_medical.json.jbuilder (0.6ms)
+  Rendered medicals/_medical.json.jbuilder (0.6ms)
+  Rendered medicals/_medical.json.jbuilder (0.7ms)
+  Rendered medicals/_medical.json.jbuilder (0.5ms)
+  Rendered medicals/_medical.json.jbuilder (0.5ms)
+  Rendered medicals/_medical.json.jbuilder (0.5ms)
+  Rendered medicals/_medical.json.jbuilder (0.4ms)
+  Rendered medicals/_medical.json.jbuilder (0.5ms)
+  Rendered medicals/_medical.json.jbuilder (0.5ms)
+  Rendered medicals/index.json.jbuilder (23.6ms)
+Completed 200 OK in 28ms (Views: 26.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-01-11 21:33:50 +0100
+Processing by AuthenticatedController#authenticated as HTML
+  Rendering layouts/main.html.erb within layouts/application
+  Rendered layouts/main.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 85ms (Views: 84.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/firemen" for 127.0.0.1 at 2018-01-11 21:33:52 +0100
+Started GET "/medicals" for 127.0.0.1 at 2018-01-11 21:33:52 +0100
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Processing by FiremenController#index as JSON
+  Rendering firemen/index.json.jbuilder
+  [1m[36mUser Load (4.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Processing by MedicalsController#index as JSON
+  Rendering medicals/index.json.jbuilder
+  [1m[36mFiremen Load (8.5ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen" ORDER BY "firemen"."id" ASC[0m
+  Rendered firemen/_fireman.json.jbuilder (1.0ms)
+  Rendered firemen/_fireman.json.jbuilder (0.4ms)
+  Rendered firemen/_fireman.json.jbuilder (0.6ms)
+  Rendered firemen/_fireman.json.jbuilder (0.7ms)
+  Rendered firemen/_fireman.json.jbuilder (1.0ms)
+  [1m[36mMedical Load (6.7ms)[0m  [1m[34mSELECT "medicals".* FROM "medicals"[0m
+  Rendered firemen/_fireman.json.jbuilder (0.9ms)
+  Rendered medicals/_medical.json.jbuilder (1.6ms)
+  Rendered firemen/_fireman.json.jbuilder (0.7ms)
+  Rendered firemen/_fireman.json.jbuilder (0.7ms)
+  Rendered firemen/_fireman.json.jbuilder (0.8ms)
+  Rendered medicals/_medical.json.jbuilder (0.6ms)
+  Rendered firemen/_fireman.json.jbuilder (0.8ms)
+  Rendered medicals/_medical.json.jbuilder (0.8ms)
+  Rendered firemen/_fireman.json.jbuilder (0.4ms)
+  Rendered medicals/_medical.json.jbuilder (0.4ms)
+  Rendered firemen/_fireman.json.jbuilder (0.8ms)
+  Rendered medicals/_medical.json.jbuilder (0.6ms)
+  Rendered medicals/_medical.json.jbuilder (0.4ms)
+  Rendered medicals/_medical.json.jbuilder (0.4ms)
+  Rendered medicals/_medical.json.jbuilder (0.4ms)
+  Rendered firemen/_fireman.json.jbuilder (0.7ms)
+  Rendered medicals/_medical.json.jbuilder (0.5ms)
+  Rendered medicals/_medical.json.jbuilder (0.6ms)
+  Rendered firemen/_fireman.json.jbuilder (0.7ms)
+  Rendered medicals/_medical.json.jbuilder (0.6ms)
+  Rendered medicals/_medical.json.jbuilder (0.7ms)
+  Rendered medicals/_medical.json.jbuilder (0.7ms)
+  Rendered medicals/_medical.json.jbuilder (0.7ms)
+  Rendered firemen/_fireman.json.jbuilder (0.8ms)
+  Rendered medicals/_medical.json.jbuilder (1.0ms)
+  Rendered medicals/_medical.json.jbuilder (0.8ms)
+  Rendered firemen/_fireman.json.jbuilder (1.1ms)
+  Rendered firemen/_fireman.json.jbuilder (0.7ms)
+  Rendered medicals/index.json.jbuilder (54.3ms)
+Completed 200 OK in 71ms (Views: 62.5ms | ActiveRecord: 6.7ms)
+
+
+  Rendered firemen/index.json.jbuilder (72.7ms)
+Completed 200 OK in 80ms (Views: 70.3ms | ActiveRecord: 8.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-01-11 21:40:16 +0100
+Processing by AuthenticatedController#authenticated as HTML
+  Rendering layouts/main.html.erb within layouts/application
+  Rendered layouts/main.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 1011ms (Views: 1009.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/firemen" for 127.0.0.1 at 2018-01-11 21:40:18 +0100
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Processing by FiremenController#index as JSON
+Started GET "/medicals" for 127.0.0.1 at 2018-01-11 21:40:18 +0100
+Started GET "/courses" for 127.0.0.1 at 2018-01-11 21:40:18 +0100
+  [1m[36mUser Load (3.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Processing by MedicalsController#index as JSON
+  Rendering medicals/index.json.jbuilder
+  Rendering firemen/index.json.jbuilder
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Processing by CoursesController#index as JSON
+  [1m[36mFiremen Load (2.9ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen" ORDER BY "firemen"."id" ASC[0m
+  Rendered firemen/_fireman.json.jbuilder (1.3ms)
+  [1m[36mMedical Load (23.5ms)[0m  [1m[34mSELECT "medicals".* FROM "medicals"[0m
+  Rendering courses/index.json.jbuilder
+  Rendered firemen/_fireman.json.jbuilder (0.5ms)
+  Rendered firemen/_fireman.json.jbuilder (0.6ms)
+  Rendered firemen/_fireman.json.jbuilder (0.7ms)
+  Rendered firemen/_fireman.json.jbuilder (0.6ms)
+  Rendered medicals/_medical.json.jbuilder (1.0ms)
+  [1m[36mCourse Load (2.7ms)[0m  [1m[34mSELECT "courses".* FROM "courses"[0m
+  Rendered courses/_course.json.jbuilder (1.0ms)
+  Rendered courses/index.json.jbuilder (10.4ms)
+Completed 200 OK in 21ms (Views: 13.3ms | ActiveRecord: 2.7ms)
+
+
+  Rendered medicals/_medical.json.jbuilder (0.6ms)
+  Rendered medicals/_medical.json.jbuilder (0.7ms)
+  Rendered medicals/_medical.json.jbuilder (0.6ms)
+  Rendered medicals/_medical.json.jbuilder (0.7ms)
+  Rendered medicals/_medical.json.jbuilder (0.7ms)
+  Rendered medicals/_medical.json.jbuilder (0.6ms)
+  Rendered medicals/_medical.json.jbuilder (0.6ms)
+  Rendered firemen/_fireman.json.jbuilder (0.7ms)
+  Rendered firemen/_fireman.json.jbuilder (0.6ms)
+  Rendered firemen/_fireman.json.jbuilder (0.5ms)
+  Rendered firemen/_fireman.json.jbuilder (0.6ms)
+  Rendered firemen/_fireman.json.jbuilder (0.6ms)
+  Rendered firemen/_fireman.json.jbuilder (0.6ms)
+  Rendered firemen/_fireman.json.jbuilder (0.5ms)
+  Rendered firemen/_fireman.json.jbuilder (0.4ms)
+  Rendered medicals/_medical.json.jbuilder (0.7ms)
+  Rendered medicals/_medical.json.jbuilder (0.4ms)
+  Rendered medicals/_medical.json.jbuilder (0.3ms)
+  Rendered medicals/_medical.json.jbuilder (0.3ms)
+  Rendered medicals/_medical.json.jbuilder (0.2ms)
+  Rendered medicals/_medical.json.jbuilder (0.2ms)
+  Rendered medicals/_medical.json.jbuilder (0.2ms)
+  Rendered firemen/_fireman.json.jbuilder (0.5ms)
+  Rendered medicals/_medical.json.jbuilder (0.4ms)
+  Rendered firemen/_fireman.json.jbuilder (0.4ms)
+  Rendered medicals/index.json.jbuilder (72.5ms)
+Completed 200 OK in 79ms (Views: 54.6ms | ActiveRecord: 23.5ms)
+
+
+  Rendered firemen/_fireman.json.jbuilder (0.8ms)
+  Rendered firemen/_fireman.json.jbuilder (0.6ms)
+  Rendered firemen/index.json.jbuilder (64.6ms)
+Completed 200 OK in 96ms (Views: 78.2ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-01-11 21:40:57 +0100
+Processing by AuthenticatedController#authenticated as HTML
+  Rendering layouts/main.html.erb within layouts/application
+  Rendered layouts/main.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 187ms (Views: 185.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/firemen" for 127.0.0.1 at 2018-01-11 21:40:58 +0100
+Started GET "/medicals" for 127.0.0.1 at 2018-01-11 21:40:58 +0100
+  [1m[36mUser Load (3.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Processing by FiremenController#index as JSON
+  Rendering firemen/index.json.jbuilder
+  [1m[36mFiremen Load (0.8ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen" ORDER BY "firemen"."id" ASC[0m
+  Rendered firemen/_fireman.json.jbuilder (1.1ms)
+Started GET "/courses" for 127.0.0.1 at 2018-01-11 21:40:58 +0100
+  [1m[36mUser Load (6.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Processing by MedicalsController#index as JSON
+  Rendering medicals/index.json.jbuilder
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Processing by CoursesController#index as JSON
+  Rendering courses/index.json.jbuilder
+  [1m[36mMedical Load (8.0ms)[0m  [1m[34mSELECT "medicals".* FROM "medicals"[0m
+  Rendered medicals/_medical.json.jbuilder (0.8ms)
+  Rendered firemen/_fireman.json.jbuilder (0.4ms)
+  Rendered firemen/_fireman.json.jbuilder (0.7ms)
+  Rendered firemen/_fireman.json.jbuilder (0.3ms)
+  [1m[36mCourse Load (3.6ms)[0m  [1m[34mSELECT "courses".* FROM "courses"[0m
+  Rendered firemen/_fireman.json.jbuilder (0.4ms)
+  Rendered medicals/_medical.json.jbuilder (0.3ms)
+  Rendered medicals/_medical.json.jbuilder (0.6ms)
+  Rendered medicals/_medical.json.jbuilder (0.3ms)
+  Rendered firemen/_fireman.json.jbuilder (0.6ms)
+  Rendered firemen/_fireman.json.jbuilder (0.3ms)
+  Rendered courses/_course.json.jbuilder (1.1ms)
+  Rendered courses/index.json.jbuilder (16.0ms)
+Completed 200 OK in 21ms (Views: 16.2ms | ActiveRecord: 3.6ms)
+
+
+  Rendered firemen/_fireman.json.jbuilder (0.3ms)
+  Rendered firemen/_fireman.json.jbuilder (0.6ms)
+  Rendered firemen/_fireman.json.jbuilder (0.4ms)
+  Rendered medicals/_medical.json.jbuilder (0.3ms)
+  Rendered medicals/_medical.json.jbuilder (0.6ms)
+  Rendered medicals/_medical.json.jbuilder (0.6ms)
+  Rendered firemen/_fireman.json.jbuilder (0.5ms)
+  Rendered firemen/_fireman.json.jbuilder (0.6ms)
+  Rendered firemen/_fireman.json.jbuilder (0.6ms)
+  Rendered firemen/_fireman.json.jbuilder (0.7ms)
+  Rendered firemen/_fireman.json.jbuilder (0.5ms)
+  Rendered firemen/_fireman.json.jbuilder (0.8ms)
+  Rendered medicals/_medical.json.jbuilder (0.6ms)
+  Rendered medicals/_medical.json.jbuilder (0.6ms)
+  Rendered medicals/_medical.json.jbuilder (0.6ms)
+  Rendered medicals/_medical.json.jbuilder (0.3ms)
+  Rendered medicals/_medical.json.jbuilder (0.3ms)
+  Rendered medicals/_medical.json.jbuilder (0.2ms)
+  Rendered medicals/_medical.json.jbuilder (0.7ms)
+  Rendered firemen/_fireman.json.jbuilder (0.4ms)
+  Rendered medicals/_medical.json.jbuilder (0.4ms)
+  Rendered firemen/index.json.jbuilder (59.8ms)
+Completed 200 OK in 66ms (Views: 64.6ms | ActiveRecord: 0.8ms)
+
+
+  Rendered medicals/_medical.json.jbuilder (0.6ms)
+  Rendered medicals/index.json.jbuilder (55.4ms)
+Completed 200 OK in 61ms (Views: 52.0ms | ActiveRecord: 8.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-01-11 21:43:11 +0100
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by AuthenticatedController#authenticated as HTML
+  Rendering layouts/main.html.erb within layouts/application
+  Rendered layouts/main.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 6376ms (Views: 6367.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/medicals" for 127.0.0.1 at 2018-01-11 21:43:19 +0100
+Started GET "/courses" for 127.0.0.1 at 2018-01-11 21:43:19 +0100
+Started GET "/firemen" for 127.0.0.1 at 2018-01-11 21:43:19 +0100
+  [1m[36mUser Load (2.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Processing by MedicalsController#index as JSON
+  Rendering medicals/index.json.jbuilder
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Processing by CoursesController#index as JSON
+Processing by FiremenController#index as JSON
+  Rendering firemen/index.json.jbuilder
+  [1m[36mMedical Load (38.4ms)[0m  [1m[34mSELECT "medicals".* FROM "medicals"[0m
+  [1m[36mFiremen Load (1.2ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen" ORDER BY "firemen"."id" ASC[0m
+  Rendering courses/index.json.jbuilder
+  Rendered medicals/_medical.json.jbuilder (1.3ms)
+  Rendered medicals/_medical.json.jbuilder (0.5ms)
+  Rendered medicals/_medical.json.jbuilder (0.4ms)
+  [1m[36mCourse Load (20.3ms)[0m  [1m[34mSELECT "courses".* FROM "courses"[0m
+  Rendered medicals/_medical.json.jbuilder (0.5ms)
+  Rendered medicals/_medical.json.jbuilder (0.6ms)
+  Rendered medicals/_medical.json.jbuilder (0.5ms)
+  Rendered medicals/_medical.json.jbuilder (0.7ms)
+  Rendered medicals/_medical.json.jbuilder (0.3ms)
+  Rendered medicals/_medical.json.jbuilder (0.3ms)
+  Rendered medicals/_medical.json.jbuilder (0.4ms)
+  Rendered medicals/_medical.json.jbuilder (0.5ms)
+  Rendered medicals/_medical.json.jbuilder (0.4ms)
+  Rendered medicals/_medical.json.jbuilder (0.7ms)
+  Rendered medicals/_medical.json.jbuilder (0.5ms)
+  Rendered medicals/_medical.json.jbuilder (0.5ms)
+  Rendered medicals/_medical.json.jbuilder (0.6ms)
+  Rendered medicals/index.json.jbuilder (137.3ms)
+Completed 200 OK in 159ms (Views: 102.8ms | ActiveRecord: 43.5ms)
+
+
+  Rendered firemen/_fireman.json.jbuilder (0.9ms)
+  Rendered firemen/_fireman.json.jbuilder (0.9ms)
+  Rendered firemen/_fireman.json.jbuilder (0.9ms)
+  Rendered firemen/_fireman.json.jbuilder (0.7ms)
+  Rendered firemen/_fireman.json.jbuilder (0.7ms)
+  Rendered firemen/_fireman.json.jbuilder (0.6ms)
+  Rendered firemen/_fireman.json.jbuilder (0.6ms)
+  Rendered firemen/_fireman.json.jbuilder (0.5ms)
+  Rendered firemen/_fireman.json.jbuilder (0.5ms)
+  Rendered firemen/_fireman.json.jbuilder (0.7ms)
+  Rendered courses/_course.json.jbuilder (1.2ms)
+  Rendered courses/index.json.jbuilder (116.9ms)
+Completed 200 OK in 161ms (Views: 103.5ms | ActiveRecord: 28.5ms)
+
+
+  Rendered firemen/_fireman.json.jbuilder (0.8ms)
+  Rendered firemen/_fireman.json.jbuilder (0.7ms)
+  Rendered firemen/_fireman.json.jbuilder (0.7ms)
+  Rendered firemen/_fireman.json.jbuilder (0.6ms)
+  Rendered firemen/_fireman.json.jbuilder (0.6ms)
+  Rendered firemen/_fireman.json.jbuilder (0.7ms)
+  Rendered firemen/_fireman.json.jbuilder (0.7ms)
+  Rendered firemen/index.json.jbuilder (165.0ms)
+Completed 200 OK in 197ms (Views: 152.4ms | ActiveRecord: 22.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-01-11 22:05:12 +0100
+Processing by AuthenticatedController#authenticated as HTML
+  Rendering layouts/main.html.erb within layouts/application
+  Rendered layouts/main.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 805ms (Views: 804.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/firemen" for 127.0.0.1 at 2018-01-11 22:05:15 +0100
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Processing by FiremenController#index as JSON
+  Rendering firemen/index.json.jbuilder
+  [1m[36mFiremen Load (0.9ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen" ORDER BY "firemen"."id" ASC[0m
+Started GET "/medicals" for 127.0.0.1 at 2018-01-11 22:05:15 +0100
+  Rendered firemen/_fireman.json.jbuilder (1.4ms)
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Processing by MedicalsController#index as JSON
+  Rendering medicals/index.json.jbuilder
+Started GET "/courses" for 127.0.0.1 at 2018-01-11 22:05:15 +0100
+  Rendered firemen/_fireman.json.jbuilder (1.1ms)
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Processing by CoursesController#index as JSON
+  [1m[36mMedical Load (7.9ms)[0m  [1m[34mSELECT "medicals".* FROM "medicals"[0m
+  Rendering courses/index.json.jbuilder
+  Rendered firemen/_fireman.json.jbuilder (1.1ms)
+  Rendered firemen/_fireman.json.jbuilder (0.8ms)
+  Rendered firemen/_fireman.json.jbuilder (0.6ms)
+  [1m[36mCourse Load (1.6ms)[0m  [1m[34mSELECT "courses".* FROM "courses"[0m
+  Rendered medicals/_medical.json.jbuilder (1.2ms)
+  Rendered courses/_course.json.jbuilder (1.2ms)
+  Rendered courses/index.json.jbuilder (10.3ms)
+Completed 200 OK in 18ms (Views: 15.2ms | ActiveRecord: 1.6ms)
+
+
+  Rendered medicals/_medical.json.jbuilder (0.6ms)
+  Rendered medicals/_medical.json.jbuilder (0.6ms)
+  Rendered medicals/_medical.json.jbuilder (0.6ms)
+  Rendered medicals/_medical.json.jbuilder (0.6ms)
+  Rendered firemen/_fireman.json.jbuilder (0.6ms)
+  Rendered firemen/_fireman.json.jbuilder (0.7ms)
+  Rendered firemen/_fireman.json.jbuilder (0.6ms)
+  Rendered medicals/_medical.json.jbuilder (0.9ms)
+  Rendered medicals/_medical.json.jbuilder (0.8ms)
+  Rendered medicals/_medical.json.jbuilder (0.6ms)
+  Rendered firemen/_fireman.json.jbuilder (0.6ms)
+  Rendered firemen/_fireman.json.jbuilder (0.8ms)
+  Rendered firemen/_fireman.json.jbuilder (0.6ms)
+  Rendered medicals/_medical.json.jbuilder (0.6ms)
+  Rendered medicals/_medical.json.jbuilder (0.6ms)
+  Rendered medicals/_medical.json.jbuilder (0.6ms)
+  Rendered firemen/_fireman.json.jbuilder (0.6ms)
+  Rendered firemen/_fireman.json.jbuilder (0.6ms)
+  Rendered medicals/_medical.json.jbuilder (0.8ms)
+  Rendered firemen/_fireman.json.jbuilder (0.6ms)
+  Rendered firemen/_fireman.json.jbuilder (0.6ms)
+  Rendered firemen/_fireman.json.jbuilder (0.6ms)
+  Rendered firemen/_fireman.json.jbuilder (0.6ms)
+  Rendered medicals/_medical.json.jbuilder (0.6ms)
+  Rendered medicals/_medical.json.jbuilder (0.7ms)
+  Rendered medicals/_medical.json.jbuilder (0.6ms)
+  Rendered medicals/_medical.json.jbuilder (0.7ms)
+  Rendered medicals/index.json.jbuilder (83.9ms)
+Completed 200 OK in 92ms (Views: 82.5ms | ActiveRecord: 7.9ms)
+
+
+  Rendered firemen/index.json.jbuilder (103.4ms)
+Completed 200 OK in 109ms (Views: 107.6ms | ActiveRecord: 0.9ms)
+
+
+Started POST "/courses" for 127.0.0.1 at 2018-01-11 22:05:37 +0100
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Processing by CoursesController#create as JSON
+  Parameters: {"name"=>"nowe", "date_course"=>"2018-01-01T23:00:00.000Z", "date"=>"2018-01-01T23:00:00.000Z", "expiry_date"=>"2018-01-08T23:00:00.000Z", "medical_examination_from"=>"2018-01-22T23:00:00.000Z", "medical_examination_to"=>"2018-01-30T23:00:00.000Z", "firemen_id"=>2, "course"=>{"name"=>"nowe", "date_course"=>"2018-01-01T23:00:00.000Z", "date"=>"2018-01-01T23:00:00.000Z", "expiry_date"=>"2018-01-08T23:00:00.000Z", "medical_examination_from"=>"2018-01-22T23:00:00.000Z", "medical_examination_to"=>"2018-01-30T23:00:00.000Z", "firemen_id"=>2}}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFiremen Load (0.3ms)[0m  [1m[34mSELECT  "firemen".* FROM "firemen" WHERE "firemen"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35mSQL (0.8ms)[0m  [1m[32mINSERT INTO "courses" ("name", "date_course", "date", "expiry_date", "medical_examination_from", "medical_examination_to", "firemen_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "nowe"], ["date_course", "2018-01-01T23:00:00.000Z"], ["date", "2018-01-01T23:00:00.000Z"], ["expiry_date", "2018-01-08"], ["medical_examination_from", "2018-01-22"], ["medical_examination_to", "2018-01-30"], ["firemen_id", 2], ["created_at", "2018-01-11 21:05:37.974431"], ["updated_at", "2018-01-11 21:05:37.974431"]]
+  [1m[35m (12.9ms)[0m  [1m[35mCOMMIT[0m
+  Rendering courses/show.json.jbuilder
+  Rendered courses/_course.json.jbuilder (0.7ms)
+  Rendered courses/show.json.jbuilder (2.3ms)
+Completed 201 Created in 42ms (Views: 7.0ms | ActiveRecord: 14.5ms)
+
+
+Started GET "/medicals" for 127.0.0.1 at 2018-01-11 22:05:38 +0100
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Processing by MedicalsController#index as JSON
+  Rendering medicals/index.json.jbuilder
+  [1m[36mMedical Load (0.4ms)[0m  [1m[34mSELECT "medicals".* FROM "medicals"[0m
+  Rendered medicals/_medical.json.jbuilder (1.0ms)
+  Rendered medicals/_medical.json.jbuilder (0.6ms)
+  Rendered medicals/_medical.json.jbuilder (0.7ms)
+  Rendered medicals/_medical.json.jbuilder (0.5ms)
+  Rendered medicals/_medical.json.jbuilder (0.5ms)
+  Rendered medicals/_medical.json.jbuilder (0.5ms)
+  Rendered medicals/_medical.json.jbuilder (0.6ms)
+  Rendered medicals/_medical.json.jbuilder (0.6ms)
+  Rendered medicals/_medical.json.jbuilder (0.6ms)
+  Rendered medicals/_medical.json.jbuilder (0.6ms)
+  Rendered medicals/_medical.json.jbuilder (0.7ms)
+  Rendered medicals/_medical.json.jbuilder (0.5ms)
+  Rendered medicals/_medical.json.jbuilder (0.5ms)
+  Rendered medicals/_medical.json.jbuilder (0.6ms)
+  Rendered medicals/_medical.json.jbuilder (0.6ms)
+  Rendered medicals/_medical.json.jbuilder (0.6ms)
+  Rendered medicals/index.json.jbuilder (32.8ms)
+Completed 200 OK in 37ms (Views: 35.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-01-11 22:06:09 +0100
+Processing by AuthenticatedController#authenticated as HTML
+  Rendering layouts/main.html.erb within layouts/application
+  Rendered layouts/main.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 516ms (Views: 515.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/firemen" for 127.0.0.1 at 2018-01-11 22:06:11 +0100
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Processing by FiremenController#index as JSON
+Started GET "/medicals" for 127.0.0.1 at 2018-01-11 22:06:11 +0100
+Started GET "/courses" for 127.0.0.1 at 2018-01-11 22:06:11 +0100
+  [1m[36mUser Load (3.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Processing by MedicalsController#index as JSON
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering firemen/index.json.jbuilder
+Processing by CoursesController#index as JSON
+  Rendering courses/index.json.jbuilder
+  Rendering medicals/index.json.jbuilder
+  [1m[36mFiremen Load (15.1ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen" ORDER BY "firemen"."id" ASC[0m
+  [1m[36mCourse Load (3.5ms)[0m  [1m[34mSELECT "courses".* FROM "courses"[0m
+  [1m[36mMedical Load (2.4ms)[0m  [1m[34mSELECT "medicals".* FROM "medicals"[0m
+  Rendered medicals/_medical.json.jbuilder (1.1ms)
+  Rendered medicals/_medical.json.jbuilder (0.5ms)
+  Rendered medicals/_medical.json.jbuilder (0.7ms)
+  Rendered medicals/_medical.json.jbuilder (0.3ms)
+  Rendered firemen/_fireman.json.jbuilder (1.4ms)
+  Rendered firemen/_fireman.json.jbuilder (0.7ms)
+  Rendered firemen/_fireman.json.jbuilder (0.6ms)
+  Rendered firemen/_fireman.json.jbuilder (0.8ms)
+  Rendered firemen/_fireman.json.jbuilder (0.8ms)
+  Rendered firemen/_fireman.json.jbuilder (0.6ms)
+  Rendered firemen/_fireman.json.jbuilder (0.6ms)
+  Rendered firemen/_fireman.json.jbuilder (0.5ms)
+  Rendered medicals/_medical.json.jbuilder (1.0ms)
+  Rendered courses/_course.json.jbuilder (1.0ms)
+  Rendered firemen/_fireman.json.jbuilder (0.7ms)
+  Rendered medicals/_medical.json.jbuilder (0.8ms)
+  Rendered courses/_course.json.jbuilder (0.7ms)
+  Rendered courses/index.json.jbuilder (37.1ms)
+Completed 200 OK in 46ms (Views: 41.6ms | ActiveRecord: 3.5ms)
+
+
+  Rendered medicals/_medical.json.jbuilder (0.7ms)
+  Rendered medicals/_medical.json.jbuilder (0.6ms)
+  Rendered medicals/_medical.json.jbuilder (0.6ms)
+  Rendered firemen/_fireman.json.jbuilder (0.6ms)
+  Rendered medicals/_medical.json.jbuilder (0.8ms)
+  Rendered firemen/_fireman.json.jbuilder (0.5ms)
+  Rendered firemen/_fireman.json.jbuilder (0.6ms)
+  Rendered medicals/_medical.json.jbuilder (0.5ms)
+  Rendered medicals/_medical.json.jbuilder (0.6ms)
+  Rendered medicals/_medical.json.jbuilder (0.5ms)
+  Rendered medicals/_medical.json.jbuilder (0.7ms)
+  Rendered medicals/_medical.json.jbuilder (0.5ms)
+  Rendered medicals/_medical.json.jbuilder (0.6ms)
+  Rendered firemen/_fireman.json.jbuilder (0.9ms)
+  Rendered medicals/index.json.jbuilder (57.5ms)
+  Rendered firemen/_fireman.json.jbuilder (0.6ms)
+Completed 200 OK in 79ms (Views: 72.3ms | ActiveRecord: 2.4ms)
+
+
+  Rendered firemen/_fireman.json.jbuilder (0.5ms)
+  Rendered firemen/_fireman.json.jbuilder (1.0ms)
+  Rendered firemen/_fireman.json.jbuilder (0.8ms)
+  Rendered firemen/index.json.jbuilder (84.9ms)
+Completed 200 OK in 101ms (Views: 78.0ms | ActiveRecord: 15.1ms)
+
+
+Started POST "/courses" for 127.0.0.1 at 2018-01-11 22:06:19 +0100
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Processing by CoursesController#create as JSON
+  Parameters: {"name"=>"xcvvvv", "firemen_id"=>2, "course"=>{"name"=>"xcvvvv", "firemen_id"=>2}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFiremen Load (0.5ms)[0m  [1m[34mSELECT  "firemen".* FROM "firemen" WHERE "firemen"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35mSQL (1.1ms)[0m  [1m[32mINSERT INTO "courses" ("name", "firemen_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "xcvvvv"], ["firemen_id", 2], ["created_at", "2018-01-11 21:06:19.560358"], ["updated_at", "2018-01-11 21:06:19.560358"]]
+  [1m[35m (12.8ms)[0m  [1m[35mCOMMIT[0m
+  Rendering courses/show.json.jbuilder
+  Rendered courses/_course.json.jbuilder (0.9ms)
+  Rendered courses/show.json.jbuilder (2.3ms)
+Completed 201 Created in 28ms (Views: 7.4ms | ActiveRecord: 14.9ms)
+
+
+Started GET "/courses" for 127.0.0.1 at 2018-01-11 22:06:19 +0100
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Processing by CoursesController#index as JSON
+  Rendering courses/index.json.jbuilder
+  [1m[36mCourse Load (0.3ms)[0m  [1m[34mSELECT "courses".* FROM "courses"[0m
+  Rendered courses/_course.json.jbuilder (0.9ms)
+  Rendered courses/_course.json.jbuilder (0.3ms)
+  Rendered courses/_course.json.jbuilder (0.3ms)
+  Rendered courses/index.json.jbuilder (4.4ms)
+Completed 200 OK in 8ms (Views: 6.5ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/medicals" for 127.0.0.1 at 2018-01-11 22:06:58 +0100
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Processing by MedicalsController#create as JSON
+  Parameters: {"name"=>"okresowe", "examination_date"=>"2018-01-01T23:00:00.000Z", "start_date"=>"2018-01-08T23:00:00.000Z", "end_date"=>"2018-01-22T23:00:00.000Z", "firemen_id"=>2, "medical"=>{"name"=>"okresowe", "examination_date"=>"2018-01-01T23:00:00.000Z", "start_date"=>"2018-01-08T23:00:00.000Z", "end_date"=>"2018-01-22T23:00:00.000Z", "firemen_id"=>2}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (170.3ms)[0m  [1m[32mINSERT INTO "medicals" ("name", "examination_date", "start_date", "end_date", "firemen_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "okresowe"], ["examination_date", "2018-01-01"], ["start_date", "2018-01-08"], ["end_date", "2018-01-22"], ["firemen_id", 2], ["created_at", "2018-01-11 21:06:58.738286"], ["updated_at", "2018-01-11 21:06:58.738286"]]
+  [1m[35m (25.1ms)[0m  [1m[35mCOMMIT[0m
+  Rendering medicals/show.json.jbuilder
+  Rendered medicals/_medical.json.jbuilder (0.7ms)
+  Rendered medicals/show.json.jbuilder (1.8ms)
+Completed 201 Created in 211ms (Views: 10.3ms | ActiveRecord: 195.5ms)
+
+
+Started GET "/medicals" for 127.0.0.1 at 2018-01-11 22:06:58 +0100
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Processing by MedicalsController#index as JSON
+  Rendering medicals/index.json.jbuilder
+  [1m[36mMedical Load (0.4ms)[0m  [1m[34mSELECT "medicals".* FROM "medicals"[0m
+  Rendered medicals/_medical.json.jbuilder (1.4ms)
+  Rendered medicals/_medical.json.jbuilder (0.6ms)
+  Rendered medicals/_medical.json.jbuilder (0.7ms)
+  Rendered medicals/_medical.json.jbuilder (0.4ms)
+  Rendered medicals/_medical.json.jbuilder (0.5ms)
+  Rendered medicals/_medical.json.jbuilder (0.8ms)
+  Rendered medicals/_medical.json.jbuilder (0.9ms)
+  Rendered medicals/_medical.json.jbuilder (0.6ms)
+  Rendered medicals/_medical.json.jbuilder (0.5ms)
+  Rendered medicals/_medical.json.jbuilder (0.8ms)
+  Rendered medicals/_medical.json.jbuilder (0.8ms)
+  Rendered medicals/_medical.json.jbuilder (2.3ms)
+  Rendered medicals/_medical.json.jbuilder (0.4ms)
+  Rendered medicals/_medical.json.jbuilder (0.5ms)
+  Rendered medicals/_medical.json.jbuilder (0.3ms)
+  Rendered medicals/_medical.json.jbuilder (0.3ms)
+  Rendered medicals/_medical.json.jbuilder (0.3ms)
+  Rendered medicals/index.json.jbuilder (28.1ms)
+Completed 200 OK in 33ms (Views: 30.8ms | ActiveRecord: 0.4ms)
+
+
+Started DELETE "/users/sign_out.json" for 127.0.0.1 at 2018-01-11 22:09:19 +0100
+Processing by Devise::SessionsController#destroy as JSON
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+Completed 204 No Content in 13ms (ActiveRecord: 0.7ms)
+
+
+Started POST "/users/sign_in.json" for 127.0.0.1 at 2018-01-11 22:09:29 +0100
+Processing by Devise::SessionsController#create as JSON
+  Parameters: {"user"=>{"email"=>"matt@gmail.com", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"email"=>"matt@gmail.com", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "matt@gmail.com"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[33mUPDATE "users" SET "current_sign_in_at" = $1, "last_sign_in_at" = $2, "sign_in_count" = $3, "updated_at" = $4 WHERE "users"."id" = $5[0m  [["current_sign_in_at", "2018-01-11 21:09:29.312964"], ["last_sign_in_at", "2018-01-09 16:46:38.856388"], ["sign_in_count", 24], ["updated_at", "2018-01-11 21:09:29.313945"], ["id", 2]]
+  [1m[35m (12.2ms)[0m  [1m[35mCOMMIT[0m
+Completed 201 Created in 170ms (Views: 0.9ms | ActiveRecord: 13.8ms)
+
+
+Started GET "/cars" for 127.0.0.1 at 2018-01-11 22:09:30 +0100
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Processing by CarsController#index as JSON
+  Rendering cars/index.json.jbuilder
+  [1m[36mCar Load (1.7ms)[0m  [1m[34mSELECT "cars".* FROM "cars"[0m
+  Rendered cars/_car.json.jbuilder (1.4ms)
+  Rendered cars/_car.json.jbuilder (0.5ms)
+  Rendered cars/_car.json.jbuilder (0.4ms)
+  Rendered cars/_car.json.jbuilder (0.4ms)
+  Rendered cars/_car.json.jbuilder (0.5ms)
+  Rendered cars/index.json.jbuilder (35.1ms)
+Completed 200 OK in 55ms (Views: 33.7ms | ActiveRecord: 5.9ms)
+
+
+Started DELETE "/users/sign_out.json" for 127.0.0.1 at 2018-01-11 22:16:28 +0100
+Processing by Devise::SessionsController#destroy as JSON
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+Completed 204 No Content in 8ms (ActiveRecord: 1.5ms)
+
+
+Started POST "/users/sign_in.json" for 127.0.0.1 at 2018-01-11 22:16:35 +0100
+Processing by Devise::SessionsController#create as JSON
+  Parameters: {"user"=>{"email"=>"matt@gmail.com", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"email"=>"matt@gmail.com", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "matt@gmail.com"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[33mUPDATE "users" SET "current_sign_in_at" = $1, "last_sign_in_at" = $2, "sign_in_count" = $3, "updated_at" = $4 WHERE "users"."id" = $5[0m  [["current_sign_in_at", "2018-01-11 21:16:35.727825"], ["last_sign_in_at", "2018-01-11 21:09:29.312964"], ["sign_in_count", 25], ["updated_at", "2018-01-11 21:16:35.728864"], ["id", 2]]
+  [1m[35m (197.5ms)[0m  [1m[35mCOMMIT[0m
+Completed 201 Created in 352ms (Views: 0.5ms | ActiveRecord: 198.5ms)
+
+
+Started GET "/cars" for 127.0.0.1 at 2018-01-11 22:17:44 +0100
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Processing by CarsController#index as JSON
+  Rendering cars/index.json.jbuilder
+  [1m[36mCar Load (0.3ms)[0m  [1m[34mSELECT "cars".* FROM "cars"[0m
+  Rendered cars/_car.json.jbuilder (0.7ms)
+  Rendered cars/_car.json.jbuilder (0.2ms)
+  Rendered cars/_car.json.jbuilder (0.2ms)
+  Rendered cars/_car.json.jbuilder (0.3ms)
+  Rendered cars/_car.json.jbuilder (0.4ms)
+  Rendered cars/index.json.jbuilder (7.2ms)
+Completed 200 OK in 13ms (Views: 10.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/cars" for 127.0.0.1 at 2018-01-11 22:17:48 +0100
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Processing by CarsController#index as JSON
+  Rendering cars/index.json.jbuilder
+  [1m[36mCar Load (0.8ms)[0m  [1m[34mSELECT "cars".* FROM "cars"[0m
+  Rendered cars/_car.json.jbuilder (1.0ms)
+  Rendered cars/_car.json.jbuilder (0.3ms)
+  Rendered cars/_car.json.jbuilder (0.3ms)
+  Rendered cars/_car.json.jbuilder (0.4ms)
+  Rendered cars/_car.json.jbuilder (0.3ms)
+  Rendered cars/index.json.jbuilder (8.5ms)
+Completed 200 OK in 14ms (Views: 11.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/cars" for 127.0.0.1 at 2018-01-11 22:17:52 +0100
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Processing by CarsController#index as JSON
+  Rendering cars/index.json.jbuilder
+  [1m[36mCar Load (0.5ms)[0m  [1m[34mSELECT "cars".* FROM "cars"[0m
+  Rendered cars/_car.json.jbuilder (1.2ms)
+  Rendered cars/_car.json.jbuilder (0.4ms)
+  Rendered cars/_car.json.jbuilder (0.3ms)
+  Rendered cars/_car.json.jbuilder (0.2ms)
+  Rendered cars/_car.json.jbuilder (0.2ms)
+  Rendered cars/index.json.jbuilder (8.0ms)
+Completed 200 OK in 13ms (Views: 11.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/cars" for 127.0.0.1 at 2018-01-11 22:17:56 +0100
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Processing by CarsController#index as JSON
+  Rendering cars/index.json.jbuilder
+  [1m[36mCar Load (0.5ms)[0m  [1m[34mSELECT "cars".* FROM "cars"[0m
+  Rendered cars/_car.json.jbuilder (0.9ms)
+  Rendered cars/_car.json.jbuilder (0.4ms)
+  Rendered cars/_car.json.jbuilder (0.8ms)
+  Rendered cars/_car.json.jbuilder (0.4ms)
+  Rendered cars/_car.json.jbuilder (0.5ms)
+  Rendered cars/index.json.jbuilder (10.0ms)
+Completed 200 OK in 15ms (Views: 13.4ms | ActiveRecord: 0.5ms)
+
+

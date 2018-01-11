@@ -236,7 +236,40 @@
                     </md-tab>
 
                     <md-tab label="SZKOLENIA">
+
+                        <div layout="row" layout-align="space-around center" layout-padding>
+                            <div>Lp.</div>
+                            <div>Nazwa</div>
+                            <div>date_course</div>
+                            <div>date_to</div>
+                            <div>expiry_date</div>
+                            <div>medical_examination_from</div>
+                            <div>medical_examination_to</div>
+                        </div>
+
+                        <div ng-repeat="course in firemen.selectedFireman.courses track by $index"
+                             layout="row"
+                             layout-align="space-around center"
+                             layout-padding>
+                            <div ng-bind="$index+1"></div>
+                            <div ng-bind="course.name"></div>
+                            <div ng-bind="course.date"></div>
+                            <div ng-bind="course.date_course"></div>
+                            <div ng-bind="course.expiry_date"></div>
+                            <div ng-bind="course.medical_examination_from"></div>
+                            <div ng-bind="course.medical_examination_to"></div>
+
+                        </div>
+
+                        <button class="md-fab md-fab-bottom-right docs-scroll-fab md-button md-ink-ripple scrolling"
+                                type="button"
+                                ng-click="addNewCourse()"
+                                aria-label="add new course">
+                            <div>+</div>
+                        </button>
+
                     </md-tab>
+
 
                     <md-tab label="ODZNACZENIA">
                     </md-tab>

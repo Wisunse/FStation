@@ -1,7 +1,7 @@
 class CoursesController < ApplicationController
   before_action :set_course, only: [:show, :edit, :update, :destroy]
   respond_to :json
-  
+
   # GET /courses
   # GET /courses.json
   def index
@@ -25,7 +25,9 @@ class CoursesController < ApplicationController
   # POST /courses
   # POST /courses.json
   def create
-    @course = Course.new(course_params)
+    hash = {}
+    course_params.each { |key, value| hash[key] = value }
+    @course = Course.new(hash)
 
     respond_to do |format|
       if @course.save
@@ -41,8 +43,15 @@ class CoursesController < ApplicationController
   # PATCH/PUT /courses/1
   # PATCH/PUT /courses/1.json
   def update
+
+    @course = Course.find(course_params[:id])
+    hash = {}
+    course_params.each { |key, value| hash[key] = value }
+    hash.delete('id')
+    hash.delete('url')
+
     respond_to do |format|
-      if @course.update(course_params)
+      if @course.update(hash)
         format.html { redirect_to @course, notice: 'Course was successfully updated.' }
         format.json { render :show, status: :ok, location: @course }
       else

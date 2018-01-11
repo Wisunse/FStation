@@ -70,6 +70,24 @@ angular.module('FireStation')
                     $scope.status = 'You cancelled the dialog.';
                 });
 
+        };
+
+        $scope.addNewCourse = function(ev) {
+
+            $mdDialog.show({
+                controller: 'AddNewCourse',
+                templateUrl: 'dialog/_add_new_course.html',
+                parent: angular.element(document.body),
+                targetEvent: ev,
+                clickOutsideToClose:true,
+                fullscreen: $scope.customFullscreen // Only for -xs, -sm breakpoints.
+            })
+                .then(function(answer) {
+                    $scope.status = 'You said the information was "' + answer + '".';
+                }, function() {
+                    $scope.status = 'You cancelled the dialog.';
+                });
+
         }
 
 

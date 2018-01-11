@@ -1,0 +1,60 @@
+{:uriI"èfile://app/assets/javascripts/dialog/_add_new_course.html?type=text/ng-html&id=cfa810dffe8d1e8e4b7f7d18bd0d508febfe64856e351f899ad6525a7847d5cb:ET:load_pathI"app/assets/javascripts;T:filenameI"7app/assets/javascripts/dialog/_add_new_course.html;T:	nameI"dialog/_add_new_course;T:logical_pathI" dialog/_add_new_course.html;T:content_typeI"text/ng-html;T:sourceI"¯<md-dialog aria-label="Badania Lekarskie">
+    <form ng-cloak>
+        <md-toolbar>
+            <div class="md-toolbar-tools">
+                <h2>Dodaj</h2>
+                <span flex></span>
+                <md-button class="md-icon-button" ng-click="cancel()">X</md-button>
+            </div>
+        </md-toolbar>
+
+        <md-dialog-content>
+            <div class="md-dialog-content">
+
+                <md-input-container>
+                    <label>Nazwa</label>
+                    <input ng-model="newCourse.name">
+                </md-input-container>
+
+                <div flex-gt-xs>
+                    <div>date_course</div>
+                    <md-datepicker ng-model="newCourse.date_course" md-placeholder="12/11/2017" md-open-on-focus></md-datepicker>
+                </div>
+
+                <div flex-gt-xs>
+                    <div>date to:</div>
+                    <md-datepicker ng-model="newCourse.date" md-placeholder="12/11/2017" md-open-on-focus></md-datepicker>
+                </div>
+
+                <div flex-gt-xs>
+                    <div>expiry_date:</div>
+                    <md-datepicker ng-model="newCourse.expiry_date" md-placeholder="12/11/2017" md-open-on-focus></md-datepicker>
+                </div>
+
+                <div flex-gt-xs>
+                    <div>medical_examination_from:</div>
+                    <md-datepicker ng-model="newCourse.medical_examination_from" md-placeholder="12/11/2017" md-open-on-focus></md-datepicker>
+                </div>
+
+                <div flex-gt-xs>
+                    <div>medical_examination_to:</div>
+                    <md-datepicker ng-model="newCourse.medical_examination_to" md-placeholder="12/11/2017" md-open-on-focus></md-datepicker>
+                </div>
+
+            </div>
+
+        </md-dialog-content>
+
+        <md-dialog-actions layout="row">
+
+            <md-button ng-click="addMedical()" class="md-raised md-cornered md-primary">
+                Potwied≈∫
+            </md-button>
+
+        </md-dialog-actions>
+    </form>
+</md-dialog>;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"8processors:type=text/ng-html&file_type=text/ng-html;TTI"Efile-digest://app/assets/javascripts/dialog/_add_new_course.html;TTF:charsetI"
+utf-8;F:digest"%KYøÊcÌÈtrd2=•,0(À≈3?È4û:ïÛÔ:lengthi¯:dependencies_digest"%-8A„èéTq:ÿŸ¥>ê«ΩÉÿ24‹Ôq‰Sd¬÷:idI"Ecfa810dffe8d1e8e4b7f7d18bd0d508febfe64856e351f899ad6525a7847d5cb;F:
+mtimel+•«WZ
