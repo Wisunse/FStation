@@ -88,7 +88,30 @@ angular.module('FireStation')
                     $scope.status = 'You cancelled the dialog.';
                 });
 
-        }
+        };
+
+        $scope.showEditMedical = function(medical){
+
+            firemen.editedMedical = angular.copy(medical);
+            firemen.editedMedical.examination_date = new Date(medical.examination_date);
+            firemen.editedMedical.start_date = new Date(medical.start_date);
+            firemen.editedMedical.end_date = new Date(medical.end_date);
+
+            $mdDialog.show({
+                controller: 'AddNewMedical',
+                templateUrl: 'dialog/_edit_medical.html',
+                parent: angular.element(document.body),
+                // targetEvent: ev,
+                clickOutsideToClose:true,
+                fullscreen: $scope.customFullscreen // Only for -xs, -sm breakpoints.
+            })
+                .then(function(answer) {
+                    $scope.status = 'You said the information was "' + answer + '".';
+                }, function() {
+                    $scope.status = 'You cancelled the dialog.';
+                });
+
+        };
 
 
     }]);

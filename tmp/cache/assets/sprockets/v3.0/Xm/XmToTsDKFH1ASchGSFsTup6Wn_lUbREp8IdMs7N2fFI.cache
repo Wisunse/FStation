@@ -1,0 +1,50 @@
+{:uriI"çfile://app/assets/javascripts/dialog/_edit_medical.html?type=text/ng-html&id=faebea618327243296f947c802af2599960f265986e6dcb500ef556cf92750b0:ET:load_pathI"app/assets/javascripts;T:filenameI"5app/assets/javascripts/dialog/_edit_medical.html;T:	nameI"dialog/_edit_medical;T:logical_pathI"dialog/_edit_medical.html;T:content_typeI"text/ng-html;T:sourceI"9<md-dialog aria-label="Badania Lekarskie">
+    <form ng-cloak>
+        <md-toolbar>
+            <div class="md-toolbar-tools">
+                <h2>Dodaj</h2>
+                <span flex></span>
+                <md-button class="md-icon-button" ng-click="cancel()">X</md-button>
+            </div>
+        </md-toolbar>
+
+
+        <md-dialog-content>
+            <div class="md-dialog-content">
+
+                <md-input-container>
+                    <label>Nazwa</label>
+                    <input ng-model="firemen.editedMedical.name">
+                </md-input-container>
+
+                <div flex-gt-xs>
+                    <div>Data badania</div>
+                    <md-datepicker ng-model="firemen.editedMedical.examination_date" md-placeholder="12/11/2017" md-open-on-focus></md-datepicker>
+                </div>
+
+                <div flex-gt-xs>
+                    <div>Wa≈ºno≈õƒá od:</div>
+                    <md-datepicker ng-model="firemen.editedMedical.start_date" md-placeholder="12/11/2017" md-open-on-focus></md-datepicker>
+                </div>
+
+                <div flex-gt-xs>
+                    <div>Wa≈ºno≈õƒá do:</div>
+                    <md-datepicker ng-model="firemen.editedMedical.end_date" md-placeholder="12/11/2017" md-open-on-focus></md-datepicker>
+                </div>
+
+            </div>
+        </md-dialog-content>
+
+        <md-dialog-actions layout="row">
+
+            <md-button ng-click="editMedical()" class="md-raised md-cornered md-primary">
+                Zapisz
+            </md-button>
+
+        </md-dialog-actions>
+    </form>
+</md-dialog>;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"8processors:type=text/ng-html&file_type=text/ng-html;TTI"Cfile-digest://app/assets/javascripts/dialog/_edit_medical.html;TTF:charsetI"
+utf-8;F:digest"%¢`BvCœçàEÓç€¬ΩóÉ·…ÚÇ¶tÉO®bÒ:lengthi9:dependencies_digest"%pÎË_ÙÕ…◊'w3Àq√◊ŒM»µ∑Å>≤RRÊ:idI"Efaebea618327243296f947c802af2599960f265986e6dcb500ef556cf92750b0;F:
+mtimel+ÖZZ

@@ -24,9 +24,9 @@
 
 .firemen-row:hover {
     cursor: pointer;
-    background: radial-gradient(#ded232, #c6aa2a, #fdea40);
+    background: rgb(255,255,0)
 }
 
 .firemen-row__selected {
-    background: radial-gradient(#ded232, #c6aa2a, #fdea40);
+    background: rgb(255,255,0)
 }

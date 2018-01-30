@@ -27,7 +27,7 @@
                                     </div>
                                     <div layout="row">
                                         <div class="md-padding">Pozostało:</div>
-                                        <div class="md-padding md-subhead md-warn"> 125 dni</div>
+                                        <div class="md-padding md-subhead md-warn" ng-class="{'cars__warn': daysLeft(car.servicing_to) < 30}"> {{daysLeft(car.servicing_to)}} </div>
                                     </div>
                                 </div>
                             </md-card-title>

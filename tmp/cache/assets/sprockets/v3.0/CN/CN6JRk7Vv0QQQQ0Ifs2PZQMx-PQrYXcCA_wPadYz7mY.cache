@@ -1,0 +1,13 @@
+{:uriI"‡file://app/assets/javascripts/footer/_footer.html?type=text/ng-html&id=6efb9b77d2e95080a3bf7573d8cfeaa9428c5154f5a102e8c5f4290c2220127c:ET:load_pathI"app/assets/javascripts;T:filenameI"/app/assets/javascripts/footer/_footer.html;T:	nameI"footer/_footer;T:logical_pathI"footer/_footer.html;T:content_typeI"text/ng-html;T:sourceI"i<div class="login-wrapper">
+    <div layout="flex" layout-fill ng-cloak>
+        <section layout="column" flex layout-align="center center" class="login">
+            <!--<md-toolbar layout-align="center center">-->
+                <div style="color:white">Â© Mateusz Mydlarz 2017-2018</div>
+            <!--</md-toolbar>-->
+        </section>
+    </div>
+</div>;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"8processors:type=text/ng-html&file_type=text/ng-html;TTI"=file-digest://app/assets/javascripts/footer/_footer.html;TTF:charsetI"
+utf-8;F:digest"%şYü³WĞ†DTİŒVì€Ò„}	½“æ½*ØY³D¦|ç:lengthii:dependencies_digest"%Ü·“o©åÖ«&d…‚]L…n.ƒ¥Û²{ÿ0†²U:idI"E6efb9b77d2e95080a3bf7573d8cfeaa9428c5154f5a102e8c5f4290c2220127c;F:
+mtimel+TxoZ

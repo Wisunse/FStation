@@ -5,37 +5,55 @@
         <md-content flex="40">
 
             <md-card>
-                <div><input type="text" placeholder="Szukaj" ng-model="firemenFilter"></div>
+                <md-input-container>
+                    <label>Szukaj</label>
+                    <input type="text" ng-model="firemenFilter">
+                </md-input-container>
                 <md-tabs md-dynamic-height md-border-bottom md-center-tabs="true">
 
                     <md-tab label="WSZYSCY" >
 
                         <div layout="column" style="height:500px">
                             <md-content>
-                                <div ng-repeat="fireman in firemen.allFiremen | filter:firemenFilter track by $index"
-                                     layout="row"
-                                     layout-align="center center"
-                                     ng-click="firemen.selectFireman(fireman)"
-                                     class="firemen-row"
-                                     ng-class="{'firemen-row__selected':firemen.selectedFireman.data == fireman}">
-                                    <div flex="33" ng-bind="fireman.name"></div>
-                                    <div flex="66" ng-bind="fireman.surname"></div>
-                                </div>
+
+                                <md-list>
+                                    <md-list-item class="md-2-line" md-whiteframe="1"
+                                                  ng-repeat="fireman in firemen.allFiremen | filter:firemenFilter track by $index"
+                                                  ng-click="firemen.selectFireman(fireman)"
+                                                  ng-class="{'firemen-row__selected':firemen.selectedFireman.data == fireman}">
+
+                                        <div class="md-list-item-text" layout="row" layout-align="start center">
+                                            <img ng-src="/images/cat.jpeg" class="md-avatar" alt="" />
+                                            <span flex="33" ng-bind="fireman.name"></span>
+                                            <span flex="66" ng-bind="fireman.surname"></span>
+                                        </div>
+
+                                    </md-list-item>
+
+                                </md-list>
+
                             </md-content>
                         </div>
                     </md-tab>
 
                     <md-tab label="MDP">
                         <div layout="column">
-                            <div ng-repeat="fireman in firemen.allFiremen track by $index"
-                                 ng-if="fireman.section=='MDP'"
-                                 layout="row"
-                                 ng-click="selectedFireman(fireman)"
-                                 class="firemen-row"
-                                 ng-class="{'firemen-row__selected':firemen.selectedFireman == fireman}">
-                                <div flex="33" ng-bind="fireman.name"></div>
-                                <div flex="66" ng-bind="fireman.surname"></div>
-                            </div>
+                            <md-list>
+                                <md-list-item class="md-2-line"
+                                              ng-repeat="fireman in firemen.allFiremen | filter:firemenFilter track by $index"
+                                              ng-click="firemen.selectFireman(fireman)"
+                                              ng-class="{'firemen-row__selected':firemen.selectedFireman.data == fireman}"
+                                              ng-if="fireman.section=='MDP'">
+
+                                    <div class="md-list-item-text" layout="row" layout-align="start center">
+                                        <img ng-src="/images/cat.jpeg" class="md-avatar" alt="" />
+                                        <span flex="33" ng-bind="fireman.name"></span>
+                                        <span flex="66" ng-bind="fireman.surname"></span>
+                                    </div>
+
+                                </md-list-item>
+
+                            </md-list>
                         </div>
                     </md-tab>
 
@@ -206,25 +224,30 @@
                     </md-tab>
 
                     <md-tab label="BADANIA">
+                        <md-list>
+                            <md-list-item class="md-2-line" md-whiteframe="1">
+                                <div class="md-list-item-text" layout="row" layout-align="start center">
+                                    <span flex>Lp.</span>
+                                    <span flex>Nazwa</span>
+                                    <span flex>Data badania</span>
+                                    <span flex>Ważność od</span>
+                                    <span flex>Ważność do</span>
+                                </div>
+                            </md-list-item>
 
-                        <div layout="row" layout-align="space-around center" layout-padding>
-                            <div>Lp.</div>
-                            <div>Nazwa</div>
-                            <div>Data badania</div>
-                            <div>Ważność od</div>
-                            <div>Ważność do</div>
-                        </div>
-
-                        <div ng-repeat="medical in firemen.selectedFireman.medicals track by $index"
-                             layout="row"
-                             layout-align="space-around center"
-                             layout-padding>
-                            <div ng-bind="$index+1"></div>
-                            <div ng-bind="medical.name"></div>
-                            <div ng-bind="medical.examination_date"></div>
-                            <div ng-bind="medical.start_date"></div>
-                            <div ng-bind="medical.end_date"></div>
-                        </div>
+                            <md-list-item ng-repeat="medical in firemen.selectedFireman.medicals track by $index"
+                                    class="md-2-line"
+                                    md-whiteframe="1"
+                                    ng-click="showEditMedical(medical)">
+                                <div class="md-list-item-text" layout="row" layout-align="start center">
+                                    <span flex ng-bind="$index+1"></span>
+                                    <span flex ng-bind="medical.name"></span>
+                                    <span flex ng-bind="medical.examination_date"></span>
+                                    <span flex ng-bind="medical.start_date"></span>
+                                    <span flex ng-bind="medical.end_date"></span>
+                                </div>
+                            </md-list-item>
+                        </md-list>
 
                         <button class="md-fab md-fab-bottom-right docs-scroll-fab md-button md-ink-ripple scrolling"
                                 type="button"
@@ -237,29 +260,33 @@
 
                     <md-tab label="SZKOLENIA">
 
-                        <div layout="row" layout-align="space-around center" layout-padding>
-                            <div>Lp.</div>
-                            <div>Nazwa</div>
-                            <div>date_course</div>
-                            <div>date_to</div>
-                            <div>expiry_date</div>
-                            <div>medical_examination_from</div>
-                            <div>medical_examination_to</div>
-                        </div>
+                        <md-list>
+                            <md-list-item class="md-2-line" md-whiteframe="1">
+                                <div class="md-list-item-text" layout="row" layout-align="start center">
+                                    <span flex>Lp.</span>
+                                    <span flex>Nazwa</span>
+                                    <span flex>Data kursu</span>
+                                    <span flex>Ważność do</span>
+                                    <span flex>expiry_date</span>
+                                    <span flex>Badania od:</span>
+                                    <span flex>Badania do:</span>
+                                </div>
+                            </md-list-item>
 
-                        <div ng-repeat="course in firemen.selectedFireman.courses track by $index"
-                             layout="row"
-                             layout-align="space-around center"
-                             layout-padding>
-                            <div ng-bind="$index+1"></div>
-                            <div ng-bind="course.name"></div>
-                            <div ng-bind="course.date"></div>
-                            <div ng-bind="course.date_course"></div>
-                            <div ng-bind="course.expiry_date"></div>
-                            <div ng-bind="course.medical_examination_from"></div>
-                            <div ng-bind="course.medical_examination_to"></div>
-
-                        </div>
+                            <md-list-item class="md-2-line"
+                                          md-whiteframe="1"
+                                          ng-repeat="course in firemen.selectedFireman.courses track by $index">
+                                <div class="md-list-item-text" layout="row" layout-align="start center">
+                                    <span flex ng-bind="$index+1"></span>
+                                    <span flex ng-bind="course.name"></span>
+                                    <span flex ng-bind="course.date"></span>
+                                    <span flex ng-bind="course.date_course"></span>
+                                    <span flex ng-bind="course.expiry_date"></span>
+                                    <span flex ng-bind="course.medical_examination_from"></span>
+                                    <span flex ng-bind="course.medical_examination_to"></span>
+                                </div>
+                            </md-list-item>
+                        </md-list>
 
                         <button class="md-fab md-fab-bottom-right docs-scroll-fab md-button md-ink-ripple scrolling"
                                 type="button"
