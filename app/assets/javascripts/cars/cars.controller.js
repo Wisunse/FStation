@@ -28,7 +28,7 @@ function($scope, $http, $state, $mdDialog, cars) {
 
     $scope.showEditCar = function(ev, car) {
 
-        cars.selectedCar = car;
+        cars.selectedCar = angular.copy(car);
         cars.selectedCar.servicing_to = new Date(car.servicing_to);
         $mdDialog.show({
             controller: 'CarsController',
@@ -49,7 +49,7 @@ function($scope, $http, $state, $mdDialog, cars) {
     $scope.editCar = function(){
 
         $http.patch('/cars/'+cars.selectedCar.id,cars.selectedCar).then(function(result){
-            console.log(result.data);
+
             cars.getCars();
             $mdDialog.cancel()
         });

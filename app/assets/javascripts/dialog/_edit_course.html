@@ -1,0 +1,55 @@
+<md-dialog aria-label="Badania Lekarskie">
+    <form ng-cloak>
+        <md-toolbar>
+            <div class="md-toolbar-tools">
+                <h2>Dodaj</h2>
+                <span flex></span>
+                <md-button class="md-icon-button" ng-click="cancel()">X</md-button>
+            </div>
+        </md-toolbar>
+
+
+        <md-dialog-content>
+            <div class="md-dialog-content">
+                <md-input-container>
+                    <label>Nazwa</label>
+                    <input ng-model="firemen.editedCourse.name">
+                </md-input-container>
+
+                <!--<div flex-gt-xs>-->
+                    <!--<div>Data: </div>-->
+                    <!--<md-datepicker ng-model="firemen.editedCourse.date" md-placeholder="12/11/2017" md-open-on-focus></md-datepicker>-->
+                <!--</div>-->
+
+                <!--<div flex-gt-xs>-->
+                    <!--<div>Data kursu:</div>-->
+                    <!--<md-datepicker ng-model="firemen.editedCourse.date_course" md-placeholder="12/11/2017" md-open-on-focus></md-datepicker>-->
+                <!--</div>-->
+
+                <div flex-gt-xs>
+                    <div>Ważność Do:</div>
+                    <md-datepicker ng-model="firemen.editedCourse.expiry_date" md-placeholder="12/11/2017" md-open-on-focus></md-datepicker>
+                </div>
+
+                <div flex-gt-xs>
+                    <div>Badania Od:</div>
+                    <md-datepicker ng-model="firemen.editedCourse.medical_examination_from" md-placeholder="12/11/2017" md-open-on-focus></md-datepicker>
+                </div>
+
+                <div flex-gt-xs>
+                    <div>Badania Do:</div>
+                    <md-datepicker ng-model="firemen.editedCourse.medical_examination_to" md-placeholder="12/11/2017" md-open-on-focus></md-datepicker>
+                </div>
+
+            </div>
+        </md-dialog-content>
+
+        <md-dialog-actions layout="row">
+
+            <md-button ng-click="editCourse()" class="md-raised md-cornered md-primary">
+                Zapisz
+            </md-button>
+
+        </md-dialog-actions>
+    </form>
+</md-dialog>

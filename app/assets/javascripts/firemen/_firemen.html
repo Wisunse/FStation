@@ -101,12 +101,12 @@
 
                 </md-tabs>
 
-                <button class="md-fab md-fab-bottom-right docs-scroll-fab md-button md-ink-ripple scrolling"
+                <md-button class="md-fab md-accent md-fab-bottom-right docs-scroll-fab md-ink-ripple scrolling"
                         type="button"
                         ng-click="addNewFireman()"
                         aria-label="Back to Top">
-                    <div>+</div>
-                </button>
+                    <md-icon>add</md-icon>
+                </md-button>
 
             </md-card>
 
@@ -145,6 +145,11 @@
                                 <div>
                                     <div>Data urodzenia</div>
                                     <md-datepicker ng-model="firemen.selectedFireman.data.birth_date" md-placeholder="12/11/1980" md-open-on-focus></md-datepicker>
+                                </div>
+
+                                <div>
+                                    <div>Wiek: </div>
+                                    <div ng-bind="howOld(firemen.selectedFireman.data.birth_date)"></div>
                                 </div>
 
                                 <md-input-container>
@@ -253,7 +258,7 @@
                                 type="button"
                                 ng-click="addNewMedical()"
                                 aria-label="add new medical">
-                            <div>+</div>
+                            <md-icon class="font-white">add</md-icon>
                         </button>
 
                     </md-tab>
@@ -265,22 +270,23 @@
                                 <div class="md-list-item-text" layout="row" layout-align="start center">
                                     <span flex>Lp.</span>
                                     <span flex>Nazwa</span>
-                                    <span flex>Data kursu</span>
+                                    <!--<span flex>Data kursu</span>-->
+                                    <!--<span flex>Ważność do</span>-->
                                     <span flex>Ważność do</span>
-                                    <span flex>expiry_date</span>
-                                    <span flex>Badania od:</span>
-                                    <span flex>Badania do:</span>
+                                    <span flex>Badania od</span>
+                                    <span flex>Badania do</span>
                                 </div>
                             </md-list-item>
 
                             <md-list-item class="md-2-line"
                                           md-whiteframe="1"
-                                          ng-repeat="course in firemen.selectedFireman.courses track by $index">
+                                          ng-repeat="course in firemen.selectedFireman.courses track by $index"
+                                          ng-click="showEditCourse(course)">
                                 <div class="md-list-item-text" layout="row" layout-align="start center">
                                     <span flex ng-bind="$index+1"></span>
                                     <span flex ng-bind="course.name"></span>
-                                    <span flex ng-bind="course.date"></span>
-                                    <span flex ng-bind="course.date_course"></span>
+                                    <!--<span flex ng-bind="course.date"></span>-->
+                                    <!--<span flex ng-bind="course.date_course"></span>-->
                                     <span flex ng-bind="course.expiry_date"></span>
                                     <span flex ng-bind="course.medical_examination_from"></span>
                                     <span flex ng-bind="course.medical_examination_to"></span>
@@ -288,11 +294,11 @@
                             </md-list-item>
                         </md-list>
 
-                        <button class="md-fab md-fab-bottom-right docs-scroll-fab md-button md-ink-ripple scrolling"
+                        <button class="md-fab md-accent md-fab-bottom-right docs-scroll-fab md-button md-ink-ripple scrolling"
                                 type="button"
                                 ng-click="addNewCourse()"
                                 aria-label="add new course">
-                            <div>+</div>
+                            <md-icon >add</md-icon>
                         </button>
 
                     </md-tab>

@@ -5,7 +5,7 @@ angular.module('FireStation')
     .factory('firemen', [ '$http', '$state', function($http, $state) {
 
         var factory = [];
-        factory.selectedFireman = {data: null, medicals: null};
+        factory.selectedFireman = {data: null, medicals: null, courses: null};
         factory.getFiremen = function() {
             $http.get('/firemen').then(function(result){
                 console.log(result.data);
@@ -29,8 +29,10 @@ angular.module('FireStation')
 
         factory.selectFireman = function(fireman) {
             factory.selectedFireman.data = fireman;
+            factory.selectedFireman.data.birth_date = new Date(fireman.birth_date);
             factory.selectedFireman.medicals = factory.selectedMedicals(fireman.id);
             factory.selectedFireman.courses = factory.selectedCourses(fireman.id);
+
 
         };
 

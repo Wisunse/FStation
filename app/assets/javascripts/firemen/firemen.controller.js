@@ -5,14 +5,11 @@ angular.module('FireStation')
     .controller('FiremenController', ['$scope', '$http', '$state', '$mdDialog', 'firemen', '$mdToast',
         function($scope, $http, $state, $mdDialog, firemen, $mdToast ) {
 
-        console.log('FiremenController');
-
         $scope.firemen = firemen;
         $scope.customFullscreen = true;
         $scope.sections = ['MDP', 'CZYNNI', 'ZWYKLI', 'HONOROWI'];
         $scope.firemenFilter = '';
 
-        console.log(firemen.allFiremen);
 
         $scope.addNewFireman = function(ev) {
 
@@ -30,8 +27,6 @@ angular.module('FireStation')
                     $scope.status = 'You cancelled the dialog.';
                 });
         };
-
-
 
         $scope.saveEditFireman = function() {
             console.log(firemen.selectedFireman.data);
@@ -111,6 +106,36 @@ angular.module('FireStation')
                     $scope.status = 'You cancelled the dialog.';
                 });
 
+        };
+
+        $scope.showEditCourse = function(course) {
+
+            firemen.editedCourse = angular.copy(course);
+            // firemen.editedCourse.date = new Date(course.date);
+            // firemen.editedCourse.date_course = new Date(course.date_course);
+            firemen.editedCourse.expiry_date = new Date(course.expiry_date);
+            firemen.editedCourse.medical_examination_from = new Date(course.medical_examination_from);
+            firemen.editedCourse.medical_examination_to = new Date(course.medical_examination_to);
+
+            $mdDialog.show({
+                controller: 'AddNewCourse',
+                templateUrl: 'dialog/_edit_course.html',
+                parent: angular.element(document.body),
+                // targetEvent: ev,
+                clickOutsideToClose:true,
+                fullscreen: $scope.customFullscreen // Only for -xs, -sm breakpoints.
+            })
+                .then(function(answer) {
+                    $scope.status = 'You said the information was "' + answer + '".';
+                }, function() {
+                    $scope.status = 'You cancelled the dialog.';
+                });
+
+        };
+
+        $scope.howOld = function(date) {
+            var today = new Date();
+            return today.getFullYear() - date.getFullYear();
         };
 
 
