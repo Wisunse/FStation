@@ -1,0 +1,89 @@
+    <!--<div layout="column" layout-fill layout-align="center center" md-scroll-y>-->
+
+        <md-content layout-align="center center">
+
+                <md-card layout-align="center center">
+
+                    <md-card-title>Badania</md-card-title>
+                    <md-card-media>
+
+                        <md-list>
+
+                            <div ng-repeat="medical in firemen.allMedicals | orderBy: 'end_date'">
+
+                                <md-list-item class="md-2-line" md-whiteframe="1"
+                                              ng-if="medical.firemen_id == fireman.id"
+                                              ng-repeat="fireman in firemen.allFiremen">
+
+                                    <div class="md-list-item-text" layout="row" layout-align="start center">
+                                        <span flex ng-bind="fireman.name"></span>
+                                        <span flex ng-bind="fireman.surname"></span>
+                                        <span flex ng-bind="medical.name"></span>
+                                        <span flex ng-bind="medical.end_date"></span>
+                                    </div>
+                                </md-list-item>
+
+                            </div>
+
+                        </md-list>
+
+                    </md-card-media>
+
+                </md-card>
+
+                <md-card layout-align="center center">
+
+                    <md-card-title>Szkolenia</md-card-title>
+                    <md-card-media>
+
+                        <md-list>
+
+                            <div ng-repeat="course in firemen.allCourses | orderBy: 'expiry_date'">
+                                <div ng-if="course.firemen_id == fireman.id"
+                                     ng-repeat="fireman in firemen.allFiremen">
+
+                                    <md-list-item class="md-2-line" md-whiteframe="1">
+                                        <div class="md-list-item-text" layout="row" layout-align="start center">
+                                            <span flex ng-bind="fireman.name" ></span>
+                                            <span flex ng-bind="fireman.surname" ></span>
+                                            <span flex ng-bind="course.name" ></span>
+                                            <span flex ng-bind="course.expiry_date" ></span>
+                                        </div>
+                                    </md-list-item>
+
+                                </div>
+
+                            </div>
+
+                        </md-list>
+
+                    </md-card-media>
+
+                </md-card>
+
+                <md-card layout-align="center center">
+
+                    <md-card-title>Pojazdy</md-card-title>
+                    <md-card-media>
+
+                        <md-list>
+
+                            <md-list-item class="md-2-line" md-whiteframe="1"
+                                          ng-repeat="car in cars.allCars | orderBy: 'servicing_to'">
+                                <div class="md-list-item-text" layout="row" layout-align="start center">
+                                    <span flex ng-bind="car.name"></span>
+                                    <span flex ng-bind="car.registration_number"></span>
+                                    <span flex ng-bind="car.servicing_to" ></span>
+                                </div>
+                            </md-list-item>
+
+                        </md-list>
+
+                    </md-card-media>
+
+                </md-card>
+
+
+        </md-content>
+
+    <!--</div>-->

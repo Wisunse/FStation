@@ -9,6 +9,7 @@ angular.module('FireStation')
         $scope.customFullscreen = true;
         $scope.sections = ['MDP', 'CZYNNI', 'ZWYKLI', 'HONOROWI'];
         $scope.firemenFilter = '';
+        $scope.gender = ['Mężczyzna', 'Kobieta'];
 
 
         $scope.addNewFireman = function(ev) {
@@ -134,8 +135,12 @@ angular.module('FireStation')
         };
 
         $scope.howOld = function(date) {
-            var today = new Date();
-            return today.getFullYear() - date.getFullYear();
+            if(date !== undefined){
+                var today = new Date();
+                return today.getFullYear() - date.getFullYear();
+            }else {
+                return null;
+            }
         };
 
 

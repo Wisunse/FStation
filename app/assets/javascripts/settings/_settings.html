@@ -48,6 +48,45 @@
                                 <span class="md-headline">Zmiana emaila</span>
 
                                 <md-input-container>
+                                    <label>email@email.com:</label>
+                                    <input ng-model="newEmail">
+                                </md-input-container>
+                            </div>
+
+                        </md-card-title>
+
+                        <md-card-title-media>
+                            <div class="md-media-sm card-media"></div>
+                        </md-card-title-media>
+
+                        <md-card-actions>
+                            <md-button class="md-raised md-primary"
+                                       ng-click="saveChangePassword()">Zmień</md-button>
+                        </md-card-actions>
+
+                    </md-card>
+
+
+                    <md-card layout-align="center center">
+
+                        <md-card-title>
+
+                            <div layout="column" layout-align="space-around center">
+
+                                <span class="md-headline">Dodaj użytkownika zwykłego</span>
+                                <span>nie mogącego wprowadzać zmian</span>
+
+                                <md-input-container>
+                                    <label>Nazwa:</label>
+                                    <input ng-model="newEmail">
+                                </md-input-container>
+
+                                <md-input-container>
+                                    <label>Hasło:</label>
+                                    <input ng-model="newEmail">
+                                </md-input-container>
+
+                                <md-input-container>
                                     <label>Potwierdź hasło:</label>
                                     <input ng-model="newEmail">
                                 </md-input-container>
@@ -61,8 +100,21 @@
 
                         <md-card-actions>
                             <md-button class="md-raised md-primary"
-                                       ng-click="saveChangePassword()">Zapisz</md-button>
+                                       ng-click="saveChangePassword()">Dodaj</md-button>
                         </md-card-actions>
+
+                    </md-card>
+
+                    <md-card>
+
+                        <md-card-title>
+                           <span>Lista urzytkowników zwykłych</span>
+                        </md-card-title>
+
+                        <md-card-media>
+                            ktos tam
+                            ktos tam
+                        </md-card-media>
 
                     </md-card>
 

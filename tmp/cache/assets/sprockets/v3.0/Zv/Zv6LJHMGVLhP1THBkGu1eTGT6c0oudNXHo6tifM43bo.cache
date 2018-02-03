@@ -1,0 +1,59 @@
+{:uriI"åfile://app/assets/javascripts/dialog/_edit_course.html?type=text/ng-html&id=ebbb96a912f1f1c32846238c5a0677f4b818b1a5b59f398928c2b23643e52af4:ET:load_pathI"app/assets/javascripts;T:filenameI"4app/assets/javascripts/dialog/_edit_course.html;T:	nameI"dialog/_edit_course;T:logical_pathI"dialog/_edit_course.html;T:content_typeI"text/ng-html;T:sourceI"T<md-dialog aria-label="Badania Lekarskie">
+    <form ng-cloak>
+        <md-toolbar>
+            <div class="md-toolbar-tools">
+                <h2>Dodaj</h2>
+                <span flex></span>
+                <md-button class="md-icon-button" ng-click="cancel()">X</md-button>
+            </div>
+        </md-toolbar>
+
+
+        <md-dialog-content>
+            <div class="md-dialog-content">
+                <md-input-container>
+                    <label>Nazwa</label>
+                    <input ng-model="firemen.editedCourse.name">
+                </md-input-container>
+
+                <!--<div flex-gt-xs>-->
+                    <!--<div>Data: </div>-->
+                    <!--<md-datepicker ng-model="firemen.editedCourse.date" md-placeholder="12/11/2017" md-open-on-focus></md-datepicker>-->
+                <!--</div>-->
+
+                <!--<div flex-gt-xs>-->
+                    <!--<div>Data kursu:</div>-->
+                    <!--<md-datepicker ng-model="firemen.editedCourse.date_course" md-placeholder="12/11/2017" md-open-on-focus></md-datepicker>-->
+                <!--</div>-->
+
+                <div flex-gt-xs>
+                    <div>Wa≈ºno≈õƒá Do:</div>
+                    <md-datepicker ng-model="firemen.editedCourse.expiry_date" md-placeholder="12/11/2017" md-open-on-focus></md-datepicker>
+                </div>
+
+                <div flex-gt-xs>
+                    <div>Badania Od:</div>
+                    <md-datepicker ng-model="firemen.editedCourse.medical_examination_from" md-placeholder="12/11/2017" md-open-on-focus></md-datepicker>
+                </div>
+
+                <div flex-gt-xs>
+                    <div>Badania Do:</div>
+                    <md-datepicker ng-model="firemen.editedCourse.medical_examination_to" md-placeholder="12/11/2017" md-open-on-focus></md-datepicker>
+                </div>
+
+            </div>
+        </md-dialog-content>
+
+        <md-dialog-actions layout="row">
+
+            <md-button ng-click="editCourse()" class="md-raised md-cornered md-primary">
+                Zapisz
+            </md-button>
+
+        </md-dialog-actions>
+    </form>
+</md-dialog>;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"8processors:type=text/ng-html&file_type=text/ng-html;TTI"Bfile-digest://app/assets/javascripts/dialog/_edit_course.html;TTF:charsetI"
+utf-8;F:digest"%øtpB¶Û/ﬂvòBZ÷-LzäêwúªC€ØÔ:lengthiT:dependencies_digest"%óHÚ‚ÅUu¯yº^≠ÇòdjG=lì§%14bn:idI"Eebbb96a912f1f1c32846238c5a0677f4b818b1a5b59f398928c2b23643e52af4;F:
+mtimel+.=pZ

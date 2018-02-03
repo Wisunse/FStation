@@ -6,6 +6,7 @@ Rails.application.routes.draw do
   get '/login' => 'authenticated#authenticated'
   get '/firemen_view' => 'authenticated#authenticated'
   get '/cars_view' => 'authenticated#authenticated'
+  get '/actions_view' => 'authenticated#authenticated'
   get '/alarms_view' => 'authenticated#authenticated'
   get '/reminders_view' => 'authenticated#authenticated'
   get '/settings_view' => 'authenticated#authenticated'

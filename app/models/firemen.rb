@@ -16,5 +16,6 @@ class Firemen < ApplicationRecord
   has_one  :Pesel
   has_one  :Note
   has_one :Section
+  has_one :EntryDate
 
 end
