@@ -2,8 +2,8 @@
 
 angular.module('FireStation')
 
-    .controller('LoginController', ['$scope', '$state', 'Auth', '$rootScope',
-        function($scope, $state, Auth, $rootScope) {
+    .controller('LoginController', ['$scope', '$state', 'Auth', '$rootScope', 'firemen',
+        function($scope, $state, Auth, $rootScope, firemen) {
 
         console.log('LoginController');
 
@@ -22,6 +22,9 @@ angular.module('FireStation')
 
             Auth.login($scope.user, config).then(function(user){
                 $rootScope.user = user;
+                firemen.getFiremen();
+                firemen.getMedicals();
+                firemen.getCourses();
                 $state.go('firemen');
             });
 

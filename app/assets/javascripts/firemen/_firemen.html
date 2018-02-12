@@ -5,10 +5,10 @@
         <md-content flex="40">
 
             <md-card>
-                <md-input-container>
-                    <label>Szukaj</label>
-                    <input type="text" ng-model="firemenFilter">
-                </md-input-container>
+                <!--<md-input-container>-->
+                    <!--<label>Szukaj</label>-->
+                    <input placeholder="Szukaj" type="text" ng-model="firemenFilter">
+                <!--</md-input-container>-->
                 <md-tabs md-dynamic-height md-border-bottom md-center-tabs="true">
 
                     <md-tab label="WSZYSCY" >
@@ -59,43 +59,64 @@
 
                     <md-tab label="CZYNNI">
                         <div layout="column">
-                            <div ng-repeat="fireman in firemen.allFiremen track by $index"
-                                 ng-if="fireman.section=='CZYNNI'"
-                                 layout="row"
-                                 ng-click="selectedFireman(fireman)"
-                                 class="firemen-row"
-                                 ng-class="{'firemen-row__selected':firemen.selectedFireman == fireman}">
-                            <div flex="33" ng-bind="fireman.name"></div>
-                            <div flex="66" ng-bind="fireman.surname"></div>
-                            </div>
+                            <md-list>
+                                <md-list-item class="md-2-line"
+                                              ng-repeat="fireman in firemen.allFiremen | filter:firemenFilter track by $index"
+                                              ng-if="fireman.section=='CZYNNI'"
+                                              ng-click="firemen.selectFireman(fireman)"
+                                              ng-class="{'firemen-row__selected':firemen.selectedFireman.data == fireman}">
+
+                                    <div class="md-list-item-text" layout="row" layout-align="start center">
+                                        <img ng-src="/images/cat.jpeg" class="md-avatar" alt="" />
+                                        <span flex="33" ng-bind="fireman.name"></span>
+                                        <span flex="66" ng-bind="fireman.surname"></span>
+                                    </div>
+
+                                </md-list-item>
+
+                            </md-list>
                         </div>
                     </md-tab>
 
                     <md-tab label="HONOROWI">
                         <div layout="column">
-                            <div ng-repeat="fireman in firemen.allFiremen track by $index"
-                                 ng-if="fireman.section=='HONOROWI'"
-                                 layout="row"
-                                 ng-click="selectedFireman(fireman)"
-                                 class="firemen-row"
-                                 ng-class="{'firemen-row__selected':firemen.selectedFireman == fireman}">
-                                <div flex="33" ng-bind="fireman.name"></div>
-                                <div flex="66" ng-bind="fireman.surname"></div>
-                            </div>
+                            <md-list>
+                                <md-list-item class="md-2-line"
+                                              ng-repeat="fireman in firemen.allFiremen | filter:firemenFilter track by $index"
+                                              ng-if="fireman.section=='HONOROWI'"
+                                              ng-click="firemen.selectFireman(fireman)"
+                                              ng-class="{'firemen-row__selected':firemen.selectedFireman.data == fireman}">
+
+                                    <div class="md-list-item-text" layout="row" layout-align="start center">
+                                        <img ng-src="/images/cat.jpeg" class="md-avatar" alt="" />
+                                        <span flex="33" ng-bind="fireman.name"></span>
+                                        <span flex="66" ng-bind="fireman.surname"></span>
+                                    </div>
+
+                                </md-list-item>
+
+                            </md-list>
                         </div>
                     </md-tab>
 
                     <md-tab label="ZWYKLI">
                         <div layout="column">
-                            <div ng-repeat="fireman in firemen.allFiremen track by $index"
-                                 ng-if="fireman.section=='ZWYKLI'"
-                                 layout="row"
-                                 ng-click="selectedFireman(fireman)"
-                                 class="firemen-row"
-                                 ng-class="{'firemen-row__selected':firemen.selectedFireman == fireman}">
-                                <div flex="33" ng-bind="fireman.name"></div>
-                                <div flex="66" ng-bind="fireman.surname"></div>
-                            </div>
+                            <md-list>
+                                <md-list-item class="md-2-line"
+                                              ng-repeat="fireman in firemen.allFiremen | filter:firemenFilter track by $index"
+                                              ng-if="fireman.section=='ZWYKLI'"
+                                              ng-click="firemen.selectFireman(fireman)"
+                                              ng-class="{'firemen-row__selected':firemen.selectedFireman.data == fireman}">
+
+                                    <div class="md-list-item-text" layout="row" layout-align="start center">
+                                        <img ng-src="/images/cat.jpeg" class="md-avatar" alt="" />
+                                        <span flex="33" ng-bind="fireman.name"></span>
+                                        <span flex="66" ng-bind="fireman.surname"></span>
+                                    </div>
+
+                                </md-list-item>
+
+                            </md-list>
                         </div>
                     </md-tab>
 

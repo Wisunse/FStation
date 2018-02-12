@@ -5,7 +5,7 @@ class CoursesController < ApplicationController
   # GET /courses
   # GET /courses.json
   def index
-    @courses = Course.all
+    @courses = Course.all.where(user_id: current_user.id).order(:id)
   end
 
   # GET /courses/1
@@ -27,6 +27,7 @@ class CoursesController < ApplicationController
   def create
     hash = {}
     course_params.each { |key, value| hash[key] = value }
+    hash[:user_id] = current_user.id
     @course = Course.new(hash)
 
     respond_to do |format|
@@ -45,28 +46,39 @@ class CoursesController < ApplicationController
   def update
 
     @course = Course.find(course_params[:id])
-    hash = {}
-    course_params.each { |key, value| hash[key] = value }
-    hash.delete('id')
-    hash.delete('url')
+    if @course[:user_id] == current_user.id
 
-    respond_to do |format|
-      if @course.update(hash)
-        format.html { redirect_to @course, notice: 'Course was successfully updated.' }
-        format.json { render :show, status: :ok, location: @course }
-      else
-        format.html { render :edit }
-        format.json { render json: @course.errors, status: :unprocessable_entity }
+      hash = {}
+      course_params.each { |key, value| hash[key] = value }
+      hash.delete('id')
+      hash.delete('url')
+
+      respond_to do |format|
+        if @course.update(hash)
+          format.html { redirect_to @course, notice: 'Course was successfully updated.' }
+          format.json { render :show, status: :ok, location: @course }
+        else
+          format.html { render :edit }
+          format.json { render json: @course.errors, status: :unprocessable_entity }
+        end
       end
+
+    else
+      format.json { render json: 'error', status: :unprocessable_entity }
     end
+
   end
 
   # DELETE /courses/1
   # DELETE /courses/1.json
   def destroy
-    @course.destroy
-    respond_to do |format|
-      format.html { redirect_to courses_url, notice: 'Course was successfully destroyed.' }
+    if @couse[:user_id] == current_user.id
+      @course.destroy
+      respond_to do |format|
+        format.html { redirect_to courses_url, notice: 'Course was successfully destroyed.' }
+        format.json { head :no_content }
+      end
+    else
       format.json { head :no_content }
     end
   end

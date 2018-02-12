@@ -2,12 +2,12 @@
 
         <md-content layout-align="center center">
 
-                <md-card layout-align="center center">
+                <md-card layout-align="center center" layout-fill md-padding>
 
                     <md-card-title>Badania</md-card-title>
-                    <md-card-media>
+                    <md-card-media layout-fill>
 
-                        <md-list>
+                        <md-list layout-fill>
 
                             <div ng-repeat="medical in firemen.allMedicals | orderBy: 'end_date'">
 
@@ -31,12 +31,12 @@
 
                 </md-card>
 
-                <md-card layout-align="center center">
+                <md-card layout-align="center center" layout-fill md-padding>
 
                     <md-card-title>Szkolenia</md-card-title>
-                    <md-card-media>
+                    <md-card-media layout-fill>
 
-                        <md-list>
+                        <md-list layout-fill>
 
                             <div ng-repeat="course in firemen.allCourses | orderBy: 'expiry_date'">
                                 <div ng-if="course.firemen_id == fireman.id"
@@ -61,22 +61,32 @@
 
                 </md-card>
 
-                <md-card layout-align="center center">
+                <md-card layout-align="center center"="" layout-fill>
 
                     <md-card-title>Pojazdy</md-card-title>
-                    <md-card-media>
-
-                        <md-list>
-
+                    <md-card-media layout-fill>
+                        <md-list layout-fill>
+                            <md-list-item class="md-2-line" md-whiteframe="1">
+                                <div class="md-list-item-text" layout="row" layout-align="start center">
+                                    <span flex>Nazwa</span>
+                                    <span flex>Nr. Rejestracyjny</span>
+                                    <span flex>Przegląd do</span>
+                                    <span flex>Pozostało</span>
+                                    <span flex>Ubezpieczenie do</span>
+                                    <span flex>Pozostało</span>
+                                </div>
+                            </md-list-item>
                             <md-list-item class="md-2-line" md-whiteframe="1"
                                           ng-repeat="car in cars.allCars | orderBy: 'servicing_to'">
                                 <div class="md-list-item-text" layout="row" layout-align="start center">
                                     <span flex ng-bind="car.name"></span>
                                     <span flex ng-bind="car.registration_number"></span>
                                     <span flex ng-bind="car.servicing_to" ></span>
+                                    <span flex> {{cars.daysLeft(car.servicing_to)}}</span>
+                                    <span flex ng-bind="car.insurance_date" ></span>
+                                    <span flex> {{cars.daysLeft(car.insurance_date)}}</span>
                                 </div>
                             </md-list-item>
-
                         </md-list>
 
                     </md-card-media>

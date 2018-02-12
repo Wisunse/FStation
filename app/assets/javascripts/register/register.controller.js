@@ -12,9 +12,9 @@ angular.module('FireStation')
             };
 
             $scope.user = {
-                'email': 'matt@gmail.com',
-                'username': 'matt',
-                'password': 'password'
+                'email': '',
+                'username': '',
+                'password': ''
             };
 
             $scope.register = function() {

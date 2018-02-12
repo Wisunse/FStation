@@ -6,7 +6,7 @@ class FiremenController < ApplicationController
   # GET /firemen
   # GET /firemen.json
   def index
-    @firemen = Firemen.all.order(:id)
+    @firemen = Firemen.all.where(user_id: current_user.id).order(:id)
   end
 
   # GET /firemen/1
@@ -29,6 +29,7 @@ class FiremenController < ApplicationController
 
     hash = {}
     fireman_params.each { |key, value| hash[key] = value }
+    hash[:user_id] = current_user.id
     @fireman = Firemen.new(hash)
 
     respond_to do |format|
@@ -47,12 +48,16 @@ class FiremenController < ApplicationController
   def update
 
     @firemen = Firemen.find(fireman_params[:id])
-    hash = {}
-    fireman_params.each { |key, value| hash[key] = value }
-    hash.delete('id')
-    hash.delete('url')
-    if @firemen.update(hash)
-    head :no_content
+    if @firemen[:user_id] == current_user.id
+      hash = {}
+      fireman_params.each { |key, value| hash[key] = value }
+      hash.delete('id')
+      hash.delete('url')
+      if @firemen.update(hash)
+        head :no_content
+      else
+        render json: @firemen.errors, status: :unprocessable_entity
+      end
     else
       render json: @firemen.errors, status: :unprocessable_entity
     end
@@ -61,9 +66,14 @@ class FiremenController < ApplicationController
   # DELETE /firemen/1
   # DELETE /firemen/1.json
   def destroy
-    @fireman.destroy
-    respond_to do |format|
-      format.html { redirect_to firemen_url, notice: 'Firemen was successfully destroyed.' }
+    if @fireman[:user_id] == current_user.id
+      @fireman.destroy
+      respond_to do |format|
+        format.html { redirect_to firemen_url, notice: 'Firemen was successfully destroyed.' }
+        format.json { head :no_content }
+      end
+    else
+      format.html { redirect_to firemen_url, notice: 'Error' }
       format.json { head :no_content }
     end
   end

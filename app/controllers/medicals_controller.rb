@@ -5,7 +5,7 @@ class MedicalsController < ApplicationController
   # GET /medicals
   # GET /medicals.json
   def index
-    @medicals = Medical.all
+    @medicals = Medical.all.where(user_id: current_user.id).order(:id)
   end
 
   # GET /medicals/1
@@ -25,11 +25,12 @@ class MedicalsController < ApplicationController
   # POST /medicals
   # POST /medicals.json
   def create
-    puts medical_params.inspect
+
     hash = {}
     medical_params.each { |key, value| hash[key] = value }
+    hash[:user_id] = current_user.id
     @medical = Medical.new(hash)
-    puts @medical.inspect
+
     respond_to do |format|
       if @medical.save
         format.html { redirect_to @medical, notice: 'Medical was successfully created.' }
@@ -45,28 +46,34 @@ class MedicalsController < ApplicationController
   # PATCH/PUT /medicals/1.json
   def update
     @medical = Medical.find(medical_params[:id])
-    hash = {}
-    medical_params.each { |key, value| hash[key] = value }
-    hash.delete('id')
-    hash.delete('url')
-    respond_to do |format|
-      if @medical.update(hash)
-        format.html { redirect_to @medical, notice: 'Medical was successfully updated.' }
-        format.json { render :show, status: :ok, location: @medical }
-      else
-        format.html { render :edit }
-        format.json { render json: @medical.errors, status: :unprocessable_entity }
+    if @medical.user_id == current_user.id
+      hash = {}
+      medical_params.each { |key, value| hash[key] = value }
+      hash.delete('id')
+      hash.delete('url')
+      respond_to do |format|
+        if @medical.update(hash)
+          format.html { redirect_to @medical, notice: 'Medical was successfully updated.' }
+          format.json { render :show, status: :ok, location: @medical }
+        else
+          format.html { render :edit }
+          format.json { render json: @medical.errors, status: :unprocessable_entity }
+        end
       end
+    else
+      format.json { render json: 'error', status: 'error' }
     end
   end
 
   # DELETE /medicals/1
   # DELETE /medicals/1.json
   def destroy
-    @medical.destroy
-    respond_to do |format|
-      format.html { redirect_to medicals_url, notice: 'Medical was successfully destroyed.' }
-      format.json { head :no_content }
+    if @medical.user_id == current_user.id
+      @medical.destroy
+      respond_to do |format|
+        format.html { redirect_to medicals_url, notice: 'Medical was successfully destroyed.' }
+        format.json { head :no_content }
+      end
     end
   end
 

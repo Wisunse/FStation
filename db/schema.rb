@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180201185942) do
+ActiveRecord::Schema.define(version: 20180212140245) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -22,6 +22,8 @@ ActiveRecord::Schema.define(version: 20180201185942) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.date "insurance_date"
+    t.bigint "user_id"
+    t.index ["user_id"], name: "index_cars_on_user_id"
   end
 
   create_table "courses", force: :cascade do |t|
@@ -34,7 +36,20 @@ ActiveRecord::Schema.define(version: 20180201185942) do
     t.bigint "firemen_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.bigint "user_id"
     t.index ["firemen_id"], name: "index_courses_on_firemen_id"
+    t.index ["user_id"], name: "index_courses_on_user_id"
+  end
+
+  create_table "departures", force: :cascade do |t|
+    t.string "name"
+    t.date "incident_date"
+    t.bigint "user_id"
+    t.text "firemens"
+    t.text "note"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["user_id"], name: "index_departures_on_user_id"
   end
 
   create_table "firemen", force: :cascade do |t|
@@ -57,6 +72,19 @@ ActiveRecord::Schema.define(version: 20180201185942) do
     t.text "note"
     t.string "section"
     t.date "entry_date"
+    t.bigint "user_id"
+    t.index ["user_id"], name: "index_firemen_on_user_id"
+  end
+
+  create_table "medals", force: :cascade do |t|
+    t.bigint "firemen_id"
+    t.bigint "user_id"
+    t.date "granting_date"
+    t.string "name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["firemen_id"], name: "index_medals_on_firemen_id"
+    t.index ["user_id"], name: "index_medals_on_user_id"
   end
 
   create_table "medicals", force: :cascade do |t|
@@ -69,6 +97,8 @@ ActiveRecord::Schema.define(version: 20180201185942) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.boolean "have_end"
+    t.bigint "user_id"
+    t.index ["user_id"], name: "index_medicals_on_user_id"
   end
 
   create_table "models", force: :cascade do |t|
@@ -102,9 +132,18 @@ ActiveRecord::Schema.define(version: 20180201185942) do
     t.datetime "last_sign_in_at"
     t.inet "current_sign_in_ip"
     t.inet "last_sign_in_ip"
+    t.string "phone_number"
+    t.boolean "is_admin"
+    t.integer "admin_id"
+    t.integer "roles_mask"
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
 
+  add_foreign_key "cars", "users"
   add_foreign_key "courses", "firemen", column: "firemen_id"
+  add_foreign_key "courses", "users"
+  add_foreign_key "departures", "users"
+  add_foreign_key "firemen", "users"
+  add_foreign_key "medicals", "users"
 end

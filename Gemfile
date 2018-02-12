@@ -31,6 +31,7 @@ gem 'jbuilder', '~> 2.5'
 gem 'bcrypt', '~> 3.1.7'
 gem 'devise'
 gem 'angular_rails_csrf'
+gem 'cancan'
 
 source "https://rails-assets.org" do
   gem "rails-assets-angular-devise"

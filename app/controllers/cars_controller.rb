@@ -5,7 +5,7 @@ class CarsController < ApplicationController
   # GET /cars
   # GET /cars.json
   def index
-    @cars = Car.all.order(:id)
+    @cars = Car.all.where(user_id: current_user.id).order(:id)
   end
 
   # GET /cars/1
@@ -27,7 +27,7 @@ class CarsController < ApplicationController
   def create
     hash = {}
     car_params.each { |key, value| hash[key] = value }
-    puts car_params.inspect
+    hash[:user_id] = current_user.id
     @car = Car.new(hash)
 
     respond_to do |format|
@@ -45,30 +45,35 @@ class CarsController < ApplicationController
   # PATCH/PUT /cars/1.json
   def update
     @car = Car.find(car_params[:id])
-    hash = {}
-    car_params.each { |key, value| hash[key] = value }
-    hash.delete('id')
-    hash.delete('url')
-    respond_to do |format|
-      if @car.update(hash)
-        format.html { redirect_to @car, notice: 'Car was successfully updated.' }
-        format.json { render :show, status: :ok, location: @car }
-      else
-        format.html { render :edit }
-        format.json { render json: @car.errors, status: :unprocessable_entity }
+    if @car[:user_id] == current_user.id
+      hash = {}
+      car_params.each { |key, value| hash[key] = value }
+      hash.delete('id')
+      hash.delete('url')
+      respond_to do |format|
+        if @car.update(hash)
+          format.html { redirect_to @car, notice: 'Car was successfully updated.' }
+          format.json { render :show, status: :ok, location: @car }
+        else
+          format.html { render :edit }
+          format.json { render json: @car.errors, status: :unprocessable_entity }
+        end
       end
+    else
+      format.html { render :edit }
+      format.json { render json: @car.errors, status: :unprocessable_entity }
     end
   end
 
   # DELETE /cars/1
   # DELETE /cars/1.json
   def destroy
-    puts @car.inspect
-    puts car_params
-    @car.destroy
-    respond_to do |format|
-      format.html { redirect_to cars_url, notice: 'Car was successfully destroyed.' }
-      format.json { head :no_content }
+    if @car[:user_id] == current_user.id
+      @car.destroy
+      respond_to do |format|
+        format.html { redirect_to cars_url, notice: 'Car was successfully destroyed.' }
+        format.json { head :no_content }
+      end
     end
   end
 

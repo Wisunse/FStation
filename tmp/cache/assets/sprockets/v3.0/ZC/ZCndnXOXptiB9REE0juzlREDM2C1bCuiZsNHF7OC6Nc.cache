@@ -1,0 +1,55 @@
+{:uriI"åfile://app/assets/javascripts/dialog/_add_new_car.html?type=text/ng-html&id=60a50bc96c3da3dfc6bc152ac47bc4348cdcb4e8d2a46450e47f3afcf08f2128:ET:load_pathI"app/assets/javascripts;T:filenameI"4app/assets/javascripts/dialog/_add_new_car.html;T:	nameI"dialog/_add_new_car;T:logical_pathI"dialog/_add_new_car.html;T:content_typeI"text/ng-html;T:sourceI" <md-dialog aria-label="Mango (Fruit)">
+    <form ng-cloak>
+        <md-toolbar>
+            <div class="md-toolbar-tools">
+                <h2>Dodaj</h2>
+                <span flex></span>
+                <md-button class="md-icon-button" ng-click="cancel()">
+                    X
+                </md-button>
+            </div>
+        </md-toolbar>
+
+        <md-dialog-content>
+            <div class="md-dialog-content">
+
+                <md-input-container>
+                    <label>Nazwa</label>
+                    <input ng-model="newCar.name">
+                </md-input-container>
+
+                <md-input-container>
+                    <label>numer rejestracyjny</label>
+                    <input ng-model="newCar.registration_number">
+                </md-input-container>
+
+                <div>
+                    <div>PrzeglƒÖd do</div>
+                    <md-datepicker ng-model="newCar.servicing_to" md-open-on-focus></md-datepicker>
+                </div>
+
+                <div>
+                    <div>Ubezpieczenie OC do</div>
+                    <md-datepicker ng-model="newCar.insurance_date" md-open-on-focus></md-datepicker>
+                </div>
+
+            </div>
+
+
+            </button>
+
+        </md-dialog-content>
+
+        <md-dialog-actions layout="row">
+
+            <md-button ng-click="addCar()" class="md-raised md-cornered md-primary">
+                Dodaj
+            </md-button>
+
+        </md-dialog-actions>
+    </form>
+</md-dialog>;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"8processors:type=text/ng-html&file_type=text/ng-html;TTI"Bfile-digest://app/assets/javascripts/dialog/_add_new_car.html;TTF:charsetI"
+utf-8;F:digest"%––®˘“wj∆™„ˇr≈’ê>Z÷“$“[aZûë:lengthi :dependencies_digest"%Kj#B'eÏY`ÒÈÆO”∞ê˛Hv=ﬁ*±„/ut£:idI"E60a50bc96c3da3dfc6bc152ac47bc4348cdcb4e8d2a46450e47f3afcf08f2128;F:
+mtimel+9¯~Z

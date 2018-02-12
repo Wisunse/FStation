@@ -61,13 +61,7 @@ function($scope, $http, $state, $mdDialog, cars) {
         cars.getCars();
     };
 
-    $scope.daysLeft = function(date){
-        var today = new Date();
-        date = new Date(date);
-        var msPerDay = 24 * 60 * 60 * 1000 ;
-        var timeLeft = date.getTime() - today.getTime();
-        return Math.round(timeLeft / msPerDay);
-    };
+
 
     $scope.deleteCar = function(selectedCar) {
         $http.delete('/cars/'+selectedCar.id+'.json').then(function(result){

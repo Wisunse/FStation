@@ -2,7 +2,7 @@
 
     <div layout="column" layout-fill layout-align="center center" md-scroll-y>
 
-        <md-content layout-align="center center">
+        <md-content layout-align="center center" style="min-height:350px;min-width:350px;">
 
                 <div layout="column" layout-align="center center" class="md-padding">
 
@@ -27,7 +27,15 @@
                                     </div>
                                     <div layout="row">
                                         <div class="md-padding">Pozostało:</div>
-                                        <div class="md-padding md-subhead md-warn" ng-class="{'cars__warn': daysLeft(car.servicing_to) < 30}"> {{daysLeft(car.servicing_to)}} </div>
+                                        <div class="md-padding md-subhead md-warn" ng-class="{'cars__warn': cars.daysLeft(car.servicing_to) < 30}"> {{cars.daysLeft(car.servicing_to)}} </div>
+                                    </div>
+                                    <div layout="row">
+                                        <div class="md-padding">Ubezpieczenie OC do:</div>
+                                        <span class="md-padding md-subhead" ng-bind="car.insurance_date"></span>
+                                    </div>
+                                    <div layout="row">
+                                        <div class="md-padding">Pozostało:</div>
+                                        <div class="md-padding md-subhead md-warn" ng-class="{'cars__warn': cars.daysLeft(car.insurance_date) < 30}"> {{cars.daysLeft(car.insurance_date)}} </div>
                                     </div>
                                 </div>
                             </md-card-title>
