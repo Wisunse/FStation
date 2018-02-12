@@ -1,0 +1,55 @@
+{:uriI"èfile://app/assets/javascripts/dialog/_add_new_action.html?type=text/ng-html&id=f73a41bddb656c236d17db15b675b28bca2409925e7bfb10ac3560a97eff0fa3:ET:load_pathI"app/assets/javascripts;T:filenameI"7app/assets/javascripts/dialog/_add_new_action.html;T:	nameI"dialog/_add_new_action;T:logical_pathI" dialog/_add_new_action.html;T:content_typeI"text/ng-html;T:sourceI"ò<md-dialog aria-label="Mango (Fruit)">
+    <form ng-cloak>
+        <md-toolbar>
+            <div class="md-toolbar-tools">
+                <h2>Dodaj</h2>
+                <span flex></span>
+                <md-button class="md-icon-button" ng-click="cancel()">
+                    X
+                </md-button>
+            </div>
+        </md-toolbar>
+
+        <md-dialog-content>
+            <div class="md-dialog-content">
+
+                <md-input-container>
+                    <label>Nazwa</label>
+                    <input ng-model="newAction.name">
+                </md-input-container>
+
+                <md-input-container>
+                    <label>Data</label>
+                    <input ng-model="newAction.incident_date">
+                </md-input-container>
+
+                <md-input-container>
+                    <label>strazacy</label>
+                    <input ng-model="newAction.firemens">
+                </md-input-container>
+
+                <md-input-container>
+                    <label>notatka</label>
+                    <input ng-model="newAction.note">
+                </md-input-container>
+
+            </div>
+
+
+            </button>
+
+        </md-dialog-content>
+
+        <md-dialog-actions layout="row">
+
+            <md-button ng-click="addAction()" class="md-raised md-cornered md-primary">
+                Dodaj
+            </md-button>
+
+        </md-dialog-actions>
+    </form>
+</md-dialog>;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"8processors:type=text/ng-html&file_type=text/ng-html;TTI"Efile-digest://app/assets/javascripts/dialog/_add_new_action.html;TTF:charsetI"
+utf-8;F:digest"%x1%LuÔ·ú$kƒŒœ¢%ˇâ|Å˝≠C◊-nµd:lengthiò:dependencies_digest"%ósê?èäßÖ—R∑˘Søz9q∑Â∆üUÒÚiÌ§VAl”:idI"Ef73a41bddb656c236d17db15b675b28bca2409925e7bfb10ac3560a97eff0fa3;F:
+mtimel+ØÇZ

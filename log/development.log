@@ -74204,3 +74204,373 @@ Processing by CarsController#index as JSON
 Completed 200 OK in 52ms (Views: 33.2ms | ActiveRecord: 10.8ms)
 
 
+Started GET "/actions_view" for 127.0.0.1 at 2018-02-12 23:18:48 +0100
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by AuthenticatedController#authenticated as HTML
+  Rendering layouts/main.html.erb within layouts/application
+  Rendered layouts/main.html.erb within layouts/application (0.9ms)
+Started GET "/actions_view" for 127.0.0.1 at 2018-02-12 23:18:49 +0100
+Processing by AuthenticatedController#authenticated as HTML
+  Rendering layouts/main.html.erb within layouts/application
+  Rendered layouts/main.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 15462ms (Views: 15456.6ms | ActiveRecord: 0.0ms)
+
+
+Completed 200 OK in 15239ms (Views: 15237.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/cars" for 127.0.0.1 at 2018-02-12 23:19:05 +0100
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Processing by CarsController#index as JSON
+  Rendering cars/index.json.jbuilder
+  [1m[36mCar Load (0.7ms)[0m  [1m[34mSELECT "cars".* FROM "cars" WHERE "cars"."user_id" = $1 ORDER BY "cars"."id" ASC[0m  [["user_id", 2]]
+  Rendered cars/_car.json.jbuilder (1.1ms)
+  Rendered cars/_car.json.jbuilder (0.4ms)
+  Rendered cars/_car.json.jbuilder (0.4ms)
+  Rendered cars/_car.json.jbuilder (0.4ms)
+  Rendered cars/_car.json.jbuilder (0.3ms)
+  Rendered cars/_car.json.jbuilder (0.3ms)
+  Rendered cars/_car.json.jbuilder (0.3ms)
+  Rendered cars/index.json.jbuilder (28.9ms)
+Completed 200 OK in 40ms (Views: 29.7ms | ActiveRecord: 4.3ms)
+
+
+Started GET "/actions_view" for 127.0.0.1 at 2018-02-12 23:19:41 +0100
+Processing by AuthenticatedController#authenticated as HTML
+  Rendering layouts/main.html.erb within layouts/application
+  Rendered layouts/main.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 86ms (Views: 85.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/cars" for 127.0.0.1 at 2018-02-12 23:19:42 +0100
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Processing by CarsController#index as JSON
+  Rendering cars/index.json.jbuilder
+  [1m[36mCar Load (0.5ms)[0m  [1m[34mSELECT "cars".* FROM "cars" WHERE "cars"."user_id" = $1 ORDER BY "cars"."id" ASC[0m  [["user_id", 2]]
+  Rendered cars/_car.json.jbuilder (1.4ms)
+  Rendered cars/_car.json.jbuilder (0.7ms)
+  Rendered cars/_car.json.jbuilder (0.6ms)
+  Rendered cars/_car.json.jbuilder (0.5ms)
+  Rendered cars/_car.json.jbuilder (0.6ms)
+  Rendered cars/_car.json.jbuilder (0.6ms)
+  Rendered cars/_car.json.jbuilder (0.6ms)
+  Rendered cars/index.json.jbuilder (14.7ms)
+Completed 200 OK in 20ms (Views: 18.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/firemen" for 127.0.0.1 at 2018-02-12 23:19:50 +0100
+Started GET "/medicals" for 127.0.0.1 at 2018-02-12 23:19:50 +0100
+Started GET "/courses" for 127.0.0.1 at 2018-02-12 23:19:50 +0100
+Started GET "/cars" for 127.0.0.1 at 2018-02-12 23:19:50 +0100
+Started GET "/medals" for 127.0.0.1 at 2018-02-12 23:19:50 +0100
+  [1m[36mUser Load (9.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Processing by FiremenController#index as JSON
+  [1m[36mUser Load (5.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mUser Load (6.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mUser Load (2.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mUser Load (2.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Processing by CarsController#index as JSON
+  Rendering cars/index.json.jbuilder
+Processing by MedicalsController#index as JSON
+Processing by CoursesController#index as JSON
+Processing by MedalsController#index as JSON
+  [1m[36mCar Load (27.0ms)[0m  [1m[34mSELECT "cars".* FROM "cars" WHERE "cars"."user_id" = $1 ORDER BY "cars"."id" ASC[0m  [["user_id", 2]]
+  Rendering firemen/index.json.jbuilder
+  Rendered cars/_car.json.jbuilder (0.9ms)
+  Rendered cars/_car.json.jbuilder (0.5ms)
+  Rendered cars/_car.json.jbuilder (0.3ms)
+  [1m[36mFiremen Load (2.1ms)[0m  [1m[34mSELECT "firemen".* FROM "firemen" WHERE "firemen"."user_id" = $1 ORDER BY "firemen"."id" ASC[0m  [["user_id", 2]]
+  Rendered cars/_car.json.jbuilder (0.3ms)
+  Rendered cars/_car.json.jbuilder (0.4ms)
+  Rendered cars/_car.json.jbuilder (0.3ms)
+  Rendered cars/_car.json.jbuilder (0.5ms)
+  Rendered firemen/_fireman.json.jbuilder (0.7ms)
+  Rendered cars/index.json.jbuilder (72.1ms)
+Completed 200 OK in 77ms (Views: 48.4ms | ActiveRecord: 27.0ms)
+
+
+  Rendered firemen/_fireman.json.jbuilder (0.3ms)
+  Rendered firemen/_fireman.json.jbuilder (0.3ms)
+  Rendered firemen/_fireman.json.jbuilder (0.4ms)
+  Rendered firemen/_fireman.json.jbuilder (1.2ms)
+  Rendered firemen/_fireman.json.jbuilder (0.4ms)
+  Rendered firemen/_fireman.json.jbuilder (0.4ms)
+  Rendered firemen/_fireman.json.jbuilder (1.0ms)
+  Rendered firemen/_fireman.json.jbuilder (0.7ms)
+  Rendered firemen/_fireman.json.jbuilder (0.8ms)
+  Rendered firemen/_fireman.json.jbuilder (0.4ms)
+  Rendered firemen/_fireman.json.jbuilder (0.3ms)
+  Rendered firemen/_fireman.json.jbuilder (0.4ms)
+  Rendered firemen/_fireman.json.jbuilder (0.3ms)
+  Rendered firemen/_fireman.json.jbuilder (0.3ms)
+  Rendered firemen/_fireman.json.jbuilder (0.3ms)
+  Rendered firemen/_fireman.json.jbuilder (0.3ms)
+  Rendered firemen/_fireman.json.jbuilder (0.3ms)
+  Rendered firemen/_fireman.json.jbuilder (0.3ms)
+  Rendered firemen/_fireman.json.jbuilder (0.3ms)
+  Rendered firemen/_fireman.json.jbuilder (0.3ms)
+  Rendered firemen/_fireman.json.jbuilder (0.3ms)
+  Rendered firemen/index.json.jbuilder (59.3ms)
+Completed 200 OK in 107ms (Views: 60.7ms | ActiveRecord: 6.8ms)
+
+
+  Rendering medicals/index.json.jbuilder
+  Rendering medals/index.json.jbuilder
+  [1m[36mMedical Load (4.7ms)[0m  [1m[34mSELECT "medicals".* FROM "medicals" WHERE "medicals"."user_id" = $1 ORDER BY "medicals"."id" ASC[0m  [["user_id", 2]]
+  Rendering courses/index.json.jbuilder
+  [1m[36mMedal Load (3.9ms)[0m  [1m[34mSELECT "medals".* FROM "medals" WHERE "medals"."user_id" = $1 ORDER BY "medals"."id" ASC[0m  [["user_id", 2]]
+  [1m[36mCourse Load (1.7ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."user_id" = $1 ORDER BY "courses"."id" ASC[0m  [["user_id", 2]]
+  Rendered medicals/_medical.json.jbuilder (0.7ms)
+  Rendered medicals/_medical.json.jbuilder (0.5ms)
+  Rendered courses/_course.json.jbuilder (0.9ms)
+  Rendered courses/_course.json.jbuilder (0.3ms)
+  Rendered medicals/_medical.json.jbuilder (0.4ms)
+  Rendered courses/index.json.jbuilder (41.5ms)
+  Rendered medicals/_medical.json.jbuilder (0.7ms)
+  Rendered medals/_medal.json.jbuilder (1.3ms)
+  Rendered medals/_medal.json.jbuilder (0.4ms)
+  Rendered medals/_medal.json.jbuilder (0.3ms)
+Completed 200 OK in 159ms (Views: 38.7ms | ActiveRecord: 27.7ms)
+
+
+  Rendered medals/_medal.json.jbuilder (0.3ms)
+  Rendered medals/index.json.jbuilder (64.5ms)
+Completed 200 OK in 163ms (Views: 29.1ms | ActiveRecord: 46.3ms)
+
+
+  Rendered medicals/_medical.json.jbuilder (0.3ms)
+  Rendered medicals/_medical.json.jbuilder (0.5ms)
+  Rendered medicals/_medical.json.jbuilder (0.6ms)
+  Rendered medicals/_medical.json.jbuilder (0.6ms)
+  Rendered medicals/_medical.json.jbuilder (0.7ms)
+  Rendered medicals/_medical.json.jbuilder (0.6ms)
+  Rendered medicals/_medical.json.jbuilder (0.5ms)
+  Rendered medicals/_medical.json.jbuilder (0.5ms)
+  Rendered medicals/index.json.jbuilder (81.4ms)
+Completed 200 OK in 178ms (Views: 73.6ms | ActiveRecord: 20.8ms)
+
+
+Started GET "/actions_view" for 127.0.0.1 at 2018-02-12 23:20:27 +0100
+Processing by AuthenticatedController#authenticated as HTML
+  Rendering layouts/main.html.erb within layouts/application
+  Rendered layouts/main.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 489ms (Views: 488.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/cars" for 127.0.0.1 at 2018-02-12 23:20:29 +0100
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Processing by CarsController#index as JSON
+  Rendering cars/index.json.jbuilder
+  [1m[36mCar Load (0.5ms)[0m  [1m[34mSELECT "cars".* FROM "cars" WHERE "cars"."user_id" = $1 ORDER BY "cars"."id" ASC[0m  [["user_id", 2]]
+  Rendered cars/_car.json.jbuilder (0.7ms)
+  Rendered cars/_car.json.jbuilder (0.2ms)
+  Rendered cars/_car.json.jbuilder (0.5ms)
+  Rendered cars/_car.json.jbuilder (0.4ms)
+  Rendered cars/_car.json.jbuilder (0.5ms)
+  Rendered cars/_car.json.jbuilder (0.4ms)
+  Rendered cars/_car.json.jbuilder (0.3ms)
+  Rendered cars/index.json.jbuilder (10.5ms)
+Completed 200 OK in 16ms (Views: 13.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/actions_view" for 127.0.0.1 at 2018-02-12 23:20:40 +0100
+Processing by AuthenticatedController#authenticated as HTML
+  Rendering layouts/main.html.erb within layouts/application
+  Rendered layouts/main.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 758ms (Views: 757.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/cars" for 127.0.0.1 at 2018-02-12 23:20:41 +0100
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Processing by CarsController#index as JSON
+  Rendering cars/index.json.jbuilder
+  [1m[36mCar Load (2.5ms)[0m  [1m[34mSELECT "cars".* FROM "cars" WHERE "cars"."user_id" = $1 ORDER BY "cars"."id" ASC[0m  [["user_id", 2]]
+  Rendered cars/_car.json.jbuilder (1.2ms)
+  Rendered cars/_car.json.jbuilder (0.5ms)
+  Rendered cars/_car.json.jbuilder (0.6ms)
+  Rendered cars/_car.json.jbuilder (0.5ms)
+  Rendered cars/_car.json.jbuilder (0.5ms)
+  Rendered cars/_car.json.jbuilder (0.4ms)
+  Rendered cars/_car.json.jbuilder (0.3ms)
+  Rendered cars/index.json.jbuilder (13.9ms)
+Completed 200 OK in 18ms (Views: 14.7ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/actions_view" for 127.0.0.1 at 2018-02-12 23:21:28 +0100
+Processing by AuthenticatedController#authenticated as HTML
+  Rendering layouts/main.html.erb within layouts/application
+  Rendered layouts/main.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 585ms (Views: 584.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/cars" for 127.0.0.1 at 2018-02-12 23:21:30 +0100
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Processing by CarsController#index as JSON
+  Rendering cars/index.json.jbuilder
+  [1m[36mCar Load (0.9ms)[0m  [1m[34mSELECT "cars".* FROM "cars" WHERE "cars"."user_id" = $1 ORDER BY "cars"."id" ASC[0m  [["user_id", 2]]
+  Rendered cars/_car.json.jbuilder (1.1ms)
+  Rendered cars/_car.json.jbuilder (0.7ms)
+  Rendered cars/_car.json.jbuilder (0.5ms)
+  Rendered cars/_car.json.jbuilder (0.4ms)
+  Rendered cars/_car.json.jbuilder (0.4ms)
+  Rendered cars/_car.json.jbuilder (0.4ms)
+  Rendered cars/_car.json.jbuilder (0.4ms)
+  Rendered cars/index.json.jbuilder (12.0ms)
+Completed 200 OK in 16ms (Views: 14.1ms | ActiveRecord: 0.9ms)
+
+
+Started POST "/departures" for 127.0.0.1 at 2018-02-12 23:24:11 +0100
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Processing by DeparturesController#create as JSON
+  Parameters: {"name"=>"pierwszy", "firemens"=>"1,2,3,4,5", "note"=>"aaaaaaaa", "departure"=>{"name"=>"pierwszy", "firemens"=>"1,2,3,4,5", "note"=>"aaaaaaaa"}}
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 3.9ms)
+
+
+  
+ActiveModel::ForbiddenAttributesError (ActiveModel::ForbiddenAttributesError):
+  
+app/controllers/departures_controller.rb:27:in `create'
+Started POST "/departures" for 127.0.0.1 at 2018-02-12 23:25:24 +0100
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Processing by DeparturesController#create as JSON
+  Parameters: {"name"=>"pierwszy", "firemens"=>"1,2,3,4,5", "note"=>"aaaaaaaa", "departure"=>{"name"=>"pierwszy", "firemens"=>"1,2,3,4,5", "note"=>"aaaaaaaa"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35mSQL (1.4ms)[0m  [1m[32mINSERT INTO "departures" ("name", "user_id", "firemens", "note", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "pierwszy"], ["user_id", 2], ["firemens", "1,2,3,4,5"], ["note", "aaaaaaaa"], ["created_at", "2018-02-12 22:25:24.706365"], ["updated_at", "2018-02-12 22:25:24.706365"]]
+  [1m[35m (12.5ms)[0m  [1m[35mCOMMIT[0m
+  Rendering departures/show.json.jbuilder
+  Rendered departures/_departure.json.jbuilder (0.8ms)
+  Rendered departures/show.json.jbuilder (4.7ms)
+Completed 201 Created in 55ms (Views: 12.2ms | ActiveRecord: 19.5ms)
+
+
+Started GET "/actions_view" for 127.0.0.1 at 2018-02-12 23:30:07 +0100
+Processing by AuthenticatedController#authenticated as HTML
+  Rendering layouts/main.html.erb within layouts/application
+  Rendered layouts/main.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 7321ms (Views: 7320.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/departures" for 127.0.0.1 at 2018-02-12 23:30:16 +0100
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Processing by DeparturesController#index as JSON
+  Rendering departures/index.json.jbuilder
+  [1m[36mDeparture Load (0.6ms)[0m  [1m[34mSELECT "departures".* FROM "departures" WHERE "departures"."user_id" = $1 ORDER BY "departures"."id" ASC[0m  [["user_id", 2]]
+  Rendered departures/_departure.json.jbuilder (1.5ms)
+  Rendered departures/index.json.jbuilder (5.0ms)
+Completed 200 OK in 10ms (Views: 8.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/actions_view" for 127.0.0.1 at 2018-02-12 23:30:56 +0100
+Processing by AuthenticatedController#authenticated as HTML
+  Rendering layouts/main.html.erb within layouts/application
+  Rendered layouts/main.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 491ms (Views: 490.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/departures" for 127.0.0.1 at 2018-02-12 23:30:58 +0100
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Processing by DeparturesController#index as JSON
+  Rendering departures/index.json.jbuilder
+  [1m[36mDeparture Load (2.4ms)[0m  [1m[34mSELECT "departures".* FROM "departures" WHERE "departures"."user_id" = $1 ORDER BY "departures"."id" ASC[0m  [["user_id", 2]]
+  Rendered departures/_departure.json.jbuilder (2.0ms)
+  Rendered departures/index.json.jbuilder (7.3ms)
+Completed 200 OK in 13ms (Views: 9.1ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/actions_view" for 127.0.0.1 at 2018-02-12 23:31:07 +0100
+Processing by AuthenticatedController#authenticated as HTML
+  Rendering layouts/main.html.erb within layouts/application
+  Rendered layouts/main.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 777ms (Views: 776.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/departures" for 127.0.0.1 at 2018-02-12 23:31:09 +0100
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Processing by DeparturesController#index as JSON
+  Rendering departures/index.json.jbuilder
+  [1m[36mDeparture Load (2.0ms)[0m  [1m[34mSELECT "departures".* FROM "departures" WHERE "departures"."user_id" = $1 ORDER BY "departures"."id" ASC[0m  [["user_id", 2]]
+  Rendered departures/_departure.json.jbuilder (1.1ms)
+  Rendered departures/index.json.jbuilder (5.7ms)
+Completed 200 OK in 11ms (Views: 7.9ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/actions_view" for 127.0.0.1 at 2018-02-12 23:32:00 +0100
+Processing by AuthenticatedController#authenticated as HTML
+  Rendering layouts/main.html.erb within layouts/application
+  Rendered layouts/main.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 571ms (Views: 570.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/departures" for 127.0.0.1 at 2018-02-12 23:32:01 +0100
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Processing by DeparturesController#index as JSON
+  Rendering departures/index.json.jbuilder
+  [1m[36mDeparture Load (2.2ms)[0m  [1m[34mSELECT "departures".* FROM "departures" WHERE "departures"."user_id" = $1 ORDER BY "departures"."id" ASC[0m  [["user_id", 2]]
+  Rendered departures/_departure.json.jbuilder (1.0ms)
+  Rendered departures/index.json.jbuilder (5.8ms)
+Completed 200 OK in 11ms (Views: 7.2ms | ActiveRecord: 2.2ms)
+
+
+Started POST "/departures" for 127.0.0.1 at 2018-02-12 23:32:20 +0100
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Processing by DeparturesController#create as JSON
+  Parameters: {"incident_date"=>"2018-02-06T23:00:00.000Z", "name"=>"asddd", "note"=>"ddd", "departure"=>{"name"=>"asddd", "incident_date"=>"2018-02-06T23:00:00.000Z", "note"=>"ddd"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "departures" ("name", "incident_date", "user_id", "note", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "asddd"], ["incident_date", "2018-02-06"], ["user_id", 2], ["note", "ddd"], ["created_at", "2018-02-12 22:32:20.181595"], ["updated_at", "2018-02-12 22:32:20.181595"]]
+  [1m[35m (12.0ms)[0m  [1m[35mCOMMIT[0m
+  Rendering departures/show.json.jbuilder
+  Rendered departures/_departure.json.jbuilder (0.8ms)
+  Rendered departures/show.json.jbuilder (2.0ms)
+Completed 201 Created in 25ms (Views: 6.0ms | ActiveRecord: 13.2ms)
+
+
+Started GET "/departures" for 127.0.0.1 at 2018-02-12 23:32:20 +0100
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Processing by DeparturesController#index as JSON
+  Rendering departures/index.json.jbuilder
+  [1m[36mDeparture Load (0.8ms)[0m  [1m[34mSELECT "departures".* FROM "departures" WHERE "departures"."user_id" = $1 ORDER BY "departures"."id" ASC[0m  [["user_id", 2]]
+  Rendered departures/_departure.json.jbuilder (1.3ms)
+  Rendered departures/_departure.json.jbuilder (0.5ms)
+  Rendered departures/index.json.jbuilder (6.3ms)
+Completed 200 OK in 11ms (Views: 9.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/actions_view" for 127.0.0.1 at 2018-02-12 23:33:43 +0100
+Processing by AuthenticatedController#authenticated as HTML
+  Rendering layouts/main.html.erb within layouts/application
+  Rendered layouts/main.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 475ms (Views: 473.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/departures" for 127.0.0.1 at 2018-02-12 23:33:45 +0100
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Processing by DeparturesController#index as JSON
+  Rendering departures/index.json.jbuilder
+  [1m[36mDeparture Load (0.6ms)[0m  [1m[34mSELECT "departures".* FROM "departures" WHERE "departures"."user_id" = $1 ORDER BY "departures"."id" ASC[0m  [["user_id", 2]]
+  Rendered departures/_departure.json.jbuilder (1.2ms)
+  Rendered departures/_departure.json.jbuilder (0.6ms)
+  Rendered departures/index.json.jbuilder (6.2ms)
+Completed 200 OK in 11ms (Views: 9.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/actions_view" for 127.0.0.1 at 2018-02-12 23:34:25 +0100
+Processing by AuthenticatedController#authenticated as HTML
+  Rendering layouts/main.html.erb within layouts/application
+  Rendered layouts/main.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 486ms (Views: 484.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/departures" for 127.0.0.1 at 2018-02-12 23:34:27 +0100
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Processing by DeparturesController#index as JSON
+  Rendering departures/index.json.jbuilder
+  [1m[36mDeparture Load (1.7ms)[0m  [1m[34mSELECT "departures".* FROM "departures" WHERE "departures"."user_id" = $1 ORDER BY "departures"."id" ASC[0m  [["user_id", 2]]
+  Rendered departures/_departure.json.jbuilder (0.9ms)
+  Rendered departures/_departure.json.jbuilder (0.3ms)
+  Rendered departures/index.json.jbuilder (7.5ms)
+Completed 200 OK in 11ms (Views: 8.5ms | ActiveRecord: 1.7ms)
+
+

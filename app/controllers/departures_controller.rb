@@ -24,7 +24,10 @@ class DeparturesController < ApplicationController
   # POST /departures
   # POST /departures.json
   def create
-    @departure = Departure.new(departure_params)
+    hash = {}
+    departure_params.each { |key, value| hash[key] = value }
+    hash[:user_id] = current_user.id
+    @departure = Departure.new(hash)
 
     respond_to do |format|
       if @departure.save
