@@ -17,6 +17,8 @@ Rails.application.routes.draw do
     resources :cars, :defaults => { :format => :json }
     resources :medicals, :defaults => { :format => :json }
     resources :courses, :defaults => { :format => :json }
+    resources :medals, :defaults => { :format => :json }
+    resources :departures, :defaults => { :format => :json }
   end
 
 end

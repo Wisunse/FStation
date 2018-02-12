@@ -1,0 +1,40 @@
+{:uriI"éfile://app/assets/javascripts/dialog/_add_new_medal.html?type=text/ng-html&id=91209dff89cfdd0a5b8fb0d7d57cced53a28e88929323f1c27960eeb377f952b:ET:load_pathI"app/assets/javascripts;T:filenameI"6app/assets/javascripts/dialog/_add_new_medal.html;T:	nameI"dialog/_add_new_medal;T:logical_pathI"dialog/_add_new_medal.html;T:content_typeI"text/ng-html;T:sourceI"6<md-dialog aria-label="Badania Lekarskie">
+    <form ng-cloak>
+        <md-toolbar>
+            <div class="md-toolbar-tools">
+                <h2>Dodaj</h2>
+                <span flex></span>
+                <md-button class="md-icon-button" ng-click="cancel()">X</md-button>
+            </div>
+        </md-toolbar>
+
+        <md-dialog-content>
+            <div class="md-dialog-content">
+
+                <md-input-container>
+                    <label>Nazwa</label>
+                    <input ng-model="newMedal.name">
+                </md-input-container>
+
+                <div flex-gt-xs>
+                    <div>Data nadania</div>
+                    <md-datepicker ng-model="newMedal.granting_date" md-placeholder="12/11/2017" md-open-on-focus></md-datepicker>
+                </div>
+
+            </div>
+
+        </md-dialog-content>
+
+        <md-dialog-actions layout="row">
+
+            <md-button ng-click="addMedal()" class="md-raised md-cornered md-primary">
+                Potwied≈∫
+            </md-button>
+
+        </md-dialog-actions>
+    </form>
+</md-dialog>;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"8processors:type=text/ng-html&file_type=text/ng-html;TTI"Dfile-digest://app/assets/javascripts/dialog/_add_new_medal.html;TTF:charsetI"
+utf-8;F:digest"%ƒù¡úP◊ôñï)}”åGs —‹Ÿ@€{Ÿä„°íG:lengthi6:dependencies_digest"%Ûz	-[•—Gl>⁄√ùã˚˝∫4WëÆ‘•∑˛(bﬁoﬁ:idI"E91209dff89cfdd0a5b8fb0d7d57cced53a28e88929323f1c27960eeb377f952b;F:
+mtimel+N˘ÅZ

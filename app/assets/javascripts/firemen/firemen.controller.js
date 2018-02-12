@@ -29,6 +29,23 @@ angular.module('FireStation')
                 });
         };
 
+        $scope.addNewMedal = function(ev) {
+
+            $mdDialog.show({
+                controller: 'AddNewMedal',
+                templateUrl: 'dialog/_add_new_medal.html',
+                parent: angular.element(document.body),
+                targetEvent: ev,
+                clickOutsideToClose:true,
+                fullscreen: $scope.customFullscreen // Only for -xs, -sm breakpoints.
+            })
+                .then(function(answer) {
+                    $scope.status = 'You said the information was "' + answer + '".';
+                }, function() {
+                    $scope.status = 'You cancelled the dialog.';
+                });
+        };
+
         $scope.saveEditFireman = function() {
             console.log(firemen.selectedFireman.data);
             var url = '/firemen/' + firemen.selectedFireman.data.id;

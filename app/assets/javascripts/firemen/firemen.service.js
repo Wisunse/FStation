@@ -5,35 +5,38 @@ angular.module('FireStation')
     .factory('firemen', [ '$http', '$state', function($http, $state) {
 
         var factory = [];
-        factory.selectedFireman = {data: null, medicals: null, courses: null};
+        factory.selectedFireman = {data: null, medicals: null, courses: null, medals: null};
         factory.getFiremen = function() {
             $http.get('/firemen').then(function(result){
-                console.log(result.data);
                 factory.allFiremen = result.data;
             });
         };factory.getFiremen();
 
         factory.getMedicals = function() {
            return $http.get('/medicals').then(function(result){
-                console.log(result.data);
                 factory.allMedicals = result.data;
             });
         };factory.getMedicals();
 
         factory.getCourses = function() {
             return $http.get('/courses').then(function(result){
-                console.log(result.data);
                 factory.allCourses = result.data;
             });
         };factory.getCourses();
+
+        factory.getMedals = function() {
+            return $http.get('/medals').then(function(result){
+                console.log(result.data);
+                factory.allMedals = result.data;
+            });
+        };factory.getMedals();
 
         factory.selectFireman = function(fireman) {
             factory.selectedFireman.data = fireman;
             factory.selectedFireman.data.birth_date = new Date(fireman.birth_date);
             factory.selectedFireman.medicals = factory.selectedMedicals(fireman.id);
             factory.selectedFireman.courses = factory.selectedCourses(fireman.id);
-
-
+            factory.selectedFireman.medals = factory.selectedMedals(fireman.id);
         };
 
         factory.selectedMedicals = function(fireman_id) {
@@ -56,6 +59,16 @@ angular.module('FireStation')
             return result;
         };
 
+        factory.selectedMedals = function(fireman_id) {
+            var result = [];
+            factory.allMedals.forEach(function(medal) {
+                console.log(medal);
+                if(medal.firemen_id === fireman_id) {
+                    result.push(medal);
+                }
+            });
+            return result;
+        };
 
         return factory;
     }]);

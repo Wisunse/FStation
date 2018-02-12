@@ -327,8 +327,38 @@
                     </md-tab>
 
 
-                    <md-tab label="ODZNACZENIA">
-                    </md-tab>
+                        <md-tab label="ODZNACZENIA">
+
+                            <md-list>
+                                <md-list-item class="md-2-line" md-whiteframe="1">
+                                    <div class="md-list-item-text" layout="row" layout-align="start center">
+                                        <span flex>Lp.</span>
+                                        <span flex>Nazwa</span>
+                                        <span flex>Data nadania</span>
+                                    </div>
+                                </md-list-item>
+
+                                <md-list-item class="md-2-line"
+                                              md-whiteframe="1"
+                                              ng-repeat="medal in firemen.selectedFireman.medals track by $index"
+                                              ng-click="showEditMedal(medal)">
+                                    <div class="md-list-item-text" layout="row" layout-align="start center">
+                                        <span flex ng-bind="$index+1"></span>
+                                        <span flex ng-bind="medal.name"></span>
+                                        <span flex ng-bind="medal.granting_date"></span>
+                                    </div>
+                                </md-list-item>
+                            </md-list>
+
+                            <button class="md-fab md-accent md-fab-bottom-right docs-scroll-fab md-button md-ink-ripple scrolling"
+                                    type="button"
+                                    ng-click="addNewMedal()"
+                                    aria-label="add new course">
+                                <md-icon >add</md-icon>
+                            </button>
+
+                        </md-tab>
+
                     </md-card>
 
                 </md-tabs>

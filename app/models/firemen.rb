@@ -17,5 +17,5 @@ class Firemen < ApplicationRecord
   has_one  :Note
   has_one :Section
   has_one :EntryDate
-
+  belongs_to :user
 end

@@ -6,4 +6,5 @@ class Medical < ApplicationRecord
   has_one :FiremenId
   has_one :StateId
   has_one :HaveEnd
+  belongs_to :user
 end
