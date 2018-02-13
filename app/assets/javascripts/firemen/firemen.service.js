@@ -7,7 +7,7 @@ angular.module('FireStation')
         var factory = [];
         factory.selectedFireman = {data: null, medicals: null, courses: null, medals: null};
         factory.getFiremen = function() {
-            $http.get('/firemen').then(function(result){
+            return $http.get('/firemen').then(function(result){
                 factory.allFiremen = result.data;
             });
         };factory.getFiremen();
@@ -26,7 +26,6 @@ angular.module('FireStation')
 
         factory.getMedals = function() {
             return $http.get('/medals').then(function(result){
-                console.log(result.data);
                 factory.allMedals = result.data;
             });
         };factory.getMedals();
@@ -62,7 +61,6 @@ angular.module('FireStation')
         factory.selectedMedals = function(fireman_id) {
             var result = [];
             factory.allMedals.forEach(function(medal) {
-                console.log(medal);
                 if(medal.firemen_id === fireman_id) {
                     result.push(medal);
                 }

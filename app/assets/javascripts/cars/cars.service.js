@@ -8,7 +8,6 @@ angular.module('FireStation')
 
     factory.getCars = function() {
         $http.get('/cars').then(function(result){
-            console.log(result.data);
             factory.allCars = result.data;
         });
     };factory.getCars();

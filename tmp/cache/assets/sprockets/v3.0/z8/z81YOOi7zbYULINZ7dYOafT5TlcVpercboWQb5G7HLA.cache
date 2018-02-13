@@ -1,0 +1,55 @@
+{:uriI"èfile://app/assets/javascripts/dialog/_add_new_action.html?type=text/ng-html&id=76c0a5f9c5a11c89c6778b65ed2cb9528aefd3e5fa92e174bc172fc2d4b2c970:ET:load_pathI"app/assets/javascripts;T:filenameI"7app/assets/javascripts/dialog/_add_new_action.html;T:	nameI"dialog/_add_new_action;T:logical_pathI" dialog/_add_new_action.html;T:content_typeI"text/ng-html;T:sourceI"ß<md-dialog aria-label="Mango (Fruit)">
+    <form ng-cloak>
+        <md-toolbar>
+            <div class="md-toolbar-tools">
+                <h2>Dodaj</h2>
+                <span flex></span>
+                <md-button class="md-icon-button" ng-click="cancel()">
+                    X
+                </md-button>
+            </div>
+        </md-toolbar>
+
+        <md-dialog-content>
+            <div class="md-dialog-content">
+
+                <md-input-container>
+                    <label>Nazwa</label>
+                    <input ng-model="newAction.name">
+                </md-input-container>
+
+                <div>
+                    <div>Data wyjazdu</div>
+                    <md-datepicker ng-model="newAction.incident_date" md-open-on-focus></md-datepicker>
+                </div>
+
+                <md-input-container>
+                    <label>strazacy</label>
+                    <input ng-model="newAction.firemens">
+                </md-input-container>
+
+                <md-input-container>
+                    <label>notatka</label>
+                    <input ng-model="newAction.note">
+                </md-input-container>
+
+            </div>
+
+
+            </button>
+
+        </md-dialog-content>
+
+        <md-dialog-actions layout="row">
+
+            <md-button ng-click="addAction()" class="md-raised md-cornered md-primary">
+                Dodaj
+            </md-button>
+
+        </md-dialog-actions>
+    </form>
+</md-dialog>;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"8processors:type=text/ng-html&file_type=text/ng-html;TTI"Efile-digest://app/assets/javascripts/dialog/_add_new_action.html;TTF:charsetI"
+utf-8;F:digest"%P,Ä'”ûê4£ûÆ‰Tƒ9X.ﬁ§IˇVY|:lengthiß:dependencies_digest"%zíÔ<ÕqôrêA.úw†ç‹≈O«Ñ¶,ÿ:idI"E76c0a5f9c5a11c89c6778b65ed2cb9528aefd3e5fa92e174bc172fc2d4b2c970;F:
+mtimel+ﬂÇZ

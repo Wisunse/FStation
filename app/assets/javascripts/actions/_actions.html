@@ -4,26 +4,30 @@
 
     <md-card layout-align="center center" layout-fill md-padding>
 
-        <md-card-title>Wyjazdy</md-card-title>
+        <md-card-title></md-card-title>
         <md-card-media layout-fill>
 
             <md-list layout-fill>
                 <md-list-item class="md-2-line" md-whiteframe="1">
-
                     <div class="md-list-item-text" layout="row" layout-align="start center">
-                        <span flex>Nazwa</span>
-                        <span flex>zaloga</span>
-                        <span flex>data wyjazdu</span>
-                        <span flex>notatka</span>
+                        <span flex><h4>Nazwa</h4></span>
+                        <span flex><h4>Zaloga</h4></span>
+                        <span flex><h4>Data wyjazdu</h4></span>
+                        <span flex><h4>Notatka</h4></span>
                     </div>
-
                 </md-list-item>
                 <md-list-item class="md-2-line" md-whiteframe="1"
-                              ng-repeat="action in actions.allActions">
+                              ng-repeat="action in actions.allActions"
+                              ng-click="showEditAction(action)">
 
                     <div class="md-list-item-text" layout="row" layout-align="start center">
                         <span flex ng-bind="action.name"></span>
-                        <span flex ng-bind="action.firemens"></span>
+                        <span flex>
+                            <div ng-repeat="man in action.orderedFiremen">
+                                {{man.name}} {{man.surname}}
+                            </div>
+                        </span>
+
                         <span flex ng-bind="action.incident_date"></span>
                         <span flex ng-bind="action.note"></span>
                     </div>

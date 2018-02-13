@@ -27,14 +27,14 @@ function($scope, $http, $state, $mdDialog, actions) {
 
     };
 
-    $scope.showEditAction = function(ev, action) {
+    $scope.showEditAction = function(action) {
 
-        cars.selectedAction = angular.copy(action);
+        actions.selectedAction = angular.copy(action);
         $mdDialog.show({
-            controller: 'CarsController',
+            controller: 'AddNewAction',
             templateUrl: 'dialog/_edit_action.html',
             parent: angular.element(document.body),
-            targetEvent: ev,
+            // targetEvent: ev,
             clickOutsideToClose:true,
             fullscreen: true // Only for -xs, -sm breakpoints.
         })

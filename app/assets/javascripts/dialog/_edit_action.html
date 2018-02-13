@@ -1,0 +1,55 @@
+<md-dialog aria-label="Mango (Fruit)">
+    <form ng-cloak>
+        <md-toolbar>
+            <div class="md-toolbar-tools">
+                <h2>Edytuj: {{cars.selectedCar.name}}</h2>
+                <span flex></span>
+                <md-button class="md-icon-button" ng-click="cancel()">
+                    X
+                </md-button>
+            </div>
+        </md-toolbar>
+
+        <md-dialog-content>
+            <div class="md-dialog-content">
+
+                <md-input-container>
+                    <label>Nazwa</label>
+                    <input ng-model="actions.selectedAction.name">
+                </md-input-container>
+
+                <md-input-container>
+                    <label>Notatka</label>
+                    <input ng-model="actions.selectedAction.note">
+                </md-input-container>
+
+                <div>
+                    <div>Data wyjazdu</div>
+                    <md-datepicker ng-model="actions.selectedAction.incident_date" md-open-on-focus></md-datepicker>
+                </div>
+
+                <div>
+                    <h4>Załoga</h4>
+                    <div class="demo-select-all-checkboxes"ng-repeat="fireman in firemen.allFiremen">
+                        <md-checkbox ng-checked="exists(fireman.id, actions.selectedAction.firemens)" ng-click="toggle(fireman.id, actions.selectedAction.firemens)">
+                            {{ fireman.name }} {{fireman.surname}}
+                        </md-checkbox>
+                    </div>
+                </div>
+
+            </div>
+
+
+            </button>
+
+        </md-dialog-content>
+
+        <md-dialog-actions layout="row">
+
+            <md-button ng-click="editAction()" class="md-raised md-cornered md-primary">
+                Dodaj
+            </md-button>
+
+        </md-dialog-actions>
+    </form>
+</md-dialog>

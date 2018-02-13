@@ -12,26 +12,29 @@
 
         <md-dialog-content>
             <div class="md-dialog-content">
-
                 <md-input-container>
                     <label>Nazwa</label>
                     <input ng-model="newAction.name">
                 </md-input-container>
 
                 <div>
-                    <div>Data wyjazdu</div>
-                    <md-datepicker ng-model="newAction.incident_date" md-open-on-focus></md-datepicker>
+                    <h4>Data wyjazdu</h4>
+                    <md-datepicker ng-model="newAction.incident_date" md-open-on-focus="true"></md-datepicker>
                 </div>
-
-                <md-input-container>
-                    <label>strazacy</label>
-                    <input ng-model="newAction.firemens">
-                </md-input-container>
 
                 <md-input-container>
                     <label>notatka</label>
                     <input ng-model="newAction.note">
                 </md-input-container>
+                <div>
+                    <h4>Załoga</h4>
+                    <div class="demo-select-all-checkboxes"ng-repeat="fireman in firemen.allFiremen">
+                        <md-checkbox ng-checked="exists(fireman.id, newAction.firemens)" ng-click="toggle(fireman.id, newAction.firemens)">
+                            {{ fireman.name }} {{fireman.surname}}
+                        </md-checkbox>
+                    </div>
+                </div>
+
 
             </div>
 

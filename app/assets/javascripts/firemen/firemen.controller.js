@@ -47,7 +47,6 @@ angular.module('FireStation')
         };
 
         $scope.saveEditFireman = function() {
-            console.log(firemen.selectedFireman.data);
             var url = '/firemen/' + firemen.selectedFireman.data.id;
             $http.patch(url, firemen.selectedFireman.data).then(function(callback) {
                 firemen.getFiremen();
