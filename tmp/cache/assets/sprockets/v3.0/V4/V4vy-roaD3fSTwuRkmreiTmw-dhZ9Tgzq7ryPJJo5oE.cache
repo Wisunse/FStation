@@ -1,52 +1,0 @@
-{:uriI"âfile://app/assets/javascripts/actions/_actions.html?type=text/ng-html&id=0de8424db8a848397710914c22cf65225713c9e2f4b0bfe7e083ac9072c15485:ET:load_pathI"app/assets/javascripts;T:filenameI"1app/assets/javascripts/actions/_actions.html;T:	nameI"actions/_actions;T:logical_pathI"actions/_actions.html;T:content_typeI"text/ng-html;T:sourceI"\<!--<div layout="column" layout-fill layout-align="center center" md-scroll-y>-->
-
-<md-content layout-align="center center">
-
-    <md-card layout-align="center center" layout-fill md-padding>
-
-        <md-card-title>Wyjazdy</md-card-title>
-        <md-card-media layout-fill>
-
-            <md-list layout-fill>
-                <md-list-item class="md-2-line" md-whiteframe="1">
-
-                    <div class="md-list-item-text" layout="row" layout-align="start center">
-                        <span flex>Nazwa</span>
-                        <span flex>zaloga</span>
-                        <span flex>data wyjazdu</span>
-                        <span flex>notatka</span>
-                    </div>
-
-                </md-list-item>
-                <md-list-item class="md-2-line" md-whiteframe="1"
-                              ng-repeat="action in actions.allActions">
-
-                    <div class="md-list-item-text" layout="row" layout-align="start center">
-                        <span flex ng-bind="action.name"></span>
-                        <span flex ng-bind="action.firemens"></span>
-                        <span flex ng-bind="action.incident_date"></span>
-                        <span flex ng-bind="action.note"></span>
-                    </div>
-
-                </md-list-item>
-
-            </md-list>
-
-        </md-card-media>
-
-    </md-card>
-
-</md-content>
-
-<button class="md-fab md-accent md-fab-bottom-right docs-scroll-fab md-button md-ink-ripple scrolling"
-        type="button"
-        ng-click="addNewAction()"
-        aria-label="add new course">
-    <md-icon>add</md-icon>
-</button>
-<!--</div>-->
-;T:metadata{	:dependencieso:Set:
-@hash}
-I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"8processors:type=text/ng-html&file_type=text/ng-html;TTI"?file-digest://app/assets/javascripts/actions/_actions.html;TTF:charsetI"
-utf-8;F:digest"%*∑:K08aûæπ3YâS∑XÁ~}[î√Øõ◊†∂}:lengthi\:dependencies_digest"%ö±ÆŒ:W?ªÜ+?˝'·Oc®!Ù≠,¡ûçﬁ∑9<:idI"E0de8424db8a848397710914c22cf65225713c9e2f4b0bfe7e083ac9072c15485;F:
-mtimel+pÇZ

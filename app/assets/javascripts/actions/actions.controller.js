@@ -30,6 +30,7 @@ function($scope, $http, $state, $mdDialog, actions) {
     $scope.showEditAction = function(action) {
 
         actions.selectedAction = angular.copy(action);
+        actions.selectedAction.firemens = actions.selectedAction.firemens.split(',');
         $mdDialog.show({
             controller: 'AddNewAction',
             templateUrl: 'dialog/_edit_action.html',
@@ -46,12 +47,7 @@ function($scope, $http, $state, $mdDialog, actions) {
 
     };
 
-    $scope.editAction = function(){
-        $http.patch('/departures/'+actions.selectedAction.id,actions.selectedAction).then(function(result){
-            actions.getActions();
-            $mdDialog.cancel()
-        });
-    };
+
 
     $scope.cancel = function() {
         $mdDialog.cancel();

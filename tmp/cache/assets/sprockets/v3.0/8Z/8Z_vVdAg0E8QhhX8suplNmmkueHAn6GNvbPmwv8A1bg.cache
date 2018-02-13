@@ -1,0 +1,59 @@
+{:uriI"åfile://app/assets/javascripts/dialog/_edit_action.html?type=text/ng-html&id=5b7f7bf37ca24ae690693ec0710773bff79e2989972ab26cd7ad872d4dc03472:ET:load_pathI"app/assets/javascripts;T:filenameI"4app/assets/javascripts/dialog/_edit_action.html;T:	nameI"dialog/_edit_action;T:logical_pathI"dialog/_edit_action.html;T:content_typeI"text/ng-html;T:sourceI"$<md-dialog aria-label="Mango (Fruit)">
+    <form ng-cloak>
+        <md-toolbar>
+            <div class="md-toolbar-tools">
+                <h2>Edytuj: {{cars.selectedCar.name}}</h2>
+                <span flex></span>
+                <md-button class="md-icon-button" ng-click="cancel()">
+                    X
+                </md-button>
+            </div>
+        </md-toolbar>
+
+        <md-dialog-content>
+            <div class="md-dialog-content">
+
+                <md-input-container>
+                    <label>Nazwa</label>
+                    <input ng-model="actions.selectedAction.name">
+                </md-input-container>
+
+                <md-input-container>
+                    <label>Notatka</label>
+                    <input ng-model="actions.selectedAction.note">
+                </md-input-container>
+
+                <div>
+                    <div>Data wyjazdu</div>
+                    <!--<md-datepicker ng-model="actions.selectedAction.incident_date" md-open-on-focus></md-datepicker>-->
+                </div>
+
+                <div>
+                    <h4>Za≈Çoga</h4>
+                    <div class="demo-select-all-checkboxes"ng-repeat="fireman in firemen.allFiremen">
+                        <md-checkbox ng-checked="exists(fireman.id, actions.selectedAction.firemens)" ng-click="toggle(fireman.id, actions.selectedAction.firemens)">
+                            {{ fireman.name }} {{fireman.surname}}
+                        </md-checkbox>
+                    </div>
+                </div>
+
+            </div>
+
+
+            </button>
+
+        </md-dialog-content>
+
+        <md-dialog-actions layout="row">
+
+            <md-button ng-click="editAction()" class="md-raised md-cornered md-primary">
+                Dodaj
+            </md-button>
+
+        </md-dialog-actions>
+    </form>
+</md-dialog>;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"8processors:type=text/ng-html&file_type=text/ng-html;TTI"Bfile-digest://app/assets/javascripts/dialog/_edit_action.html;TTF:charsetI"
+utf-8;F:digest"%√ôÉO2sÅtj6Á∑IÁàm.ıbÂqfŒ~áS1•:lengthi$:dependencies_digest"%»‚ùèQ"√ÿ'PlË.S™Œ•tmñáe€n–¸“ÃÙJ:idI"E5b7f7bf37ca24ae690693ec0710773bff79e2989972ab26cd7ad872d4dc03472;F:
+mtimel+ﬂ1ÉZ

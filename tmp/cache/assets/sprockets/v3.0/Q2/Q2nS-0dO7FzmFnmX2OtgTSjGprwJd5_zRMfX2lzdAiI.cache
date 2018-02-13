@@ -1,37 +1,0 @@
-{:uriI"âfile://app/assets/javascripts/actions/_actions.html?type=text/ng-html&id=2569c24318f91c0cf3bcfe40948b76fc89795aba8f01b626e862727b5511a0c4:ET:load_pathI"app/assets/javascripts;T:filenameI"1app/assets/javascripts/actions/_actions.html;T:	nameI"actions/_actions;T:logical_pathI"actions/_actions.html;T:content_typeI"text/ng-html;T:sourceI"Õ<!--<div layout="column" layout-fill layout-align="center center" md-scroll-y>-->
-
-<md-content layout-align="center center">
-
-    <md-card layout-align="center center" layout-fill md-padding>
-
-        <md-card-title>Badania</md-card-title>
-        <md-card-media layout-fill>
-
-            <md-list layout-fill>
-
-                <md-list-item class="md-2-line" md-whiteframe="1"
-                              ng-repeat="action in firemen.allActions">
-
-                    <div class="md-list-item-text" layout="row" layout-align="start center">
-                        <span flex ng-bind="action.name"></span>
-                        <span flex ng-bind="action.firemens"></span>
-                        <span flex ng-bind="action.incident_date"></span>
-                        <span flex ng-bind="action.note"></span>
-                    </div>
-
-                </md-list-item>
-
-            </md-list>
-
-        </md-card-media>
-
-    </md-card>
-
-</md-content>
-
-<!--</div>-->
-;T:metadata{	:dependencieso:Set:
-@hash}
-I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"8processors:type=text/ng-html&file_type=text/ng-html;TTI"?file-digest://app/assets/javascripts/actions/_actions.html;TTF:charsetI"
-utf-8;F:digest"%£67 pO@∏y&ﬂÂ¯ÒÂÈ•äŸ(„≠O˝ëè¯»:lengthiÕ:dependencies_digest"%TÇî¬†\D›Ï'|Ù¥†§é{D∫xµÑÓTÔa«µM:idI"E2569c24318f91c0cf3bcfe40948b76fc89795aba8f01b626e862727b5511a0c4;F:
-mtimel+—ÇZ

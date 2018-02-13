@@ -43,13 +43,21 @@ class DeparturesController < ApplicationController
   # PATCH/PUT /departures/1
   # PATCH/PUT /departures/1.json
   def update
-    respond_to do |format|
-      if @departure.update(departure_params)
-        format.html { redirect_to @departure, notice: 'Departure was successfully updated.' }
-        format.json { render :show, status: :ok, location: @departure }
-      else
-        format.html { render :edit }
-        format.json { render json: @departure.errors, status: :unprocessable_entity }
+    @departure = Departure.find(departure_params[:id])
+    if @departure[:user_id] == current_user.id
+      hash = {}
+      departure_params.each { |key, value| hash[key] = value }
+      hash.delete('id')
+      hash.delete('user_id')
+      hash.delete('url')
+      respond_to do |format|
+        if @departure.update(hash)
+          format.html { redirect_to @departure, notice: 'Departure was successfully updated.' }
+          format.json { render :show, status: :ok, location: @departure }
+        else
+          format.html { render :edit }
+          format.json { render json: @departure.errors, status: :unprocessable_entity }
+        end
       end
     end
   end
