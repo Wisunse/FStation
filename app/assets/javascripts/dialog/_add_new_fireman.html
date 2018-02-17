@@ -34,19 +34,22 @@
                     <input ng-model="newFireman.father_name">
                 </md-input-container>
 
-                <md-input-container>
-                    <label>Data urodzenia</label>
-                    <input ng-model="newFireman.birth_date">
-                </md-input-container>
+                <div>
+                    <h4>Data urodzenia</h4>
+                    <md-datepicker ng-model="newFireman.birth_date" md-placeholder="12/11/1980" md-open-on-focus></md-datepicker>
+                </div>
 
                 <md-input-container>
                     <label>Miejsce urodzenia</label>
                     <input ng-model="newFireman.birt_place">
                 </md-input-container>
 
+
                 <md-input-container>
                     <label>Płeć</label>
-                    <input ng-model="newFireman.sex">
+                    <md-select ng-model="newFireman.sex">
+                        <md-option ng-value="gen" ng-repeat="gen in gender">{{gen}}</md-option>
+                    </md-select>
                 </md-input-container>
 
                 <md-input-container>

@@ -30,6 +30,7 @@ function($scope, $http, $state, $mdDialog, cars) {
 
         cars.selectedCar = angular.copy(car);
         cars.selectedCar.servicing_to = new Date(car.servicing_to);
+        cars.selectedCar.insurance_date = new Date(car.insurance_date);
         $mdDialog.show({
             controller: 'CarsController',
             templateUrl: 'dialog/_edit_car.html',

@@ -2,8 +2,8 @@
 
 angular.module('FireStation')
 
-    .controller('RegisterController', ['$scope', '$http', '$mdSidenav', 'Auth', '$rootScope',
-        function($scope, $http, $mdSidenav, Auth, $rootScope) {
+    .controller('RegisterController', ['$scope', '$http', '$mdSidenav', 'Auth', '$rootScope', '$state',
+        function($scope, $http, $mdSidenav, Auth, $rootScope, $state) {
 
             var config = {
                 headers: {
@@ -14,17 +14,27 @@ angular.module('FireStation')
             $scope.user = {
                 'email': '',
                 'username': '',
-                'password': ''
+                'password': '',
+                'confirmPassword': ''
             };
 
             $scope.register = function() {
+                if($scope.user.password) {
+                    delete $scope.user.confirmPassword;
+                    Auth.register($scope.user, config).then(function(user) {
 
-                Auth.register($scope.user, config).then(function(user){
-                    $rootScope.user = user;
-                    $state.go('firemen');
-                });
+                        $rootScope.user = user;
 
+                        $scope.user = {
+                            'email': '',
+                            'username': '',
+                            'password': '',
+                            'confirmPassword': ''
+                        };
+
+                        $state.go('login');
+                    });
+                }
             }
-
 
     }]);

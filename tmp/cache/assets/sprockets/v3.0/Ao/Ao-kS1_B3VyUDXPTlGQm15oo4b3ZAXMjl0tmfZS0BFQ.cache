@@ -1,0 +1,55 @@
+{:uriI"‰file://app/assets/javascripts/dialog/_edit_car.html?type=text/ng-html&id=e238508f33e5e4995879be62292a039fb2d55c920227d474de23d820cf6fefbd:ET:load_pathI"app/assets/javascripts;T:filenameI"1app/assets/javascripts/dialog/_edit_car.html;T:	nameI"dialog/_edit_car;T:logical_pathI"dialog/_edit_car.html;T:content_typeI"text/ng-html;T:sourceI"<md-dialog aria-label="Mango (Fruit)">
+    <form ng-cloak>
+        <md-toolbar>
+            <div class="md-toolbar-tools">
+                <h2>Edytuj: {{cars.selectedCar.name}}</h2>
+                <span flex></span>
+                <md-button class="md-icon-button" ng-click="cancel()">
+                    X
+                </md-button>
+            </div>
+        </md-toolbar>
+
+        <md-dialog-content>
+            <div class="md-dialog-content">
+
+                <md-input-container>
+                    <label>Nazwa</label>
+                    <input ng-model="cars.selectedCar.name">
+                </md-input-container>
+
+                <md-input-container>
+                    <label>numer rejestracyjny</label>
+                    <input ng-model="cars.selectedCar.registration_number">
+                </md-input-container>
+
+                <div>
+                    <div>PrzeglÄ…d do</div>
+                    <md-datepicker ng-model="cars.selectedCar.servicing_to" md-open-on-focus></md-datepicker>
+                </div>
+
+                <div>
+                    <div>Ubezpieczenie do</div>
+                    <md-datepicker ng-model="cars.selectedCar.insurance_date" md-open-on-focus></md-datepicker>
+                </div>
+
+            </div>
+
+
+            </button>
+
+        </md-dialog-content>
+
+        <md-dialog-actions layout="row">
+
+            <md-button ng-click="editCar()" class="md-raised md-cornered md-primary">
+                Dodaj
+            </md-button>
+
+        </md-dialog-actions>
+    </form>
+</md-dialog>;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"8processors:type=text/ng-html&file_type=text/ng-html;TTI"?file-digest://app/assets/javascripts/dialog/_edit_car.html;TTF:charsetI"
+utf-8;F:digest"%t?`_sÄ‚å¦óEb•›v°A»%dÃT:AŠôd:lengthi:dependencies_digest"%·œ„½éÒÂézô»î3Z@s`\ˆƒúÝþá¬>GÚ2:idI"Ee238508f33e5e4995879be62292a039fb2d55c920227d474de23d820cf6fefbd;F:
+mtimel+Šú‡Z

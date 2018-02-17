@@ -1,4 +1,4 @@
-<div class="login-wrapper">
+<div class="main-wrapper">
     <div layout="flex" layout-fill ng-cloak>
         <section layout="column" flex layout-align="center center" class="login">
 
@@ -29,9 +29,15 @@
                             <label for="password">Password</label>
                             <input id="password" type="password" name="password" ng-model="user.password" required ng-keydown="$event.which === 13 && login()"/>
                         </md-input-container>
+
+                        <md-input-container class="md-block">
+                            <label for="confirmPassword">Password</label>
+                            <input id="confirmPassword" type="password" name="confirmPassword" ng-model="user.confirmPassword" required ng-keydown="$event.which === 13 && login()"/>
+                        </md-input-container>
+
                         <md-input-container class="md-block">
                             <div layout="row" layout-align="center center">
-                                <md-button class="md-raised md-accent" flex="50" ng-click="register()">Login</md-button>
+                                <md-button class="md-raised md-accent" flex="50" ng-click="register()">Wyślij</md-button>
                             </div>
                         </md-input-container>
                     </form>

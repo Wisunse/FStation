@@ -133,107 +133,133 @@
 
         </md-content>
 
-        <md-card flex="60" layout="column" layout-fill>
+        <md-card flex="60" layout="column" layout-fill ng-if="firemen.selectedFireman.data !== null">
 
                 <md-tabs md-border-bottom md-center-tabs="true" layout="column" layout-fill md-stretch-tabs="always" flex>
                     <md-tab label="DANE">
 
-                        <div layout="column" md-scroll-y layout-wrap style="height:480px;width:100%;">
-                            <md-content>
-                            <div layout="row" layout-wrap layout-align="space-around center">
-                                <md-input-container>
-                                    <label>Imie</label>
-                                    <input ng-model="firemen.selectedFireman.data.name">
-                                </md-input-container>
-
-                                <md-input-container>
-                                    <label>Drugie Imie</label>
-                                    <input ng-model="firemen.selectedFireman.data.second_name">
-                                </md-input-container>
-
-                                <md-input-container>
-                                    <label>Nazwisko</label>
-                                    <input ng-model="firemen.selectedFireman.data.surname">
-                                </md-input-container>
-                            </div>
-
-                            <div layout="row"  layout-wrap layout-align="space-around center">
-                                <md-input-container>
-                                    <label>Imie ojca</label>
-                                    <input ng-model="firemen.selectedFireman.data.father_name">
-                                </md-input-container>
+                        <div layout="column" md-scroll-y layout-wrap >
+                            <!--style="height:480px;width:100%;"-->
+                            <md-content md-theme="docs-dark" layout-gt-sm="row" layout-padding>
 
                                 <div>
-                                    <h4>Data urodzenia</h4>
-                                    <md-datepicker ng-model="firemen.selectedFireman.data.birth_date" md-placeholder="12/11/1980" md-open-on-focus></md-datepicker>
+                                    <md-input-container>
+                                        <label>Imie</label>
+                                        <input ng-model="firemen.selectedFireman.data.name">
+                                    </md-input-container>
+
+                                    <md-input-container>
+                                        <label>Drugie Imie</label>
+                                        <input ng-model="firemen.selectedFireman.data.second_name">
+                                    </md-input-container>
+
+                                    <md-input-container>
+                                        <label>Nazwisko</label>
+                                        <input ng-model="firemen.selectedFireman.data.surname">
+                                    </md-input-container>
                                 </div>
 
-                                <div>
-                                    <div>Wiek: </div>
-                                    <div ng-bind="howOld(firemen.selectedFireman.data.birth_date)"></div>
-                                </div>
-
-                                <md-input-container>
-                                    <label>Miejsce urodzenia</label>
-                                    <input ng-model="firemen.selectedFireman.data.birt_place">
-                                </md-input-container>
-
-                            </div>
-
-                            <div layout="row"  layout-wrap layout-align="space-around center">
-                                <md-input-container>
-                                    <label>Płeć</label>
-                                    <md-select ng-model="firemen.selectedFireman.data.sex">
-                                        <md-option ng-value="gen" ng-repeat="gen in gender">{{gen}}</md-option>
-                                    </md-select>
-                                </md-input-container>
-
-                                <md-input-container>
-                                    <label>Adres</label>
-                                    <input ng-model="firemen.selectedFireman.data.adres">
-                                </md-input-container>
-
-                                <md-input-container>
-                                    <label>Kod pocztowy</label>
-                                    <input ng-model="firemen.selectedFireman.data.zip_code">
-                                </md-input-container>
-                            </div>
-
-                            <div layout="row"  layout-wrap layout-align="space-around center">
-                                <md-input-container>
-                                    <label>Miejscowość</label>
-                                    <input ng-model="firemen.selectedFireman.data.place">
-                                </md-input-container>
-
-                                <md-input-container>
-                                    <label>Pesel</label>
-                                    <input ng-model="firemen.selectedFireman.data.pesel">
-                                </md-input-container>
-
-                                <md-input-container>
-                                    <label>Telefon</label>
-                                    <input ng-model="firemen.selectedFireman.data.phone">
-                                </md-input-container>
-                            </div>
-
-                            <div layout="row"  layout-wrap layout-align="space-around center">
-                                <md-input-container>
-                                    <label>Email</label>
-                                    <input ng-model="firemen.selectedFireman.data.email">
-                                </md-input-container>
-                                <md-input-container>
-                                    <label>Sekcja</label>
-                                    <md-select ng-model="firemen.selectedFireman.data.section">
-                                        <md-option ng-repeat="section in sections"
-                                                   ng-value="section">{{section}}</md-option>
-                                    </md-select>
-                                </md-input-container>
-                                <md-input-container>
-                                    <label>Notatki</label>
-                                    <textarea ng-model="firemen.selectedFireman.data.note"></textarea>
-                                </md-input-container>
-                            </div>
                             </md-content>
+
+                            <md-content layout-gt-sm="row" layout-padding>
+                                <div>
+                                    <md-input-container>
+                                        <label>Kod pocztowy</label>
+                                        <input ng-model="firemen.selectedFireman.data.zip_code">
+                                    </md-input-container>
+
+                                    <md-input-container>
+                                        <label>Miejscowość</label>
+                                        <input ng-model="firemen.selectedFireman.data.place">
+                                    </md-input-container>
+
+                                    <md-input-container>
+                                        <label>Pesel</label>
+                                        <input ng-model="firemen.selectedFireman.data.pesel">
+                                    </md-input-container>
+                                </div>
+                            </md-content>
+
+                            <md-content layout-gt-sm="row" layout-padding>
+                                <div layout-gt-sm="row" layout-padding>
+
+                                    <md-input-container>
+                                        <label>Imie ojca</label>
+                                        <input ng-model="firemen.selectedFireman.data.father_name">
+                                    </md-input-container>
+
+                                    <md-input-container>
+                                        <label>Miejsce urodzenia</label>
+                                        <input ng-model="firemen.selectedFireman.data.birt_place">
+                                    </md-input-container>
+
+                                    <md-input-container>
+                                        <label>Adres</label>
+                                        <input ng-model="firemen.selectedFireman.data.adres">
+                                    </md-input-container>
+
+
+
+                                </div>
+                            </md-content>
+
+                            <md-content layout-gt-sm="row" layout-padding>
+                                <div>
+                                    <md-input-container>
+                                        <label>Telefon</label>
+                                        <input ng-model="firemen.selectedFireman.data.phone">
+                                    </md-input-container>
+
+                                    <md-input-container>
+                                        <label>Email</label>
+                                        <input ng-model="firemen.selectedFireman.data.email">
+                                    </md-input-container>
+
+                                    <md-input-container>
+                                        <label>Notatki</label>
+                                        <textarea ng-model="firemen.selectedFireman.data.note"></textarea>
+                                    </md-input-container>
+
+                                </div>
+                            </md-content>
+
+
+                            <md-content layout-gt-sm="row" layout-padding>
+                                <div layout-gt-sm="row">
+
+                                    <md-input-container>
+                                        <label>Płeć</label>
+                                        <md-select ng-model="firemen.selectedFireman.data.sex">
+                                            <md-option ng-value="gen" ng-repeat="gen in gender">{{gen}}</md-option>
+                                        </md-select>
+                                    </md-input-container>
+
+                                    <div layout-gt-xs="column">
+                                        <div flex-gt-xs>
+                                            <div>Data urodzenia</div>
+                                            <md-datepicker ng-model="firemen.selectedFireman.data.birth_date" md-placeholder="12/11/1980" md-open-on-focus></md-datepicker>
+                                        </div>
+                                    </div>
+
+                                    <div layout="row">
+                                        <div layout-padding>Wiek: </div>
+                                        <div layout-padding ng-bind="howOld(firemen.selectedFireman.data.birth_date)"></div>
+                                    </div>
+
+                                    <md-input-container>
+                                        <label>Sekcja</label>
+                                        <md-select ng-model="firemen.selectedFireman.data.section">
+                                            <md-option ng-repeat="section in sections"
+                                                       ng-value="section">{{section}}</md-option>
+                                        </md-select>
+                                    </md-input-container>
+
+                                </div>
+                            </md-content>
+
+
+
+
                         </div>
                         <div layout-align="space-between center" layout="row">
                             <div layout-align="center center">

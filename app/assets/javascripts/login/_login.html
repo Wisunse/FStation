@@ -1,4 +1,4 @@
-<div class="login-wrapper">
+<div class="main-wrapper">
     <div layout="flex" layout-fill ng-cloak>
         <section layout="column" flex layout-align="center center" class="login">
 
@@ -16,7 +16,7 @@
                 <md-card-content>
                     <form name="loginForm">
                         <md-input-container class="md-block">
-                            <label for="email">Username / Email</label>
+                            <label for="email">Email</label>
                             <input id="email" name="email" ng-model="user.email" required ng-keydown="$event.which === 13 && login()" />
                         </md-input-container>
                         <md-input-container class="md-block">

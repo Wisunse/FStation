@@ -31,6 +31,7 @@ angular.module('FireStation')
         };factory.getMedals();
 
         factory.selectFireman = function(fireman) {
+            console.log(fireman);
             factory.selectedFireman.data = fireman;
             factory.selectedFireman.data.birth_date = new Date(fireman.birth_date);
             factory.selectedFireman.medicals = factory.selectedMedicals(fireman.id);
