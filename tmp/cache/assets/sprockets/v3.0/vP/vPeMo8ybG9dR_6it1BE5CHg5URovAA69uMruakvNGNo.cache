@@ -1,71 +1,0 @@
-{:uriI"‹file://app/assets/javascripts/register/_register.html?type=text/ng-html&id=58f76c2404c9b02534dc4fcbebc18eeef75d6750cb0dbe1e3c86f2667d94f2d8:ET:load_pathI"app/assets/javascripts;T:filenameI"3app/assets/javascripts/register/_register.html;T:	nameI"register/_register;T:logical_pathI"register/_register.html;T:content_typeI"text/ng-html;T:sourceI"	<div class="main-wrapper">
-    <div layout="flex" layout-fill ng-cloak>
-        <section layout="column" flex layout-align="center center" class="login">
-
-            <md-card class="md-whiteframe-4dp">
-
-                <md-toolbar>
-                    <div layout="column" layout-padding layout-align="center center">
-                        <div>
-                            <md-icon class="md-36" ng-cloak>lock</md-icon>
-                        </div>
-                        <div class="md-headline md-padding">Rejestracja</div>
-                    </div>
-                </md-toolbar>
-
-                <md-card-content>
-                    <form name="loginForm">
-                        <md-input-container class="md-block">
-                            <label for="email">Email</label>
-                            <input id="email" name="email" ng-model="user.email" required ng-keydown="$event.which === 13 && login()" />
-                        </md-input-container>
-
-                        <md-input-container class="md-block">
-                            <label for="username">Username</label>
-                            <input id="username" name="email" ng-model="user.username" required ng-keydown="$event.which === 13 && login()" />
-                        </md-input-container>
-
-                        <md-input-container class="md-block">
-                            <label for="password">Password</label>
-                            <input id="password" type="password" name="password" ng-model="user.password" required ng-keydown="$event.which === 13 && login()"/>
-                        </md-input-container>
-                        <md-input-container class="md-block">
-                            <div layout="row" layout-align="center center">
-                                <md-button class="md-raised md-accent" flex="50" ng-click="register()">WyÅ›lij</md-button>
-                            </div>
-                        </md-input-container>
-                    </form>
-                </md-card-content>
-
-            </md-card>
-
-        </section>
-    </div>
-</div>
-
-<!--<div class="login-wrapper">-->
-<!--<div ng-include="'login/_about_app.html'"></div>-->
-<!--<div ng-include="'login/_registration.html'"></div>-->
-<!--<div ng-include="'login/_contact.html'"></div>-->
-<!--</div>-->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-;T:metadata{	:dependencieso:Set:
-@hash}
-I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"8processors:type=text/ng-html&file_type=text/ng-html;TTI"Afile-digest://app/assets/javascripts/register/_register.html;TTF:charsetI"
-utf-8;F:digest"%ý?#¶Ÿ.9aO¨oòÒ•äß¡¾=]O¥>PÒ˜l:lengthi	:dependencies_digest"%¨lðb„gìe}<Ë¾X•Î¶¤Q,"[Î‰œŠÉßÍÁ:idI"E58f76c2404c9b02534dc4fcbebc18eeef75d6750cb0dbe1e3c86f2667d94f2d8;F:
-mtimel+Iª†Z
