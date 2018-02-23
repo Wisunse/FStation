@@ -45,6 +45,7 @@ angular.module('FireStation')
 
         Auth.logout(config).then(function(oldUser) {
             $state.go('login');
+            location.reload();
         }, function(error) {
             // An error occurred logging out.
         });

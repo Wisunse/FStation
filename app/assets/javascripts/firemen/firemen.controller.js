@@ -150,6 +150,27 @@ angular.module('FireStation')
 
         };
 
+        $scope.showEditMedal = function(medal) {
+
+            firemen.editedMedal = angular.copy(medal);
+            firemen.editedMedal.granting_date = new Date(medal.granting_date);
+
+            $mdDialog.show({
+                controller: 'AddNewMedal',
+                templateUrl: 'dialog/_edit_medal.html',
+                parent: angular.element(document.body),
+                // targetEvent: ev,
+                clickOutsideToClose:true,
+                fullscreen: $scope.customFullscreen // Only for -xs, -sm breakpoints.
+            })
+                .then(function(answer) {
+                    $scope.status = 'You said the information was "' + answer + '".';
+                }, function() {
+                    $scope.status = 'You cancelled the dialog.';
+                });
+
+        };
+
         $scope.howOld = function(date) {
             if(date !== undefined){
                 var today = new Date();

@@ -26,7 +26,7 @@ angular.module('FireStation')
                 $mdDialog.cancel();
                 var myDataPromise = firemen.getCourses();
                 myDataPromise.then(function(result) {
-                    firemen.selectFireman(firemen.selectedFireman);
+                    firemen.selectFireman(firemen.selectedFireman.data);
                 });
             });
         };
@@ -42,12 +42,13 @@ angular.module('FireStation')
                 .cancel('Anuluj');
 
             $mdDialog.show(confirm).then(function() {
-                $http.delete('/courses/' + $scope.firemen.editedCourse.id).then(function successCallback(response) {});
-                var myDataPromise = firemen.getCourses();
-                myDataPromise.then(function(result) {
-                    firemen.selectFireman(firemen.selectedFireman);
+                $http.delete('/courses/' + $scope.firemen.editedCourse.id+'.json').then(function successCallback(response) {
+                    var myDataPromise = firemen.getCourses();
+                    myDataPromise.then(function(result) {
+                        firemen.selectFireman(firemen.selectedFireman.data);
+                    });
                 });
-                }, function() {
+            }, function() {
 
             });
 

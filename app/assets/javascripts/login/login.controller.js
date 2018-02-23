@@ -2,13 +2,8 @@
 
 angular.module('FireStation')
 
-    .controller('LoginController', ['$scope', '$state', 'Auth', '$rootScope', 'firemen',
-        function($scope, $state, Auth, $rootScope, firemen) {
-
-            firemen.allFiremen = null;
-            firemen.allMedicals = null;
-            firemen.allCourses = null;
-            firemen.selectedFireman = {data: null, medicals: null, courses: null, medals: null};
+    .controller('LoginController', ['$scope', '$state', 'Auth', '$rootScope',
+        function($scope, $state, Auth, $rootScope) {
 
         var config = {
                 headers: {
@@ -16,28 +11,21 @@ angular.module('FireStation')
                 }
             };
 
-        // $scope.user = {
-        //     'email': 'matt@gmail.com',
-        //     'password': 'password'
-        // };
-
         $scope.user = {
-            'email': '',
-            'password': ''
+            'email': 'matt@gmail.com',
+            'password': 'password'
         };
 
+        // $scope.user = {
+        //     'email': '',
+        //     'password': ''
+        // };
+
         $scope.login = function() {
-
             Auth.login($scope.user, config).then(function(user){
-
                 $rootScope.user = user;
-
-                firemen.getFiremen();
-                firemen.getMedicals();
-                firemen.getCourses();
                 $state.go('firemen');
             });
-
         }
 
     }]);

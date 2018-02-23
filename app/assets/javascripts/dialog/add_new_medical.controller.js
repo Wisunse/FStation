@@ -43,11 +43,13 @@ angular.module('FireStation')
             .cancel('Anuluj');
 
         $mdDialog.show(confirm).then(function() {
-            $http.delete('/medicals/' + $scope.firemen.editedMedical.id).then(function successCallback(response) {});
-            var myDataPromise = firemen.getMedicals();
-            myDataPromise.then(function(result) {
-                firemen.selectFireman(firemen.selectedFireman);
+            $http.delete('/medicals/' + $scope.firemen.editedMedical.id).then(function successCallback(response) {
+                var myDataPromise = firemen.getMedicals();
+                myDataPromise.then(function(result) {
+                    firemen.selectFireman(firemen.selectedFireman.data);
+                });
             });
+
         }, function() {
 
         });

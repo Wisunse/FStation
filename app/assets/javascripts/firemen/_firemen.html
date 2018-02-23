@@ -7,7 +7,7 @@
             <md-card>
                 <!--<md-input-container>-->
                     <!--<label>Szukaj</label>-->
-                    <input placeholder="Szukaj" type="text" ng-model="firemenFilter">
+                <input placeholder="Szukaj" type="text" ng-model="firemenFilter">
                 <!--</md-input-container>-->
                 <md-tabs md-dynamic-height md-border-bottom md-center-tabs="true">
 
@@ -20,7 +20,7 @@
                                     <md-list-item class="md-2-line" md-whiteframe="1"
                                                   ng-repeat="fireman in firemen.allFiremen | filter:firemenFilter track by $index"
                                                   ng-click="firemen.selectFireman(fireman)"
-                                                  ng-class="{'firemen-row__selected':firemen.selectedFireman.data == fireman}">
+                                                  ng-class="{'firemen-row__selected':firemen.selectedFireman.data.id == fireman.id}">
 
                                         <div class="md-list-item-text" layout="row" layout-align="start center">
                                             <img ng-src="/images/cat.jpeg" class="md-avatar" alt="" />

@@ -45,12 +45,14 @@ class MedicalsController < ApplicationController
   # PATCH/PUT /medicals/1
   # PATCH/PUT /medicals/1.json
   def update
+    puts medical_params
     @medical = Medical.find(medical_params[:id])
-    if @medical.user_id == current_user.id
+    if @medical[:user_id] == current_user.id
       hash = {}
       medical_params.each { |key, value| hash[key] = value }
       hash.delete('id')
       hash.delete('url')
+
       respond_to do |format|
         if @medical.update(hash)
           format.html { redirect_to @medical, notice: 'Medical was successfully updated.' }

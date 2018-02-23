@@ -1,0 +1,38 @@
+<md-dialog aria-label="Badania Lekarskie">
+    <form ng-cloak>
+        <md-toolbar>
+            <div class="md-toolbar-tools">
+                <h2>Dodaj</h2>
+                <span flex></span>
+                <md-button class="md-icon-button" ng-click="cancel()">X</md-button>
+            </div>
+        </md-toolbar>
+
+
+        <md-dialog-content>
+            <div class="md-dialog-content">
+
+                <md-input-container>
+                    <label>Nazwa</label>
+                    <input ng-model="firemen.editedMedal.name">
+                </md-input-container>
+
+                <div flex-gt-xs>
+                    <div>Data nadania</div>
+                    <md-datepicker ng-model="firemen.editedMedal.examination_date" md-placeholder="12/11/2017" md-open-on-focus></md-datepicker>
+                </div>
+
+            </div>
+        </md-dialog-content>
+
+        <md-dialog-actions layout="row">
+            <md-button ng-click="showDeleteMedal()" class="md-raised md-cornered md-primary">
+                Usuń
+            </md-button>
+            <md-button ng-click="editMedal()" class="md-raised md-cornered md-primary">
+                Zapisz
+            </md-button>
+
+        </md-dialog-actions>
+    </form>
+</md-dialog>
