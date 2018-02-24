@@ -46,13 +46,20 @@ class MedalsController < ApplicationController
   # PATCH/PUT /medals/1
   # PATCH/PUT /medals/1.json
   def update
-    respond_to do |format|
-      if @medal.update(medal_params)
-        format.html { redirect_to @medal, notice: 'Medal was successfully updated.' }
-        format.json { render :show, status: :ok, location: @medal }
-      else
-        format.html { render :edit }
-        format.json { render json: @medal.errors, status: :unprocessable_entity }
+    @medal = Medal.find(medal_params[:id])
+    if @medal[:user_id] == current_user.id
+      hash = {}
+      medal_params.each { |key, value| hash[key] = value }
+      hash.delete('id')
+      hash.delete('url')
+      respond_to do |format|
+        if @medal.update(hash)
+          format.html { redirect_to @medal, notice: 'Medal was successfully updated.' }
+          format.json { render :show, status: :ok, location: @medal }
+        else
+          format.html { render :edit }
+          format.json { render json: @medal.errors, status: :unprocessable_entity }
+        end
       end
     end
   end

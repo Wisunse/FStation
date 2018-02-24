@@ -11,15 +11,15 @@ angular.module('FireStation')
                 }
             };
 
-        $scope.user = {
-            'email': 'matt@gmail.com',
-            'password': 'password'
-        };
-
         // $scope.user = {
-        //     'email': '',
-        //     'password': ''
+        //     'email': 'matt@gmail.com',
+        //     'password': 'password'
         // };
+
+        $scope.user = {
+            'email': '',
+            'password': ''
+        };
 
         $scope.login = function() {
             Auth.login($scope.user, config).then(function(user){
