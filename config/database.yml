@@ -83,8 +83,15 @@ test:
 #  database: myapp_production
 #  username: myapp
 #  password: <%= ENV['MYAPP_DATABASE_PASSWORD'] %>
+development:
+  adapter: postgresql
+  host: ec2-54-247-95-125.eu-west-1.compute.amazonaws.com
+  username: bptvgshrydkrbd
+  database: d2j9l68k15j3ao
+  password: dd02ccb37615054a355a5ce81a04acec1873aadfeb96a0a5041708af397b6b68
+  
 production:
-adapter: postgresql
+  adapter: postgresql
   host: ec2-54-247-95-125.eu-west-1.compute.amazonaws.com
   username: bptvgshrydkrbd
   database: d2j9l68k15j3ao
