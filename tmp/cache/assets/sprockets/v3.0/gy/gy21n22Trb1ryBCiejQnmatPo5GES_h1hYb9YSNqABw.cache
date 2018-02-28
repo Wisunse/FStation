@@ -1,0 +1,42 @@
+{:uriI"‹file://app/assets/javascripts/dialog/_edit_medal.html?type=text/ng-html&id=fcf2ec68bcf91042964cd9ca8a6759d91e1d2e8d50e8796e94253b136a8df8fc:ET:load_pathI"app/assets/javascripts;T:filenameI"3app/assets/javascripts/dialog/_edit_medal.html;T:	nameI"dialog/_edit_medal;T:logical_pathI"dialog/_edit_medal.html;T:content_typeI"text/ng-html;T:sourceI"Ö<md-dialog aria-label="Badania Lekarskie">
+    <form ng-cloak>
+        <md-toolbar>
+            <div class="md-toolbar-tools">
+                <h2>Dodaj</h2>
+                <span flex></span>
+                <md-button class="md-icon-button" ng-click="cancel()">X</md-button>
+            </div>
+        </md-toolbar>
+
+
+        <md-dialog-content>
+            <div class="md-dialog-content">
+
+                <md-input-container>
+                    <label>Nazwa</label>
+                    <input ng-model="firemen.editedMedal.name">
+                </md-input-container>
+
+                <div flex-gt-xs>
+                    <div>Data nadania</div>
+                    <md-datepicker ng-model="firemen.editedMedal.granting_date" md-placeholder="12/11/2017" md-open-on-focus></md-datepicker>
+                </div>
+
+            </div>
+        </md-dialog-content>
+
+        <md-dialog-actions layout="row">
+            <md-button ng-click="showDeleteMedal()" class="md-raised md-cornered md-primary">
+                UsuÅ„
+            </md-button>
+            <md-button ng-click="editMedal()" class="md-raised md-cornered md-primary">
+                Zapisz
+            </md-button>
+
+        </md-dialog-actions>
+    </form>
+</md-dialog>;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"8processors:type=text/ng-html&file_type=text/ng-html;TTI"Afile-digest://app/assets/javascripts/dialog/_edit_medal.html;TTF:charsetI"
+utf-8;F:digest"%ÄUÏÁ#Þú´ù·§µ<Ú?3%¢)~vúÃ3W™õØó˜:lengthiÖ:dependencies_digest"%˜³@éçðc¤0jsUÌ£Óæ‚ç5'†àW.+ÎxC¯:idI"Efcf2ec68bcf91042964cd9ca8a6759d91e1d2e8d50e8796e94253b136a8df8fc;F:
+mtimel+£•Z
