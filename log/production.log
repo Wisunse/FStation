@@ -1,0 +1,245 @@
+I, [2018-02-28T10:12:36.912138 #23440]  INFO -- : [e9bce487-1932-4331-9add-897e29fdd80e] Started GET "/" for 127.0.0.1 at 2018-02-28 10:12:36 +0100
+I, [2018-02-28T10:12:36.925127 #23440]  INFO -- : [e9bce487-1932-4331-9add-897e29fdd80e] Processing by AuthenticatedController#authenticated as HTML
+I, [2018-02-28T10:12:36.934784 #23440]  INFO -- : [e9bce487-1932-4331-9add-897e29fdd80e]   Rendering layouts/main.html.erb within layouts/application
+I, [2018-02-28T10:12:36.935387 #23440]  INFO -- : [e9bce487-1932-4331-9add-897e29fdd80e]   Rendered layouts/main.html.erb within layouts/application (0.5ms)
+I, [2018-02-28T10:12:36.937830 #23440]  INFO -- : [e9bce487-1932-4331-9add-897e29fdd80e] Completed 500 Internal Server Error in 12ms
+F, [2018-02-28T10:12:36.938558 #23440] FATAL -- : [e9bce487-1932-4331-9add-897e29fdd80e]   
+F, [2018-02-28T10:12:36.938625 #23440] FATAL -- : [e9bce487-1932-4331-9add-897e29fdd80e] ActionView::Template::Error (The asset "application.css" is not present in the asset pipeline.):
+F, [2018-02-28T10:12:36.938766 #23440] FATAL -- : [e9bce487-1932-4331-9add-897e29fdd80e]      6:     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+[e9bce487-1932-4331-9add-897e29fdd80e]      7:     <%= csrf_meta_tags %>
+[e9bce487-1932-4331-9add-897e29fdd80e]      8: 
+[e9bce487-1932-4331-9add-897e29fdd80e]      9:     <%= stylesheet_link_tag    'application', media: 'all' %>
+[e9bce487-1932-4331-9add-897e29fdd80e]     10:     <%= javascript_include_tag 'application' %>
+[e9bce487-1932-4331-9add-897e29fdd80e]     11:     <%= csrf_meta_tags %>
+[e9bce487-1932-4331-9add-897e29fdd80e]     12:   </head>
+F, [2018-02-28T10:12:36.938802 #23440] FATAL -- : [e9bce487-1932-4331-9add-897e29fdd80e]   
+F, [2018-02-28T10:12:36.938834 #23440] FATAL -- : [e9bce487-1932-4331-9add-897e29fdd80e] app/views/layouts/application.html.erb:9:in `_app_views_layouts_application_html_erb___2984997593770906045_47012333397860'
+[e9bce487-1932-4331-9add-897e29fdd80e] app/controllers/authenticated_controller.rb:6:in `authenticated'
+I, [2018-02-28T10:12:50.177825 #23440]  INFO -- : [da4843bb-ce3d-4a38-97c0-e03110e2bbe6] Started GET "/" for 127.0.0.1 at 2018-02-28 10:12:50 +0100
+I, [2018-02-28T10:12:50.178801 #23440]  INFO -- : [da4843bb-ce3d-4a38-97c0-e03110e2bbe6] Processing by AuthenticatedController#authenticated as HTML
+I, [2018-02-28T10:12:50.180282 #23440]  INFO -- : [da4843bb-ce3d-4a38-97c0-e03110e2bbe6]   Rendering layouts/main.html.erb within layouts/application
+I, [2018-02-28T10:12:50.180465 #23440]  INFO -- : [da4843bb-ce3d-4a38-97c0-e03110e2bbe6]   Rendered layouts/main.html.erb within layouts/application (0.1ms)
+I, [2018-02-28T10:12:50.181770 #23440]  INFO -- : [da4843bb-ce3d-4a38-97c0-e03110e2bbe6] Completed 500 Internal Server Error in 3ms
+F, [2018-02-28T10:12:50.183154 #23440] FATAL -- : [da4843bb-ce3d-4a38-97c0-e03110e2bbe6]   
+F, [2018-02-28T10:12:50.183268 #23440] FATAL -- : [da4843bb-ce3d-4a38-97c0-e03110e2bbe6] ActionView::Template::Error (The asset "application.css" is not present in the asset pipeline.):
+F, [2018-02-28T10:12:50.183591 #23440] FATAL -- : [da4843bb-ce3d-4a38-97c0-e03110e2bbe6]      6:     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+[da4843bb-ce3d-4a38-97c0-e03110e2bbe6]      7:     <%= csrf_meta_tags %>
+[da4843bb-ce3d-4a38-97c0-e03110e2bbe6]      8: 
+[da4843bb-ce3d-4a38-97c0-e03110e2bbe6]      9:     <%= stylesheet_link_tag    'application', media: 'all' %>
+[da4843bb-ce3d-4a38-97c0-e03110e2bbe6]     10:     <%= javascript_include_tag 'application' %>
+[da4843bb-ce3d-4a38-97c0-e03110e2bbe6]     11:     <%= csrf_meta_tags %>
+[da4843bb-ce3d-4a38-97c0-e03110e2bbe6]     12:   </head>
+F, [2018-02-28T10:12:50.183656 #23440] FATAL -- : [da4843bb-ce3d-4a38-97c0-e03110e2bbe6]   
+F, [2018-02-28T10:12:50.183718 #23440] FATAL -- : [da4843bb-ce3d-4a38-97c0-e03110e2bbe6] app/views/layouts/application.html.erb:9:in `_app_views_layouts_application_html_erb___2984997593770906045_47012333397860'
+[da4843bb-ce3d-4a38-97c0-e03110e2bbe6] app/controllers/authenticated_controller.rb:6:in `authenticated'
+I, [2018-02-28T10:12:50.771524 #23440]  INFO -- : [5f45c387-5edd-4d87-be44-fe7dddce9600] Started GET "/favicon.ico" for 127.0.0.1 at 2018-02-28 10:12:50 +0100
+F, [2018-02-28T10:12:50.772552 #23440] FATAL -- : [5f45c387-5edd-4d87-be44-fe7dddce9600]   
+F, [2018-02-28T10:12:50.772651 #23440] FATAL -- : [5f45c387-5edd-4d87-be44-fe7dddce9600] ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+F, [2018-02-28T10:12:50.772707 #23440] FATAL -- : [5f45c387-5edd-4d87-be44-fe7dddce9600]   
+F, [2018-02-28T10:12:50.772761 #23440] FATAL -- : [5f45c387-5edd-4d87-be44-fe7dddce9600] actionpack (5.1.2) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+[5f45c387-5edd-4d87-be44-fe7dddce9600] actionpack (5.1.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+[5f45c387-5edd-4d87-be44-fe7dddce9600] railties (5.1.2) lib/rails/rack/logger.rb:36:in `call_app'
+[5f45c387-5edd-4d87-be44-fe7dddce9600] railties (5.1.2) lib/rails/rack/logger.rb:24:in `block in call'
+[5f45c387-5edd-4d87-be44-fe7dddce9600] activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+[5f45c387-5edd-4d87-be44-fe7dddce9600] activesupport (5.1.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+[5f45c387-5edd-4d87-be44-fe7dddce9600] activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+[5f45c387-5edd-4d87-be44-fe7dddce9600] railties (5.1.2) lib/rails/rack/logger.rb:24:in `call'
+[5f45c387-5edd-4d87-be44-fe7dddce9600] actionpack (5.1.2) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+[5f45c387-5edd-4d87-be44-fe7dddce9600] actionpack (5.1.2) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+[5f45c387-5edd-4d87-be44-fe7dddce9600] rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+[5f45c387-5edd-4d87-be44-fe7dddce9600] rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+[5f45c387-5edd-4d87-be44-fe7dddce9600] activesupport (5.1.2) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+[5f45c387-5edd-4d87-be44-fe7dddce9600] actionpack (5.1.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+[5f45c387-5edd-4d87-be44-fe7dddce9600] rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+[5f45c387-5edd-4d87-be44-fe7dddce9600] railties (5.1.2) lib/rails/engine.rb:522:in `call'
+[5f45c387-5edd-4d87-be44-fe7dddce9600] puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+[5f45c387-5edd-4d87-be44-fe7dddce9600] puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+[5f45c387-5edd-4d87-be44-fe7dddce9600] puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+[5f45c387-5edd-4d87-be44-fe7dddce9600] puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+[5f45c387-5edd-4d87-be44-fe7dddce9600] puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+I, [2018-02-28T10:13:50.122768 #23580]  INFO -- : [095900b5-e3e0-48ab-9637-daf769e6ae42] Started GET "/login" for 127.0.0.1 at 2018-02-28 10:13:50 +0100
+I, [2018-02-28T10:13:50.132183 #23580]  INFO -- : [095900b5-e3e0-48ab-9637-daf769e6ae42] Processing by AuthenticatedController#authenticated as HTML
+I, [2018-02-28T10:13:50.138933 #23580]  INFO -- : [095900b5-e3e0-48ab-9637-daf769e6ae42]   Rendering layouts/main.html.erb within layouts/application
+I, [2018-02-28T10:13:50.139422 #23580]  INFO -- : [095900b5-e3e0-48ab-9637-daf769e6ae42]   Rendered layouts/main.html.erb within layouts/application (0.4ms)
+I, [2018-02-28T10:13:50.141216 #23580]  INFO -- : [095900b5-e3e0-48ab-9637-daf769e6ae42] Completed 500 Internal Server Error in 9ms
+F, [2018-02-28T10:13:50.142166 #23580] FATAL -- : [095900b5-e3e0-48ab-9637-daf769e6ae42]   
+F, [2018-02-28T10:13:50.142220 #23580] FATAL -- : [095900b5-e3e0-48ab-9637-daf769e6ae42] ActionView::Template::Error (The asset "application.css" is not present in the asset pipeline.):
+F, [2018-02-28T10:13:50.142396 #23580] FATAL -- : [095900b5-e3e0-48ab-9637-daf769e6ae42]      6:     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+[095900b5-e3e0-48ab-9637-daf769e6ae42]      7:     <%= csrf_meta_tags %>
+[095900b5-e3e0-48ab-9637-daf769e6ae42]      8: 
+[095900b5-e3e0-48ab-9637-daf769e6ae42]      9:     <%= stylesheet_link_tag    'application', media: 'all' %>
+[095900b5-e3e0-48ab-9637-daf769e6ae42]     10:     <%= javascript_include_tag 'application' %>
+[095900b5-e3e0-48ab-9637-daf769e6ae42]     11:     <%= csrf_meta_tags %>
+[095900b5-e3e0-48ab-9637-daf769e6ae42]     12:   </head>
+F, [2018-02-28T10:13:50.142443 #23580] FATAL -- : [095900b5-e3e0-48ab-9637-daf769e6ae42]   
+F, [2018-02-28T10:13:50.142476 #23580] FATAL -- : [095900b5-e3e0-48ab-9637-daf769e6ae42] app/views/layouts/application.html.erb:9:in `_app_views_layouts_application_html_erb__496033180776115906_47314180096760'
+[095900b5-e3e0-48ab-9637-daf769e6ae42] app/controllers/authenticated_controller.rb:6:in `authenticated'
+I, [2018-02-28T10:13:50.790188 #23580]  INFO -- : [ad605b51-39a4-47d6-a1fa-91efc7c1c6a3] Started GET "/favicon.ico" for 127.0.0.1 at 2018-02-28 10:13:50 +0100
+F, [2018-02-28T10:13:50.790870 #23580] FATAL -- : [ad605b51-39a4-47d6-a1fa-91efc7c1c6a3]   
+F, [2018-02-28T10:13:50.790950 #23580] FATAL -- : [ad605b51-39a4-47d6-a1fa-91efc7c1c6a3] ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+F, [2018-02-28T10:13:50.791004 #23580] FATAL -- : [ad605b51-39a4-47d6-a1fa-91efc7c1c6a3]   
+F, [2018-02-28T10:13:50.791053 #23580] FATAL -- : [ad605b51-39a4-47d6-a1fa-91efc7c1c6a3] actionpack (5.1.2) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+[ad605b51-39a4-47d6-a1fa-91efc7c1c6a3] actionpack (5.1.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+[ad605b51-39a4-47d6-a1fa-91efc7c1c6a3] railties (5.1.2) lib/rails/rack/logger.rb:36:in `call_app'
+[ad605b51-39a4-47d6-a1fa-91efc7c1c6a3] railties (5.1.2) lib/rails/rack/logger.rb:24:in `block in call'
+[ad605b51-39a4-47d6-a1fa-91efc7c1c6a3] activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+[ad605b51-39a4-47d6-a1fa-91efc7c1c6a3] activesupport (5.1.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+[ad605b51-39a4-47d6-a1fa-91efc7c1c6a3] activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+[ad605b51-39a4-47d6-a1fa-91efc7c1c6a3] railties (5.1.2) lib/rails/rack/logger.rb:24:in `call'
+[ad605b51-39a4-47d6-a1fa-91efc7c1c6a3] actionpack (5.1.2) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+[ad605b51-39a4-47d6-a1fa-91efc7c1c6a3] actionpack (5.1.2) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+[ad605b51-39a4-47d6-a1fa-91efc7c1c6a3] rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+[ad605b51-39a4-47d6-a1fa-91efc7c1c6a3] rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+[ad605b51-39a4-47d6-a1fa-91efc7c1c6a3] activesupport (5.1.2) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+[ad605b51-39a4-47d6-a1fa-91efc7c1c6a3] actionpack (5.1.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+[ad605b51-39a4-47d6-a1fa-91efc7c1c6a3] rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+[ad605b51-39a4-47d6-a1fa-91efc7c1c6a3] railties (5.1.2) lib/rails/engine.rb:522:in `call'
+[ad605b51-39a4-47d6-a1fa-91efc7c1c6a3] puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+[ad605b51-39a4-47d6-a1fa-91efc7c1c6a3] puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+[ad605b51-39a4-47d6-a1fa-91efc7c1c6a3] puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+[ad605b51-39a4-47d6-a1fa-91efc7c1c6a3] puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+[ad605b51-39a4-47d6-a1fa-91efc7c1c6a3] puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+I, [2018-02-28T10:14:06.624902 #23580]  INFO -- : [f0378f2c-eae8-417a-962d-10e6ca645a41] Started GET "/login" for 127.0.0.1 at 2018-02-28 10:14:06 +0100
+I, [2018-02-28T10:14:06.626350 #23580]  INFO -- : [f0378f2c-eae8-417a-962d-10e6ca645a41] Processing by AuthenticatedController#authenticated as HTML
+I, [2018-02-28T10:14:06.628285 #23580]  INFO -- : [f0378f2c-eae8-417a-962d-10e6ca645a41]   Rendering layouts/main.html.erb within layouts/application
+I, [2018-02-28T10:14:06.628607 #23580]  INFO -- : [f0378f2c-eae8-417a-962d-10e6ca645a41]   Rendered layouts/main.html.erb within layouts/application (0.1ms)
+I, [2018-02-28T10:14:06.631034 #23580]  INFO -- : [f0378f2c-eae8-417a-962d-10e6ca645a41] Completed 500 Internal Server Error in 4ms
+F, [2018-02-28T10:14:06.632107 #23580] FATAL -- : [f0378f2c-eae8-417a-962d-10e6ca645a41]   
+F, [2018-02-28T10:14:06.632147 #23580] FATAL -- : [f0378f2c-eae8-417a-962d-10e6ca645a41] ActionView::Template::Error (The asset "application.css" is not present in the asset pipeline.):
+F, [2018-02-28T10:14:06.632274 #23580] FATAL -- : [f0378f2c-eae8-417a-962d-10e6ca645a41]      6:     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+[f0378f2c-eae8-417a-962d-10e6ca645a41]      7:     <%= csrf_meta_tags %>
+[f0378f2c-eae8-417a-962d-10e6ca645a41]      8: 
+[f0378f2c-eae8-417a-962d-10e6ca645a41]      9:     <%= stylesheet_link_tag    'application', media: 'all' %>
+[f0378f2c-eae8-417a-962d-10e6ca645a41]     10:     <%= javascript_include_tag 'application' %>
+[f0378f2c-eae8-417a-962d-10e6ca645a41]     11:     <%= csrf_meta_tags %>
+[f0378f2c-eae8-417a-962d-10e6ca645a41]     12:   </head>
+F, [2018-02-28T10:14:06.632306 #23580] FATAL -- : [f0378f2c-eae8-417a-962d-10e6ca645a41]   
+F, [2018-02-28T10:14:06.632348 #23580] FATAL -- : [f0378f2c-eae8-417a-962d-10e6ca645a41] app/views/layouts/application.html.erb:9:in `_app_views_layouts_application_html_erb__496033180776115906_47314180096760'
+[f0378f2c-eae8-417a-962d-10e6ca645a41] app/controllers/authenticated_controller.rb:6:in `authenticated'
+I, [2018-02-28T10:14:09.595079 #23580]  INFO -- : [603aa5a8-3162-45ca-9326-9995f0365a30] Started GET "/login" for 127.0.0.1 at 2018-02-28 10:14:09 +0100
+I, [2018-02-28T10:14:09.596826 #23580]  INFO -- : [603aa5a8-3162-45ca-9326-9995f0365a30] Processing by AuthenticatedController#authenticated as HTML
+I, [2018-02-28T10:14:09.597786 #23580]  INFO -- : [603aa5a8-3162-45ca-9326-9995f0365a30]   Rendering layouts/main.html.erb within layouts/application
+I, [2018-02-28T10:14:09.597920 #23580]  INFO -- : [603aa5a8-3162-45ca-9326-9995f0365a30]   Rendered layouts/main.html.erb within layouts/application (0.0ms)
+I, [2018-02-28T10:14:09.599077 #23580]  INFO -- : [603aa5a8-3162-45ca-9326-9995f0365a30] Completed 500 Internal Server Error in 2ms
+F, [2018-02-28T10:14:09.600135 #23580] FATAL -- : [603aa5a8-3162-45ca-9326-9995f0365a30]   
+F, [2018-02-28T10:14:09.600229 #23580] FATAL -- : [603aa5a8-3162-45ca-9326-9995f0365a30] ActionView::Template::Error (The asset "application.css" is not present in the asset pipeline.):
+F, [2018-02-28T10:14:09.600401 #23580] FATAL -- : [603aa5a8-3162-45ca-9326-9995f0365a30]      6:     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+[603aa5a8-3162-45ca-9326-9995f0365a30]      7:     <%= csrf_meta_tags %>
+[603aa5a8-3162-45ca-9326-9995f0365a30]      8: 
+[603aa5a8-3162-45ca-9326-9995f0365a30]      9:     <%= stylesheet_link_tag    'application', media: 'all' %>
+[603aa5a8-3162-45ca-9326-9995f0365a30]     10:     <%= javascript_include_tag 'application' %>
+[603aa5a8-3162-45ca-9326-9995f0365a30]     11:     <%= csrf_meta_tags %>
+[603aa5a8-3162-45ca-9326-9995f0365a30]     12:   </head>
+F, [2018-02-28T10:14:09.600446 #23580] FATAL -- : [603aa5a8-3162-45ca-9326-9995f0365a30]   
+F, [2018-02-28T10:14:09.600493 #23580] FATAL -- : [603aa5a8-3162-45ca-9326-9995f0365a30] app/views/layouts/application.html.erb:9:in `_app_views_layouts_application_html_erb__496033180776115906_47314180096760'
+[603aa5a8-3162-45ca-9326-9995f0365a30] app/controllers/authenticated_controller.rb:6:in `authenticated'
+I, [2018-02-28T10:14:12.448217 #23580]  INFO -- : [9660c4ea-ed7e-44a0-bfe8-e96ed658515c] Started GET "/login" for 127.0.0.1 at 2018-02-28 10:14:12 +0100
+I, [2018-02-28T10:14:12.449997 #23580]  INFO -- : [9660c4ea-ed7e-44a0-bfe8-e96ed658515c] Processing by AuthenticatedController#authenticated as HTML
+I, [2018-02-28T10:14:12.452182 #23580]  INFO -- : [9660c4ea-ed7e-44a0-bfe8-e96ed658515c]   Rendering layouts/main.html.erb within layouts/application
+I, [2018-02-28T10:14:12.452536 #23580]  INFO -- : [9660c4ea-ed7e-44a0-bfe8-e96ed658515c]   Rendered layouts/main.html.erb within layouts/application (0.1ms)
+I, [2018-02-28T10:14:12.455510 #23580]  INFO -- : [9660c4ea-ed7e-44a0-bfe8-e96ed658515c] Completed 500 Internal Server Error in 5ms
+F, [2018-02-28T10:14:12.456255 #23580] FATAL -- : [9660c4ea-ed7e-44a0-bfe8-e96ed658515c]   
+F, [2018-02-28T10:14:12.456291 #23580] FATAL -- : [9660c4ea-ed7e-44a0-bfe8-e96ed658515c] ActionView::Template::Error (The asset "application.css" is not present in the asset pipeline.):
+F, [2018-02-28T10:14:12.456409 #23580] FATAL -- : [9660c4ea-ed7e-44a0-bfe8-e96ed658515c]      6:     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+[9660c4ea-ed7e-44a0-bfe8-e96ed658515c]      7:     <%= csrf_meta_tags %>
+[9660c4ea-ed7e-44a0-bfe8-e96ed658515c]      8: 
+[9660c4ea-ed7e-44a0-bfe8-e96ed658515c]      9:     <%= stylesheet_link_tag    'application', media: 'all' %>
+[9660c4ea-ed7e-44a0-bfe8-e96ed658515c]     10:     <%= javascript_include_tag 'application' %>
+[9660c4ea-ed7e-44a0-bfe8-e96ed658515c]     11:     <%= csrf_meta_tags %>
+[9660c4ea-ed7e-44a0-bfe8-e96ed658515c]     12:   </head>
+F, [2018-02-28T10:14:12.456437 #23580] FATAL -- : [9660c4ea-ed7e-44a0-bfe8-e96ed658515c]   
+F, [2018-02-28T10:14:12.456464 #23580] FATAL -- : [9660c4ea-ed7e-44a0-bfe8-e96ed658515c] app/views/layouts/application.html.erb:9:in `_app_views_layouts_application_html_erb__496033180776115906_47314180096760'
+[9660c4ea-ed7e-44a0-bfe8-e96ed658515c] app/controllers/authenticated_controller.rb:6:in `authenticated'
+I, [2018-02-28T10:14:22.522144 #23580]  INFO -- : [64cec46f-0735-4c9b-bd9d-ca24100bfec4] Started GET "/" for 127.0.0.1 at 2018-02-28 10:14:22 +0100
+I, [2018-02-28T10:14:22.523000 #23580]  INFO -- : [64cec46f-0735-4c9b-bd9d-ca24100bfec4] Processing by AuthenticatedController#authenticated as HTML
+I, [2018-02-28T10:14:22.523908 #23580]  INFO -- : [64cec46f-0735-4c9b-bd9d-ca24100bfec4]   Rendering layouts/main.html.erb within layouts/application
+I, [2018-02-28T10:14:22.524140 #23580]  INFO -- : [64cec46f-0735-4c9b-bd9d-ca24100bfec4]   Rendered layouts/main.html.erb within layouts/application (0.1ms)
+I, [2018-02-28T10:14:22.525433 #23580]  INFO -- : [64cec46f-0735-4c9b-bd9d-ca24100bfec4] Completed 500 Internal Server Error in 2ms
+F, [2018-02-28T10:14:22.526470 #23580] FATAL -- : [64cec46f-0735-4c9b-bd9d-ca24100bfec4]   
+F, [2018-02-28T10:14:22.526533 #23580] FATAL -- : [64cec46f-0735-4c9b-bd9d-ca24100bfec4] ActionView::Template::Error (The asset "application.css" is not present in the asset pipeline.):
+F, [2018-02-28T10:14:22.526683 #23580] FATAL -- : [64cec46f-0735-4c9b-bd9d-ca24100bfec4]      6:     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+[64cec46f-0735-4c9b-bd9d-ca24100bfec4]      7:     <%= csrf_meta_tags %>
+[64cec46f-0735-4c9b-bd9d-ca24100bfec4]      8: 
+[64cec46f-0735-4c9b-bd9d-ca24100bfec4]      9:     <%= stylesheet_link_tag    'application', media: 'all' %>
+[64cec46f-0735-4c9b-bd9d-ca24100bfec4]     10:     <%= javascript_include_tag 'application' %>
+[64cec46f-0735-4c9b-bd9d-ca24100bfec4]     11:     <%= csrf_meta_tags %>
+[64cec46f-0735-4c9b-bd9d-ca24100bfec4]     12:   </head>
+F, [2018-02-28T10:14:22.526715 #23580] FATAL -- : [64cec46f-0735-4c9b-bd9d-ca24100bfec4]   
+F, [2018-02-28T10:14:22.526746 #23580] FATAL -- : [64cec46f-0735-4c9b-bd9d-ca24100bfec4] app/views/layouts/application.html.erb:9:in `_app_views_layouts_application_html_erb__496033180776115906_47314180096760'
+[64cec46f-0735-4c9b-bd9d-ca24100bfec4] app/controllers/authenticated_controller.rb:6:in `authenticated'
+I, [2018-02-28T10:14:23.249695 #23580]  INFO -- : [fe922a04-a0e6-400a-9e76-96a754d14d27] Started GET "/favicon.ico" for 127.0.0.1 at 2018-02-28 10:14:23 +0100
+F, [2018-02-28T10:14:23.250555 #23580] FATAL -- : [fe922a04-a0e6-400a-9e76-96a754d14d27]   
+F, [2018-02-28T10:14:23.250682 #23580] FATAL -- : [fe922a04-a0e6-400a-9e76-96a754d14d27] ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+F, [2018-02-28T10:14:23.250748 #23580] FATAL -- : [fe922a04-a0e6-400a-9e76-96a754d14d27]   
+F, [2018-02-28T10:14:23.250834 #23580] FATAL -- : [fe922a04-a0e6-400a-9e76-96a754d14d27] actionpack (5.1.2) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+[fe922a04-a0e6-400a-9e76-96a754d14d27] actionpack (5.1.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+[fe922a04-a0e6-400a-9e76-96a754d14d27] railties (5.1.2) lib/rails/rack/logger.rb:36:in `call_app'
+[fe922a04-a0e6-400a-9e76-96a754d14d27] railties (5.1.2) lib/rails/rack/logger.rb:24:in `block in call'
+[fe922a04-a0e6-400a-9e76-96a754d14d27] activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+[fe922a04-a0e6-400a-9e76-96a754d14d27] activesupport (5.1.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+[fe922a04-a0e6-400a-9e76-96a754d14d27] activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+[fe922a04-a0e6-400a-9e76-96a754d14d27] railties (5.1.2) lib/rails/rack/logger.rb:24:in `call'
+[fe922a04-a0e6-400a-9e76-96a754d14d27] actionpack (5.1.2) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+[fe922a04-a0e6-400a-9e76-96a754d14d27] actionpack (5.1.2) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+[fe922a04-a0e6-400a-9e76-96a754d14d27] rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+[fe922a04-a0e6-400a-9e76-96a754d14d27] rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+[fe922a04-a0e6-400a-9e76-96a754d14d27] activesupport (5.1.2) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+[fe922a04-a0e6-400a-9e76-96a754d14d27] actionpack (5.1.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+[fe922a04-a0e6-400a-9e76-96a754d14d27] rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+[fe922a04-a0e6-400a-9e76-96a754d14d27] railties (5.1.2) lib/rails/engine.rb:522:in `call'
+[fe922a04-a0e6-400a-9e76-96a754d14d27] puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+[fe922a04-a0e6-400a-9e76-96a754d14d27] puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+[fe922a04-a0e6-400a-9e76-96a754d14d27] puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+[fe922a04-a0e6-400a-9e76-96a754d14d27] puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+[fe922a04-a0e6-400a-9e76-96a754d14d27] puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+I, [2018-02-28T10:14:48.359607 #23580]  INFO -- : [d6b1a0cd-1b89-4e4d-a53b-f316bfbcc9f4] Started GET "/" for 127.0.0.1 at 2018-02-28 10:14:48 +0100
+I, [2018-02-28T10:14:48.360487 #23580]  INFO -- : [d6b1a0cd-1b89-4e4d-a53b-f316bfbcc9f4] Processing by AuthenticatedController#authenticated as HTML
+I, [2018-02-28T10:14:48.362263 #23580]  INFO -- : [d6b1a0cd-1b89-4e4d-a53b-f316bfbcc9f4]   Rendering layouts/main.html.erb within layouts/application
+I, [2018-02-28T10:14:48.362505 #23580]  INFO -- : [d6b1a0cd-1b89-4e4d-a53b-f316bfbcc9f4]   Rendered layouts/main.html.erb within layouts/application (0.1ms)
+I, [2018-02-28T10:14:48.364644 #23580]  INFO -- : [d6b1a0cd-1b89-4e4d-a53b-f316bfbcc9f4] Completed 500 Internal Server Error in 4ms
+F, [2018-02-28T10:14:48.367180 #23580] FATAL -- : [d6b1a0cd-1b89-4e4d-a53b-f316bfbcc9f4]   
+F, [2018-02-28T10:14:48.367355 #23580] FATAL -- : [d6b1a0cd-1b89-4e4d-a53b-f316bfbcc9f4] ActionView::Template::Error (The asset "application.css" is not present in the asset pipeline.):
+F, [2018-02-28T10:14:48.367692 #23580] FATAL -- : [d6b1a0cd-1b89-4e4d-a53b-f316bfbcc9f4]      6:     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+[d6b1a0cd-1b89-4e4d-a53b-f316bfbcc9f4]      7:     <%= csrf_meta_tags %>
+[d6b1a0cd-1b89-4e4d-a53b-f316bfbcc9f4]      8: 
+[d6b1a0cd-1b89-4e4d-a53b-f316bfbcc9f4]      9:     <%= stylesheet_link_tag    'application', media: 'all' %>
+[d6b1a0cd-1b89-4e4d-a53b-f316bfbcc9f4]     10:     <%= javascript_include_tag 'application' %>
+[d6b1a0cd-1b89-4e4d-a53b-f316bfbcc9f4]     11:     <%= csrf_meta_tags %>
+[d6b1a0cd-1b89-4e4d-a53b-f316bfbcc9f4]     12:   </head>
+F, [2018-02-28T10:14:48.367771 #23580] FATAL -- : [d6b1a0cd-1b89-4e4d-a53b-f316bfbcc9f4]   
+F, [2018-02-28T10:14:48.367844 #23580] FATAL -- : [d6b1a0cd-1b89-4e4d-a53b-f316bfbcc9f4] app/views/layouts/application.html.erb:9:in `_app_views_layouts_application_html_erb__496033180776115906_47314180096760'
+[d6b1a0cd-1b89-4e4d-a53b-f316bfbcc9f4] app/controllers/authenticated_controller.rb:6:in `authenticated'
+I, [2018-02-28T10:17:59.749472 #23580]  INFO -- : [7c2a2c67-8e32-4bf0-80f3-4c624f622d03] Started GET "/" for 127.0.0.1 at 2018-02-28 10:17:59 +0100
+I, [2018-02-28T10:17:59.750222 #23580]  INFO -- : [7c2a2c67-8e32-4bf0-80f3-4c624f622d03] Processing by AuthenticatedController#authenticated as HTML
+I, [2018-02-28T10:17:59.751875 #23580]  INFO -- : [7c2a2c67-8e32-4bf0-80f3-4c624f622d03]   Rendering layouts/main.html.erb within layouts/application
+I, [2018-02-28T10:17:59.752105 #23580]  INFO -- : [7c2a2c67-8e32-4bf0-80f3-4c624f622d03]   Rendered layouts/main.html.erb within layouts/application (0.1ms)
+I, [2018-02-28T10:17:59.754368 #23580]  INFO -- : [7c2a2c67-8e32-4bf0-80f3-4c624f622d03] Completed 500 Internal Server Error in 4ms
+F, [2018-02-28T10:17:59.756203 #23580] FATAL -- : [7c2a2c67-8e32-4bf0-80f3-4c624f622d03]   
+F, [2018-02-28T10:17:59.756323 #23580] FATAL -- : [7c2a2c67-8e32-4bf0-80f3-4c624f622d03] ActionView::Template::Error (The asset "application.css" is not present in the asset pipeline.):
+F, [2018-02-28T10:17:59.756536 #23580] FATAL -- : [7c2a2c67-8e32-4bf0-80f3-4c624f622d03]      6:     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+[7c2a2c67-8e32-4bf0-80f3-4c624f622d03]      7:     <%= csrf_meta_tags %>
+[7c2a2c67-8e32-4bf0-80f3-4c624f622d03]      8: 
+[7c2a2c67-8e32-4bf0-80f3-4c624f622d03]      9:     <%= stylesheet_link_tag    'application', media: 'all' %>
+[7c2a2c67-8e32-4bf0-80f3-4c624f622d03]     10:     <%= javascript_include_tag 'application' %>
+[7c2a2c67-8e32-4bf0-80f3-4c624f622d03]     11:     <%= csrf_meta_tags %>
+[7c2a2c67-8e32-4bf0-80f3-4c624f622d03]     12:   </head>
+F, [2018-02-28T10:17:59.757096 #23580] FATAL -- : [7c2a2c67-8e32-4bf0-80f3-4c624f622d03]   
+F, [2018-02-28T10:17:59.757178 #23580] FATAL -- : [7c2a2c67-8e32-4bf0-80f3-4c624f622d03] app/views/layouts/application.html.erb:9:in `_app_views_layouts_application_html_erb__496033180776115906_47314180096760'
+[7c2a2c67-8e32-4bf0-80f3-4c624f622d03] app/controllers/authenticated_controller.rb:6:in `authenticated'
+I, [2018-02-28T10:18:27.248643 #24269]  INFO -- : [bfd80ac5-e373-4c8b-8f38-3a4db9985f70] Started GET "/" for 127.0.0.1 at 2018-02-28 10:18:27 +0100
+I, [2018-02-28T10:18:27.259998 #24269]  INFO -- : [bfd80ac5-e373-4c8b-8f38-3a4db9985f70] Processing by AuthenticatedController#authenticated as HTML
+I, [2018-02-28T10:18:27.267436 #24269]  INFO -- : [bfd80ac5-e373-4c8b-8f38-3a4db9985f70]   Rendering layouts/main.html.erb within layouts/application
+I, [2018-02-28T10:18:27.268062 #24269]  INFO -- : [bfd80ac5-e373-4c8b-8f38-3a4db9985f70]   Rendered layouts/main.html.erb within layouts/application (0.4ms)
+I, [2018-02-28T10:18:27.270537 #24269]  INFO -- : [bfd80ac5-e373-4c8b-8f38-3a4db9985f70] Completed 500 Internal Server Error in 10ms
+F, [2018-02-28T10:18:27.271388 #24269] FATAL -- : [bfd80ac5-e373-4c8b-8f38-3a4db9985f70]   
+F, [2018-02-28T10:18:27.271434 #24269] FATAL -- : [bfd80ac5-e373-4c8b-8f38-3a4db9985f70] ActionView::Template::Error (The asset "application.css" is not present in the asset pipeline.):
+F, [2018-02-28T10:18:27.271687 #24269] FATAL -- : [bfd80ac5-e373-4c8b-8f38-3a4db9985f70]      6:     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+[bfd80ac5-e373-4c8b-8f38-3a4db9985f70]      7:     <%= csrf_meta_tags %>
+[bfd80ac5-e373-4c8b-8f38-3a4db9985f70]      8: 
+[bfd80ac5-e373-4c8b-8f38-3a4db9985f70]      9:     <%= stylesheet_link_tag    'application', media: 'all' %>
+[bfd80ac5-e373-4c8b-8f38-3a4db9985f70]     10:     <%= javascript_include_tag 'application' %>
+[bfd80ac5-e373-4c8b-8f38-3a4db9985f70]     11:     <%= csrf_meta_tags %>
+[bfd80ac5-e373-4c8b-8f38-3a4db9985f70]     12:   </head>
+F, [2018-02-28T10:18:27.271733 #24269] FATAL -- : [bfd80ac5-e373-4c8b-8f38-3a4db9985f70]   
+F, [2018-02-28T10:18:27.271790 #24269] FATAL -- : [bfd80ac5-e373-4c8b-8f38-3a4db9985f70] app/views/layouts/application.html.erb:9:in `_app_views_layouts_application_html_erb__2247574654489664765_46917631379800'
+[bfd80ac5-e373-4c8b-8f38-3a4db9985f70] app/controllers/authenticated_controller.rb:6:in `authenticated'
