@@ -21,10 +21,15 @@ default: &default
   # http://guides.rubyonrails.org/configuring.html#database-pooling
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
 
+#development:
+#  <<: *default
+#  database: myapp_development
 development:
-  <<: *default
-  database: myapp_development
-
+  adapter: postgresql
+  host: ec2-54-247-95-125.eu-west-1.compute.amazonaws.com
+  username: bptvgshrydkrbd
+  database: d2j9l68k15j3ao
+  password: dd02ccb37615054a355a5ce81a04acec1873aadfeb96a0a5041708af397b6b68
   # The specified database role being used to connect to postgres.
   # To create additional roles in postgres see `$ createuser --help`.
   # When left blank, postgres will use the default role. This is
