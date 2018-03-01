@@ -4,7 +4,7 @@ Rails.application.routes.draw do
   # root to: 'authenticated#authenticated'
 
   authenticated :user do
-    root to: 'authenticated#is_authenticated'
+    root to: 'authenticated#authenticated'
     get '/firemen_view' => 'authenticated#authenticated'
     get '/cars_view' => 'authenticated#authenticated'
     get '/actions_view' => 'authenticated#authenticated'

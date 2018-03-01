@@ -11,4 +11,8 @@ class AuthenticatedController < ApplicationController
     redirect_to('/login')
   end
 
+  def go_firemen_view
+    redirect_to('/firemen_view')
+  end
+
 end
